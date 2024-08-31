@@ -1,0 +1,172 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Math 120 QR}}
+\author{\huge{Alex Hernandez Juarez}}
+\date{Fall 2024}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{}
+\section{Day 1 notes}
+
+\defrose{Distance Formula}{DDefintion: 
+	\begin{center}
+		\[ |P_{1}P_{2}| = \sqrt{(x_{2} - x_{1})^{2} + (y_{2} - y_{1})^{2} + (z_{2} - z_{1})^{2} }\] 
+	\end{center}
+}
+
+\defrose{Equation of a sphere}{
+	DDefintion: An equation of a sphere with center $C(h,k,l)$, and radius $r$ is 
+	\begin{center}
+		\[ (x-h)^{2} + (y-k)^{2} + (z-l)^{2}\] 
+	\end{center}
+	In particular, if the center is the origin $O$, than an equation of the sphere is 
+	\begin{center}
+		\[ x^{2} + y^{2} + z^{2}\] 
+	\end{center}
+}
+		
+\section{Day 2 Notes}
+
+\defrose{The lenght/magnitude of a vecotr}{IIn 2D, $\vec{v} = <a,b>$: $|\vec{v}| = \sqrt{a^{2} + b^{2}}$  \\
+	In 3D, $\vec{v}$, $\vec{v} = <a,b,c>$: $|\vec{v}| = \sqrt{a^{2} + b^{2} + c^{2}}$\\
+	A unit vector is a vector of length 1
+}
+
+\qs{}{If $\vec{v}$ is a a vector and $a$ is a scalar, then what is $|a \vec{v}|$}
+\sol{
+	\begin{center}
+		\[ |a\vec{v}| = |a||\vec{v}|\] 
+	\end{center}
+}
+
+\defrose{Vectors in $\mathbf{R}^{3}$}{TThe standard basis vectors in $\mathbf{R}^{3}$ are 
+	\begin{center}
+		\[i = <1,0,0>\]
+		\[j = <0,1,0> \] 
+		\[k = <0,0,1> \]  
+	\end{center}	
+}
+
+\qs{}{What is special about i,j,k?}
+\sol{
+	\begin{itemize}
+		\item Cannot make any of them as a linear combibnation of the other three. 
+		\item Any vector $\vec{v} \epsilon \mathbf{R}^{3}$ can be written uniquily as a linear combibnation of i,j,k
+	\end{itemize}
+}
+
+\exrose{}{$\vec{v} + \vec{u}$ = $\begin{pmatrix} u_{1}\\ u_{2}\\ u_{3} \end{pmatrix} + \begin{pmatrix} v_{1}\\ v_{2}\\ v_{3} \end{pmatrix}$ \\
+$\vec{v} + \vec{u} = \begin{pmatrix} u_{1} + v_{1}\\ u_{2} + v_{2}\\ u_{3} + v_{3} \end{pmatrix}$ 
+
+}
+
+\defrose{Dot product}{AA dot product between $v$ and $w$ is: \\
+In 2D: $v \cdot w = v_{1}w_{1} + v_{2}w_{2}$\\
+In 3D: $v \cdot 2 = v_{1}w_{1} + v_{2}w_{2} + v_{3}w_{3}$ \\
+
+Geometric defintion: \\
+$|u \cdot w| = |u||w| \cos(\theta)$ where $\theta$ is the angle between $v$ and $w$
+}
+
+\exrose{Why the 2 defintions are the same}{
+	\begin{center}
+		\[ v_{1}w_{1} + v_{2}w_{2} = |v||w|\cos(\theta) = p|v|\] 
+		\[ p = |w|\cos(\theta)\]
+		\[ v_{1} = |v|\cos(\theta)\]
+		\[ v_{2} = |v|\sin(\theta)\]  
+		\[ w_{1} = |w|\cos(\theta)\]
+		\[ w_{2} = |w|\sin(\theta)\]    
+		\[ \text{LHS} = |v||w| \left(\cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta)\right)\]
+		\[ \text{LHS} = |v||w| \sin(\alpha + \beta) \]
+		\[ \text{LHS} = |v||w| \cos(\theta) = \text{RHS} \]    
+	\end{center}
+}
+
+\exrose{what does the def mean}{
+	How much effect of $\vec{w}$ act along $\vec{v}$ \\
+	Work: $w = \vec{F} \cdot \vec{S}$
+}
+
+\qs{}{Find a relation between $|v|$ and $v \cdot v$}
+\sol{$|v|^{2} = v \cdot v$}
+
+\qs{}{$v$, $w$ of fixed lenghts when is $v \cdot w$ largest?} 
+\sol{$v$ paralell: $\theta = 0$ \\
+$\cos(\theta) = 1$}
+
+\exrose{Projections}{Given $\vec{v} \neq \vec{o}$ \\
+	The project of $w$ on $v$ is proj $w = \left(\frac{\vec{w} \cdot \vec{v}}{|v|}\right) \frac{\vec{v}}{|v|}$\\
+	Directon of $v$ is $\frac{\vec{v}}{|v|}$ \\
+	Dor project of $w$ with direction is: 
+	\begin{center}
+		\[ \vec{w} \cdot \frac{\vec{v}}{|v|}\] 
+	\end{center}
+	
+}
+
+\qs{}{TRUE or False: \\
+	$u, v, w$: vectors 
+	$(u \cdot v)w = u(v \cdot w)$
+}
+\sol{false}
+
+\qs{}{TRUE or FALSE: \\
+	$v - w| = |v| - |w|$ if $v \parallel w$
+}
+\sol{false}
+
+\qs{}{When is this ideal square sum happening? \\
+	\begin{center}
+		\[ |v + w|^{2} = |v|^{2} + |w|^{2}\] 
+	\end{center}	
+}
+\sol{when $v \perp w$}
+
+\defrose{Cross Product}{TThe cross product of two vectors $v$ and $w$, $v * w$ is a vector u defined by 
+	$u \perp v$ and $u \perp w$. \\
+	Direction of $u$ is given by the right hand rule
+	
+	Magnitude: $|u|$ = Area of the parallelogram spanned by $v$ and $w$.
+}
+
+\section{Day 2 Reading notes} 
+
+\defrose{Vector Addition}{IIf $\textbf{u}$ and $\textbf{v}$ are vectors positioned so the initial
+point of $\textbf{v}$ is at the terminal point of $\textbf{u}$, then the $\textbf{sum u + v}$ is the vector from the
+initial point of $\textbf{u}$ to the terminal point of $\textbf{v}$.}
+
+
+\defrose{Scalar Multiplication}{IIf $c$ is a scalar and $\textbf{v}$ is a vector, then the
+$\textbf{scalar multiple}$ $c \textbf{v}$ is the vector whose length is $|c|$ times the length of $\textbf{v}$ and whose direction is
+the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or $\textbf{v}$ = 0, then c$\textbf{v} = 0$ }
+
+\exrose{}{Given the points $A(x_{1}, y_{1},z_{1})$ and $B(x_{2}, y_{2}, z_{2})$, the vector $\textbf{a}$ with represenation 
+	$\vec{AB}$ is: 
+	\begin{center}
+		\[ a = \langle x_{2} - x_{1}, y_{2}-y_{1}, z_{2} - z_{1} \rangle \] 
+	\end{center}
+}
+
+\exrose{}{
+	If $\textbf{a}  = \langle a_{1}, a_{2}\rangle$ and $\textbf{b} = \langle b_{1}, b_{2} \rangle$, then: 
+		\begin{center}
+			\[ \textbf{a} + \textbf{b} = \langle a_{1} + b_{1}, a_{2} + b_{2} \rangle \]
+			\[ \textbf{a} - \textbf{b} = \langle a_{1} - b_{1}, a_{2} - b_{2} \rangle \]
+			\[ c\textbf{a} = \langle ca_{1}, ca_{2} \rangle \]   
+		\end{center} 
+	Similarily for three demensional vectors 
+}
+
+\end{document}
