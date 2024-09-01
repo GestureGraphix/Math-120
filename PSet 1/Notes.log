@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  30 AUG 2024 20:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  1 SEP 2024 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/alexhernandezjuarez/Documents/math/Math 120/Notes.tex"
-(/home/alexhernandezjuarez/Documents/math/Math 120/Notes.tex
+**"/home/alexhernandezjuarez/Documents/math/Math 120/PSet 1/Notes.tex"
+(/home/alexhernandezjuarez/Documents/math/Math 120/PSet 1/Notes.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/report.cls
@@ -1154,14 +1154,32 @@ File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowwidth=\dimen310
 \pgfarrowlinewidth=\dimen311
 )))
+(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/tikz-3dplot/tikz-3d
+plot.sty
+(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer
+/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer
+/tikz/libraries/tikzlibrary3d.code.tex
+File: tikzlibrary3d.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer
+/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/pgf
+libraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen312
+)))
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/algorithm2e/algorit
 hm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
 \c@AlgoLine=\count357
-
-(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/ifthen.sty
-Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-)
 \algocf@hangindent=\skip67
 
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/ifoddpage/ifoddpage
@@ -1183,12 +1201,12 @@ Package: relsize 2013/03/29 ver 4.1
 \skiplength=\skip73
 \algomargin=\skip74
 \skipalgocfslide=\skip75
-\algowidth=\dimen312
-\inoutsize=\dimen313
-\inoutindent=\dimen314
-\interspacetitleruled=\dimen315
-\interspacealgoruled=\dimen316
-\interspacetitleboxruled=\dimen317
+\algowidth=\dimen313
+\inoutsize=\dimen314
+\inoutindent=\dimen315
+\interspacetitleruled=\dimen316
+\interspacealgoruled=\dimen317
+\interspacetitleboxruled=\dimen318
 \algocf@ruledwidth=\skip76
 \algocf@inoutbox=\box133
 \algocf@inputbox=\box134
@@ -1229,12 +1247,12 @@ Package: pdfpages 2024/05/29 v0.6a Insert pages of external PDF documents (AM)
 
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen318
-\ESO@tempdimb=\dimen319
+\ESO@tempdima=\dimen319
+\ESO@tempdimb=\dimen320
 )
-\AM@pagewidth=\dimen320
-\AM@pageheight=\dimen321
-\AM@fboxrule=\dimen322
+\AM@pagewidth=\dimen321
+\AM@pageheight=\dimen322
+\AM@fboxrule=\dimen323
 
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pdfpages/pppdftex.d
 ef
@@ -1283,15 +1301,6 @@ X3.
 /l3keys2e.sty
 Package: l3keys2e 2024-05-08 LaTeX2e option processing using LaTeX3 keys
 )
-(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer
-/tikz/libraries/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/pgf
-libraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen323
-))
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer
 /tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer
@@ -1419,10 +1428,6 @@ File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \c@tcb@cnt@qstion=\count466
 \c@tcb@cnt@wconc=\count467
 
-(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer
-/tikz/libraries/tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pgf-blur/tikzlibrar
 yshadows.blur.code.tex  v1.02, 2012/12/09
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer
@@ -1438,26 +1443,14 @@ File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ty
 Package: titletoc 2023/10/27 v2.16 TOC entries
 \ttl@leftsep=\dimen332
-)) (macros.tex) (letterfonts.tex) (Notes.aux
-
-LaTeX Warning: Label `def:D' multiply defined.
-
-
-LaTeX Warning: Label `def:T' multiply defined.
-
-
-LaTeX Warning: Label `def:I' multiply defined.
-
-
-LaTeX Warning: Label `def:I' multiply defined.
-
-)
+)) (macros.tex) (letterfonts.tex) (Notes.aux)
 \openout1 = `Notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 11.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
  11.
- (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/newpx/omlnpxmi.fd
+
+(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
 LaTeX Font Info:    ... okay on input line 11.
@@ -1474,13 +1467,15 @@ LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 11.
 LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
 11.
- (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/newpx/unpxexa.fd
+
+(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 11.
 LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
  11.
+
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
@@ -1641,95 +1636,22 @@ l.19
 Chapter 1.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 27.
+(Font)              size <5> substituted on input line 25.
 
-<slime.png, id=71, 867.24pt x 530.2209pt>
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 27.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 38.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 45.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-
-LaTeX Font Warning: Font shape `OT1/cmr/b/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 60.
-
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 60.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [2
 
 {/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.
-enc} <./slime.png>]
-<flow.png, id=90, 692.5875pt x 492.84125pt>
+enc}]
+<flow.png, id=76, 692.5875pt x 492.84125pt>
 File: flow.png Graphic file (type png)
 <use flow.png>
-Package pdftex.def Info: flow.png  used on input line 73.
-(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-
- []
-
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 81.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-File: flow.png Graphic file (type png)
-<use flow.png>
-Package pdftex.def Info: flow.png  used on input line 95.
-(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
-File: flow.png Graphic file (type png)
-<use flow.png>
-Package pdftex.def Info: flow.png  used on input line 100.
+Package pdftex.def Info: flow.png  used on input line 69.
 (pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
 
 
-[3 <./flow.png>]
-File: flow.png Graphic file (type png)
-<use flow.png>
-Package pdftex.def Info: flow.png  used on input line 117.
-(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
-
- []
-
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 142.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-
-
-[4]
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 148.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 153.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-File: flow.png Graphic file (type png)
-<use flow.png>
-Package pdftex.def Info: flow.png  used on input line 160.
-(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
-File: flow.png Graphic file (type png)
-<use flow.png>
-Package pdftex.def Info: flow.png  used on input line 170.
-(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
-
-
-[5] (Notes.aux)
+[3 <./flow.png>] (Notes.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1742,39 +1664,33 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 37034 strings out of 475839
- 748241 string characters out of 5777281
- 1962905 words of memory out of 5000000
- 58962 multiletter control sequences out of 15000+600000
- 588314 words of font info for 122 fonts, out of 8000000 for 9000
+ 37226 strings out of 475839
+ 751128 string characters out of 5777281
+ 1942905 words of memory out of 5000000
+ 59177 multiletter control sequences out of 15000+600000
+ 585560 words of font info for 113 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 99i,10n,102p,594b,1433s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/d
-pi600/tcrm1000.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1
-/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fon
-ts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs
-/install/fonts/type1/public/amsfonts/cm/cmb10.pfb></home/alexhernandezjuarez/.m
-iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexherna
-ndezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></h
-ome/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
-mbxti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/i
-nstall/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.mik
-tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandez
-juarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/al
-exhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></
-home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.
-pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/
-txexs.pfb>
-Output written on Notes.pdf (6 pages, 987606 bytes).
+ 99i,13n,102p,601b,1419s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/Ne
+wPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/
+newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/t
+ype1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/in
+stall/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.mik
+tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/alexherna
+ndezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></ho
+me/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/am
+sfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/instal
+l/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/te
+xmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.mi
+ktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuar
+ez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb>
+Output written on Notes.pdf (4 pages, 153496 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
