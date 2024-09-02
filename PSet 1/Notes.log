@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  1 SEP 2024 12:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  2 SEP 2024 13:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1644,14 +1644,8 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 
 {/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.
 enc}]
-<flow.png, id=76, 692.5875pt x 492.84125pt>
-File: flow.png Graphic file (type png)
-<use flow.png>
-Package pdftex.def Info: flow.png  used on input line 69.
-(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
 
-
-[3 <./flow.png>] (Notes.aux)
+[3] (Notes.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1666,10 +1660,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 37226 strings out of 475839
- 751128 string characters out of 5777281
+ 37221 strings out of 475839
+ 751041 string characters out of 5777281
  1942905 words of memory out of 5000000
- 59177 multiletter control sequences out of 15000+600000
+ 59172 multiletter control sequences out of 15000+600000
  585560 words of font info for 113 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  99i,13n,102p,601b,1419s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1688,9 +1682,9 @@ l/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/te
 xmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.mi
 ktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuar
 ez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb>
-Output written on Notes.pdf (4 pages, 153496 bytes).
+Output written on Notes.pdf (4 pages, 147310 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
+ 149 PDF objects out of 1000 (max. 8388607)
  10 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
