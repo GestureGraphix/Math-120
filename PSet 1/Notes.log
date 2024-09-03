@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  2 SEP 2024 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  2 SEP 2024 20:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1644,10 +1644,16 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 
 {/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.
 enc}]
+<Prob.png, id=76, 231.86626pt x 147.55125pt>
+File: Prob.png Graphic file (type png)
+<use Prob.png>
+Package pdftex.def Info: Prob.png  used on input line 119.
+(pdftex.def)             Requested size: 173.89925pt x 110.66315pt.
+
 
 [3]
 
-[4] (Notes.aux)
+[4 <./Prob.png>] (Notes.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1662,13 +1668,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 37255 strings out of 475839
- 751781 string characters out of 5777281
+ 37262 strings out of 475839
+ 751888 string characters out of 5777281
  1953905 words of memory out of 5000000
- 59199 multiletter control sequences out of 15000+600000
+ 59206 multiletter control sequences out of 15000+600000
  585926 words of font info for 114 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 99i,13n,102p,601b,1419s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,15n,102p,601b,1419s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/Ne
 wPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/
 newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/t
@@ -1685,9 +1691,9 @@ xmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.mi
 ktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuar
 ez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernand
 ezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
-Output written on Notes.pdf (5 pages, 166546 bytes).
+Output written on Notes.pdf (5 pages, 181208 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
+ 167 PDF objects out of 1000 (max. 8388607)
  16 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

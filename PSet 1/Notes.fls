@@ -519,6 +519,13 @@ INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/nt
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newtx/ntxexx.vf
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txexs.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
+INPUT ./Prob.png
+INPUT ./Prob.png
+INPUT ./Prob.png
+INPUT ./Prob.png
+INPUT ./Prob.png
+INPUT ./Prob.png
+INPUT ./Prob.png
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplsym.vf
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/ntxsym.tfm
 INPUT Notes.aux
