@@ -190,4 +190,182 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 	\end{itemize}
 }
 
+\section{Day 3 Reading notes}
+
+\exrose{}{$\in$ }
+
+\section{Day 3 Class notes}
+
+\exrose{}{Use the geometric def of cross product to calculate:  \\
+	$i \times ( i + j)$ \\ 
+	$( i + j) \times (i - j)$	
+}
+
+\defrose{Second definition of dot product}{
+	AArithmetic Definition: 
+	\begin{center}
+		\[ a \times b = \left[ \begin{matrix}
+			i & j & k  \\
+			a_{1} & a_{2} & a_{3} \\
+			b_{1} & b_{2} & b_{3} \\
+		\end{matrix}\right] = |a||b| \sin(\theta) \] 
+		\[ \left[ \begin{matrix}
+			a_{2} & a_{3} \\
+			b_{2} & b_{3}  \\
+		\end{matrix}\right] i - \left[ \begin{matrix}
+			a_{1} & a_{3} \\
+			b_{1} & b_{3}  \\
+		\end{matrix}\right] j - \left[ \begin{matrix}
+			a_{1} & a_{2} \\
+			b_{1} & b_{2} k  \\
+		\end{matrix}\right]\] 
+		\[ = (a_{2}b_{3} - a_{3}b_{2}) i - (a_{1}b_{3} - a_{3}b_{1}) j + (a_{1} b_{2} - a_{2}b_{1}) k \]\
+		\[ |a \times b |^{2} = (a_{2}b_{3} - a_{3}b_{2}) - (a_{1}b_{3} - a_{3}b_{1})  + (a_{1} b_{2} - a_{2}b_{1})  \] 
+		\[ |a \times b |^{2} = (a_{2}b_{3} - a_{3}b_{2}) - (a_{1}b_{3} - a_{3}b_{1})  + (a_{1} b_{2} - a_{2}b_{1})  \] 
+
+	\end{center}
+}
+
+\qs{}{Calculate the corss product of $v = \langle -1, 3, 4 \rangle$ and $w = \langle 2, 1, -2 \rangle$ }
+
+\sol{ 
+	\begin{center}
+		\[ v \times w =  \left[ \begin{matrix}
+			i & j & k  \\
+			-1 & 4 & 4 \\
+			2 & 1 & -2 \\
+		\end{matrix}\right]  = 10 i + 6j - 7k \] 
+	\end{center}
+}
+
+\qs{}{Calculate the area of the triangle with vertices P(1,0,1), Q (-3, 4, 0) and R(2,1,0)}
+
+\sol{ 
+	\begin{center}
+		\[ \ray{RP} = \langle -1, -1, 1 \rangle \] 
+		\[ \ray{RQ} = \langle 5, 0, 0\rangle \] 
+		\[ \ray{RP} \times \ray{RQ} = \left[ \begin{matrix}
+			i & j & k  \\
+			-1 & -1 & 1 \\
+			-5 & 0 & 0 \\
+		\end{matrix}\right] = -5j - 5k \]
+		\[ \text{area of } \delta PQR = \frac{1}{2} |\ray{RP \times \ray{RQ}} = \frac{1}{2}\sqrt{5^{2} + 5^{2}} = \frac{5 \sqrt{2}}{2}\]  
+	\end{center}
+}
+
+\qs{}{What is special about: P(1,4,2), 1(3,3,5), R(9,1,11), and S(5, 11, 9)}
+
+\sol{
+	If ($\ray{AC} \times \ray{AB} \parallel (\ray{AD} \times \ray{AC}))$ then A, B, C, D are 
+	on the same plane  
+}
+
+\qs{}{1. If $u \times w = u \times v$  then $ w = v$ \\
+	2. If $u \cdot v = 0$ and $u \times v = \vec{0}$ then either $u = \vec{0}$ or $v = \vec{0}$  	
+}
+
+\sol{ \\
+	1. False
+		\begin{center}
+			\[ u \times ( u + w) = u \times w\] 
+		\end{center} 
+	2. True \\ 
+	The reason is because the dot product is $|u||v| \cos(\theta)$ and the cross product is 
+	$|u||v| \sin(\theta)$ 
+}
+
+\qs{}{Find the distance of a point p to the line passing through A and B}
+
+\sol{
+	\begin{center}
+		\[ = \frac{1}{2} \text{dist} (P, AB) \cdot |AB|\]
+		\[ \text{dist} (P, AB) = \frac{|\ray{AB} \times \ray{AP}|}{|\ray{AB}}\]  
+	\end{center}
+}
+
+\ntimg{Line in 2D equation: $ax + by = c$ \\
+	Line in 3D: Equation of a line passing through $(x_{0}, y_{0}, z_{0})$
+	and parallel to $\vec{v} = \langle a, b, c \rangle$ is 
+	\begin{itemize}
+		\item $x = x_{0} + at $
+		\item $y = y_{0} + bt$
+		\item $z = z_{0} + zt$ 
+	\end{itemize}
+}
+
+\ntimg{
+	Equation of a plane passing through $(x_{0}, y_{0}, z_{0})$ and orthogonal to $\vec{n} = \langle a, b, c \rangle $ is 
+	$(r - r_{0}) \cdot n = 0 $ \\
+	$\langle x - x_{0}, y - y_{0}, z - z_{0} \rangle \cdot \langle a, b, c \rangle = 0 $ \\
+	$ax + by + cz + d = 0 $
+}
+
+\qs{}{What is the normal of the plane $3x + z + 2 = 0$? }
+
+\sol{
+	\begin{center}
+		\[ \vec{n} = \langle 3, 0, 1 \rangle \] 
+	\end{center}
+}
+
+\qs{}{Is the line $x = 2t$, $ y = 1 + 3t$, $z = 2 + 4t$ parallel to the plane $x - 2y + z = 7$}
+
+\section{Integration Review}
+
+\exrose{}{
+	\begin{center}
+		\[ \int \frac{x}{\sqrt{1- x^{2}}} dx \]
+		\[ v = 1- x^{2} \]
+		\[ dv = -2x dx \]
+		\[ \int \frac{-\frac{1}{2}}{\sqrt{v}} dv \] 
+		\[ = \frac{1}{2} \int  \frac{1}{\sqrt{v}} \]   
+	\end{center}
+}
+
+\exrose{}{
+	\begin{center}
+		\[ (3x^{2} 5)e^{x^{3} + 5x} dx \] 
+		\[ u  = x^{3} + 5x \]
+		\[ du = 3x^{2} 5 dx \]
+		\[ = \int e^{u} du \]
+		\[ = e^{x^{3} + 5x} c\]    
+	\end{center}
+}
+
+\exrose{}{
+	\begin{center}
+		\[ \cos^{5}(2t) dt \] 
+		\[ u = 2t \]
+		\[ du = 2 dt \]
+		\[ = \frac{1}{2} \cos^{3}(u) du = \frac{1}{2} \cos^{4}(u) + \cos(u) du \]
+		\[ = \frac{1}{2} \int (1 - \sin^{2}(u))^{2} \cdot \cos(u) du \]
+		\[ v = \sin(u) \]
+		\[ dv = \cos (u) du \]       
+	\end{center}
+}
+
+\exrose{}{
+	\begin{center}
+		\[ xe^{2x} dx \] 
+		\[ x' = 1\] 
+		\[ \int e^{2x} dx = \frac{1}{2} e^{2x} + c \]
+		\[ \int v dv = uv + \int v du \]
+		\[ v = x \to dv = 1 dx\]
+		\[ dv = e^{2x} dx \to v = \frac{1}{2}e^{2x}\]
+		\[ \int = \frac{1}{2} x e^{2x} - \int \frac{1}{2} e^{2x} dx \]     
+	\end{center}
+}
+
+\exrose{}{
+	\begin{center}
+		\[ \int t \sin(2t) dt \] 
+		\[ t' = 1\] 
+		\[ \int \sin(2t) dt = -\frac{1}{2}\cos(2t) \]
+		\[ \int v dv = uv + \int v dv \]
+		\[ v = t \to dv = 1 dt\]
+		\[ dv = \sin(2t) dx \to v = -\frac{1}{2}\cos(2t)\]
+		\[ \int = - \frac{1}{2}\cos(2t) - \int \frac{1}{2} e^{2x} dx \]
+	\end{center}
+}
+
 \end{document}

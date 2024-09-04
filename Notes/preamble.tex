@@ -27,6 +27,7 @@
 \usepackage{nameref}
 \usepackage{multicol,array}
 \usepackage{tikz-cd}
+\usepackage{tikz-3dplot}
 \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 \usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
 \usepackage{import}
@@ -35,7 +36,10 @@
 \usepackage{transparent}
 \usepackage{graphicx} % <-- Added package to handle graphics
 \usepackage{xcolor}
+\usepackage{pgfplots}
 \definecolor{pastelFDF7C3}{HTML}{FDF7C3}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{colormaps}
 
 
 \newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
