@@ -94,6 +94,8 @@ greater than 90$^{\circ}$)}
 		\end{center}
 }
 
+\newpage
+
 \qs{}{
 	a) Describe in words and with a sketch the regions in $\mathbb{R}^{3}$ represented by \\
 		i. The equation $z = -2$ \\
@@ -203,6 +205,9 @@ greater than 90$^{\circ}$)}
 	slab that extends infinitely in teh $y$ and $z-$ directions, but is bounded by $x = -3$ and $x=3$ along the x-axis. 
 }
 
+
+\newpage 
+
 \qs{}{Let $A, B, C, D$, and $E$ be the points in the diagram below. Write each combintation 
 	of vectors as a single vector. \\
 	1. $\ray{AE} + \ray{ED}$ \\
@@ -225,7 +230,7 @@ greater than 90$^{\circ}$)}
 		\end{center}
 }
 
-
+\newpage 
 
 
 \qs{}{Find the sum of the vectors $\vec{a} = \langle 2, -3 \rangle$ and $\vec{b} = \langle 1, 4 \rangle$ and illustrate geometrically}
@@ -235,29 +240,32 @@ greater than 90$^{\circ}$)}
 		\[ \vec{a} + \vec{b}= \langle 2, -3 \rangle + \langle 1, 4 \rangle \] 
 		\[ \vec{a} + \vec{b}= \langle 2 + 1, -3 + 4\rangle = \langle 3, 1 \rangle  \] 
 	\end{center}
+	
+	\begin{center}
+		\begin{tikzpicture}
+			% Draw the x and y axis
+			\draw[->] (-1,0) -- (4,0) node[right] {$x$};
+			\draw[->] (0,-4) -- (0,4) node[above] {$y$};
+			
+			% Draw vector a
+			\draw[->, thick, blue] (0,0) -- (2,-3) node[midway, below right] {$\vec{a} = \langle 2, -3 \rangle$};
+			
+			% Draw vector b from the tip of vector a
+			\draw[->, thick, red] (2,-3) -- (3,1) node[midway, below right] {$\vec{b} = \langle 1, 4 \rangle$};
+			
+			% Draw vector a+b
+			\draw[->, thick, green] (0,0) -- (3,1) node[midway, above left] {$\vec{a} + \vec{b} = \langle 3, 1 \rangle$};
+			
+			% Draw dashed line from origin to b
+			\draw[dashed, gray] (0,0) -- (3,1);
+			
+			% Add points for the vectors
+			\filldraw[black] (0,0) circle (1pt) node[below left] {O};
+			\filldraw[black] (2,-3) circle (1pt) node[below right] {A};
+			\filldraw[black] (3,1) circle (1pt) node[above right] {B};
+		\end{tikzpicture}
+	\end{center}
 
-	\begin{tikzpicture}
-		% Draw the x and y axis
-		\draw[->] (-1,0) -- (4,0) node[right] {$x$};
-		\draw[->] (0,-4) -- (0,4) node[above] {$y$};
-		
-		% Draw vector a
-		\draw[->, thick, blue] (0,0) -- (2,-3) node[midway, below right] {$\vec{a} = \langle 2, -3 \rangle$};
-		
-		% Draw vector b from the tip of vector a
-		\draw[->, thick, red] (2,-3) -- (3,1) node[midway, below right] {$\vec{b} = \langle 1, 4 \rangle$};
-		
-		% Draw vector a+b
-		\draw[->, thick, green] (0,0) -- (3,1) node[midway, above left] {$\vec{a} + \vec{b} = \langle 3, 1 \rangle$};
-		
-		% Draw dashed line from origin to b
-		\draw[dashed, gray] (0,0) -- (3,1);
-		
-		% Add points for the vectors
-		\filldraw[black] (0,0) circle (1pt) node[below left] {O};
-		\filldraw[black] (2,-3) circle (1pt) node[below right] {A};
-		\filldraw[black] (3,1) circle (1pt) node[above right] {B};
-	\end{tikzpicture}
 }
 
 \qs{}{Find the vector that has the same direction as $\hat{\imath} + 3 \hat{\jmath} - \hat{k}$ but has length 6  }
@@ -269,6 +277,12 @@ greater than 90$^{\circ}$)}
 		\[ \mathbf{u} = \frac{6}{\sqrt{11}}\hat{\imath} + \frac{18}{\sqrt{11}}\hat{j} - \frac{6}{\sqrt{11}} \hat{k} \] 
 	\end{center}
 }
+
+\qs{}{omplete the Ximera assignment on vector projections linked from the Problem Set 1 assignment in
+the Canvas umbrella site. Write “I have completed the Ximera assignment” for Problem 8 on the file
+you submit for this problem set.}
+
+\sol{“I have completed the Ximera assignment”  }
 
 
 \end{document}
