@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  4 SEP 2024 18:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  4 SEP 2024 19:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1764,14 +1764,14 @@ enc}]
 <Prob.png, id=88, 231.86626pt x 147.55125pt>
 File: Prob.png Graphic file (type png)
 <use Prob.png>
-Package pdftex.def Info: Prob.png  used on input line 218.
+Package pdftex.def Info: Prob.png  used on input line 217.
 (pdftex.def)             Requested size: 173.89925pt x 110.66315pt.
 
 
 [5 <./Prob.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmr/b/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 275.
+(Font)              size <5> substituted on input line 268.
 
 
 
@@ -1815,7 +1815,7 @@ ezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexh
 ernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home
 /alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
 
-Output written on Notes.pdf (7 pages, 228290 bytes).
+Output written on Notes.pdf (7 pages, 227835 bytes).
 PDF statistics:
  184 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
