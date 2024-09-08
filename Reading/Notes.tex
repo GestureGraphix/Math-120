@@ -177,7 +177,46 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 }
 
 
-\section{Day 3 Class notes}
+\section{12.4 Notes (Cross Product)}
+
+\defrose{Cross Product}{
+	GGiven two nonzero vectors $\mathbf{a} = \langle a_1, a_2, a_3 \rangle$ and $\mathbf{b} = \langle b_1, b_2, b_3 \rangle$, suppose that a nonzero vector $\mathbf{c} = \langle c_1, c_2, c_3 \rangle$ is perpendicular to both $\mathbf{a}$ and $\mathbf{b}$. Then $\mathbf{a} \cdot \mathbf{c} = 0$ and $\mathbf{b} \cdot \mathbf{c} = 0$, and so:
+
+	\begin{align}
+	a_1c_1 + a_2c_2 + a_3c_3 &= 0 \tag{1} \\
+	b_1c_1 + b_2c_2 + b_3c_3 &= 0 \tag{2}
+	\end{align}
+
+	To eliminate $c_3$, we multiply (1) by $b_3$ and (2) by $a_3$ and subtract:
+
+	\[ (a_1b_3 - a_3b_1)c_1 + (a_2b_3 - a_3b_2)c_2 = 0 \tag{3} \]
+
+	Equation (3) has the form $pc_1 + qc_2 = 0$, for which an obvious solution is $c_1 = q$ and $c_2 = -p$. So, a solution of (3) is:
+
+	\begin{align*}
+		c_1 &= a_2b_3 - a_3b_2 \\
+		c_2 &= a_3b_1 - a_1b_3
+	\end{align*}
+
+	Substituting these values into (1) and (2), we then get:
+
+	\[ 	c_3 = a_1b_2 - a_2b_1 	\]
+
+	This means that a vector perpendicular to both $\mathbf{a}$ and $\mathbf{b}$ is:
+
+	\[ 	\langle c_1, c_2, c_3 \rangle = \langle a_2b_3 - a_3b_2, a_3b_1 - a_1b_3, a_1b_2 - a_2b_1 \rangle \]
+
+	The resulting vector is called the \textbf{cross product} of $\mathbf{a}$ and $\mathbf{b}$ and is denoted by $\mathbf{a} \times \mathbf{b}$.
+
+}
+
+\defrose{Cross Product of two vectors}{
+	IIf $\mathbf{a} = \langle a_{1}, a_{2}, a_{3} \rangle $ and $\mathbf{b} = \langle b_{1}, b_{2}, b_{3} \rangle $ 
+	then the \textbf{cross product} of \textbf{a} and \textbf{b} is: 
+	\begin{center}
+		\[ \mathbf{a} \times \mathbf{b} = \langle a_{2}b_{3} - a_{3}b_{2}, a_{3}b_{1} - a_{1}b_{3}, a_{1}b_{2} - a_{2}b_{1} \rangle \] 
+	\end{center}
+}
 
 \exrose{}{Use the geometric def of cross product to calculate:  \\
 	$i \times ( i + j)$ \\ 
