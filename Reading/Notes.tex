@@ -218,12 +218,42 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 	\end{center}
 }
 
-\exrose{}{Use the geometric def of cross product to calculate:  \\
-	$i \times ( i + j)$ \\ 
-	$( i + j) \times (i - j)$	
+\ntimg{Determinant of order 2: 
+	\begin{center}
+		\[ \begin{vmatrix}
+		a & b \\
+		c & d
+		\end{vmatrix}
+		= ad - bc \]
+	\end{center}
 }
 
-\defrose{Second definition of dot product}{
+\ntimg{Determinant of order 3: 
+	\[ 
+	\begin{vmatrix}
+	a_1 & a_2 & a_3 \\
+	b_1 & b_2 & b_3 \\
+	c_1 & c_2 & c_3
+	\end{vmatrix}
+	= a_1
+	\begin{vmatrix}
+	b_2 & b_3 \\
+	c_2 & c_3
+	\end{vmatrix}
+	- a_2
+	\begin{vmatrix}
+	b_1 & b_3 \\
+	c_1 & c_3
+	\end{vmatrix}
+	+ a_3
+	\begin{vmatrix}
+	b_1 & b_2 \\
+	c_1 & c_2
+	\end{vmatrix}
+	\]
+}
+
+\defrose{Second definition of cross product}{
 	AArithmetic Definition: 
 	\begin{center}
 		\[ a \times b = \left[ \begin{matrix}
@@ -237,7 +267,7 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 		\end{matrix}\right] i - \left[ \begin{matrix}
 			a_{1} & a_{3} \\
 			b_{1} & b_{3}  \\
-		\end{matrix}\right] j - \left[ \begin{matrix}
+		\end{matrix}\right] j + \left[ \begin{matrix}
 			a_{1} & a_{2} \\
 			b_{1} & b_{2} k  \\
 		\end{matrix}\right]\] 
@@ -247,5 +277,5 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 
 	\end{center}
 }
-
+ 
 \end{document}
