@@ -337,6 +337,47 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 	parallelogram determined by \textbf{a} and \textbf{b} 
 }
 
+\ntimg{
+	If we apply the following theorem:
 
- 
+	The vector \(\mathbf{a} \times \mathbf{b}\) is orthogonal to both \(\mathbf{a}\) and \(\mathbf{b}\), and 
+	\[ 	|\mathbf{a} \times \mathbf{b}| = |\mathbf{a}| |\mathbf{b}| \sin \theta \]
+	to the standard basis vectors \(\mathbf{i}, \mathbf{j}, \mathbf{k}\) using \(\theta = \frac{\pi}{2}\), we obtain
+
+	\[
+	\begin{aligned}
+		\mathbf{i} \times \mathbf{j} &= \mathbf{k} \quad &\mathbf{j} \times \mathbf{k} &= \mathbf{i} \quad &\mathbf{k} \times \mathbf{i} &= \mathbf{j} \\
+		\mathbf{j} \times \mathbf{i} &= -\mathbf{k} \quad &\mathbf{k} \times \mathbf{j} &= -\mathbf{i} \quad &\mathbf{i} \times \mathbf{k} &= -\mathbf{j}
+	\end{aligned}
+	\]
+}
+
+
+\ntimg{
+	If \(\mathbf{a}\), \(\mathbf{b}\), and \(\mathbf{c}\) are vectors and \(c\) is a scalar, then
+	\begin{enumerate}
+		\item \(\mathbf{a} \times \mathbf{b} = -\mathbf{b} \times \mathbf{a}\)
+		\item \((c\mathbf{a}) \times \mathbf{b} = c(\mathbf{a} \times \mathbf{b}) = \mathbf{a} \times (c\mathbf{b})\)
+		\item \(\mathbf{a} \times (\mathbf{b} + \mathbf{c}) = \mathbf{a} \times \mathbf{b} + \mathbf{a} \times \mathbf{c}\)
+		\item \((\mathbf{a} + \mathbf{b}) \times \mathbf{c} = \mathbf{a} \times \mathbf{c} + \mathbf{b} \times \mathbf{c}\)
+		\item \(\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c}\)
+		\item \(\mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \cdot \mathbf{c})\mathbf{b} - (\mathbf{a} \cdot \mathbf{b})\mathbf{c}\)
+	\end{enumerate}
+}
+
+\exrose{Proof of property 5 of cross products}{
+	If \(\mathbf{a} = \langle a_1, a_2, a_3 \rangle\), \(\mathbf{b} = \langle b_1, b_2, b_3 \rangle\), and \(\mathbf{c} = \langle c_1, c_2, c_3 \rangle\), then: 
+	\begin{align*}
+		\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) &= a_1(b_2c_3 - b_3c_2) + a_2(b_3c_1 - b_1c_3) + a_3(b_1c_2 - b_2c_1)\\ 
+		\\
+		&= a_1b_2c_3 - a_1b_3c_2 + a_2b_3c_1 - a_2b_1c_3 + a_3b_1c_2 - a_3b_2c_1 \\
+		\\
+		&= (a_2b_3 - a_3b_2)c_1 + (a_3b_1 - a_1b_3)c_2 + (a_1b_2 - a_2b_1)c_3 \\
+		\\
+		&= (\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} \\
+	\end{align*}
+}
+
+\defrose{Triple Products}{ hi }
+
 \end{document}
