@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1725839956.16466 "/home/alexhernandezjuarez/Documents/math/Math 120/Reading/Notes.tex" "Notes.pdf" "Notes" 1725839961.29363 0
+["pdflatex"] 1725840376.94764 "/home/alexhernandezjuarez/Documents/math/Math 120/Reading/Notes.tex" "Notes.pdf" "Notes" 1725840382.11005 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1725409887.90446 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1720481779.2778 11548 a72ccb84d52a88897df751d2d1963cd5 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
@@ -311,10 +311,10 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xfrac/xfrac.sty" 1720481722.07727 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty" 1720481758.74561 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1720481720.24125 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/alexhernandezjuarez/Documents/math/Math 120/Reading/Notes.tex" 1725839955.54198 11529 a8a76dbe33b4aff8ade278a62b4dad56 ""
-  "Notes.aux" 1725839960.95127 3366 5745510f67ecedd31278cdb3dc0dafb9 "pdflatex"
-  "Notes.tex" 1725839955.54198 11529 a8a76dbe33b4aff8ade278a62b4dad56 ""
-  "Notes.toc" 1725839960.95427 369 dd2bf21f715e1e40ed0a834155d7f2d5 "pdflatex"
+  "/home/alexhernandezjuarez/Documents/math/Math 120/Reading/Notes.tex" 1725840376.31029 11930 11b728d23f5fe9dcea50fd009b76dfd5 ""
+  "Notes.aux" 1725840381.76852 3366 5745510f67ecedd31278cdb3dc0dafb9 "pdflatex"
+  "Notes.tex" 1725840376.31029 11930 11b728d23f5fe9dcea50fd009b76dfd5 ""
+  "Notes.toc" 1725840381.77152 369 dd2bf21f715e1e40ed0a834155d7f2d5 "pdflatex"
   "flow.png" 1723602120.64709 3327 eab4ed35b4d13609c606e28f6c71b1ca ""
   "letterfonts.tex" 1720527956.72324 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "lot.png" 1723601909.60344 371900 6f9425d133ddfae48260c3ff1caaf72c ""

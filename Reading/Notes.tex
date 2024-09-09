@@ -272,10 +272,31 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 			b_{1} & b_{2} k  \\
 		\end{matrix}\right]\] 
 		\[ = (a_{2}b_{3} - a_{3}b_{2}) i - (a_{1}b_{3} - a_{3}b_{1}) j + (a_{1} b_{2} - a_{2}b_{1}) k \]\
-		\[ |a \times b |^{2} = (a_{2}b_{3} - a_{3}b_{2}) - (a_{1}b_{3} - a_{3}b_{1})  + (a_{1} b_{2} - a_{2}b_{1})  \] 
-		\[ |a \times b |^{2} = (a_{2}b_{3} - a_{3}b_{2}) - (a_{1}b_{3} - a_{3}b_{1})  + (a_{1} b_{2} - a_{2}b_{1})  \] 
-
 	\end{center}
+
+	The vector \textbf{a} $\times$ \textbf{b} is orthogonal to both \textbf{a} and \textbf{b} 
+}
+
+\exrose{Proof that \textbf{a} $\times$ \textbf{b} is orthogonal to both \textbf{a}}{
+	\begin{align*}
+		(\mathbf{a} \times \mathbf{b}) \cdot \mathbf{a} &= 
+		\begin{vmatrix}
+		a_2 & a_3 \\
+		b_2 & b_3
+		\end{vmatrix} a_1 - 
+		\begin{vmatrix}
+		a_1 & a_3 \\
+		b_1 & b_3
+		\end{vmatrix} a_2 + 
+		\begin{vmatrix}
+		a_1 & a_2 \\
+		b_1 & b_2
+		\end{vmatrix} a_3 \\
+		&= a_1(a_2b_3 - a_3b_2) - a_2(a_1b_3 - a_3b_1) + a_3(a_1b_2 - a_2b_1) \\
+		&= a_1a_2b_3 - a_1a_3b_2 - a_2a_1b_3 + a_2a_3b_1 + a_3a_1b_2 - a_3a_2b_1 \\
+		&= 0
+	\end{align*}
+
 }
  
 \end{document}
