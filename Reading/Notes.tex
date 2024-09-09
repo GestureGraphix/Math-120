@@ -464,6 +464,37 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 	\[ \mathbf{r}(t) = (1-t)\mathbf{r_{0}} + tr_{1} \quad 0 \leq t \leq 1\] 
 }
 
+\defrose{Planes}{
+	AA plane in space is determined by a point $P_0(x_0, y_0, z_0)$ in the plane and a
+	vector $\mathbf{n}$ that is orthogonal to the plane. This orthogonal vector
+	$\mathbf{n}$ is called a \textbf{normal vector}. Let $P(x, y, z)$ be an arbitrary
+	 point in the plane, and let $\mathbf{r_0}$ and $\mathbf{r}$ be the position vectors
+	of $P_0$ and $P$. Then the vector $\mathbf{r - r_0}$ is represented by
+	$\overrightarrow{P_0P}$.
+
+	The normal vector $\mathbf{n}$ is orthogonal to every vector in the given plane. 
+	In particular, $\mathbf{n}$ is orthogonal to $\mathbf{r - r_0}$ and so we have
+	\begin{equation}
+		\mathbf{n} \cdot (\mathbf{r} - \mathbf{r_0}) = 0
+	\end{equation}
+	which can be rewritten as
+	\begin{equation}
+		\mathbf{n} \cdot \mathbf{r} = \mathbf{n} \cdot \mathbf{r_0}
+	\end{equation}
+	These can be reffered to as the \textbf{vector equation of the plane}
+
+	To obtain a scalar equation for the plane, we write \textbf{n} $ = \langle a, b, c \rangle, 
+	\mathbf{r} = \langle x, y, x \rangle$, and $\mathbf{r}_{0} = \langle x_{0}, y_{0}, z_{0} \rangle$. then the 
+	vector equation becomes: 
+	\[ \langle a, b, c \rangle \cdot \langle x - x_{0}, y - y_{0}, z - z_{0} \rangle = 0 \] 
+
+	Expanding the left side of this equation gives the following: \\
+	A \textbf{scalar equation of the plane} through the point $P_{0}(x_{0}, y_{0}, z_{0})$ with normal vector 
+	\textbf{n} $ = \langle a, b, c \rangle$ is 
+	\[ a(x - x_{0}) + b(y - y_{0}) + c(z - z_{0}) = 0 \]
+	by colecting terms can be rewritten as: 
+	\[ ax + by + cz + d = 0 \]    
+}
 
 
 

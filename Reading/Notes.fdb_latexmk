@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1725847598.80682 "/home/alexhernandezjuarez/Documents/math/Math 120/Reading/Notes.tex" "Notes.pdf" "Notes" 1725847605.07435 0
+["pdflatex"] 1725856906.71407 "/home/alexhernandezjuarez/Documents/math/Math 120/Reading/Notes.tex" "Notes.pdf" "Notes" 1725856913.19222 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1725409887.90446 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1720481779.2778 11548 a72ccb84d52a88897df751d2d1963cd5 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
@@ -313,10 +313,10 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xfrac/xfrac.sty" 1720481722.07727 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty" 1720481758.74561 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1720481720.24125 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/alexhernandezjuarez/Documents/math/Math 120/Reading/Notes.tex" 1725847591.77615 20672 ad8a35cd3bbc22451e409a09735e7f5e ""
-  "Notes.aux" 1725847604.72127 5201 74b628376f057a3c2bbdb5b1d0aa9575 "pdflatex"
-  "Notes.tex" 1725847591.77615 20672 ad8a35cd3bbc22451e409a09735e7f5e ""
-  "Notes.toc" 1725847604.72427 533 e3da3c2538105222e50b9ce5416c753d "pdflatex"
+  "/home/alexhernandezjuarez/Documents/math/Math 120/Reading/Notes.tex" 1725856906.09358 22233 138a0d6d4da94369b026971e035efd63 ""
+  "Notes.aux" 1725856912.83262 5276 5cb7f0d64f2f084c08c2c8f497f1e3a9 "pdflatex"
+  "Notes.tex" 1725856906.09358 22233 138a0d6d4da94369b026971e035efd63 ""
+  "Notes.toc" 1725856912.83562 533 e3da3c2538105222e50b9ce5416c753d "pdflatex"
   "flow.png" 1723602120.64709 3327 eab4ed35b4d13609c606e28f6c71b1ca ""
   "letterfonts.tex" 1720527956.72324 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "lines.png" 1725845452.94303 48725 0543dc0928245a9079d9a47159bb468e ""
