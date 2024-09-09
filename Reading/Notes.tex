@@ -18,7 +18,7 @@
 \pagebreak
 
 \chapter{}
-\section{12.1 notes}
+\section{12.1 Notes (Three Dimensional Coodinate Systems)}
 
 \defrose{Distance Formula}{DDefintion: 
 	\begin{center}
@@ -37,7 +37,7 @@
 	\end{center}
 }
 		
-\section{12.2 Notes}
+\section{12.2 Notes (Vectors)}
 
 \defrose{Vector Addition}{IIf $\textbf{u}$ and $\textbf{v}$ are vectors positioned so the initial
 point of $\textbf{v}$ is at the terminal point of $\textbf{u}$, then the $\textbf{sum u + v}$ is the vector from the
@@ -87,7 +87,7 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 	\end{itemize}
 }
 
-\section{12.3 Notes}
+\section{12.3 Notes (Dot Product)}
 
 \defrose{Dot Product}{
 	IIf $\textbf{a} = \langle a_{1}, a_{2}, a_{3} \rangle $ and $\textbf{b} = \langle b_{1}, b_{2}, 
@@ -378,6 +378,25 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 	\end{align*}
 }
 
-\defrose{Triple Products}{ hi }
+\defrose{Triple Products}{ 
+	TThe product \(\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})\) that occurs in Property 5 is called the \textit{scalar triple product} of the vectors \(\mathbf{a}\), \(\mathbf{b}\), and \(\mathbf{c}\). 
+
+	\[ 	\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 
+	\begin{vmatrix}
+	a_1 & a_2 & a_3 \\
+	b_1 & b_2 & b_3 \\
+	c_1 & c_2 & c_3
+	\end{vmatrix} \]
+	
+	The geometric significance of the scalar triple product can be seen by considering the parallelepiped determined by the vectors \(\mathbf{a}\), \(\mathbf{b}\), and \(\mathbf{c}\). The area of the base parallelogram is \(A = |\mathbf{b} \times \mathbf{c}|\). If \(\theta\) is the angle between \(\mathbf{a}\) and \(\mathbf{b} \times \mathbf{c}\), then the height \(h\) of the parallelepiped is \(h = |\mathbf{a}| |\cos \theta|\). (We must use \(|\cos \theta|\) instead of \(\cos \theta\) in case \(\theta > \pi / 2\).) Therefore, the volume of the parallelepiped is
+	
+	\[ 	V = A h = |\mathbf{b} \times \mathbf{c}| |\mathbf{a}| |\cos \theta| = |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})| \]
+	
+	Thus, we have proved the following formula: 
+	The volume of the parallelepiped determined by the vectors \textbf{a}, \textbf{b}, and \textbf{c} is the magnitude of their scalar triple product:
+	\[ V = |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})| \] 
+ }
+ 
+ \section{12.5 Notes (Equations of Lines and Planes)}
 
 \end{document}

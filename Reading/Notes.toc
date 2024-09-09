@@ -1,6 +1,7 @@
 \contentsline {chapter}{\numberline {1}}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}12.1 notes}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}12.2 Notes}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}12.3 Notes}{3}{section.1.3}%
-\contentsline {section}{\numberline {1.4}12.4 Notes (Cross Product)}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.1}12.1 Notes (Three Dimensional Coodinate Systems)}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}12.2 Notes (Vectors)}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}12.3 Notes (Dot Product)}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}12.4 Notes (Cross Product)}{6}{section.1.4}%
+\contentsline {section}{\numberline {1.5}12.5 Notes (Equations of Lines and Planes)}{9}{section.1.5}%
 \contentsfinish 
