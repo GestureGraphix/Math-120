@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  8 SEP 2024 20:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  8 SEP 2024 20:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1865,6 +1865,15 @@ Package pdftex.def Info: slime.png  used on input line 324.
 
 
 [6]
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 329.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+File: flow.png Graphic file (type png)
+<use flow.png>
+Package pdftex.def Info: flow.png  used on input line 338.
+(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
+
 
 [7] (Notes.aux)
  ***********
@@ -1884,10 +1893,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 47033 strings out of 475839
- 1083170 string characters out of 5777281
+ 47041 strings out of 475839
+ 1083345 string characters out of 5777281
  1975905 words of memory out of 5000000
- 68819 multiletter control sequences out of 15000+600000
+ 68826 multiletter control sequences out of 15000+600000
  588321 words of font info for 122 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  99i,16n,102p,818b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1910,9 +1919,9 @@ rnandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home
 </home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txex
 s.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newt
 x/txsym.pfb>
-Output written on Notes.pdf (8 pages, 1240964 bytes).
+Output written on Notes.pdf (8 pages, 1244366 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 286 words of extra memory for PDF output out of 10000 (max. 10000000)
 
