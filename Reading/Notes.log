@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  8 SEP 2024 21:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  8 SEP 2024 22:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1576,6 +1576,9 @@ LaTeX Warning: Label `def:I' multiply defined.
 
 LaTeX Warning: Label `def:T' multiply defined.
 
+
+LaTeX Warning: Label `def:T' multiply defined.
+
 )
 \openout1 = `Notes.aux'.
 
@@ -1901,15 +1904,39 @@ Package pdftex.def Info: slime.png  used on input line 398.
 <lines.png, id=187, 1012.78375pt x 673.51625pt>
 File: lines.png Graphic file (type png)
 <use lines.png>
-Package pdftex.def Info: lines.png  used on input line 418.
+Package pdftex.def Info: lines.png  used on input line 420.
 (pdftex.def)             Requested size: 253.19531pt x 168.37865pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 418.
+Package pdftex.def Info: slime.png  used on input line 420.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[9 <./lines.png>] (Notes.aux)
+[9 <./lines.png>]
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 431.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+File: flow.png Graphic file (type png)
+<use flow.png>
+Package pdftex.def Info: flow.png  used on input line 441.
+(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--460
+
+ []
+
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 460.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 465.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[10] (Notes.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1927,10 +1954,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 47080 strings out of 475839
- 1083957 string characters out of 5777281
+ 47097 strings out of 475839
+ 1084312 string characters out of 5777281
  1967905 words of memory out of 5000000
- 68852 multiletter control sequences out of 15000+600000
+ 68866 multiletter control sequences out of 15000+600000
  588667 words of font info for 123 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  99i,16n,102p,818b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1954,9 +1981,9 @@ aX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/new
 px/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/publ
 ic/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type
 1/public/newtx/txsym.pfb>
-Output written on Notes.pdf (10 pages, 1300070 bytes).
+Output written on Notes.pdf (11 pages, 1310767 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 323 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 347 words of extra memory for PDF output out of 10000 (max. 10000000)
 
