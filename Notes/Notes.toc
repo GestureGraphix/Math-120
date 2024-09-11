@@ -6,4 +6,5 @@
 \contentsline {section}{\numberline {1.5}Day 3 Class notes}{6}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Integration Review}{8}{section.1.6}%
 \contentsline {section}{\numberline {1.7}Day 4 Class Notes}{10}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Day 5 Class Notes}{10}{section.1.8}%
 \contentsfinish 
