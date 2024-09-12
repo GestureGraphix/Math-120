@@ -519,7 +519,7 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 	\[	= \frac{|(a x_1 + b y_1 + c z_1) - (a x_0 + b y_0 + c z_0)|}{\sqrt{a^2 + b^2 + c^2}} \]
 }
 
-\section{12.6}
+\section{12.6 Reading Notes (Cylinders and Quadric Surfaces)}
 
 \defrose{Cylinder}{
 	AA cylinder is a surface that consists of all lines (called rulings) that are parallel to a
@@ -559,6 +559,91 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 	\[ -\frac{x^2}{a^2} - \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1 \] 
 	Horizontal traces in \(z = k\) are ellipses if \(k > c\) or \(k < -c\). Vertical traces are hyperbolas. The two minus signs indicate two sheets. \\
 }
+
+\chapter{}
+\section{13.1 Reading Notes(Vector Functions and Space Curves)}
+
+\defrose{Vector Value Functions}{
+	AA \textbf{vector-valued function}, or \textbf{vector function}, is simply a function whose
+	domain is a set of real numbers and whose range is a set of vectors. We are most 
+	interested in vector functions r whose values are three-dimensional vectors. If
+	$f(t)$, $g(t)$, and $h(t)$ are the components of the vector \textbf{r}$(t)$, then $f$ , $g$, and $h$ are real-valued
+	functions called the \textbf{component functions} of r and we can write
+
+	\[ \mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t) \mathbf{i} + g(t) \mathbf{j} + h(t) \mathbf{k} \]
+	We use the letter \( t \) to denote the independent variable because it represents time in most applications of vector functions.
+}
+
+\defrose{Limit of Vectors}{
+	TThe \textbf{limit} of a vector function \(\mathbf{r}\) is defined by taking the limits of its component functions as follows.
+
+    If $(\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle)$, then
+    \[ \lim_{t \to a} \mathbf{r}(t) = \left\langle \lim_{t \to a} f(t), \lim_{t \to a} g(t), \lim_{t \to a} h(t) \right\rangle \]
+    provided the limits of the component functions exist.
+}
+
+\defrose{Space Curves}{
+	There is a close connection between continuous vector functions and space curves. Suppose that \( f \), \( g \), and \( h \) are continuous real-valued functions on an interval \( I \). Then the set \( C \) of all points \( (x, y, z) \) in space, where
+	\[ x = f(t) \quad y = g(t) \quad z = h(t) \]
+	and $( t )$ varies throughout the interval \( I \), is called a \textbf{space curve}.
+    The equations in are called \textbf{parametric equations of} \( C \) and \( t \) is called a \textbf{parameter}.
+}
+
+\section{13.2 Notes (Derivatives and Integrals of Vector Functions)}
+
+\defrose{Derivatives}{
+	TThe derivative \(\mathbf{r}'\) of a vector function \(\mathbf{r}\) is defined in much the same way as for real-valued functions:
+	\[ \frac{d\mathbf{r}}{dt} = \mathbf{r}'(t) = \lim_{h \to 0} \frac{\mathbf{r}(t+h) - \mathbf{r}(t)}{h} \]
+}
+
+\defrose{Derivatives of vectors pt 2}{
+	The following theorem gives us a convenient method for computing the derivative of a vector function \(\mathbf{r}\): just differentiate each component of \(\mathbf{r}\).
+	\textbf{Theorem} If \(\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t) \mathbf{i} + g(t) \mathbf{j} + h(t) \mathbf{k}\), where \(f\), \(g\), and \(h\) are differentiable functions, then
+	\[ \mathbf{r}'(t) = \langle f'(t), g'(t), h'(t) \rangle = f'(t) \mathbf{i} + g'(t) \mathbf{j} + h'(t) \mathbf{k} \]
+}
+
+\exrose{Proof of Definition 2.2.2}{
+	\[ \mathbf{r}'(t) = \lim_{\Delta t \to 0} \frac{1}{\Delta t} [\mathbf{r}(t + \Delta t) - \mathbf{r}(t)] \]
+	\[ 	= \lim_{\Delta t \to 0} \frac{1}{\Delta t} [\langle f(t + \Delta t), g(t + \Delta t), h(t + \Delta t) \rangle - \langle f(t), g(t), h(t) \rangle] \]
+	\[ 	= \lim_{\Delta t \to 0} \left\langle \frac{f(t + \Delta t) - f(t)}{\Delta t}, \frac{g(t + \Delta t) - g(t)}{\Delta t}, \frac{h(t + \Delta t) - h(t)}{\Delta t} \right\rangle \]
+	\[ 	= \left\langle \lim_{\Delta t \to 0} \frac{f(t + \Delta t) - f(t)}{\Delta t}, \lim_{\Delta t \to 0} \frac{g(t + \Delta t) - g(t)}{\Delta t}, \lim_{\Delta t \to 0} \frac{h(t + \Delta t) - h(t)}{\Delta t} \right\rangle \]
+	\[ 	= \langle f'(t), g'(t), h'(t) \rangle \]
+	A unit vector that has the same direction as the tangent vector is called the \textbf{unit tangent vector} \(\mathbf{T}\) and is defined by
+	\[ 	\mathbf{T}(t) = \frac{\mathbf{r}'(t)}{|\mathbf{r}'(t)|} \]
+}
+
+\defrose{Differentiation Rules}{
+	PProof:
+	\textbf{Theorem} Suppose \(\mathbf{u}\) and \(\mathbf{v}\) are differentiable vector functions, \(c\) is a scalar, and \(f\) is a real-valued function. Then
+	\begin{enumerate}
+		\item \(\frac{d}{dt} [\mathbf{u}(t) + \mathbf{v}(t)] = \mathbf{u}'(t) + \mathbf{v}'(t)\)
+		\item \(\frac{d}{dt} [c\mathbf{u}(t)] = c\mathbf{u}'(t)\)
+		\item \(\frac{d}{dt} [f(t)\mathbf{u}(t)] = f'(t)\mathbf{u}(t) + f(t)\mathbf{u}'(t)\)
+		\item \(\frac{d}{dt} [\mathbf{u}(t) \cdot \mathbf{v}(t)] = \mathbf{u}'(t) \cdot \mathbf{v}(t) + \mathbf{u}(t) \cdot \mathbf{v}'(t)\)
+		\item \(\frac{d}{dt} [\mathbf{u}(t) \times \mathbf{v}(t)] = \mathbf{u}'(t) \times \mathbf{v}(t) + \mathbf{u}(t) \times \mathbf{v}'(t)\)
+		\item \(\frac{d}{dt} [\mathbf{u}(f(t))] = f'(t) \mathbf{u}'(f(t))\) \hfill \textcolor{blue}{(Chain Rule)}
+	\end{enumerate}
+}
+
+\ntimg{
+	We use Formula 4 to prove the following theorem.
+	\textbf{Theorem} If \(|\mathbf{r}(t)| = c\) (a constant), then \(\mathbf{r}'(t)\) is orthogonal to \(\mathbf{r}(t)\) for all \(t\).
+}
+
+\defrose{Interation of Vectors}{
+	TThe \textbf{definite integral} of a continuous vector function \(\mathbf{r}(t)\) can be defined in much the same way as for real-valued functions except that the integral is a vector. But then we can express the integral of \(\mathbf{r}\) in terms of the integrals of its component functions \(f\), \(g\), and \(h\) as follows. (We use the notation of Chapter 5.)
+
+	\[ \int_a^b \mathbf{r}(t) \, dt = \lim_{n \to \infty} \sum_{j=1}^{n} \mathbf{r}(t_j^*) \, \Delta t \]
+	\[ = \lim_{n \to \infty} \left[ \left( \sum_{i=1}^{n} f(t_i^*) \, \Delta t \right) \mathbf{i} + \left( \sum_{i=1}^{n} g(t_i^*) \, \Delta t \right) \mathbf{j} + \left( \sum_{i=1}^{n} h(t_i^*) \, \Delta t \right) \mathbf{k} \right] \]
+	and so
+	\[ \int_a^b \mathbf{r}(t) \, dt = \left( \int_a^b f(t) \, dt \right) \mathbf{i} + \left( \int_a^b g(t) \, dt \right) \mathbf{j} + \left( \int_a^b h(t) \, dt \right) \mathbf{k} \]
+	This means that we can evaluate an integral of a vector function by integrating each component function.
+
+	We can extend the Fundamental Theorem of Calculus to continuous vector functions as follows:
+	\[ 	\int_a^b \mathbf{r}(t) \, dt = \mathbf{R}(t) \Big|_a^b = \mathbf{R}(b) - \mathbf{R}(a) \]
+	where \(\mathbf{R}\) is an antiderivative of \(\mathbf{r}\), that is, \(\mathbf{R}'(t) = \mathbf{r}(t)\). We use the notation \(\int \mathbf{r}(t) \, dt\) for indefinite integrals (antiderivatives).
+	}
+
 
 
 
