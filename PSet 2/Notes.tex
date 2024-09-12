@@ -75,6 +75,8 @@
 	\[ x = 4 - \sqrt{13} \]      
 }
 
+\newpage 
+
 \qs{}{
 	Find the scalar and vector projections of $\vec{b} = \hat{i} + \hat{j}$ onto $\vec{a} = -\hat{i} + 3\hat{j}$, and illustrate your answers with a sketch.
 }
@@ -131,6 +133,7 @@
 	\[ u_{2} = -\frac{1}{5 \sqrt{2}} \langle -8, 10, -6 \rangle \]  
 }
 
+\newpage 
 
 \qs{}{
 	Let $\vec{a} = \langle 3, 1, 0 \rangle$. Find all vectors $\vec{b} = \langle b_1, b_2, b_3 \rangle$ such that $\vec{a} \times \vec{b}$ is parallel to the $z$-axis and pointing in the positive $z$ direction. Illustrate with a sketch, in which all vectors are drawn as position vectors, i.e., with the tail at the origin.
@@ -145,6 +148,37 @@
 	\[ b_{3} = 0 \]
 	\[ -3b_{3} = 0\] 	
 	All vectors in the form of $\langle b_{1}, b_{2}, 0 \rangle$ where $3b_{2} - b_{1} > 0$
+	
+
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				axis lines = middle,
+				xlabel = $x$,
+				ylabel = $y$,
+				zlabel = {$z$},
+				view={60}{30}, % Adjust the angle for 3D view
+				zmax=2, zmin=-2,
+				xmax=4, xmin=-4,
+				ymax=4, ymin=-4
+			]
+			
+			% Draw several sample vectors that satisfy 3b_2 - b_1 > 0
+			\addplot3[blue,->,thick] coordinates {(0,0,0) (-6,2,0)};
+			\addplot3[blue,->,thick] coordinates {(0,0,0) (-5,2,0)};
+			\addplot3[blue,->,thick] coordinates {(0,0,0) (-4,2,0)};
+			\addplot3[blue,->,thick] coordinates {(0,0,0) (-3,2,0)};
+			\addplot3[blue,->,thick] coordinates {(0,0,0) (-2,2,0)};
+			\addplot3[blue,->,thick] coordinates {(0,0,0) (-1,2,0)};
+			\addplot3[blue,->,thick] coordinates {(0,0,0) (0,1,0)};
+			\addplot3[blue,->,thick] coordinates {(0,0,0) (1,2,0)};
+			\addplot3[blue,->,thick] coordinates {(0,0,0) (2,3,0)};
+			\addplot3[blue,->,thick] coordinates {(0,0,0) (3,4,0)};
+			\addplot3[blue,->,thick] coordinates {(0,0,0) (4,5,0)};
+			\addplot3[blue,->,thick] coordinates {(0,0,0) (5,6,0)};
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
 }
 
 \qs{}{
