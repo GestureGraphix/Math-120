@@ -41,8 +41,8 @@
 	\[ \text{slope of line perpendicular to }L_{1}: -\frac{1}{-\frac{1}{2}} = 2 \] 
 	\[ \langle 1, 2 \rangle \] 
 	\[ |n| = \sqrt{1^{2} + 2^{2}} = \sqrt{5} \]
-	\[ u_{1} = \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}}\]  
-	\[ u_{2} = - u_{1} = -\frac{1}{\sqrt{5}}, -\frac{2}{\sqrt{5}}\] 
+	\[ u_{1} = \left\langle \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}} \right\rangle\]  
+	\[ u_{2} = - u_{1} = \left\langle -\frac{1}{\sqrt{5}}, -\frac{2}{\sqrt{5}} \right\rangle\] 
 	
 	c)
 	\[ \vec{v_{1}} = \langle 1, -2 \rangle \]
@@ -69,7 +69,7 @@
 	\[ x^{2} - 8x + 3 = 0 \] 
 	\[ x = \frac{8 \pm \sqrt{(-8)^{2} - 4(1)(3)}}{2 \cdot 1}\]
 	\[ x = \frac{8 \pm \sqrt{52}}{2} \]
-	\[ x = 4 - \sqrt{13} \]      
+	\[ x = 4 \pm \sqrt{13} \]      
 }
 
 \qs{}{
@@ -83,10 +83,37 @@
 	\[ \vec{a} = \hat{\imath} + 3 \hat{\jmath} \]
 	\[ \text{comp}_{a}\mathbf{b} = \frac{a \cdot b}{|a|} \]
 	\[ \frac{a \cdot b}{|a|} = \frac{2}{\sqrt{10}} = \frac{2\sqrt{10}}{10} = \frac{\sqrt{10}}{5} \]
+
+	\begin{center}
+		\begin{tikzpicture}[scale=1]
+			% Draw axes
+			\draw[->] (-2,0) -- (2,0) node[anchor=north west] {$x$};
+			\draw[->] (0,-1) -- (0,4) node[anchor=south east] {$y$};
+			
+			% Draw vector a
+			\draw[->, thick, blue] (0,0) -- (-1,3) node[anchor=east] {$\vec{a}$};
+			
+			% Draw vector b
+			\draw[->, thick, red] (0,0) -- (1,1) node[anchor=south west] {$\vec{b}$};
+			
+			% Draw projection of b onto a
+			\draw[->, thick, green] (0,0) -- (-0.2,0.6) node[anchor=north] {$\text{proj}_{\vec{a}} \vec{b}$};
+			
+			% Dashed line for scalar projection
+			\draw[dashed, gray] (1,1) -- (-0.2,0.6);
+			
+			% Labels for angles
+			\draw (0.2, 0.2) node[anchor=north west] {$\theta$};
+			
+		\end{tikzpicture}
+	\end{center}
+
 	Vector Projection: 
 	\[ \text{proj}_{a}\mathbf{b} = \left(\frac{a \cdot b}{|a|^{2}} \right) a \]
 	\[ \left(\frac{a \cdot b}{|a|^{2}} \right) a  = \frac{2}{\sqrt{10}^{2}} a = \frac{2}{10} a = \frac{1}{5} a \]
 	\[ \frac{1}{5} a = \frac{1}{5} ( - \hat{\imath}, 3 \hat{\jmath}) = \langle -\frac{1}{5} \hat{\imath}, \frac{3}{5} \hat{\jmath}\rangle \] 
+
+
 }
 
 \qs{}{
