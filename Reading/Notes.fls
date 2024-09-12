@@ -1,6 +1,6 @@
-PWD /home/alexhernandezjuarez/Documents/math/Math 120/Reading
+PWD /home/alexhernandezjuarez/Documents/Math 120/Reading
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
-INPUT /home/alexhernandezjuarez/Documents/math/Math 120/Reading/Notes.tex
+INPUT /home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex
 OUTPUT Notes.log
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/report.cls
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/report.cls
@@ -720,6 +720,17 @@ INPUT ./slime.png
 INPUT ./slime.png
 INPUT ./slime.png
 INPUT ./slime.png
+INPUT ./slime.png
+INPUT ./slime.png
+INPUT ./slime.png
+INPUT ./slime.png
+INPUT ./distances.png
+INPUT ./distances.png
+INPUT ./distances.png
+INPUT ./distances.png
+INPUT ./distances.png
+INPUT ./distances.png
+INPUT ./distances.png
 INPUT ./slime.png
 INPUT ./slime.png
 INPUT ./slime.png

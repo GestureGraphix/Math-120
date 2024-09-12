@@ -501,7 +501,23 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 	\[ ax + by + cz + d = 0 \]    
 }
 
+\defrose{Distance of a plane}{
+	IIn order to find a formula for the distance $D$ from a point $P_1(x_1, y_1, z_1)$ to the plane $ax + by + cz + d = 0$, we let $P_0(x_0, y_0, z_0)$ be any point in the given plane and $\mathbf{b}$ be the vector corresponding to $\overrightarrow{P_0 P_1}$. Then
 
+	\[ 	\mathbf{b} = \langle x_1 - x_0, y_1 - y_0, z_1 - z_0 \rangle \]
+	
+	\begin{center}
+		\insertpng[0.4]{distances.png}
+	\end{center}
+
+	From Figure, you can see that the distance $D$ from $P_1$ to the plane is equal to the absolute value of the scalar projection of $\mathbf{b}$ onto the normal vector $\mathbf{n} = \langle a, b, c \rangle$. Thus,
+
+	\[ 	D = |\text{comp}_{\mathbf{n}} \mathbf{b}| = \frac{|\mathbf{n} \cdot \mathbf{b}|}{|\mathbf{n}|} \]
+
+	\[ 	= \frac{|a(x_1 - x_0) + b(y_1 - y_0) + c(z_1 - z_0)|}{\sqrt{a^2 + b^2 + c^2}} \]
+
+	\[	= \frac{|(a x_1 + b y_1 + c z_1) - (a x_0 + b y_0 + c z_0)|}{\sqrt{a^2 + b^2 + c^2}} \]
+}
 
 
 \end{document}
