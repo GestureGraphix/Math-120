@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  11 SEP 2024 23:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  11 SEP 2024 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1150,6 +1150,9 @@ LaTeX Warning: Label `def:I' multiply defined.
 
 LaTeX Warning: Label `def:A' multiply defined.
 
+
+LaTeX Warning: Label `def:A' multiply defined.
+
 )
 \openout1 = `Notes.aux'.
 
@@ -1359,3 +1362,184 @@ LaTeX Font Warning: Font shape `OT1/cmr/b/n' in size <5.5> not available
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 106.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[3 <./flow.png> <./lot.png>]
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 139.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 143.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+
+
+[4]
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 177.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 211.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[5]
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 219.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 229.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 254.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 278.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[6]
+File: flow.png Graphic file (type png)
+<use flow.png>
+Package pdftex.def Info: flow.png  used on input line 299.
+(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 324.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[7]
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 329.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+File: flow.png Graphic file (type png)
+<use flow.png>
+Package pdftex.def Info: flow.png  used on input line 338.
+(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 353.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 366.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+File: flow.png Graphic file (type png)
+<use flow.png>
+Package pdftex.def Info: flow.png  used on input line 379.
+(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 398.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[8]
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 404.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+<lines.png, id=194, 1012.78375pt x 673.51625pt>
+File: lines.png Graphic file (type png)
+<use lines.png>
+Package pdftex.def Info: lines.png  used on input line 425.
+(pdftex.def)             Requested size: 253.19531pt x 168.37865pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 425.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[9 <./lines.png>]
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 436.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+File: flow.png Graphic file (type png)
+<use flow.png>
+Package pdftex.def Info: flow.png  used on input line 446.
+(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+
+ []
+
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 465.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 470.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 502.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[10]
+<distances.png, id=217, 241.90375pt x 164.615pt>
+File: distances.png Graphic file (type png)
+<use distances.png>
+Package pdftex.def Info: distances.png  used on input line 520.
+(pdftex.def)             Requested size: 145.14336pt x 98.76976pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 520.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 527.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[11 <./distances.png>]
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 536.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[12] (Notes.aux)
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-05-27>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 47128 strings out of 475839
+ 1084882 string characters out of 5777281
+ 1967905 words of memory out of 5000000
+ 68888 multiletter control sequences out of 15000+600000
+ 588667 words of font info for 123 fonts, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 99i,16n,102p,813b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmb10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
+Output written on Notes.pdf (13 pages, 1332991 bytes).
+PDF statistics:
+ 346 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
+ 372 words of extra memory for PDF output out of 10000 (max. 10000000)
+

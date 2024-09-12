@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1726111820.83361 "/home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex" "Notes.pdf" "Notes" 1726111827.35984 0
+["pdflatex"] 1726112776.85847 "/home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex" "Notes.pdf" "Notes" 1726112783.46668 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1725409887.90446 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1720481779.2778 11548 a72ccb84d52a88897df751d2d1963cd5 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
@@ -313,10 +313,10 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xfrac/xfrac.sty" 1720481722.07727 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty" 1720481758.74561 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1720481720.24125 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex" 1726111813.61629 23593 8ef8960d5629137ba661c14385bf91b2 ""
-  "Notes.aux" 1726111827.07737 5717 5e73d1695ae7549a11dad905a04a0635 "pdflatex"
-  "Notes.tex" 1726111813.61629 23593 8ef8960d5629137ba661c14385bf91b2 ""
-  "Notes.toc" 1726111827.08037 598 192f63864a8bfc474286833a54cf9309 "pdflatex"
+  "/home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex" 1726112776.70877 24048 d21b8766106e3c557265215a11c6fd9a ""
+  "Notes.aux" 1726112783.18182 5802 70ead74f35db4ac5ea968b1c9d863de7 "pdflatex"
+  "Notes.tex" 1726112776.70877 24048 d21b8766106e3c557265215a11c6fd9a ""
+  "Notes.toc" 1726112783.18582 598 192f63864a8bfc474286833a54cf9309 "pdflatex"
   "distances.png" 1726111584.8942 10941 e0d683c6b83f5bd226cfde518e401b4d ""
   "flow.png" 1723602120.64709 3327 eab4ed35b4d13609c606e28f6c71b1ca ""
   "letterfonts.tex" 1720527956.72324 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
