@@ -642,9 +642,83 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 	We can extend the Fundamental Theorem of Calculus to continuous vector functions as follows:
 	\[ 	\int_a^b \mathbf{r}(t) \, dt = \mathbf{R}(t) \Big|_a^b = \mathbf{R}(b) - \mathbf{R}(a) \]
 	where \(\mathbf{R}\) is an antiderivative of \(\mathbf{r}\), that is, \(\mathbf{R}'(t) = \mathbf{r}(t)\). We use the notation \(\int \mathbf{r}(t) \, dt\) for indefinite integrals (antiderivatives).
-	}
+}
 
+\section{13.3 Notes (Arc Length and Curvature)}
 
+\defrose{Length of a space curve}{
+	SSuppose that the curve has the vector equation $\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle$, $a \leq t \leq b$, or, equivalently, the parametric equations $x = f(t)$, $y = g(t)$, $z = h(t)$, where $f'$, $g'$, and $h'$ are continuous. If the curve is traversed exactly once as $t$ increases from $a$ to $b$, then it can be shown that its length is
+	\begin{equation}
+		L = \int_a^b \sqrt{[f'(t)]^2 + [g'(t)]^2 + [h'(t)]^2} \, dt
+	\end{equation}
+	\begin{equation}
+		= \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2 + \left(\frac{dz}{dt}\right)^2} \, dt
+	\end{equation}
+	Notice that both of the arc length formulas (1) and (2) can be put into the more compact form
+	\begin{equation}
+		L = \int_a^b |\mathbf{r}'(t)| \, dt
+	\end{equation}
+	because, for plane curves $\mathbf{r}(t) = f(t)\mathbf{i} + g(t)\mathbf{j}$,
+	\[ |\mathbf{r}'(t)| = |f'(t)\mathbf{i} + g'(t)\mathbf{j}| = \sqrt{[f'(t)]^2 + [g'(t)]^2} \]
+	and for space curves $\mathbf{r}(t) = f(t)\mathbf{i} + g(t)\mathbf{j} + h(t)\mathbf{k}$,
+	\[	|\mathbf{r}'(t)| = |f'(t)\mathbf{i} + g'(t)\mathbf{j} + h'(t)\mathbf{k}| = \sqrt{[f'(t)]^2 + [g'(t)]^2 + [h'(t)]^2} \]
+	A single curve \textit{C} can be respresented by more than one vector function. For instance the 
+	twisted cube
+	\begin{equation}
+		r_{1}(t) = \langle t, t^{2}, t^{3} \rangle \quad 1 \leq t \leq 2  
+	\end{equation} 
+	could also be represented by the function 
+	\begin{equation}
+		r_{2} (u) = \langle e^{u}, e^{2u}, e^{3u} \rangle \quad o \leq u \leq \ln 2 
+	\end{equation}
+	where the connection between the parameters $t$ and $u$ is given by $t = e^{u}$ We say that equations 2.4 and 2.5 are 
+	parameterizations of the curve $C$. If we were to use Equation 2.3 to
+	compute the length of C using Equations 2.4 and 2.5, we would get the same answer. This is
+	because arc length is a geometric property of the curve and hence is independent of the
+	parametrization that is used. 
+}
+
+\defrose{Arc Length Function}{
+	NNow we supose that the curve $C$ is a cruve given by a vector function 
+	\[ \mathbf{r} (t) = f(t)\mathbf{i} + g(t) \mathbf{j} + h(t) \mathbf{k} \quad a \leq t \leq b \]
+	where \textbf{r}' is continuous and $C$ is transvered exactly once as $t$ increases from $a$ to $b$.
+	We define its \textbf{arc length functions} by 
+	\begin{equation}
+		s(t) = \int_{a}^{t} |\mathbf{r}'(u)| du = \int_{a}^{t} \sqrt{\left(\frac{dx}{du}\right)^{2} + \left(\frac{dy}{du}\right)^{2} + \left(\frac{dz}{du}\right)^{2}} du  
+	\end{equation} 
+	Thus $s(t)$ is the length of part $C$ between \textbf{r}$(a)$ and \textbf{r}$(t)$. If we differentiate
+	both sides of equation 2.6 using part 1 of the Fundamental Theorem of Calculus, we obtain 
+	\begin{equation}
+		\frac{ds}{dt} = |\mathbf{r}(t)| 
+	\end{equation} 
+	It is often useful to \textbf{paramterize a curve with respect to arc length} because arc length 
+	arises naturally from the shape of the curve and does not depend on a particular coordinate system 
+	of a particular parametrization. 
+}
+
+\defrose{Curvature}{
+	AA parametrization \textbf{r}$(t)$ is called \textbf{smooth} on an interval $I$ if \textbf{r}' is continuous 
+	and \textbf{r}'$(t) \neq 0$ on $I$. A curve is called smooth if it has a smooth parameterization. A smooth corner has 
+	no cusp or sharp corner; when the tangent vector turns it does so continuously. \\
+	\\
+	If $C$ is a smooth curve defined by the vector \textbf{r}, recall that the unit tangent vector 
+	\textbf{T}(t) is given by 
+	\[ \mathbf{T}(t) = \frac{\mathbf{r}'(t)}{|\mathbf{r}'(t)|}\] 
+	The curvature of a curve is 
+	\begin{equation}
+		k = |\frac{d\mathbf{T}}{ds}|
+	\end{equation} 
+	where \textbf{T} is the unit tangent vector  \\
+	\\
+	The curvature is easier to compute if it is easier to compute if it is expressed in terms of the paramteter $t$ 
+	instead of $s$, so we use the chain rule 
+	\[ \frac{d\mathbf{T}}{dt} = \frac{d \mathbf{T}}{ds} \frac{ds}{dt} \Rightarrow k = \left|\frac{d \mathbf{T}}{s}\right| = \left| \frac{d\mathbf{T}/dt}{ds/dt}\right|\] 
+	but $ds/dt = |\mathbf{r}'(t)$ from equation 2.7 
+	\begin{equation}
+		k(t) = \frac{|\mathbf{T}'(t)|}{|\mathbf{r}'(t)|}
+	\end{equation}
+
+}
 
 
 \end{document}

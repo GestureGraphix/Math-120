@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  12 SEP 2024 01:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  14 SEP 2024 00:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1171,6 +1171,9 @@ LaTeX Warning: Label `def:T' multiply defined.
 
 LaTeX Warning: Label `def:T' multiply defined.
 
+
+LaTeX Warning: Label `def:A' multiply defined.
+
 )
 \openout1 = `Notes.aux'.
 
@@ -1337,7 +1340,7 @@ Chapter 1.
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 27.
 
-<slime.png, id=89, 867.24pt x 530.2209pt>
+<slime.png, id=92, 867.24pt x 530.2209pt>
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 27.
@@ -1354,7 +1357,7 @@ File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 48.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-<flow.png, id=91, 692.5875pt x 492.84125pt>
+<flow.png, id=94, 692.5875pt x 492.84125pt>
 File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 56.
@@ -1368,7 +1371,7 @@ File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 75.
 (pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
-<lot.png, id=112, 2007.5pt x 2007.5pt>
+<lot.png, id=115, 2007.5pt x 2007.5pt>
 File: lot.png Graphic file (type png)
 <use lot.png>
 Package pdftex.def Info: lot.png  used on input line 88.
@@ -1468,7 +1471,7 @@ File: lot.png Graphic file (type png)
 <use lot.png>
 Package pdftex.def Info: lot.png  used on input line 404.
 (pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
-<lines.png, id=203, 1012.78375pt x 673.51625pt>
+<lines.png, id=206, 1012.78375pt x 673.51625pt>
 File: lines.png Graphic file (type png)
 <use lines.png>
 Package pdftex.def Info: lines.png  used on input line 425.
@@ -1508,7 +1511,7 @@ Package pdftex.def Info: slime.png  used on input line 502.
 
 
 [10]
-<distances.png, id=226, 241.90375pt x 164.615pt>
+<distances.png, id=229, 241.90375pt x 164.615pt>
 File: distances.png Graphic file (type png)
 <use distances.png>
 Package pdftex.def Info: distances.png  used on input line 520.
@@ -1528,7 +1531,7 @@ File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 536.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-<ellipsoid.png, id=236, 159.59625pt x 121.45375pt>
+<ellipsoid.png, id=239, 159.59625pt x 121.45375pt>
 File: ellipsoid.png Graphic file (type png)
 <use ellipsoid.png>
 Package pdftex.def Info: ellipsoid.png  used on input line 549.
@@ -1538,7 +1541,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 549--549
 
  []
 
-<EllipticParaboloid.png, id=237, 158.5925pt x 154.5775pt>
+<EllipticParaboloid.png, id=240, 158.5925pt x 154.5775pt>
 File: EllipticParaboloid.png Graphic file (type png)
 <use EllipticParaboloid.png>
 Package pdftex.def Info: EllipticParaboloid.png  used on input line 549.
@@ -1548,7 +1551,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 549--549
 
  []
 
-<HyperbolicParaboloid.png, id=238, 198.7425pt x 134.5025pt>
+<HyperbolicParaboloid.png, id=241, 198.7425pt x 134.5025pt>
 File: HyperbolicParaboloid.png Graphic file (type png)
 <use HyperbolicParaboloid.png>
 Package pdftex.def Info: HyperbolicParaboloid.png  used on input line 549.
@@ -1565,7 +1568,7 @@ Package pdftex.def Info: flow.png  used on input line 549.
 
 
 [12]
-<Cone.png, id=246, 173.64874pt x 167.62625pt>
+<Cone.png, id=249, 173.64874pt x 167.62625pt>
 File: Cone.png Graphic file (type png)
 <use Cone.png>
 Package pdftex.def Info: Cone.png  used on input line 561.
@@ -1575,7 +1578,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 561--561
 
  []
 
-<HyperboloidofOneSheet.png, id=247, 180.675pt x 155.58125pt>
+<HyperboloidofOneSheet.png, id=250, 180.675pt x 155.58125pt>
 File: HyperboloidofOneSheet.png Graphic file (type png)
 <use HyperboloidofOneSheet.png>
 Package pdftex.def Info: HyperboloidofOneSheet.png  used on input line 561.
@@ -1585,7 +1588,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 561--561
 
  []
 
-<HyperboloidofTwoSheets.png, id=248, 148.555pt x 155.58125pt>
+<HyperboloidofTwoSheets.png, id=251, 148.555pt x 155.58125pt>
 File: HyperboloidofTwoSheets.png Graphic file (type png)
 <use HyperboloidofTwoSheets.png>
 Package pdftex.def Info: HyperboloidofTwoSheets.png  used on input line 561.
@@ -1649,8 +1652,36 @@ Package pdftex.def Info: slime.png  used on input line 645.
 
 
 [16]
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 679.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
-[17] (Notes.aux)
+
+[17]
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 697.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 721--721
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 721--721
+
+ []
+
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 721.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[19] (Notes.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1668,17 +1699,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 47231 strings out of 475839
- 1087060 string characters out of 5777281
+ 47255 strings out of 475839
+ 1087426 string characters out of 5777281
  1968905 words of memory out of 5000000
- 68965 multiletter control sequences out of 15000+600000
+ 68974 multiletter control sequences out of 15000+600000
  589286 words of font info for 125 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  99i,16n,102p,869b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmb10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
-Output written on Notes.pdf (18 pages, 1501623 bytes).
+Output written on Notes.pdf (20 pages, 1515308 bytes).
 PDF statistics:
- 421 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
- 438 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 450 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 446 words of extra memory for PDF output out of 10000 (max. 10000000)
 
