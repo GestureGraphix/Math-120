@@ -713,12 +713,72 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 	The curvature is easier to compute if it is easier to compute if it is expressed in terms of the paramteter $t$ 
 	instead of $s$, so we use the chain rule 
 	\[ \frac{d\mathbf{T}}{dt} = \frac{d \mathbf{T}}{ds} \frac{ds}{dt} \Rightarrow k = \left|\frac{d \mathbf{T}}{s}\right| = \left| \frac{d\mathbf{T}/dt}{ds/dt}\right|\] 
-	but $ds/dt = |\mathbf{r}'(t)$ from equation 2.7 
+	but $ds/dt = |\mathbf{r}'(t|)$ from equation 2.7 
 	\begin{equation}
 		k(t) = \frac{|\mathbf{T}'(t)|}{|\mathbf{r}'(t)|}
 	\end{equation}
+	The curvature of the curve given by the vector function \textbf{r} is 
+	\begin{equation}
+		k(t) = \frac{|\mathbf{r}'(t) \times \mathbf{r}^{n}(t)|}{|\mathbf{r}'(t)|^{3}}
+	\end{equation}
+}
+
+\ntimg{
+	For the special case of a plane curve with equation \(y = f(x)\), we choose \(x\) as the parameter and write \(\mathbf{r}(x) = x\mathbf{i} + f(x)\mathbf{j}\). Then \(\mathbf{r}'(x) = \mathbf{i} + f'(x)\mathbf{j}\) and \(\mathbf{r}''(x) = f''(x)\mathbf{j}\). Since \(\mathbf{i} \times \mathbf{j} = \mathbf{k}\) and \(\mathbf{j} \times \mathbf{j} = 0\), it follows that \(\mathbf{r}'(x) \times \mathbf{r}''(x) = f'(x)\mathbf{k}\). We also have \(|\mathbf{r}'(x)| = \sqrt{1 + [f'(x)]^2}\) and so, by Theorem 10, 
+
+	\begin{equation}
+	\kappa(x) = \frac{|f''(x)|}{[1 + (f'(x))^2]^{3/2}} 
+	\end{equation}
+}
+
+\ntimg{
+	At a given point on a smooth space curve \(\mathbf{r}(t)\), there are many vectors that are orthogonal to the unit tangent vector \(\mathbf{T}(t)\). We single out one by observing that, because \(|\mathbf{T}(t)| = 1\) for all \(t\), we have \(\mathbf{T}(t) \cdot \mathbf{T}'(t) = 0\) by Theorem 13.2.4, so \(\mathbf{T}'(t)\) is orthogonal to \(\mathbf{T}(t)\). Note that, typically, \(\mathbf{T}'(t)\) is itself not a unit vector. But at any point where \(\kappa \neq 0\) we can define the \textit{principal unit normal vector} \(\mathbf{N}(t)\) (or simply \textit{unit normal}) as
+
+	\[
+	\mathbf{N}(t) = \frac{\mathbf{T}'(t)}{|\mathbf{T}'(t)|}
+	\]
+
+	We can think of the unit normal vector as indicating the direction in which the curve is turning at each point. The vector 
+
+	\[
+	\mathbf{B}(t) = \mathbf{T}(t) \times \mathbf{N}(t)
+	\]
+}
+
+\ntimg{
+	We summarize here the formulas for unit tangent, unit normal and binormal vectors, and curvature.
+
+	\[
+	\mathbf{T}(t) = \frac{\mathbf{r}'(t)}{|\mathbf{r}'(t)|} \quad \mathbf{N}(t) = \frac{\mathbf{T}'(t)}{|\mathbf{T}'(t)|} \quad \mathbf{B}(t) = \mathbf{T}(t) \times \mathbf{N}(t)
+	\]
+	\[
+	\kappa = \left|\frac{d \mathbf{T}}{ds}\right| = \frac{|\mathbf{T}'(t)|}{|\mathbf{r}'(t)|} = \frac{|\mathbf{r}'(t) \times \mathbf{r}''(t)|}{|\mathbf{r}'(t)|^3}
+	\]
 
 }
+
+\defrose{Torision }{
+	TThe \textbf{torsion} of a curve is 
+	\[ \tau = - \frac{d\mathbf{B}}{ds} \cdot \mathbf{N} \]
+	Torsion is easier to compute if it is expressed in terms of the parameter \(t\) instead of \(s\), so we use the Chain Rule to write
+
+	\[
+	\frac{d\mathbf{B}}{dt} = \frac{d\mathbf{B}}{ds} \frac{ds}{dt} \quad \text{so} \quad \frac{d\mathbf{B}}{ds} = \frac{d\mathbf{B}/dt}{ds/dt} = \frac{\mathbf{B}'(t)}{|\mathbf{r}'(t)|}
+	\]
+
+	
+	\[
+	\tau(t) = \frac{-\mathbf{B}'(t) \cdot \mathbf{N}(t)}{|\mathbf{r}'(t)|}
+	\]
+
+	 \textbf{{Theorem}} The torsion of the curve given by the vector function \(\mathbf{r}\) is
+	
+	\[	\tau(t) = \frac{[\mathbf{r}'(t) \times \mathbf{r}''(t)] \cdot \mathbf{r}'''(t)}{|\mathbf{r}'(t) \times \mathbf{r}''(t)|^2} \]
+}
+
+\section{13.4 Notes (Motion in Space: Velocity and Acceleration)}
+
+
 
 
 \end{document}
