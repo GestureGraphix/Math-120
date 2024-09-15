@@ -1,0 +1,169 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Math 120}}
+\author{\huge{PSet 2}}
+\date{Sep 12 2024}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{}
+\section{PSet 2}
+
+\qs{}{
+	\insertpng[0.5]{Prob1.png}
+	\begin{enumerate}
+		\item[(a)] $\vec{r}(t) = \langle \cos t, \sin t, t \rangle$
+		\item[(b)] $\vec{r}(t) = t \langle \cos t, \sin t, t \rangle$
+		\item[(c)] $\vec{r}(t) = \langle \cos t, \sin t, t^3 \rangle$
+		\item[(d)] $\vec{r}(t) = \langle \cos(t^3), \sin(t^3), t^3 \rangle$
+		\item[(e)] $\vec{r}(u) = \langle \cos u, \sin u, 1 + \sin(4u) \rangle$
+		\item[(f)] $\vec{r}(u) = \langle \cos u, \sin u, 1 + 4\sin(u) \rangle$
+		\item[(g)] $\vec{r}(t) = \langle 2\cos t, 1 + 4 \cos t, 3\cos t \rangle$
+	\end{enumerate}
+}
+
+\sol{
+
+}
+
+
+
+\qs{}{
+	2. Find a vector function that represents the curve of intersection of the plane $z = -2$ and the sphere $x^2 + (y-1)^2 + (z+1)^2 = 9$.
+}
+\sol{
+
+
+}
+\qs{}{
+	Consider the vector-valued function $\vec{r}_1(t) = \langle 2\sin t, -3\cos t, 0 \rangle$, $0 \leq t \leq 2\pi$.
+	\begin{enumerate}
+		\item[(a)] Sketch the plane curve given by $\vec{r}_1(t)$.
+		\item[(b)] Compute and draw on your sketch from part (a) the position vector $\vec{r}_1 \left( \frac{2\pi}{3} \right)$ and the tangent vector $\vec{r}_1' \left( \frac{2\pi}{3} \right)$.
+		\item[(c)] The vector-valued function $\vec{r}_2(t) = \langle 2\cos(3t), -3\sin(3t) \rangle$ parameterizes the same curve. Find the smallest $t^* > 0$ such that $\vec{r}_2(t^*) = \vec{r}_1 \left( \frac{2\pi}{3} \right)$, and compute $\vec{r}_2'(t^*)$. Explain how and why $\vec{r}_2'(t^*)$ differs from the tangent vector $\vec{r}_1' \left( \frac{2\pi}{3} \right)$ you computed in part (b). 
+	\end{enumerate}
+}
+
+\sol{
+
+}
+
+\qs{}{
+	Find parametric equations for the tangent line to the curve parameterized by 
+	\[
+	x = 2t + 1, \quad y = e^{t^2 - 4}, \quad z = \ln(1 + t^2)
+	\]
+	at the point $(5, 1, \ln 5)$.
+}
+
+\sol{
+
+}
+
+\newpage 
+
+\qs{}{
+	\begin{enumerate}
+		\item[(a)] Evaluate the integral $\int \left( \tan t \, \hat{i} + \sin^2 t \, \hat{j} + \sec^2 t \, \tan t \, \hat{k} \right) \, dt$.
+		\item[(b)] Suppose a particle is at the point $(-2, 1, 4)$ at time $t = 0$, and moves according to the velocity function $\vec{v}(t) = \tan t \, \hat{i} + \sin^2 t \, \hat{j} + \sec^2 t \, \tan t \, \hat{k}$. Find the particle's position at time $t = \frac{\pi}{4}$.
+	\end{enumerate}
+}
+
+\sol{
+
+}
+
+\qs{}{
+	Consider the curve parameterized by $\vec{r}(t) = \langle e^{2t}, e^{-2t}, \sqrt{8t} \rangle$, $0 \leq t \leq 1$.
+	\begin{enumerate}
+		\item[(a)] Sketch the projections of $\vec{r}(t)$ in the $xy$-, $zx$-, and $yz$-planes.
+		\item[(b)] Find the length of the curve. \textit{Hint:} To integrate, you will need to write $\left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 + \left( \frac{dz}{dt} \right)^2$ as a perfect square.
+	\end{enumerate}
+}
+
+\sol{
+
+}
+
+\qs{}{
+	Let $C$ be the curve of intersection of the cylinder $x^2 + y^2 = 4$ and the plane $2x + y + z = 4$.
+	\begin{enumerate}
+		\item[(a)] Find a parameterization of $C$.
+		\item[(b)] Write down an integral for the length of $C$.
+		\item[(c)] Find the length accurate to five decimal places by using Desmos: \url{https://www.desmos.com/calculator}. (Click on the keyboard icon, then “functions”, then “Misc”, to find the integral symbol.)
+	\end{enumerate}}
+
+\sol{
+
+}
+
+
+\qs{}{
+	Find the velocity and position vectors of a particle that has acceleration given by
+	\[
+	\vec{a}(t) = 2\hat{i} + 6t\hat{j} + 12t^2 \hat{k},
+	\]
+	and initial velocity and position given by
+	\[
+	\vec{v}(0) = \hat{i} \quad \text{and} \quad \vec{r}(0) = \hat{j} - \hat{k}.
+	\]
+}
+
+\sol{ 
+       
+}
+
+\qs{}{
+	Consider the function $f(x, y) = \frac{\sqrt{y} - 3x}{\ln(4 - x^2 - y^2)}$.
+	\begin{enumerate}
+		\item[(a)] Find and sketch the domain of $f$.
+		\item[(b)] On your sketch from part (a), mark where $f(x, y) = 0$, and indicate the region(s) where $f(x, y)$ is positive and negative.
+	\end{enumerate}
+}
+
+\sol{
+ 
+}
+
+\newpage 
+\qs{}{
+	Here are several surfaces. \\
+	Match each function with its graph. Justify your answers.
+	\begin{enumerate}
+		\item[(a)] $f(x, y) = x^2$
+		\item[(b)] $f(x, y) = \sqrt{x^2 + y^2}$
+		\item[(c)] $f(x, y) = e^{x^2 + y^2} - 1$
+		\item[(d)] $f(x, y) = y \sin x$
+		\item[(e)] $f(x, y) = \sin(x + y)$
+		\item[(f)] $f(x, y) = \sin\left(\sqrt{x^2 + y^2}\right)$
+	\end{enumerate}
+}
+
+\sol{
+}
+
+\qs{}{
+	Draw a contour map of the function $f(x, y) = x^2 e^{-y}$ showing several level curves.
+}
+
+\qs{}{
+	Match the function with its graph (labeled A-F below) and with its contour map (labeled I-VI). Give reasons for your choices.
+	\begin{enumerate}
+		\item[(a)] $z = e^x \cos y$
+		\item[(b)] $z = \sin x - \sin y$
+		\item[(c)] $z = \frac{x - y}{1 + x^2 + y^2}$
+	\end{enumerate}
+}
+
+\end{document}
