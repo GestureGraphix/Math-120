@@ -42,8 +42,12 @@
 	2. Find a vector function that represents the curve of intersection of the plane $z = -2$ and the sphere $x^2 + (y-1)^2 + (z+1)^2 = 9$.
 }
 \sol{
-
-
+	\[ x^{2} + (y-1)^{2} + ((-2) + 1)^{2} = 9 \] 
+	\[ x^{2} + (y-1)^{2} = 8 \]
+	\[ r = 2 \sqrt{2} \]
+	\[ x(t) = 2\sqrt{2} \cos (t) \]
+	\[ y - 1 = 2\sqrt{2} \sin(t) \Rightarrow y = 2\sqrt{t} \sin(t) + 1 \]
+	\[ \vec{r}(t) = \langle 2\sqrt{2} \cos(t), 2\sqrt{2} \sin(t) + 1, -2 \rangle \] 
 }
 \qs{}{
 	Consider the vector-valued function $\vec{r}_1(t) = \langle 2\sin t, -3\cos t, 0 \rangle$, $0 \leq t \leq 2\pi$.
@@ -67,7 +71,10 @@
 }
 
 \sol{
-
+	\[ x(t) = 2(t) + 1 \quad y(t) = e^{t^{2} - 4} \quad z(t) = \ln(1 + t)^{2} \] 
+	\[ x'(t) = 2 \quad y'(t) = 2te^{t^{2}} \quad z'(t) = \frac{2t}{1+t^{2}} \]
+	\[ 5 = 2t + 1 \Rightarrow 4 = 2t \Rightarrow t = 2\]  
+	\[ x'(t) = 5 + 2 \quad y'(t) = \] 
 }
 
 \newpage 
@@ -91,18 +98,23 @@
 	\end{enumerate}
 }
 
-\sol{
+\sol{ \\
 	a) 
 	\[ x(t) = e^{2t} \quad y(t) = e^{-2t} \]
 	\[ x \cdot y = e^{2t} \cdot e^{-2y} = 1\]
-	\[ x(t) = e^{2t} \quad z(t) = \sqrt{8t} \]
+	\[ x(t) = e^{2t} \quad z(t) = \sqrt{8}t \]
 	b)
-	\[ L = \int_{t_{1}}^{t_{2}} ||\vec{r}(t)|| dt \]
-	\[ \vec{r}(t) = \langle e^{2t}, e^{-2t}, \sqrt{8t} \rangle \]
-	\[ \vec{r}'(t) = \left\langle \frac{d}{dt} \left(e^{2t} \right), \frac{d}{dt} \left(e^{-2t} \right) \frac{d}{dt} \left( \sqrt{8t} \right) \right\rangle \]   
-	\[ \vec{r}'(t) = \left\langle 2e^{2t} , -2e^{-2t} \frac{4}{\sqrt{8t}} \right\rangle \]   
-	\[ ||\vec{r}'(t)|| = \sqrt{\left(2e^{2t}\right)^{2} + \left(-2e^{2t}\right)^{2} + \left(\frac{4}{\sqrt{8t}}\right)^{2}}\] 
-
+	\[ L = \int_{0}^{1} ||\vec{r}(t)|| dt \]
+	\[ \vec{r}(t) = \langle e^{2t}, e^{-2t}, \sqrt{8}t \rangle \]
+	\[ \vec{r}'(t) = \left\langle \frac{d}{dt} \left(e^{2t} \right), \frac{d}{dt} \left(e^{-2t} \right) \frac{d}{dt} \left( \sqrt{8}t \right) \right\rangle \]   
+	\[ \vec{r}'(t) = \left\langle 2e^{2t} , -2e^{-2t}, \sqrt{8} \right\rangle \]   
+	\[ L = |\vec{r}'(t)| = \int_{0}^{1} \sqrt{\left(2e^{2t} \right)^{2} + \left(2e^{-2t} \right)^{2} + \left(\sqrt{8}\right)^{2}}\] 
+	\[ \left(2e^{2t} \right)^{2} + \left(2e^{-2t} \right)^{2} + \left(\sqrt{8}\right)^{2} = \left(2e^{2t} \right)^{2} + \left(2e^{-2t} \right)^{2} + 8 \] 
+	\[ \left(2e^{2t} \right)^{2} + \left(2e^{-2t} \right)^{2} + 8 = \left(2e^{2t} + 2e^{-2t} \right)^{2}  \] 
+	\[ L = \int_{0}^{1} \sqrt{\left(2e^{2t} + 2e^{-2t} \right)^{2}} \Rightarrow \int_{0}^{1} \left(2e^{2t} + 2e^{-2t} \right) \] 
+	\[ 2e^{2t} + 2e^{-2t} = 4\cosh(2t) \]
+	\[ L = \int_{0}^{1} 4\cosh(2t) dt \Rightarrow 2\sinh(2t)\big|_{0}^{1} \rightarrow 2\sinh(2(1)) - 2\sinh(2(0))\] 
+	\[ L =  2\sinh(2) - 2\sinh(0) \]  
 }
 
 
@@ -115,6 +127,14 @@
 	\end{enumerate}}
 
 \sol{
+	\\
+	a) 
+	\[ x^{2} + y^{2} = 4 \quad \text{r} = 2\] 
+	\[ x(t) = 2\cos(t) \quad y(t) = 2\sin(t)\] 
+	\[ 2 (2cos(t)) + 2 \sin(t) + z = 4 \Rightarrow z = 4 - 4 \cos(t) - 2 \sin(t) \]
+	\[ x^{2} + y^{2} = 4 \quad \text{r} = 2 \quad z(t) = 4 - 4\cos(t) - 2 \sin(t) \]
+	\[ L = \int_{a}^{b} \sqrt{\left( \frac{d}{dt} x(t) \right)^{2} + \left( \frac{d}{dt} y(t) \right)^{2} + \left( \frac{d}{dt} z(t) \right)^{2} }\]  
+	\[ \vec{r}'(t) = \langle \rangle \] 
 
 }
 
