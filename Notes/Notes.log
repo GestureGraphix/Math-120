@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  18 SEP 2024 13:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  18 SEP 2024 15:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1116,26 +1116,7 @@ File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2023/10/27 v2.16 TOC entries
 \ttl@leftsep=\dimen339
-)) (macros.tex) (letterfonts.tex) (Notes.aux
-
-LaTeX Warning: Label `def:D' multiply defined.
-
-
-LaTeX Warning: Label `def:T' multiply defined.
-
-
-LaTeX Warning: Label `def:I' multiply defined.
-
-
-LaTeX Warning: Label `def:I' multiply defined.
-
-
-LaTeX Warning: Label `def:A' multiply defined.
-
-
-LaTeX Warning: Label `def:I' multiply defined.
-
-)
+)) (macros.tex) (letterfonts.tex) (Notes.aux)
 \openout1 = `Notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 11.
@@ -1279,9 +1260,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-(Notes.toc
-Missing character: There is no ; in font nullfont!
-)
+No file Notes.toc.
 \tf@toc=\write5
 \openout5 = `Notes.toc'.
 
@@ -1300,7 +1279,7 @@ Chapter 1.
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 27.
 
-<slime.png, id=89, 867.24pt x 530.2209pt>
+<slime.png, id=58, 867.24pt x 530.2209pt>
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 27.
@@ -1326,7 +1305,7 @@ Package pdftex.def Info: slime.png  used on input line 60.
 [2
 
 {/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc} <./slime.png>]
-<flow.png, id=108, 692.5875pt x 492.84125pt>
+<flow.png, id=80, 692.5875pt x 492.84125pt>
 File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 73.
@@ -1386,7 +1365,7 @@ Package pdftex.def Info: flow.png  used on input line 178.
 
 
 [5]
-<lot.png, id=145, 2007.5pt x 2007.5pt>
+<lot.png, id=118, 2007.5pt x 2007.5pt>
 File: lot.png Graphic file (type png)
 <use lot.png>
 Package pdftex.def Info: lot.png  used on input line 191.
@@ -1470,6 +1449,29 @@ Package pdftex.def Info: slime.png  used on input line 408.
 
 
 [10]
+Runaway argument?
+{
+/home/alexhernandezjuarez/Documents/Math 120/Notes/Notes.tex:433: Paragraph ended before \tcb@gettitle was complete.
+<to be read again> 
+                   \par 
+l.433 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+/home/alexhernandezjuarez/Documents/Math 120/Notes/Notes.tex:433: Extra }, or forgotten \endgroup.
+\pgfkeys@code #1\pgfeov ->\tcb@gettitle {#1}
+                                            \cs_if_exist:NT \zref@titleref@s...
+l.433 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
 
 [11] (Notes.aux)
  ***********
@@ -1485,21 +1487,21 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 47098 strings out of 475839
- 1084434 string characters out of 5777281
+ 47085 strings out of 475839
+ 1084170 string characters out of 5777281
  1963905 words of memory out of 5000000
- 68852 multiletter control sequences out of 15000+600000
- 589550 words of font info for 126 fonts, out of 8000000 for 9000
+ 68840 multiletter control sequences out of 15000+600000
+ 588641 words of font info for 123 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  99i,19n,102p,811b,1745s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmb10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
-Output written on Notes.pdf (12 pages, 1284119 bytes).
+ </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmb10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
+Output written on Notes.pdf (12 pages, 1271715 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
+ 308 PDF objects out of 1000 (max. 8388607)
+ 71 named destinations out of 1000 (max. 500000)
  314 words of extra memory for PDF output out of 10000 (max. 10000000)
 
