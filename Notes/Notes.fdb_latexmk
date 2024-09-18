@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1726078216.52125 "/home/alexhernandezjuarez/Documents/math/Math 120/Notes/Notes.tex" "Notes.pdf" "Notes" 1726078222.85338 0
+["pdflatex"] 1726680577.80898 "/home/alexhernandezjuarez/Documents/Math 120/Notes/Notes.tex" "Notes.pdf" "Notes" 1726680580.42058 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1725409887.90446 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1720481779.2778 11548 a72ccb84d52a88897df751d2d1963cd5 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
@@ -313,10 +313,10 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xfrac/xfrac.sty" 1720481722.07727 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty" 1720481758.74561 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1720481720.24125 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/alexhernandezjuarez/Documents/math/Math 120/Notes/Notes.tex" 1726078215.90562 12399 a9091a162249795e0dd1bdcd454ad490 ""
-  "Notes.aux" 1726078222.57166 5232 47e489c4564cd8a7f7a0da8455fdcb99 "pdflatex"
-  "Notes.tex" 1726078215.90562 12399 a9091a162249795e0dd1bdcd454ad490 ""
-  "Notes.toc" 1726078222.57566 684 0ef7f78400a5fde433af03f8e0f23bbf "pdflatex"
+  "/home/alexhernandezjuarez/Documents/Math 120/Notes/Notes.tex" 1726680577.44869 12764 5ea8acacb133f0a0aaf83b5110e69b11 ""
+  "Notes.aux" 1726680580.28075 5598 26d69824df92a55988e771890a6b6aeb "pdflatex"
+  "Notes.tex" 1726680577.44869 12764 5ea8acacb133f0a0aaf83b5110e69b11 ""
+  "Notes.toc" 1726680580.28275 756 3cea20f20d67e8cf543308d1e043b38f "pdflatex"
   "flow.png" 1723602120.64709 3327 eab4ed35b4d13609c606e28f6c71b1ca ""
   "letterfonts.tex" 1720527956.72324 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "lot.png" 1723601909.60344 371900 6f9425d133ddfae48260c3ff1caaf72c ""
