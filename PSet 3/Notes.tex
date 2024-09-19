@@ -73,10 +73,10 @@
 
 \sol{
 	\[ x(t) = 2(t) + 1 \quad y(t) = e^{t^{2} - 4} \quad z(t) = \ln(1 + t)^{2} \] 
-	\[ x'(t) = 2 \quad y'(t) = 2te^{t^{2}} \quad z'(t) = \frac{2t}{1+t^{2}} \]
+	\[ x'(t) = 2 \quad y'(t) = 2te^{t^{2} - 4} \quad z'(t) = \frac{2t}{1+t^{2}} \]
 	\[ 5 = 2t + 1 \Rightarrow 4 = 2t \Rightarrow t = 2\]  
-	\[ x'(2) = 2 \quad y'(2) =  4e^{4t} \quad z'(t) = \frac{4}{5} \] 
-	\[ x: 5 + 2t \quad y: 1 + 4te^{4} \quad z: \ln(5) + \frac{4}{5}t\] 
+	\[ x'(2) = 2 \quad y'(2) =  4e^{2^{2}-4} = 4 \quad z'(t) = \frac{4}{5} \] 
+	\[ x: 5 + 2t \quad y: 1 + 4t \quad z: \ln(5) + \frac{4}{5}t\] 
 }
 
 \newpage 
@@ -99,7 +99,7 @@
 	\\
 	\[ \hat{\jmath} \int \sin^{2}t dt = \hat{\jmath} = \hat{\jmath} \int \frac{1 - 2\cos \theta}{2} dt\] 
 	\[ \hat{\jmath} \int \frac{1 - 2\cos t}{2} dt\ \Rightarrow \hat{\jmath}\frac{1}{2}\int 1 - 2\cos t dt\] 
-	\[ \hat{\jmath}\frac{1}{2}\int 1 - 2\cos t dt = \hat{\jmath} \frac{1}{2} t - \hat{\jmath} \frac{1}{2}\int \cos t dt \] 
+	\[ \hat{\jmath}\frac{1}{2}\int 1 - 2\cos t dt = \hat{\jmath} \frac{1}{2} t - \hat{\jmath} \frac{1}{2}\int \cos 2t dt \] 
 	\[ \hat{\jmath} \frac{1}{2} t - \hat{\jmath}\int \cos t dt = \left( \frac{1}{2}t - \frac{\sin(2t)}{4} + b\right) \hat{\jmath}\] 
 	\\
 	\[ \hat{k} \int \sec^{2}t \tan t dt \]
@@ -169,6 +169,8 @@
 	\[ L = \int_{a}^{b} \sqrt{\left( -2 \sin t \right)^{2} + \left( 2 \cos t \right)^{2} + \left( 4\sin t - 2\cos t\right)^{2} }\]  
 	\[ L = \int_{a}^{b} \sqrt{4 \sin^{2}t + 4\cos^{2} t + 16 \sin^{2}t - 16\sin t \cos t + 4\cos^{2} t} \]   
 	\[ L = \int_{a}^{b} \sqrt{20\sin^{2} t + 8 \cos^{2} t - 16sin t \cos t } \] 
+	c)
+	\[ \approx 22.64159\] 
 
 }
 
@@ -203,7 +205,7 @@
 }
 
 \qs{}{
-	Consider the function $f(x, y) = \frac{\sqrt{y} - 3x}{\ln(4 - x^2 - y^2)}$.
+	Consider the function $f(x, y) = \frac{\sqrt{y - 3x}}{\ln(4 - x^2 - y^2)}$.
 	\begin{enumerate}
 		\item[(a)] Find and sketch the domain of $f$.
 		\item[(b)] On your sketch from part (a), mark where $f(x, y) = 0$, and indicate the region(s) where $f(x, y)$ is positive and negative.
@@ -212,10 +214,14 @@
 
 \sol{\\
 	a)
-	\[ (x, y) = \frac{\sqrt{y} - 3x}{\ln(4 - x^2 - y^2)} \] 
-	\[ y \geq 0 \]
+	\[ (x, y) = \frac{\sqrt{y - 3x}}{\ln(4 - x^2 - y^2)} \] 
+	\[ y \geq 3x \]
 	\[  4 - x^{2} - y^{2}  > 0  \]
-	\[ \text{domain: } \quad  x + y^{2} > 0 \quad \text{and} \quad y \geq 0  \]    
+	\[ \text{domain: } \quad  x + y^{2} < 4 \quad \text{and} \quad y \geq 3x  \]  
+	
+	\begin{center}
+		
+	\end{center}
 	b) 
 	\[ \sqrt{y} - 3x = 0 \]
 	\[ \sqrt{y} = 3x \]
