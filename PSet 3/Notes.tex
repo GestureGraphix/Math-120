@@ -39,7 +39,7 @@
 
 
 \qs{}{
-	2. Find a vector function that represents the curve of intersection of the plane $z = -2$ and the sphere $x^2 + (y-1)^2 + (z+1)^2 = 9$.
+	Find a vector function that represents the curve of intersection of the plane $z = -2$ and the sphere $x^2 + (y-1)^2 + (z+1)^2 = 9$.
 }
 \sol{
 	\[ x^{2} + (y-1)^{2} + ((-2) + 1)^{2} = 9 \] 
@@ -75,6 +75,7 @@
 	\[ x'(t) = 2 \quad y'(t) = 2te^{t^{2}} \quad z'(t) = \frac{2t}{1+t^{2}} \]
 	\[ 5 = 2t + 1 \Rightarrow 4 = 2t \Rightarrow t = 2\]  
 	\[ x'(2) = 2 \quad y'(2) =  4e^{4t} \quad z'(t) = \frac{4}{5} \] 
+	\[ x: 5 + 2t \quad y: 1 + 4te^{4} \quad z: \ln(5) + \frac{4}{5}t\] 
 }
 
 \newpage 
@@ -87,6 +88,31 @@
 }
 
 \sol{
+	\\
+	a) 
+	\[ \int \left( \tan t \, \hat{i} + \sin^2 t \, \hat{j} + \sec^2 t \, \tan t \, \hat{k} \right) \, dt = \int \tan t \, \hat{\imath}  dt + \int \sin^{2}t \, \hat{\jmath} dt + \int \sec^{2}t\tan t \, \hat{k} dt \] 
+	\[ \int \tan t \, \hat{\imath}  dt = \hat{\imath} \int \frac{\sin t}{\cos t} dt \]
+	\[ x = \cos(t) \]
+	\[ \hat{\imath} \int \tan t dt =  \hat{\imath}\int -\frac{1}{x} dx = -\ln|x| + k \]
+	\[ \left(-\ln|x| + k \right) \hat{\imath }= \left(-\ln|\cos(x)| + a \right) \hat{\imath}\]   
+	\\
+	\[ \hat{\jmath} \int \sin^{2}t dt = \hat{\jmath} = \hat{\jmath} \int \frac{1 - 2\cos \theta}{2} dt\] 
+	\[ \hat{\jmath} \int \frac{1 - 2\cos t}{2} dt\ \Rightarrow \hat{\jmath}\frac{1}{2}\int 1 - 2\cos t dt\] 
+	\[ \hat{\jmath}\frac{1}{2}\int 1 - 2\cos t dt = \hat{\jmath} \frac{1}{2} t - \hat{\jmath} \frac{1}{2}\int \cos t dt \] 
+	\[ \hat{\jmath} \frac{1}{2} t - \hat{\jmath}\int \cos t dt = \left( \frac{1}{2}t - \frac{\sin(2t)}{4} + b\right) \hat{\jmath}\] 
+	\\
+	\[ \hat{k} \int \sec^{2}t \tan t dt \]
+	\[ \tan t = u \quad \sec^{2}dt = du \]
+	\[ \int u du = \frac{u^{2}}{2} + c \Rightarrow \left(\frac{\tan^{2}t}{2} + c\right) \hat{k} \] 
+	\\
+	\[ \int \left( \tan t \, \hat{i} + \sin^2 t \, \hat{j} + \sec^2 t \, \tan t \, \hat{k} \right) \, dt = \left(-\ln|\cos(x)| + a \right) \hat{\imath} + \left( \frac{1}{2}t - \frac{\sin(2t)}{4} + b\right) \hat{\jmath} +  \left(\frac{\tan^{2}t}{2} + c\right) \hat{k}\] 
+	\\
+	b) 
+	\[ \left(-\ln|\cos(0)| + a \right),  \left( \frac{1}{2}t - \frac{\sin(2(0))}{4} + b\right),  \left(\frac{\tan^{2}(0)}{2} + c\right) = (-2, 1, 4) \] 
+	\[ -\ln(1) + a, 0 - \frac{0}{4} + b, \frac{0}{2} + c = (-2, 1, 4) \]
+	\[ a = -2 \quad b = 1 \quad c = 4\]  
+	\[ \left(-\ln|\cos\left(\frac{\pi}{4}\right)| -2 \right),  \left( \frac{1}{2}t - \frac{\sin(2\left(\frac{\pi}{4}\right))}{4} + 1\right),  \left(\frac{\tan^{2}\left(\frac{\pi}{4} \right)}{2} + 4\right) = \left(-\ln\left(\frac{\sqrt{2}}{2}\right) - 2, \frac{\pi}{8} + \frac{3}{4},  \frac{9}{2}\right)\] 
+
 
 }
 
@@ -108,14 +134,17 @@
 	\[ \vec{r}(t) = \langle e^{2t}, e^{-2t}, \sqrt{8}t \rangle \]
 	\[ \vec{r}'(t) = \left\langle \frac{d}{dt} \left(e^{2t} \right), \frac{d}{dt} \left(e^{-2t} \right) \frac{d}{dt} \left( \sqrt{8}t \right) \right\rangle \]   
 	\[ \vec{r}'(t) = \left\langle 2e^{2t} , -2e^{-2t}, \sqrt{8} \right\rangle \]   
-	\[ L = |\vec{r}'(t)| = \int_{0}^{1} \sqrt{\left(2e^{2t} \right)^{2} + \left(2e^{-2t} \right)^{2} + \left(\sqrt{8}\right)^{2}}\] 
-	\[ \left(2e^{2t} \right)^{2} + \left(2e^{-2t} \right)^{2} + \left(\sqrt{8}\right)^{2} = \left(2e^{2t} \right)^{2} + \left(2e^{-2t} \right)^{2} + 8 \] 
-	\[ \left(2e^{2t} \right)^{2} + \left(2e^{-2t} \right)^{2} + 8 = \left(2e^{2t} + 2e^{-2t} \right)^{2}  \] 
+	\[ L = |\vec{r}'(t)| = \int_{0}^{1} \sqrt{\left(2e^{2t} \right)^{2} + \left(-2e^{-2t} \right)^{2} + \left(\sqrt{8}\right)^{2}}\] 
+	\[ \left(2e^{2t} \right)^{2} + \left(-2e^{-2t} \right)^{2} + \left(\sqrt{8}\right)^{2} = \left(2e^{2t} \right)^{2} + \left(-2e^{-2t} \right)^{2} + 8 \] 
+	\[ \left(2e^{2t} \right)^{2} + \left(-2e^{-2t} \right)^{2} + 8 = \left(2e^{2t} + 2e^{-2t} \right)^{2}  \] 
 	\[ L = \int_{0}^{1} \sqrt{\left(2e^{2t} + 2e^{-2t} \right)^{2}} \Rightarrow \int_{0}^{1} \left(2e^{2t} + 2e^{-2t} \right) \] 
+	\[ \cosh = \frac{e^{t} + e^{-t}}{2}\] 
 	\[ 2e^{2t} + 2e^{-2t} = 4\cosh(2t) \]
 	\[ L = \int_{0}^{1} 4\cosh(2t) dt \Rightarrow 2\sinh(2t)\big|_{0}^{1} \rightarrow 2\sinh(2(1)) - 2\sinh(2(0))\] 
 	\[ L =  2\sinh(2) - 2\sinh(0) \]  
 }
+
+\newpage
 
 
 \qs{}{
@@ -131,10 +160,14 @@
 	a) 
 	\[ x^{2} + y^{2} = 4 \quad \text{r} = 2\] 
 	\[ x(t) = 2\cos(t) \quad y(t) = 2\sin(t)\] 
-	\[ 2 (2cos(t)) + 2 \sin(t) + z = 4 \Rightarrow z = 4 - 4 \cos(t) - 2 \sin(t) \]
+	\[ 2 (2\cos(t)) + 2 \sin(t) + z = 4 \Rightarrow z = 4 - 4 \cos(t) - 2 \sin(t) \]
 	\[ x^{2} + y^{2} = 4 \quad \text{r} = 2 \quad z(t) = 4 - 4\cos(t) - 2 \sin(t) \]
+	b)
 	\[ L = \int_{a}^{b} \sqrt{\left( \frac{d}{dt} x(t) \right)^{2} + \left( \frac{d}{dt} y(t) \right)^{2} + \left( \frac{d}{dt} z(t) \right)^{2} }\]  
-	\[ \vec{r}'(t) = \langle \rangle \] 
+	\[ \vec{r}'(t) = \langle -2\sin t, 2\cos t, 4\sin t - 2\cos t \rangle \] 
+	\[ L = \int_{a}^{b} \sqrt{\left( -2 \sin t \right)^{2} + \left( 2 \cos t \right)^{2} + \left( 4\sin t - 2\cos t\right)^{2} }\]  
+	\[ L = \int_{a}^{b} \sqrt{4 \sin^{2}t + 4\cos^{2} t + 16 \sin^{2}t - 16\sin t \cos t + 4\cos^{2} t} \]   
+	\[ L = \int_{a}^{b} \sqrt{20\sin^{2} t + 8 \cos^{2} t - 16sin t \cos t } \] 
 
 }
 
@@ -149,9 +182,23 @@
 	\vec{v}(0) = \hat{i} \quad \text{and} \quad \vec{r}(0) = \hat{j} - \hat{k}.
 	\]
 }
+ 
 
 \sol{ 
-       
+	\[ \vec{a}(t) = \frac{d}{dt} \vec{v}(t) \]
+	\[ \vec{v}(t) = \frac{d}{dt} \vec{r}(t) \]
+	\[ \vec{a}(t) = 2 \hat{\imath} + 6t \hat{\jmath} + 12t^{2} \hat{k} \]
+	\[ \vec{v}(t) = \int \vec{a}(t) dt = \int 2 \hat{\imath} + 6t \hat{\jmath} + 12t^{2} \hat{k} \space dt \]
+	\[ \int 2 \hat{\imath} + 6t \hat{\jmath} + 12t^{2} \hat{k} = (2t + a) \hat{\imath} + \left(3t^{2} + b\right) \hat{\jmath} + \left( 4t^{3} + c \right) \hat{k} \]   
+	\[ \vec{v}(0) = (2(0) + a) \hat{\imath}, \left(3(0)^{2} + b\right) \hat{\jmath}, \left(4(0)^{3 + c}\right) \hat{k} = \langle i, 0, 0 \rangle \]   
+	\[ \vec{v}(t) = (2t + 1) \hat{\imath} + \left(3t^{2}\right) \hat{j} + \left( 4t^{3} \right) \hat{k} \] 
+	\\
+	\[ \vec{r}(t) = \int \vec{v}(t) dt = \int (2t + 1) \hat{\imath} + \left(3t^{2}\right) \hat{j} + \left( 4t^{3} \right) \hat{k} \space dt \] 
+	\[ \int (2t + 1) \hat{\imath} + \left(3t^{2}\right) \hat{j} + \left( 4t^{3} \right) \hat{k} \space dt  = \left( t^{2} + t + a_{2} \right) \hat{\imath} + \left( t^{3} + b_{2} \right) \hat{\jmath} + \left( t^{4} + c_{2} \right) \hat{k} \]
+	\[ \vec{r}(0) = \left( (0)^{2} + (0) + a_{2} \right) \hat{\imath} + \left( (0)^{3} + b_{2} \right) \hat{\jmath} + \left( (0)^{4} + c_{2} \right) \hat{k} =  (a_{2}) \hat{\imath} + (b_{1}) \hat{\jmath} + \left( c_{2} \right) \hat{k}  \]
+	\[ (a_{2}) \hat{\imath} + (b_{1}) \hat{\jmath} + \left( c_{2} \right) \hat{k}  = \langle 0, \hat{\jmath}, -\hat{k} \rangle \]   
+	\[ a_{2} = 0 \quad b_{2} = 1 \quad c_{2} = -1 \]
+	\[ \vec{r}(t) = \left( t^{2} + t \right) \hat{\imath} + \left( t^{3} + 1 \right) \hat{\jmath} + \left( t^{4} -  1\right) \hat{k} \]  
 }
 
 \qs{}{
@@ -163,7 +210,9 @@
 }
 
 \sol{
- 
+	\[ (x, y) = \frac{\sqrt{y} - 3x}{\ln(4 - x^2 - y^2)} \] 
+	\[ y > 0 \]
+	\[ \ln \left( 4 - x^{2} - y^{2}  \right) \]   
 }
 
 \newpage 
@@ -181,10 +230,20 @@
 }
 
 \sol{
-}
 
+}
 \qs{}{
 	Draw a contour map of the function $f(x, y) = x^2 e^{-y}$ showing several level curves.
+}
+
+\sol{
+	\[ f(x,y) = x^{2}e^{-y} \] 
+	\[ x^{2}e^{-y} = k \]
+	\[ e^{-y} = \frac{k}{x^{2}} \]
+	\[ \ln\left( e^{-y}\right) = \ln \left( \frac{k}{x^{2}} \right)\]   
+	\[ -y = \ln(k) - \ln(x^{2}) \Rightarrow y = - \ln(k) + 2\ln(x) \]
+	$x^{2} > 0$ for all x in the orignal function defintion so the equation is actually 
+	\[ -y = \ln(k) - \ln(x^{2}) \Rightarrow y = - \ln(k) + 2\ln(|x|) \]
 }
 
 \newpage 
