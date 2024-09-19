@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1726777582.7749 "/home/alexhernandezjuarez/Documents/Math 120/PSet 3/Notes.tex" "Notes.pdf" "Notes" 1726777586.60219 0
+["pdflatex"] 1726780531.31361 "/home/alexhernandezjuarez/Documents/Math 120/PSet 3/Notes.tex" "Notes.pdf" "Notes" 1726780535.95676 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1725409887.90446 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc" 1720481717.39723 3877 2ca811886181a05a861d20a35de75e06 ""
@@ -318,14 +318,16 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xfrac/xfrac.sty" 1720481722.07727 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty" 1720481758.74561 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1720481720.24125 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/alexhernandezjuarez/Documents/Math 120/PSet 3/Notes.tex" 1726777582.15942 13141 097bb533eeb8bfa2c05da08c68743f1f ""
-  "Notes.aux" 1726777586.32446 1196 88c0fc6e4618ec125bb1545ace4d3988 "pdflatex"
-  "Notes.tex" 1726777582.15942 13141 097bb533eeb8bfa2c05da08c68743f1f ""
-  "Notes.toc" 1726777586.32646 139 bd608bf911190746e430390ac37b708e "pdflatex"
+  "/home/alexhernandezjuarez/Documents/Math 120/PSet 3/Notes.tex" 1726780530.62708 15444 ae372dc4c149bc1d35c98b5dff747e86 ""
+  "Notes.aux" 1726780535.67414 1196 0b9141ce4fcde43cb14d638203081c86 "pdflatex"
+  "Notes.tex" 1726780530.62708 15444 ae372dc4c149bc1d35c98b5dff747e86 ""
+  "Notes.toc" 1726780535.67614 139 bd608bf911190746e430390ac37b708e "pdflatex"
   "Prob1.png" 1726411667.56144 44640 026c70246f1ca5b7b5e992142a27781e ""
   "letterfonts.tex" 1720527956.72324 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "macros.tex" 1720527956.72324 3389 93000260d2aea292d29c76d4ace77a29 ""
   "preamble.tex" 1726775147.89359 26721 7cdf4827330dc4a1a03ee7d7e29d6dc0 ""
+  "prob10a.png" 1726779180.17115 59770 56320b011a22449f756ea745a1671f06 ""
+  "prob10b.png" 1726779180.14715 56529 278252942ac2cd319f1cd2a9b5b1c4ab ""
   "q12.png" 1726686905.12248 181913 68a423363e2d2f97f4492e94845fd0fa ""
   (generated)
   "Notes.aux"
