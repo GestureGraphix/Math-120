@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  19 SEP 2024 21:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  19 SEP 2024 22:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1313,8 +1313,6 @@ Missing character: There is no t in font nullfont!
 
 
 [4]
-
-[5]
 Underfull \hbox (badness 10000) in paragraph at lines 186--188
 
  []
@@ -1331,63 +1329,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--197
 
 
 
+[5]
+
 [6]
 
 [7]
+Underfull \hbox (badness 10000) in paragraph at lines 359--361
+
+ []
+
+
 
 [8]
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 338--340
-
- []
-
-
 
 [10]
-
-[11]
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 459--459
+Underfull \hbox (badness 10000) in paragraph at lines 480--480
 
  []
 
-<prob10a.png, id=138, 741.77126pt x 277.035pt>
+<prob10a.png, id=126, 741.77126pt x 277.035pt>
 File: prob10a.png Graphic file (type png)
 <use prob10a.png>
-Package pdftex.def Info: prob10a.png  used on input line 459.
+Package pdftex.def Info: prob10a.png  used on input line 480.
 (pdftex.def)             Requested size: 370.88472pt x 138.51715pt.
-<prob10b.png, id=139, 741.77126pt x 277.035pt>
+<prob10b.png, id=127, 741.77126pt x 277.035pt>
 File: prob10b.png Graphic file (type png)
 <use prob10b.png>
-Package pdftex.def Info: prob10b.png  used on input line 459.
+Package pdftex.def Info: prob10b.png  used on input line 480.
 (pdftex.def)             Requested size: 370.88472pt x 138.51715pt.
 
 
-[13 <./prob10a.png> <./prob10b.png>]
+[11 <./prob10a.png> <./prob10b.png>]
 
-[14]
-<q12.png, id=152, 655.44875pt x 604.2575pt>
+[12]
+<q12.png, id=141, 655.44875pt x 604.2575pt>
 File: q12.png Graphic file (type png)
 <use q12.png>
-Package pdftex.def Info: q12.png  used on input line 518.
-(pdftex.def)             Requested size: 393.27228pt x 362.5573pt.
+Package pdftex.def Info: q12.png  used on input line 539.
+(pdftex.def)             Requested size: 262.17485pt x 241.69872pt.
 
-
-[15 <./q12.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 522--542
+Underfull \hbox (badness 10000) in paragraph at lines 542--562
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--542
+Underfull \hbox (badness 10000) in paragraph at lines 542--562
 
  []
 
 
 
-[16] (Notes.aux)
+[13 <./q12.png>] (Notes.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1402,17 +1396,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 48110 strings out of 475839
- 1114693 string characters out of 5777281
- 1952905 words of memory out of 5000000
- 69881 multiletter control sequences out of 15000+600000
+ 48023 strings out of 475839
+ 1112919 string characters out of 5777281
+ 1955905 words of memory out of 5000000
+ 69800 multiletter control sequences out of 15000+600000
  587310 words of font info for 119 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  99i,9n,102p,804b,2339s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
-Output written on Notes.pdf (17 pages, 536757 bytes).
+Output written on Notes.pdf (14 pages, 536761 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

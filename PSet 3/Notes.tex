@@ -5,8 +5,8 @@
 \input{letterfonts}
 
 \title{\Huge{Math 120}}
-\author{\huge{PSet 2}}
-\date{Sep 12 2024}
+\author{\huge{PSet 3}}
+\date{Sep 19 2024}
 
 \begin{document}
 
@@ -18,7 +18,7 @@
 \pagebreak
 
 \chapter{}
-\section{PSet 2}
+\section{PSet 3}
 
 \qs{}{
 	\insertpng[0.38]{Prob1.png}
@@ -37,7 +37,7 @@
 \sol{
 	\\ Equation a should make a helix with fixed radi lengths so it goes wiht curve I. 
 	\\ Equation b is similar to equation a but would have increasing ring sizes as t increases so it goes with curve II. 
-	\\ Equation c shou
+	\\ Equation c should be III because the radi is constant but it grows much faster. 
 	\\ Equation d is similar to equation a except the helix would get rings faster. It would still go with curve I. 
 	\\ Equation e would go with curve IV because the x and y portions should form circles but due to $1 + \sin(4u)$ there should also be 
 	oscillation in the z axis. 
@@ -147,9 +147,11 @@
 	\[ t* = \frac{7 \pi}{18}, \frac{11 \pi}{18} \]
 	\[ t* = \frac{11 \pi}{18} \]
 	\[ r_{2}'(t) = \langle - 6 \sin (3t), -9 \cos(3t) \rangle \]    
-	\[ r_{2}'\left(\frac{11\pi}{28}\right) = \langle 3, \frac{-9 \sqrt{3}}{2}\rangle  \] 
+	\[ r_{2}'\left(\frac{11\pi}{18}\right) = \langle 3, \frac{-9 \sqrt{3}}{2}\rangle  \] 
 	Tangent vectors differ because $r_{2}(t)$ traces the same curve more rapidly which affects the magnitude and direction of the tangent vector. 
 }
+
+\newpage 
 
 \qs{}{
 	Find parametric equations for the tangent line to the curve parameterized by 
@@ -166,8 +168,6 @@
 	\[ x'(2) = 2 \quad y'(2) =  4e^{2^{2}-4} = 4 \quad z'(t) = \frac{4}{5} \] 
 	\[ x: 5 + 2t \quad y: 1 + 4t \quad z: \ln(5) + \frac{4}{5}t\] 
 }
-
-\newpage 
 
 \qs{}{
 	\begin{enumerate}
@@ -217,60 +217,81 @@
 	a) 
 	\[ t = 0 \quad \vec{r}(0) = \langle 1,1,0 \rangle \] 
 	\[ t = \frac{1}{2} \quad \vec{r}\left( \frac{1}{2}\right) = \langle e, e^{-1}, \sqrt{2} \rangle \]
-	\[ t = 1 \quad \vec{r}(1) = \langle e^{2}, e^{-2}, 2 \sqrt{2} \rangle \]  
-	\begin{enumerate}[label=(\alph*)]
-		\item \textbf{Projection in the $xy$-plane:}
-		
+    \[ t = 1, \vec{r}(1) = \langle e^{2}, e^{-2},  2\sqrt{2}\rangle \] 
+	xy
+	\begin{center}
 		\begin{tikzpicture}[scale=1.5]
 			% Axes
 			\draw[thick,->] (-0.5,0) -- (4.5,0) node[right] {$x$};
 			\draw[thick,->] (0,-0.5) -- (0,4.5) node[above] {$y$};
 			
-			% Plot points
-			\fill[red] (1,1) circle (2pt) node[below right] {$\vec{r}(0)$};
-			\fill[red] (1.6487,0.6065) circle (2pt) node[below right] {$\vec{r}\left(\frac{1}{2}\right)$};
-			\fill[red] (2.7183,0.1353) circle (2pt) node[below right] {$\vec{r}(1)$};
+			% Markers
+			\draw[thick] (1,0.1) -- (1,-0.1) node[below] {$1$};
+			\draw[thick] (2.7,0.1) -- (2.7,-0.1) node[below] {$e$};
+			\draw[thick] (7.4,0.1) -- (7.4,-0.1) node[below] {$e^2$};
+			\draw[thick] (0.1,1) -- (-0.1,1) node[left] {$1$};
+			\draw[thick] (0.1,0.37) -- (-0.1,0.37) node[left] {$e^{-1}$};
+			\draw[thick] (0.1,0.135) -- (-0.1,0.135) node[left] {$e^{-2}$};
 			
 			% Projection curve (approximate, adjust as needed)
-			\draw[thick,blue,domain=0:1.2,samples=100] 
+			\draw[thick,blue,domain=0:2,samples=100] 
 				plot ({exp(\x)},{exp(-\x)});
+			
+			% Points
+			\fill[red] (1,1) circle (2pt) node[below right] {$\vec{r}(0)$};
+			\fill[red] (2.7,0.37) circle (2pt) node[below right] {$\vec{r}\left(\frac{1}{2}\right)$};
+			\fill[red] (7.4,0.135) circle (2pt) node[below right] {$\vec{r}(1)$};
+			
 		\end{tikzpicture}
-		
-		\item \textbf{Projection in the $zx$-plane:}
-		
-		\begin{tikzpicture}[scale=1.5]
-			% Axes
-			\draw[thick,->] (-0.5,0) -- (5,0) node[right] {$z$};
-			\draw[thick,->] (0,-0.5) -- (0,4.5) node[above] {$x$};
-			
-			% Plot points
-			\fill[red] (0,1) circle (2pt) node[below left] {$\vec{r}(0)$};
-			\fill[red] (0.707,1.6487) circle (2pt) node[below left] {$\vec{r}\left(\frac{1}{2}\right)$};
-			\fill[red] (1.414,2.7183) circle (2pt) node[below left] {$\vec{r}(1)$};
-			
-			% Projection curve (approximate, adjust as needed)
-			\draw[thick,blue,domain=0:1.2,samples=100] 
-				plot ({\x*sqrt(2)},{exp(\x)});
+	\end{center}
+    xz 
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				xlabel={$x = e^{2t}$},
+				ylabel={$z = \sqrt{8t}$},
+				axis lines=middle,
+				grid=none, % Remove grid
+				xmin=0, xmax=8,
+				ymin=0, ymax=3,
+				samples=100,
+				width=10cm,
+				height=6cm,
+			]
+			\addplot [
+				domain=0:1, 
+				thick, 
+				smooth, 
+				color=red
+			] ({exp(2*x)}, {sqrt(8*x)});
+			\end{axis}
 		\end{tikzpicture}
-		
-		\item \textbf{Projection in the $yz$-plane:}
-		
-		\begin{tikzpicture}[scale=1.5]
-			% Axes
-			\draw[thick,->] (-0.5,0) -- (4.5,0) node[right] {$z$};
-			\draw[thick,->] (0,-0.5) -- (0,4.5) node[above] {$y$};
-			
-			% Plot points
-			\fill[red] (0,1) circle (2pt) node[below left] {$\vec{r}(0)$};
-			\fill[red] (0.707,0.6065) circle (2pt) node[below left] {$\vec{r}\left(\frac{1}{2}\right)$};
-			\fill[red] (1.414,0.1353) circle (2pt) node[below left] {$\vec{r}(1)$};
-			
-			% Projection curve (approximate, adjust as needed)
-			\draw[thick,blue,domain=0:1.2,samples=100] 
-				plot ({\x*sqrt(2)},{exp(-\x)});
+	\end{center}
+	yz 
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				xlabel={$y = e^{-2t}$},
+				ylabel={$z = \sqrt{8t}$},
+				axis lines=middle,
+				grid=none, % Remove grid
+				xmin=0, xmax=1,
+				ymin=0, ymax=3,
+				samples=100,
+				width=10cm,
+				height=6cm,
+			]
+			\addplot [
+				domain=0:1, 
+				thick, 
+				smooth, 
+				color=blue
+			] ({exp(-2*x)}, {sqrt(8*x)});
+			\end{axis}
 		\end{tikzpicture}
-		
-	\end{enumerate}
+	\end{center}
+
+
 	b)
 	\[ L = \int_{0}^{1} ||\vec{r}(t)|| dt \]
 	\[ \vec{r}(t) = \langle e^{2t}, e^{-2t}, \sqrt{8}t \rangle \]
@@ -514,10 +535,9 @@
 		\item[(b)] $z = \sin x - \sin y$
 		\item[(c)] $z = \frac{x - y}{1 + x^2 + y^2}$
 	\end{enumerate}
-	\insertpng[0.6]{q12.png}
+	\insertpng[0.4]{q12.png}
 }
 
-\newpage
 
 \sol{\\
 	a) \\
