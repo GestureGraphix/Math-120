@@ -70,14 +70,73 @@
 \sol{ \\
 	a) 
 	\[ x = 2 \sin t \quad y = - 3 \cos t \]
-	\[ \left( \frac{x}{2} \right)^{2} + \left(\frac{y}{-3}\right)^{2} = sin^{2} t + cos^{2} t = 1 \] \\
-	\[ \frac{x^{2}}{4} + \frac{y^{2}}{9} = 1 \]   
-	\\
+	\[ \left( \frac{x}{2} \right)^{2} + \left(\frac{y}{-3}\right)^{2} = \sin^{2} t + \cos^{2} t = 1 \] \\
+	\[ \frac{x^{2}}{4} + \frac{y^{2}}{9} = 1 \]  
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				axis equal,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-3, xmax=3,
+				ymin=-3.5, ymax=3.5,
+				axis lines=middle,
+				samples=100,
+				ticks=none
+			]
+				\addplot[
+					domain=0:360,
+					samples=100,
+					smooth,
+					thick,
+					blue
+				] ({2*cos(x)},{3*sin(x)});
+			\end{axis}
+		\end{tikzpicture}
+	\end{center} 
 	b) 
+	\[ \vec{r}_{1}\left(\frac{2 \pi}{3}\right) = \langle 2 \sin\left( \frac{2\pi}{3}\right), - 3 \cos\left(\frac{2 \pi}{3}\right) \rangle = \left\langle \sqrt{3}, \frac{3}{2} \right\rangle \] 
 	\[ \vec{r}_{1}'(t) = \langle 2 \cos(t), 3 \sin(t) \rangle  \]
-	\[ \vec{r}_{1}\left(\frac{2\pi}{3}\right) = \langle 2 \cos \left(\frac{2 \pi}{3}\right), 3 \sin\left(\frac{2 \pi}{3} \right)\rangle \]  
-	\[ \vec{r}_{1}\left(\frac{2\pi}{3}\right) = \langle 2 \left( -\frac{1}{2}\right), 3 \left( \frac{\sqrt{3}}{2} \right)\rangle \] 
-	\[  \vec{r}_{1}\left(\frac{2\pi}{3}\right) = \langle -1, \frac{3 \sqrt{3}}{2} \rangle \] 
+	\[ \vec{r}_{1}'\left(\frac{2\pi}{3}\right) = \langle 2 \cos \left(\frac{2 \pi}{3}\right), 3 \sin\left(\frac{2 \pi}{3} \right)\rangle \]  
+	\[ \vec{r}_{1}'\left(\frac{2\pi}{3}\right) = \langle 2 \left( -\frac{1}{2}\right), 3 \left( \frac{\sqrt{3}}{2} \right)\rangle \] 
+	\[  \vec{r}_{1}'\left(\frac{2\pi}{3}\right) = \langle -1, \frac{3 \sqrt{3}}{2} \rangle \] 
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				axis equal,
+				xlabel={$x$},
+				ylabel={$y$},
+				xmin=-4, xmax=4,
+				ymin=-4, ymax=4,
+				axis lines=middle,
+				ticks=none,
+				samples=100
+			]
+				% Plot the ellipse
+				\addplot[
+					domain=0:360,
+					samples=100,
+					smooth,
+					thick,
+					blue
+				] ({2*cos(x)},{3*sin(x)});
+				
+				% Position vector r(2pi/3) = <sqrt(3), 3/2>
+				\addplot[
+					-latex,
+					thick,
+					red
+				] coordinates {(0,0) ({sqrt(3)},{1.5})} node[anchor=south west] {$\vec{r}_{1}\left(\frac{2 \pi}{3}\right)$};
+				
+				% Tangent vector r'(2pi/3) = <-1, 3sqrt(3)/2>
+				\addplot[
+					-latex,
+					thick,
+					green
+				] coordinates {({sqrt(3)},{1.5}) ({sqrt(3)-1},{1.5+3*sqrt(3)/2})} node[anchor=south east] {$\vec{r}_{1}'\left(\frac{2 \pi}{3}\right)$};
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
 	c) 
 	\[ r_{2}(t* ) = \langle 2 \cos (3t), -2 \sin(3t*) \rangle = \langle \sqrt{3}, \frac{3}{2}\rangle \] 
 	\[ 2 \cos (3t*) = \sqrt{3} \quad -3 \sin (3t*) = \frac{3}{2} \]
@@ -124,7 +183,7 @@
 	\[ \int \tan t \, \hat{\imath}  dt = \hat{\imath} \int \frac{\sin t}{\cos t} dt \]
 	\[ x = \cos(t) \]
 	\[ \hat{\imath} \int \tan t dt =  \hat{\imath}\int -\frac{1}{x} dx = -\ln|x| + k \]
-	\[ \left(-\ln|x| + k \right) \hat{\imath }= \left(-\ln|\cos(x)| + a \right) \hat{\imath}\]   
+	\[ \left(-\ln|x| + k \right) \hat{\imath }= \left(-\ln|\cos(t)| + a \right) \hat{\imath}\]   
 	\\
 	\[ \hat{\jmath} \int \sin^{2}t dt = \hat{\jmath} = \hat{\jmath} \int \frac{1 - 2\cos \theta}{2} dt\] 
 	\[ \hat{\jmath} \int \frac{1 - 2\cos t}{2} dt\ \Rightarrow \hat{\jmath}\frac{1}{2}\int 1 - 2\cos t dt\] 
@@ -156,9 +215,62 @@
 
 \sol{ \\
 	a) 
-	\[ x(t) = e^{2t} \quad y(t) = e^{-2t} \]
-	\[ x \cdot y = e^{2t} \cdot e^{-2y} = 1\]
-	\[ x(t) = e^{2t} \quad z(t) = \sqrt{8}t \]
+	\[ t = 0 \quad \vec{r}(0) = \langle 1,1,0 \rangle \] 
+	\[ t = \frac{1}{2} \quad \vec{r}\left( \frac{1}{2}\right) = \langle e, e^{-1}, \sqrt{2} \rangle \]
+	\[ t = 1 \quad \vec{r}(1) = \langle e^{2}, e^{-2}, 2 \sqrt{2} \rangle \]  
+	\begin{enumerate}[label=(\alph*)]
+		\item \textbf{Projection in the $xy$-plane:}
+		
+		\begin{tikzpicture}[scale=1.5]
+			% Axes
+			\draw[thick,->] (-0.5,0) -- (4.5,0) node[right] {$x$};
+			\draw[thick,->] (0,-0.5) -- (0,4.5) node[above] {$y$};
+			
+			% Plot points
+			\fill[red] (1,1) circle (2pt) node[below right] {$\vec{r}(0)$};
+			\fill[red] (1.6487,0.6065) circle (2pt) node[below right] {$\vec{r}\left(\frac{1}{2}\right)$};
+			\fill[red] (2.7183,0.1353) circle (2pt) node[below right] {$\vec{r}(1)$};
+			
+			% Projection curve (approximate, adjust as needed)
+			\draw[thick,blue,domain=0:1.2,samples=100] 
+				plot ({exp(\x)},{exp(-\x)});
+		\end{tikzpicture}
+		
+		\item \textbf{Projection in the $zx$-plane:}
+		
+		\begin{tikzpicture}[scale=1.5]
+			% Axes
+			\draw[thick,->] (-0.5,0) -- (5,0) node[right] {$z$};
+			\draw[thick,->] (0,-0.5) -- (0,4.5) node[above] {$x$};
+			
+			% Plot points
+			\fill[red] (0,1) circle (2pt) node[below left] {$\vec{r}(0)$};
+			\fill[red] (0.707,1.6487) circle (2pt) node[below left] {$\vec{r}\left(\frac{1}{2}\right)$};
+			\fill[red] (1.414,2.7183) circle (2pt) node[below left] {$\vec{r}(1)$};
+			
+			% Projection curve (approximate, adjust as needed)
+			\draw[thick,blue,domain=0:1.2,samples=100] 
+				plot ({\x*sqrt(2)},{exp(\x)});
+		\end{tikzpicture}
+		
+		\item \textbf{Projection in the $yz$-plane:}
+		
+		\begin{tikzpicture}[scale=1.5]
+			% Axes
+			\draw[thick,->] (-0.5,0) -- (4.5,0) node[right] {$z$};
+			\draw[thick,->] (0,-0.5) -- (0,4.5) node[above] {$y$};
+			
+			% Plot points
+			\fill[red] (0,1) circle (2pt) node[below left] {$\vec{r}(0)$};
+			\fill[red] (0.707,0.6065) circle (2pt) node[below left] {$\vec{r}\left(\frac{1}{2}\right)$};
+			\fill[red] (1.414,0.1353) circle (2pt) node[below left] {$\vec{r}(1)$};
+			
+			% Projection curve (approximate, adjust as needed)
+			\draw[thick,blue,domain=0:1.2,samples=100] 
+				plot ({\x*sqrt(2)},{exp(-\x)});
+		\end{tikzpicture}
+		
+	\end{enumerate}
 	b)
 	\[ L = \int_{0}^{1} ||\vec{r}(t)|| dt \]
 	\[ \vec{r}(t) = \langle e^{2t}, e^{-2t}, \sqrt{8}t \rangle \]
@@ -281,7 +393,52 @@
 	b) 
 	\[ \text{Positive:} \quad  y > 3x \quad \text{and} \quad x^2 + y^{2} < 4 \] 
 	\[ \text{Negative:} \quad y > 3x \quad \text{and} \quad 0 < 4 - x^{2} - y^{2} < 1 \] 
-	
+	\begin{center}
+		\begin{tikzpicture}[scale=1.5]
+			% Draw the outer circle x^2 + y^2 = 4
+			\draw[thick] (0,0) circle(2);
+			
+			% Label the outer circle
+			\node at (1.7,1.7) {$x^2 + y^2 = 4$};
+			
+			% Draw the inner circle x^2 + y^2 = 3
+			\draw[thick,dashed] (0,0) circle({sqrt(3)});
+			
+			% Label the inner circle
+			\node at (-1.2,1.2) {$x^2 + y^2 = 3$};
+			
+			% Draw the line y = 3x
+			\draw[thick,red,domain=-0.65:0.65] plot (\x, {3*\x});
+			
+			% Label the line
+			\node[red, right] at (0.5, 1.5) {$y = 3x$};
+			
+			% Shade the domain region for 0 < x^2 + y^2 < 3
+			\begin{scope}
+				\clip (0,0) circle({sqrt(3)});
+				\fill[green!20] (-2, -6) -- (2, 6) -- (2, 2) -- (-2, 2) -- cycle;
+			\end{scope}
+			
+			% Shade the domain region for 3 < x^2 + y^2 < 4 and y >= 3x
+			\begin{scope}
+				\clip (0,0) circle(2);
+				\begin{scope}
+					\clip (-2, -6) -- (2, 6) -- (2, 2) -- (-2, 2) -- cycle;
+					\fill[blue!20, even odd rule] (0,0) circle(2) (0,0) circle({sqrt(3)});
+				\end{scope}
+			\end{scope}
+			
+			% Axes
+			\draw[->] (-2.5, 0) -- (2.5, 0) node[right] {$x$};
+			\draw[->] (0, -2.5) -- (0, 2.5) node[above] {$y$};
+			
+			% Label the regions
+			\node[green] at (0, -0.5) {Region 1};
+			\node[blue] at (1.2, 0.5) {Region 2};
+			\node at (-0.8, 0.8) {Region 3};
+			
+		\end{tikzpicture}
+	\end{center}
 	
 }
 
