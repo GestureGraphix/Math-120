@@ -1,0 +1,69 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Math 120}}
+\author{\huge{PSet 4}}
+\date{Sep 22 2024}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{}
+\section{PSet 4}
+
+\qs{}{
+	By finding both $f_{xy} = (f_x)_y$ and $f_{yx} = (f_y)_x$, verify that Clairaut's Theorem holds for the function $f(x,y) = y \arctan(xy)$.
+}
+
+\sol{
+}
+
+\qs{}{
+	Level curves are shown below for a function $f$ 
+	\insertpng[0.3]{Prob2.png}
+	\begin{enumerate}
+		\item[(a)] Determine the signs of $f_x, f_y, f_{xx}, f_{yy}$ and $f_{xy}$ at the point $P$. Explain your reasoning. \textit{You should assume that the undrawn level curves are nicely and evenly distributed between the ones drawn.}
+		
+		\item[(b)] Mark a point on the contour plot where $f_x = 0$. (You can either mark the point on a screenshot and insert the picture in your homework file, or just make a rough copy of the contour plot by hand.)
+	\end{enumerate}
+}
+
+\qs{}{
+	Use the Chain Rule to find the indicated partial derivatives.
+    \begin{enumerate}
+        \item[(a)] Compute $\frac{dz}{dt}$ if $z = \tan(y/x)$, $x = e^t$, and $y = 1 - e^{-t}$.
+        
+        \item[(b)] Compute $\frac{\partial M}{\partial u}$ and $\frac{\partial M}{\partial v}$ at $u = 3$ and $v = -1$ if $M = x e^{y - z^2}$, $x = 2uv$, $y = u - v$, and $z = u + v$.
+    \end{enumerate}
+}
+
+\sol{
+
+}
+
+\qs{}{
+	Use implicit differentiation to compute $\frac{\partial z}{\partial x}$ and $\frac{\partial z}{\partial y}$ for the surface given by $z^3 + 3xyz + x^2 + y^2 = 0$ at the point $(1, -2, 1)$.
+}
+
+\sol{
+
+}
+
+\qs{}{
+	[(5.) (Stewart problem 14.5.36)] Wheat production $W$ in a given year depends on the average temperature $T$ and annual rainfall $R$. Scientists estimate that the average temperature is rising at a rate of $0.15^\circ \text{C/year}$ and rainfall is decreasing at a rate of $0.1 \text{ cm/year}$. They also estimate that at current production levels, $\partial W/\partial T = -2$ and $\partial W/\partial R = 8$.
+    \begin{enumerate}
+        \item[(a)] What is the significance of the signs of these partial derivatives?
+        
+        \item[(b)] Estimate the current rate of change of wheat production $\frac{dW}{dt}$.
+    \end{enumerate}
+}
+\end{document}
