@@ -46,7 +46,26 @@
     \end{enumerate}
 }
 
-\sol{
+\sol{\\
+	a) 
+	\[ \frac{dz}{dt} = \frac{dz}{dx} \cdot \frac{dx}{dt} + \frac{dz}{dy} \cdot \frac{dy}{dt}  \]
+	\[ \frac{dz}{dx} = z_{x} = \sec\left(\frac{y}{x}\right)^{2} \cdot \left( \frac{(0)x - (1)(y)}{x^{2}} \right) \Rightarrow \sec\left(\frac{y}{x}\right)^{2} \cdot \left(\frac{-y}{x^{2}} \right) \] 
+	\[ \frac{dz}{dy} = z_{y} = \sec\left(\frac{y}{x}\right)^{2} \cdot \left( \frac{(1)x - (0)(y)}{x^{2}} \right) \Rightarrow \sec\left(\frac{y}{x}\right)^{2} \cdot \left(\frac{1}{x} \right)\] 
+	\[ \frac{dx}{dt} = e^{t} \quad \frac{dy}{dt}= e^{-t} \]
+	\[ \frac{dz}{dt} = \sec\left(\frac{1-e^{-t}}{e^{t}}\right)^{2} \cdot \left(\frac{-(1-e^{t})}{e^{2t}} \right) \cdot e^{t} + \sec\left(\frac{1-e^{-t}}{e^{t}}\right)^{2} \cdot \left(\frac{1}{e^{t}} \right) \cdot e^{-t} \]  
+	b)
+	\[ \frac{\partial M}{\partial u} = \frac{\partial M}{\partial x} \cdot \frac{dx}{dt} + \frac{\partial M}{\partial y} \cdot \frac{dy}{dt} + \frac{\partial M}{\partial z} \cdot \frac{dz}{dt}\] 
+	\[ M_{x} = e^{y-z^{2}} \quad \frac{dx}{du} = 2v \quad \frac{dx}{dv} = 2u\] 
+	\[ M_{y} = xe^{y-z^{2}} \quad \frac{dy}{du} = 1 \quad \frac{dy}{dv} = -1\]
+	\[ M_{z} = -2zxe^{y-z^{2}} \quad \frac{dz}{du} = 1 \quad \frac{dz}{dt} = 1\]
+	\[ \frac{\partial M}{\partial u} = e^{y-z^{2}} (2v) + \left(xe^{y-z^{2}}\right)(1) + \left(-2zxe^{y-z^{2}}\right)(1) \]
+	\[ x = 2uv \Rightarrow 2(3)(-1) = - 6 \]     
+	\[ y = u - v \Rightarrow (3) - -(1) = 4 \] 
+	\[ z = u + v \Rightarrow 3 + (-1) = 2 \] 
+	\[ \frac{\partial M}{\partial u} = e^{4-2^{2}} (2(-1)) + \left((-6) e^{4-2^{2}}\right)(1) + \left(-2(2)(-6)e^{4-2^{2}}\right)(1) = 1(-2) + (-6)(1) + (24)(1) = 16 \]
+	\[ \frac{\partial M}{\partial v} = \frac{\partial M}{\partial x} \cdot \frac{dx}{dv} + \frac{\partial M}{\partial y} \cdot \frac{dy}{dv} + \frac{\partial M}{\partial z} \cdot \frac{dz}{dv}\] 
+	\[ \frac{\partial M}{\partial v} = e^{y-z^{2}} (2u) + \left(xe^{y-z^{2}}\right)(-1) + \left(-2zxe^{y-z^{2}}\right)(1) \]
+	\[ \frac{\partial M}{\partial v} = e^{4-2^{2}} (2(3)) + \left((-6) e^{4-2^{2}}\right)(-1) + \left(-2(2)(-6)e^{4-2^{2}}\right)(1) = 1(6) + (-6)(1) + (24)(1) = 36 \]
 
 }
 
@@ -54,8 +73,20 @@
 	Use implicit differentiation to compute $\frac{\partial z}{\partial x}$ and $\frac{\partial z}{\partial y}$ for the surface given by $z^3 + 3xyz + x^2 + y^2 = 0$ at the point $(1, -2, 1)$.
 }
 
-\sol{
 
+
+
+\sol{
+	\[ \frac{\partial z}{\partial x} \left(z^3 + 3xyz + x^2 + y^2 \right) = 3z^{2}\frac{\partial z}{\partial x} + 3yz + 3xy \frac{\partial z}{\partial x} + 2x = 0   \] 
+	\[ 3z^{2}\frac{\partial z}{\partial x} + 3yz + 3xy \frac{\partial z}{\partial x} + 2x = 0  \Rightarrow 3z^{2} \frac{\partial z}{\partial x}  + 3xy \frac{\partial z}{\partial x}  = -3yz - 2x \] 
+	\[ 3x^{2} \frac{\partial z}{\partial x}  + 3xy \frac{\partial z}{\partial x}  = -3yz - 2x \Rightarrow \frac{\partial z}{\partial x} \left( 3z^{2} + 3xy \right) = -3yz - 2x  \] 
+	\[ \frac{\partial z}{\partial x} \left( 3z^{2} + 3xy \right) = -3yz - 2x  \Rightarrow \frac{\partial z}{\partial x} = \frac{-3yz - 2x }{3z^{2} + 3xy}\] 
+	\[ \frac{\partial z}{\partial x} = \frac{-3(-2)(1) - 2(1) }{3(1)^{2} + 3(1)(-2)} = \frac{-4}{3}  \] 
+	\[ \frac{\partial z}{\partial y} \left(z^3 + 3xyz + x^2 + y^2 \right) = 3z^{2}\frac{\partial z}{\partial y} + 3xz + 3xy \frac{\partial z}{\partial y} + 2y = 0   \] 
+	\[ 3z^{2}\frac{\partial z}{\partial y} + 3xz + 3xy \frac{\partial z}{\partial y} + 2y  = 0  \Rightarrow 3z^{2} \frac{\partial z}{\partial y}  + 3xy \frac{\partial z}{\partial x}  = -3xz - 2y \] 
+	\[ 3z^{2} \frac{\partial z}{\partial y}  + 3xy \frac{\partial z}{\partial y}  = -3xz - 2y \Rightarrow \frac{\partial z}{\partial y} \left( 3z^{2} + 3xy \right) = -3xz - 2y  \] 
+	\[ \frac{\partial z}{\partial y} \left( 3z^{2} + 3xy \right) = -3yz - 2y  \Rightarrow \frac{\partial z}{\partial x} = \frac{-3xz - 2y }{3z^{2} + 3xy}\] 
+	\[  \frac{\partial z}{\partial y} = \frac{-3(1)(1) - 2(-2) }{3(1)^{2} + 3(1)(-2)} = -\frac{1}{3}  \] 
 }
 
 \qs{}{

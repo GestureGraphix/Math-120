@@ -579,6 +579,11 @@ INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zpl
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/pxmiaX.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplexx.vf
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newtx/ntxexx.vf
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txexs.tfm
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
 INPUT Notes.aux
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb
@@ -608,3 +613,5 @@ INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb
