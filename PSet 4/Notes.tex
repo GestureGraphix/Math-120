@@ -25,7 +25,13 @@
 }
 
 \sol{
+	\[ f_{x} = \frac{\partial}{\partial x} y \arctan(xy) = y \cdot \frac{1}{1 + (xy)^{2}} \cdot y = \frac{y^{2}}{1 + (xy)^{2}}\]
+	\[ \frac{\partial}{\partial y} \frac{y^{2}}{1 + (xy)^{2}} = \frac{(2y) \left(1 + (xy)^{2}\right) - \left(y^{2}\right)\left(2x^{2}y\right)}{\left(1 + \left( xy\right)^{2} \right)^{2}}\]
+	\[  \frac{(2y) \left(1 + (xy)^{2}\right) - \left(y^{2}\right)\left(2x^{2}y\right)}{\left(1 + \left( xy\right)^{2} \right)} = \frac{2y}{\left(1 + (xy)^{2}\right)}\]   
+	\[ f_{y} = \frac{\partial}{\partial y}  y \arctan(xy) = \arctan(xy) + \frac{xy}{1 + (xy)^{2}} \]
+	\[ \frac{\partial}{\partial x} \arctan(xy) + \frac{xy}{1 + (xy)^{2}} = \frac{y}{(1+(xy)^{2})}  + \frac{y\left(1 + (xy)^{2}\right) - \left(2y^{2}x\right)(xy)}{\left( 1+ \left( xy\right)^{2} \right)^{2}} = \frac{2y}{\left(1 + (xy)^{2}\right)} \]  
 }
+\newpage 
 
 \qs{}{
 	Level curves are shown below for a function $f$ 
@@ -35,6 +41,18 @@
 		
 		\item[(b)] Mark a point on the contour plot where $f_x = 0$. (You can either mark the point on a screenshot and insert the picture in your homework file, or just make a rough copy of the contour plot by hand.)
 	\end{enumerate}
+}
+
+\sol{
+	\\
+	a) \\
+	$f_{x} > 0$ going to the right increases the level curves at point P. \\
+	$f_{y} > 0$ as you go up in the y direction at point p there is also an increase in the value of f. \\  
+	$f_{xx} < 0 $ The level curves in teh x-direction appear to be getting closer together as we move to the right, so negative. \\
+	$f_{yy} > 0$ level curves in the y-direction are spread apart implying that the slope in increasing. \\
+	$f_{xy} $ ??? \\
+	b)   yet to draw 
+
 }
 
 \qs{}{
@@ -96,5 +114,14 @@
         
         \item[(b)] Estimate the current rate of change of wheat production $\frac{dW}{dt}$.
     \end{enumerate}
+}
+
+\sol{
+	\\
+	a)
+	$\frac{\partial W}{\partial T}$ means that for every drop in 1 $^{\circ}$C there is a decrease if Wheat production of 2 units. \\
+	$\frac{\partial W}{\partial R}$ means for every increase in 1 cm rainfall there is an increases of 8 units in wheat production. \\
+	b) 
+	\[ \frac{dW}{dt} = \frac{\partial W}{\partial T} \cdot \frac{dT}{dt} + \frac{\partial W}{\partial R} + \frac{dR}{dt} = -2 (.15) + 8(-.1) = 1.1 \] 
 }
 \end{document}

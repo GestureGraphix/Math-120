@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  22 SEP 2024 19:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  22 SEP 2024 20:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1281,20 +1281,23 @@ Chapter 1.
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 25.
 
-<Prob2.png, id=63, 716.6775pt x 695.59875pt>
-File: Prob2.png Graphic file (type png)
-<use Prob2.png>
-Package pdftex.def Info: Prob2.png  used on input line 38.
-(pdftex.def)             Requested size: 215.00491pt x 208.68123pt.
 
 
 [2
 
-{/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc} <./Prob2.png>]
+{/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc}]
+<Prob2.png, id=76, 716.6775pt x 695.59875pt>
+File: Prob2.png Graphic file (type png)
+<use Prob2.png>
+Package pdftex.def Info: Prob2.png  used on input line 44.
+(pdftex.def)             Requested size: 215.00491pt x 208.68123pt.
 
-[3]
 
-[4] (Notes.aux)
+[3 <./Prob2.png>]
+
+[4]
+
+[5] (Notes.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1309,17 +1312,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 46708 strings out of 475839
- 1076152 string characters out of 5777281
- 1953905 words of memory out of 5000000
+ 46709 strings out of 475839
+ 1076160 string characters out of 5777281
+ 1956905 words of memory out of 5000000
  68525 multiletter control sequences out of 15000+600000
  586776 words of font info for 117 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  99i,7n,102p,812b,1431s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb>
-Output written on Notes.pdf (5 pages, 204941 bytes).
+Output written on Notes.pdf (6 pages, 208245 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
+ 174 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
