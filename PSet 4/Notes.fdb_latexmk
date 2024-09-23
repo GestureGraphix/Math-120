@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1727123712.727 "/home/alexhernandezjuarez/Documents/Math 120/PSet 4/Notes.tex" "Notes.pdf" "Notes" 1727123715.50204 0
+["pdflatex"] 1727123723.63327 "/home/alexhernandezjuarez/Documents/Math 120/PSet 4/Notes.tex" "Notes.pdf" "Notes" 1727123726.46726 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1725409887.90446 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc" 1720481717.39723 3877 2ca811886181a05a861d20a35de75e06 ""
@@ -306,10 +306,10 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xfrac/xfrac.sty" 1720481722.07727 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty" 1720481758.74561 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1720481720.24125 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/alexhernandezjuarez/Documents/Math 120/PSet 4/Notes.tex" 1727123712.09912 7796 1e91ef0f6b5fb365caaae53a8567b904 ""
-  "Notes.aux" 1727123715.24212 1195 26f26d2a520d39b13b285c9ab55ec37a "pdflatex"
-  "Notes.tex" 1727123712.09912 7796 1e91ef0f6b5fb365caaae53a8567b904 ""
-  "Notes.toc" 1727123715.24412 139 a857192fee33727a3cdd8d751eeb960a "pdflatex"
+  "/home/alexhernandezjuarez/Documents/Math 120/PSet 4/Notes.tex" 1727123722.92812 7778 3c6c9789bfd864f4dd385f25bdf0bf04 ""
+  "Notes.aux" 1727123726.20512 1195 26f26d2a520d39b13b285c9ab55ec37a "pdflatex"
+  "Notes.tex" 1727123722.92812 7778 3c6c9789bfd864f4dd385f25bdf0bf04 ""
+  "Notes.toc" 1727123726.20712 139 a857192fee33727a3cdd8d751eeb960a "pdflatex"
   "Prob2.png" 1727033315.22904 45034 4fd8f5047577975651b1235ec3e293b6 ""
   "letterfonts.tex" 1720527956.72324 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "macros.tex" 1720527956.72324 3389 93000260d2aea292d29c76d4ace77a29 ""
