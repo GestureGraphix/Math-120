@@ -76,6 +76,7 @@ $ax + by + cz + d = 0$ \\
     \textbf{Form:} 	$ \mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t) \mathbf{i} + g(t) \mathbf{j} + h(t) \mathbf{k} $ \\
     \textbf{Limit:} $ \lim_{t \to a} \mathbf{r}(t) = \left\langle \lim_{t \to a} f(t), \lim_{t \to a} g(t), \lim_{t \to a} h(t) \right\rangle $ \\
     \textbf{Derivative:} $\mathbf{r}'(t) = \langle f'(t), g'(t), h'(t) \rangle $ \\
+    \textbf{Unit Tangent Vector} $\mathbf{T}(t) = \frac{\mathbf{r}'(t)}{|\mathbf{r}'(t)|}$
     \textbf{Orthogonality:} If \(|\mathbf{r}(t)| = c\), then \(\mathbf{r}'(t)\) is orthogonal to \(\mathbf{r}(t)\). \\
     \textbf{Definite Integral:} $ \int_a^b \mathbf{r}(t) \, dt = \mathbf{R}(t) \Big|_a^b = \mathbf{R}(b) - \mathbf{R}(a) $
     \textbf{Length:} $ L = \int_a^b |\mathbf{r}'(t)| \, dt$
@@ -106,7 +107,26 @@ $ax + by + cz + d = 0$ \\
     \[(f_x)_y = f_{xy} = f_{12} = \frac{\partial}{\partial y} \left( \frac{\partial f}{\partial x} \right) = \frac{\partial^2 f}{\partial y \partial x} = \frac{\partial^2 z}{\partial y \partial x} \]
     \[ (f_y)_x = f_{yx} = f_{21} = \frac{\partial}{\partial x} \left( \frac{\partial f}{\partial y} \right) = \frac{\partial^2 f}{\partial x \partial y} = \frac{\partial^2 z}{\partial x \partial y} \]
     \[(f_y)_y = f_{yy} = f_{22} = \frac{\partial}{\partial y} \left( \frac{\partial f}{\partial y} \right) = \frac{\partial^2 f}{\partial y^2} = \frac{\partial^2 z}{\partial y^2} \]
+    \textbf{Clairaut's Theorem} $ f_{xy}(a, b) = f_{yx}(a, b) $
 \end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{Chain Rule}, colframe=lightblue]
+    \textbf{Case 1:} 	
+    \[ \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt} \]
+    \textbf{Case 2:}
+    \[ \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s} \]
+    \[ \frac{\partial z}{\partial t} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial t} \]
+    \textbf{General Form:}
+    \[ \frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \cdots + \frac{\partial u}{\partial x_n} \frac{\partial x_n}{\partial t_i} \]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{Implicit Differentiation}, colframe=lightblue]
+    \textbf{Form:} 	
+    \[ \frac{dy}{dx} = -\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}} = -\frac{F_x}{F_y} \]
+    \textbf{Three variables:}
+    \[ \frac{\partial z}{\partial x} = -\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial z}} = -\frac{F_x}{F_z} \quad \frac{\partial z}{\partial y} = -\frac{\frac{\partial F}{\partial y}}{\frac{\partial F}{\partial z}} = -\frac{F_y}{F_z} \]
+\end{tcolorbox}
+
 
 \end{multicols}
 \end{document}
