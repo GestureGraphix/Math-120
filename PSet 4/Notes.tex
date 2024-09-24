@@ -37,7 +37,7 @@
 	Level curves are shown below for a function $f$ 
 	\insertpng[0.3]{Prob2.png}
 	\begin{enumerate}
-		\item[(a)] Determine the signs of $f_x, f_y, f_{xx}, f_{yy}$ and $f_{xy}$ at the point $P$. Explain your reasoning. \textit{You should assume that the undrawn level curves are nicely and evenly distributed between the ones drawn.}
+		\item[(a)] Determine the signs of $f_x, f_y, f_{xx}$ and $f_{yy}$ at the point $P$. Explain your reasoning. \textit{You should assume that the undrawn level curves are nicely and evenly distributed between the ones drawn.}
 		
 		\item[(b)] Mark a point on the contour plot where $f_x = 0$. (You can either mark the point on a screenshot and insert the picture in your homework file, or just make a rough copy of the contour plot by hand.)
 	\end{enumerate}
@@ -46,11 +46,12 @@
 \sol{
 	\\
 	a) \\
-	$f_{x} > 0$ going to the right increases the level curves at point P. \\
-	$f_{y} < 0$ as you go up in the y direction at point p there is also an increase in the value of f. \\  
-	$f_{xx} > 0 $ The level curves in teh x-direction appear to be getting closer together as we move to the right, so negative. \\
-	$f_{yy} > 0$ level curves in the y-direction are spread apart implying that the slope in increasing. \\
-	b)   yet to draw 
+	$f_{x} > 0$ as you move to the right of P $f$ increases . \\
+	$f_{y} < 0$ as you go up in the y direction at point p there is a decrease in the value of f. \\  
+	$f_{xx} > 0 $ The level curves in the x-direction appear to be getting closer together as we move to the right, so it means that $f_{x}$ is increasing. \\
+	$f_{yy} > 0$ the difference in teh level cirves is decreasing as you move up so it means that $f_{y}$ is increasing \\
+	b) \\
+	\insertpng[0.3]{prob2ans.png}
 
 }
 
@@ -69,7 +70,7 @@
 	\[ \frac{dz}{dx} = z_{x} = \sec\left(\frac{y}{x}\right)^{2} \cdot \left( \frac{(0)x - (1)(y)}{x^{2}} \right) \Rightarrow \sec\left(\frac{y}{x}\right)^{2} \cdot \left(\frac{-y}{x^{2}} \right) \] 
 	\[ \frac{dz}{dy} = z_{y} = \sec\left(\frac{y}{x}\right)^{2} \cdot \left( \frac{(1)x - (0)(y)}{x^{2}} \right) \Rightarrow \sec\left(\frac{y}{x}\right)^{2} \cdot \left(\frac{1}{x} \right)\] 
 	\[ \frac{dx}{dt} = e^{t} \quad \frac{dy}{dt}= e^{-t} \]
-	\[ \frac{dz}{dt} = \sec\left(\frac{1-e^{-t}}{e^{t}}\right)^{2} \cdot \left(\frac{-(1-e^{t})}{e^{2t}} \right) \cdot e^{t} + \sec\left(\frac{1-e^{-t}}{e^{t}}\right)^{2} \cdot \left(\frac{1}{e^{t}} \right) \cdot e^{-t} \]  
+	\[ \frac{dz}{dt} = \sec\left(\frac{1-e^{-t}}{e^{t}}\right)^{2} \cdot \left(\frac{-(1-e^{-t})}{e^{2t}} \right) \cdot e^{t} + \sec\left(\frac{1-e^{-t}}{e^{t}}\right)^{2} \cdot \left(\frac{1}{e^{t}} \right) \cdot e^{-t} \]  
 	b)
 	\[ \frac{\partial M}{\partial u} = \frac{\partial M}{\partial x} \cdot \frac{dx}{dt} + \frac{\partial M}{\partial y} \cdot \frac{dy}{dt} + \frac{\partial M}{\partial z} \cdot \frac{dz}{dt}\] 
 	\[ M_{x} = e^{y-z^{2}} \quad \frac{dx}{du} = 2v \quad \frac{dx}{dv} = 2u\] 
@@ -117,9 +118,11 @@
 
 \sol{
 	\\
-	a)
-	$\frac{\partial W}{\partial T}$ means that for every drop in 1 $^{\circ}$C there is a decrease if Wheat production of 2 units. \\
+	a) \\
+	$\frac{\partial W}{\partial T} = -2 $ means that for every drop in 1 $^{\circ}$C there is a decrease if Wheat production of 2 units. \\
+	If the sign were positive it would mean that there would an increase in wheat production as a result in the decrease of temperature. \\ 
 	$\frac{\partial W}{\partial R}$ means for every increase in 1 cm rainfall there is an increases of 8 units in wheat production. \\
+	If the sign were negative instead it would mean that increase in rainfall brought down wheat production. 
 	b) 
 	\[ \frac{dW}{dt} = \frac{\partial W}{\partial T} \cdot \frac{dT}{dt} + \frac{\partial W}{\partial R} + \frac{dR}{dt} = -2 (.15) + 8(-.1) = 1.1 \] 
 }
