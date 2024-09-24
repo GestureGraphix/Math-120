@@ -1,0 +1,134 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Math 120}}
+\author{\huge{PSet 2}}
+\date{Sep 12 2024}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{}
+\section{12.1 Notes (Three Dimensional Coodinate Systems)}
+
+\defrose{Distance Formula}{DDefintion: 
+	\begin{center}
+		\[ |P_{1}P_{2}| = \sqrt{(x_{2} - x_{1})^{2} + (y_{2} - y_{1})^{2} + (z_{2} - z_{1})^{2} }\] 
+	\end{center}
+}
+
+\defrose{Equation of a sphere}{
+	DDefintion: An equation of a sphere with center $C(h,k,l)$, and radius $r$ is 
+	\begin{center}
+		\[ (x-h)^{2} + (y-k)^{2} + (z-l)^{2}\] 
+	\end{center}
+}
+
+\section{12.2 Notes (Vectors)}
+
+\ntimg{Properties of vectors: If $\textbf{a}$, $\textbf{b}$, and $\textbf{c}$ are vectors in $V_{n}$ and $c$ and $d$ are scalars than 
+	\begin{itemize}
+		\item $\textbf{a} + \textbf{b} = \textbf{b} + \textbf{a}$
+		\item $a + (\textbf{b} + \textbf{c}) = (\textbf{a} + \textbf{b}) + \textbf{c} $
+		\item $\textbf{a} + 0 = \textbf{a}$
+		\item $ \textbf{a} + \textbf{a} + \textbf{-a} = 0 $
+		\item $c(\textbf{a} + \textbf{b}) = c\textbf{a} + c\textbf{b}$ 
+		\item $(c + d)a = c \textbf{a} + d \textbf{a} $
+		\item $(cd) \textbf{a} = c(d\textbf{a})$
+		\item $l\textbf{a} = \textbf{a} $
+	\end{itemize}
+}
+
+\section{12.3 Dot Product}
+
+\defrose{Dot Product}{
+	DDefintion: 
+	\begin{center}
+		\[ \textbf{a} \cdot \textbf{b} = a_{1}b_{1} + a_{2}b_{2} + a_{3}b_{3} \] 
+		\[ \cos(\theta)  = \frac{\mathbf{a} \cdot \mathbf{b} }{|\mathbf{a}| |\mathbf{b}| } \] 
+		Two vectors $\mathbf{a}$ and $\mathbf{b}$ are orthogonal if an only if $\mathbf{a} \cdot \mathbf{b} = 0$
+	\end{center} 
+} 
+
+\defrose{Projections}{
+	DDefintion:  \\
+	\textbf{Scalar projection of $\mathbf{b}$ onto $\mathbf{a}$:} \quad $\text{comp}_{\mathbf{a}} \mathbf{b} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|}$ \\
+	\textbf{Vector projection of $\mathbf{b}$ onto $\mathbf{a}$:} \quad $\text{proj}_{\mathbf{a}} \mathbf{b} = \left( \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|^2} \right) \mathbf{a} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|^2} \mathbf{a}$
+}
+
+\section{12.4 Cross Product}
+
+\defrose{Cross Product}{DDefintion
+	\[ \mathbf{a} \times \mathbf{b} = \langle a_{2}b_{3} - a_{3}b_{2}, a_{3}b_{1} - a_{1}b_{3}, a_{1}b_{2} - a_{2}b_{1} \rangle \] 
+	\[ a \times b = \left[ \begin{matrix}
+			i & j & k  \\
+			a_{1} & a_{2} & a_{3} \\
+			b_{1} & b_{2} & b_{3} \\
+		\end{matrix}\right] = |a||b| \sin(\theta) \] 
+		\[ \left[ \begin{matrix}
+			a_{2} & a_{3} \\
+			b_{2} & b_{3}  \\
+		\end{matrix}\right] i - \left[ \begin{matrix}
+			a_{1} & a_{3} \\
+			b_{1} & b_{3}  \\
+		\end{matrix}\right] j + \left[ \begin{matrix}
+			a_{1} & a_{2} \\
+			b_{1} & b_{2} k  \\
+		\end{matrix}\right]\] 
+		\[ = (a_{2}b_{3} - a_{3}b_{2}) i - (a_{1}b_{3} - a_{3}b_{1}) j + (a_{1} b_{2} - a_{2}b_{1}) k \]\
+		\[ |\mathbf{a} \times \mathbf{b}| = |\mathbf{a}| |\mathbf{b}| \sin \theta \]
+}
+
+\defrose{Triple Product }{
+	TTriple Product:
+	\[ 	V = A h = |\mathbf{b} \times \mathbf{c}| |\mathbf{a}| |\cos \theta| = |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})| \]
+
+	\[ 	\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 
+	\begin{vmatrix}
+	a_1 & a_2 & a_3 \\
+	b_1 & b_2 & b_3 \\
+	c_1 & c_2 & c_3
+	\end{vmatrix} \]
+	\[ 	V = A h = |\mathbf{b} \times \mathbf{c}| |\mathbf{a}| |\cos \theta| = |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})| \]
+}
+ 
+\section{12.5 Equations of Lines and Planes}
+
+\defrose{Line}{
+	LLine: 
+	\[ r = r_{0} + t \mathbf{v}\] 
+}
+
+\defrose{Equation of a plane}{
+	PPlane: 
+	\[ \mathbf{n} \cdot \mathbf{r} = \mathbf{n} \cdot \mathbf{r_0} \] 
+	\[ \langle a, b, c \rangle \cdot \langle x - x_{0}, y - y_{0}, z - z_{0} \rangle = 0 \] 
+	\[ ax + by + cz + d = 0 \]    
+}
+
+\defrose{Distance of a plane}{
+	DDistance of a Plane: 
+	\[ 	D = |\text{comp}_{\mathbf{n}} \mathbf{b}| = \frac{|\mathbf{n} \cdot \mathbf{b}|}{|\mathbf{n}|} \]
+
+	\[ 	= \frac{|a(x_1 - x_0) + b(y_1 - y_0) + c(z_1 - z_0)|}{\sqrt{a^2 + b^2 + c^2}} \]
+
+	\[	= \frac{|(a x_1 + b y_1 + c z_1) - (a x_0 + b y_0 + c z_0)|}{\sqrt{a^2 + b^2 + c^2}} \]
+}
+
+\defrose{Length of curve}{
+	LLength: 
+	\[s(t) = \int_{a}^{t} |\mathbf{r}'(u)| du = \int_{a}^{t} \sqrt{\left(\frac{dx}{du}\right)^{2} + \left(\frac{dy}{du}\right)^{2} + \left(\frac{dz}{du}\right)^{2}} du  \]
+}
+
+
+
+\end{document}
