@@ -76,7 +76,7 @@ $ax + by + cz + d = 0$ \\
     \textbf{Form:} 	$ \mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t) \mathbf{i} + g(t) \mathbf{j} + h(t) \mathbf{k} $ \\
     \textbf{Limit:} $ \lim_{t \to a} \mathbf{r}(t) = \left\langle \lim_{t \to a} f(t), \lim_{t \to a} g(t), \lim_{t \to a} h(t) \right\rangle $ \\
     \textbf{Derivative:} $\mathbf{r}'(t) = \langle f'(t), g'(t), h'(t) \rangle $ \\
-    \textbf{Unit Tangent Vector} $\mathbf{T}(t) = \frac{\mathbf{r}'(t)}{|\mathbf{r}'(t)|}$
+    \textbf{Unit Tangent Vector} $\mathbf{T}(t) = \frac{\mathbf{r}'(t)}{|\mathbf{r}'(t)|}$ \\
     \textbf{Orthogonality:} If \(|\mathbf{r}(t)| = c\), then \(\mathbf{r}'(t)\) is orthogonal to \(\mathbf{r}(t)\). \\
     \textbf{Definite Integral:} $ \int_a^b \mathbf{r}(t) \, dt = \mathbf{R}(t) \Big|_a^b = \mathbf{R}(b) - \mathbf{R}(a) $
     \textbf{Length:} $ L = \int_a^b |\mathbf{r}'(t)| \, dt$
@@ -92,7 +92,7 @@ $ax + by + cz + d = 0$ \\
 \end{tcolorbox}
 
 \begin{tcolorbox}[title=\textbf{Partial Derivatives}, colframe=lightblue]
-    \textbf{Form:} 	$ f_x(a, b) = g'(a) \quad \text{where} \quad g(x) = f(x, b) $ 
+    \textbf{Form:} 	$ f_x(a, b) = g'(a) \quad \text{where} \quad g(x) = f(x, b) $ \\
     \textbf{Defintion:} 
     \[f_x(x, y) = \lim_{{h \to 0}} \frac{f(x + h, y) - f(x, y)}{h}\]
     \[f_y(x, y) = \lim_{{h \to 0}} \frac{f(x, y + h) - f(x, y)}{h}\]
@@ -127,6 +127,22 @@ $ax + by + cz + d = 0$ \\
     \[ \frac{\partial z}{\partial x} = -\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial z}} = -\frac{F_x}{F_z} \quad \frac{\partial z}{\partial y} = -\frac{\frac{\partial F}{\partial y}}{\frac{\partial F}{\partial z}} = -\frac{F_y}{F_z} \]
 \end{tcolorbox}
 
+\begin{tcolorbox}[title=\textbf{Directional Derivative and Gradient Vector}, colframe=lightblue]
+    \textbf{Directional Derivative:} 	
+    \[ D_{\mathbf{u}} f(x, y) = f_x(x, y) a + f_y(x, y) b \] 
+    \textbf{Gradient For 2 variables}
+    \[ \nabla f(x, y) = \langle f_x(x, y), f_y(x, y) \rangle = \frac{\partial f}{\partial x} \mathbf{i} + \frac{\partial f}{\partial y} \mathbf{j} \]
+    \textbf{Gradient for 3 Variables} 
+    \[ \nabla f = \langle f_x, f_y, f_z \rangle = \frac{\partial f}{\partial x} \mathbf{i} + \frac{\partial f}{\partial y} \mathbf{j} + \frac{\partial f}{\partial z} \mathbf{k} \] 
+    \textbf{Properties of Gradient Vecotr} \\
+    \( \nabla f(\mathbf{x}) \) is perpendicular to the level curve or level surface of \( f \) through \( \mathbf{x} \). \\
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{Tange Planes and Surfaces}, colframe=lightblue]
+    \textbf{Form:} 	
+    \[ \scriptstyle F_x(x_0, y_0, z_0)(x - x_0) + F_y(x_0, y_0, z_0)(y - y_0) + F_z(x_0, y_0, z_0)(z - z_0) = 0  \]
+\end{tcolorbox}
 
 \end{multicols}
 \end{document}

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1727220948.27307 "/home/alexhernandezjuarez/Documents/Math 120/CheatSheet/sheet.tex" "sheet.pdf" "sheet" 1727220949.16411 0
+["pdflatex"] 1727273449.67235 "/home/alexhernandezjuarez/Documents/Math 120/CheatSheet/sheet.tex" "sheet.pdf" "sheet" 1727273450.55671 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1727200492.36116 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1720481713.68919 1004 54797486969f23fa377b128694d548df ""
@@ -31,6 +31,7 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1720481713.70119 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1720481713.70919 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1720481713.71719 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1720481713.72119 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1720481713.72119 36281 c355509802a035cadc5f15869451dcee ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1720481713.72919 35752 024fb6c41858982481f6968b5fc26508 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1720481713.73319 31809 8670ca339bf94e56da1fc21c80635e2a ""
@@ -130,9 +131,9 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/tools/verbatim.sty" 1720481716.22122 7532 d2e1111e17bfebb1607d8ffa779705ec ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/trimspaces/trimspaces.sty" 1720481748.25751 1380 971a51b00a14503ddf754cab24c3f209 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1720481746.6575 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "/home/alexhernandezjuarez/Documents/Math 120/CheatSheet/sheet.tex" 1727220947.69491 7489 f6affc1264e6b7b1180373c26dedb578 ""
-  "sheet.aux" 1727220949.00509 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "sheet.tex" 1727220947.69491 7489 f6affc1264e6b7b1180373c26dedb578 ""
+  "/home/alexhernandezjuarez/Documents/Math 120/CheatSheet/sheet.tex" 1727273449.07349 8521 aeb4e53063516788671dcb439dd72104 ""
+  "sheet.aux" 1727273450.3935 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "sheet.tex" 1727273449.07349 8521 aeb4e53063516788671dcb439dd72104 ""
   (generated)
   "sheet.aux"
   "sheet.log"
