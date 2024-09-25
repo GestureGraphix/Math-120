@@ -47,34 +47,43 @@ $c(\mathbf{a} + \mathbf{b}) = c\mathbf{a} + c\mathbf{b}$
 
 % Dot Product
 \begin{tcolorbox}[title=\textbf{Dot Product}, colframe=lightpink]
-\textbf{Formula:} $\mathbf{a} \cdot \mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3$ \\
-\textbf{Angle:} $\cos(\theta) = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}| |\mathbf{b}|}$ \\
-\textbf{Orthogonality:} $\mathbf{a} \cdot \mathbf{b} = 0$ \\
-\textbf{Projections:} $\text{comp}_{\mathbf{a}} \mathbf{b} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|}$ \\
-$\text{proj}_{\mathbf{a}} \mathbf{b} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|^2} \mathbf{a}$
+    \textbf{Formula:} $\mathbf{a} \cdot \mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3$ \\
+    \textbf{Angle:} $\cos(\theta) = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}| |\mathbf{b}|}$ \\
+    \textbf{Orthogonality:} $\mathbf{a} \cdot \mathbf{b} = 0$ \\
+    \textbf{Projections:} 
+    \[ \text{comp}_{\mathbf{a}} \mathbf{b} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|} \] 
+    \[ \text{proj}_{\mathbf{a}} \mathbf{b} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|^2} \mathbf{a} \] 
 \end{tcolorbox}
 
 % Cross Product
 \begin{tcolorbox}[title=\textbf{Cross Product}, colframe=lightyellow]
-\textbf{Formula:} $\mathbf{a} \times \mathbf{b} = \langle a_2b_3 - a_3b_2, a_3b_1 - a_1b_3, a_1b_2 - a_2b_1 \rangle$ \\
+\textbf{Formula:}
+\[ \mathbf{a} \times \mathbf{b} = \langle a_2b_3 - a_3b_2, a_3b_1 - a_1b_3, a_1b_2 - a_2b_1 \rangle \] 
 \textbf{Magnitude:} $|\mathbf{a} \times \mathbf{b}| = |\mathbf{a}| |\mathbf{b}| \sin \theta$ \\
 \textbf{Triple Product:} $V = |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})|$
 \end{tcolorbox}
 
 % Lines and Planes
 \begin{tcolorbox}[title=\textbf{Lines and Planes}, colframe=lightblue]
-\textbf{Line:} $\mathbf{r} = \mathbf{r}_0 + t \mathbf{v}$ \\
-\textbf{Plane:} $\mathbf{n} \cdot \mathbf{r} = \mathbf{n} \cdot \mathbf{r_0}$ \\
-$ax + by + cz + d = 0$ \\
-\textbf{Distance:}  
+    \textbf{Line:} $\mathbf{r} = \mathbf{r}_0 + t \mathbf{v}$ \\
+    \textbf{Plane:} $\mathbf{n} \cdot \mathbf{r} = \mathbf{n} \cdot \mathbf{r_0}$ \\
+    $ax + by + cz + d = 0$ \\
+    \textbf{Distance:}  '
     \[ D = \frac{|a(x_1 - x_0) + b(y_1 - y_0) + c(z_1 - z_0)|}{\sqrt{a^2 + b^2 + c^2}} \]
-\textbf{Curve Length:} $s(t) = \int_{a}^{t} \sqrt{\left(\frac{dx}{du}\right)^2 + \left(\frac{dy}{du}\right)^2 + \left(\frac{dz}{du}\right)^2} \, du$
+    \textbf{Curve Length:} $s(t) = \int_{a}^{t} \sqrt{\left(\frac{dx}{du}\right)^2 + \left(\frac{dy}{du}\right)^2 + \left(\frac{dz}{du}\right)^2} \, du$
+    \textbf{Equation for Planes containing three points}
+    \[ \vec{PQ} \times \vec{PR}\]
+    \textbf{Normal Vector of a Plane} 
+    \[ ax + by + cz + d = 0 \quad \text{with normal vector} \quad \vec{n} = \langle a, b, c \rangle \]
+
 \end{tcolorbox}
 
 %Vector Value Function
 \begin{tcolorbox}[title=\textbf{Vector Value Functions}, colframe=lightblue]
-    \textbf{Form:} 	$ \mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t) \mathbf{i} + g(t) \mathbf{j} + h(t) \mathbf{k} $ \\
-    \textbf{Limit:} $ \lim_{t \to a} \mathbf{r}(t) = \left\langle \lim_{t \to a} f(t), \lim_{t \to a} g(t), \lim_{t \to a} h(t) \right\rangle $ \\
+    \textbf{Form:} 	 
+    \[ \mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t) \mathbf{i} + g(t) \mathbf{j} + h(t) \mathbf{k} \] 
+    \textbf{Limit:} 
+    \[ \lim_{t \to a} \mathbf{r}(t) = \left\langle \lim_{t \to a} f(t), \lim_{t \to a} g(t), \lim_{t \to a} h(t) \right\rangle \] 
     \textbf{Derivative:} $\mathbf{r}'(t) = \langle f'(t), g'(t), h'(t) \rangle $ \\
     \textbf{Unit Tangent Vector} $\mathbf{T}(t) = \frac{\mathbf{r}'(t)}{|\mathbf{r}'(t)|}$ \\
     \textbf{Orthogonality:} If \(|\mathbf{r}(t)| = c\), then \(\mathbf{r}'(t)\) is orthogonal to \(\mathbf{r}(t)\). \\
