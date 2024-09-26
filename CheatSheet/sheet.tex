@@ -55,6 +55,9 @@ $c(\mathbf{a} + \mathbf{b}) = c\mathbf{a} + c\mathbf{b}$ \\
     \textbf{Projections:} 
     \[ \text{comp}_{\mathbf{a}} \mathbf{b} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|} \] 
     \[ \text{proj}_{\mathbf{a}} \mathbf{b} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|^2} \mathbf{a} \] 
+    \textbf{Positive Dot Product:} The angle $\theta$ between the vectors is acute. The vectors point in the same general direction. \\ 
+    \textbf{Zero Dot Product:} The angle $\theta$ between the vectors is right. The vectors are perpendicular (orthogonal) to each other. \\
+    \textbf{Negative Dot Product:} The angle $\theta$ between the vectors is obtuse. The vectors point in opposite general directions. \\
 \end{tcolorbox}
 
 % Cross Product
@@ -78,6 +81,9 @@ If \textbf{Triple Product} = 0 than they are coplanar.
     \[ \vec{PQ} \times \vec{PR}\]
     \textbf{Normal Vector of a Plane} 
     \[ ax + by + cz + d = 0 \quad \text{with normal vector} \quad \vec{n} = \langle a, b, c \rangle \]
+    \textbf{Plane containing $L_{1}$ and parallel to $L_{2}$} \\
+    \[ \vec{n} = v_{1} \times v_{2} \Rightarrow \vec{n} \cdot (\langle x, y, z\rangle  - v_{1}(t))\] 
+    
 
 \end{tcolorbox}
 
@@ -157,6 +163,18 @@ If \textbf{Triple Product} = 0 than they are coplanar.
     \textbf{Form:} 	
     \[ \scriptstyle F_x(x_0, y_0, z_0)(x - x_0) + F_y(x_0, y_0, z_0)(y - y_0) + F_z(x_0, y_0, z_0)(z - z_0) = 0  \]
 \end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{Derivative Rules}, colframe=lightblue]
+    \[ \frac{d}{dx} [c] = 0 \]
+    \[ \frac{d}{dx} [x^n] = nx^{n-1} \]
+    \[ \frac{d}{dx} [c \cdot f(x)] = c \cdot f'(x) \]
+    \[ \frac{d}{dx} [f(x) + g(x)] = f'(x) + g'(x) \]
+    \[ \frac{d}{dx} [f(x) - g(x)] = f'(x) - g'(x) \]
+    \[ \frac{d}{dx} [f(x) \cdot g(x)] = f'(x) g(x) + f(x) g'(x) \]
+    \[ \frac{d}{dx} \left[ \frac{f(x)}{g(x)} \right] = \frac{f'(x) g(x) - f(x) g'(x)}{[g(x)]^2} \]
+    \[ \frac{d}{dx} [f(g(x))] = f'(g(x)) \cdot g'(x) \]
+\end{tcolorbox}
+
 
 \end{multicols}
 \end{document}
