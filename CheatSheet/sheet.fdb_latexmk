@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1727286987.36241 "/home/alexhernandezjuarez/Documents/Math 120/CheatSheet/sheet.tex" "sheet.pdf" "sheet" 1727286988.27694 0
+["pdflatex"] 1727359880.23502 "/home/alexhernandezjuarez/Documents/Math 120/CheatSheet/sheet.tex" "sheet.pdf" "sheet" 1727359881.13447 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1727200492.36116 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1720481713.68919 1004 54797486969f23fa377b128694d548df ""
@@ -131,9 +131,9 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/tools/verbatim.sty" 1720481716.22122 7532 d2e1111e17bfebb1607d8ffa779705ec ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/trimspaces/trimspaces.sty" 1720481748.25751 1380 971a51b00a14503ddf754cab24c3f209 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1720481746.6575 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "/home/alexhernandezjuarez/Documents/Math 120/CheatSheet/sheet.tex" 1727286986.77939 8821 ef99e39d62b20b97024080df5a143eee ""
-  "sheet.aux" 1727286988.10741 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "sheet.tex" 1727286986.77939 8821 ef99e39d62b20b97024080df5a143eee ""
+  "/home/alexhernandezjuarez/Documents/Math 120/CheatSheet/sheet.tex" 1727359879.62548 9084 3a84977e131da97f0caf57db96829a01 ""
+  "sheet.aux" 1727359880.97451 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "sheet.tex" 1727359879.62548 9084 3a84977e131da97f0caf57db96829a01 ""
   (generated)
   "sheet.aux"
   "sheet.log"

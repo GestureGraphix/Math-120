@@ -42,7 +42,9 @@
 % Vectors
 \begin{tcolorbox}[title=\textbf{Vectors}, colframe=lightgreen]
 \textbf{Properties:} $\mathbf{a} + \mathbf{b} = \mathbf{b} + \mathbf{a}$ \\
-$c(\mathbf{a} + \mathbf{b}) = c\mathbf{a} + c\mathbf{b}$
+$c(\mathbf{a} + \mathbf{b}) = c\mathbf{a} + c\mathbf{b}$ \\
+\textbf{Normalize vector :} $\frac{\vec{n}}{|n|} $ \\
+
 \end{tcolorbox}
 
 % Dot Product
@@ -60,7 +62,8 @@ $c(\mathbf{a} + \mathbf{b}) = c\mathbf{a} + c\mathbf{b}$
 \textbf{Formula:}
 \[ \mathbf{a} \times \mathbf{b} = \langle a_2b_3 - a_3b_2, a_3b_1 - a_1b_3, a_1b_2 - a_2b_1 \rangle \] 
 \textbf{Magnitude:} $|\mathbf{a} \times \mathbf{b}| = |\mathbf{a}| |\mathbf{b}| \sin \theta$ \\
-\textbf{Triple Product:} $V = |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})|$
+\textbf{Triple Product:} $V = |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})|$ \\
+If \textbf{Triple Product} = 0 than they are coplanar. 
 \end{tcolorbox}
 
 % Lines and Planes
@@ -120,6 +123,8 @@ $c(\mathbf{a} + \mathbf{b}) = c\mathbf{a} + c\mathbf{b}$
 \end{tcolorbox}
 
 \begin{tcolorbox}[title=\textbf{Chain Rule}, colframe=lightblue]
+    \textbf{Example:}
+    \[ \frac{d}{dt} \left( x^2(t) y(t) \right) = \langle 2x(t) y(t), x^2(t) \rangle \cdot \langle x'(t), y'(t) \rangle \] 
     \textbf{Case 1:} 	
     \[ \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt} \]
     \textbf{Case 2:}
@@ -148,7 +153,7 @@ $c(\mathbf{a} + \mathbf{b}) = c\mathbf{a} + c\mathbf{b}$
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[title=\textbf{Tange Planes and Surfaces}, colframe=lightblue]
+\begin{tcolorbox}[title=\textbf{Tangent Planes and Surfaces}, colframe=lightblue]
     \textbf{Form:} 	
     \[ \scriptstyle F_x(x_0, y_0, z_0)(x - x_0) + F_y(x_0, y_0, z_0)(y - y_0) + F_z(x_0, y_0, z_0)(z - z_0) = 0  \]
 \end{tcolorbox}
