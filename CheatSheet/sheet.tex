@@ -175,6 +175,65 @@ If \textbf{Triple Product} = 0 than they are coplanar.
     \[ \frac{d}{dx} [f(g(x))] = f'(g(x)) \cdot g'(x) \]
 \end{tcolorbox}
 
+\begin{tcolorbox}[title=\textbf{Intersection of Two Planes}, colframe=lightblue]
+    \textbf{Plane Equations:} \\
+    \( a_1 x + b_1 y + c_1 z = d_1 \) \\
+    \( a_2 x + b_2 y + c_2 z = d_2 \) 
+
+    \textbf{1. Direction Vector} \\
+    \[
+    \vec{d} = \langle b_1 c_2 - b_2 c_1, \, c_1 a_2 - c_2 a_1, \, a_1 b_2 - a_2 b_1 \rangle
+    \]
+
+    \textbf{2. Point on Line} \\
+    Set one variable to 0, solve for the other two.
+
+    \textbf{3. Parametric Line Equation} \\
+    \[
+    \vec{r}(t) = \langle x_0, y_0, z_0 \rangle + t \langle d_x, d_y, d_z \rangle
+    \]
+    \textbf{Component Form:} \\
+    \[
+    x = x_0 + t \cdot d_x
+    \]
+    \[
+    y = y_0 + t \cdot d_y
+    \]
+    \[
+    z = z_0 + t \cdot d_z
+    \]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{Plane Containing Line \( L \) and Point \( A \)}, colframe=lightblue]
+    \textbf{1. Line \( L \) in Parametric Form:} \\
+    \[
+    \vec{r}(t) = \langle x_1, y_1, z_1 \rangle + t \langle d_x, d_y, d_z \rangle
+    \]
+    \textbf{2. Point \( A \)} \\
+    \[
+    A = (x_0, y_0, z_0)
+    \]
+    \textbf{3. Normal Vector of the Plane:} \\
+    \[
+    \vec{n} = \vec{d} \times \overrightarrow{PA}
+    \]
+    where \(\overrightarrow{PA} = \langle x_0 - x_1, y_0 - y_1, z_0 - z_1 \rangle \).
+
+    \textbf{4. Equation of the Plane:} \\
+    \[
+    a(x - x_0) + b(y - y_0) + c(z - z_0) = 0
+    \]
+    where \(\vec{n} = \langle a, b, c \rangle\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{Distance from a Point to a Line}, colframe=lightblue]
+    \textbf{Line \( L \) in Parametric Form:} $ \vec{r}(t) = \langle x_1, y_1, z_1 \rangle + t \langle d_x, d_y, d_z \rangle $ \\
+    \textbf{Point \( P \)} $P = (x_0, y_0, z_0)$ \\
+    \textbf{1. Vector from Line Point to \( P \):} $ \overrightarrow{QP} = \langle x_0 - x_1, y_0 - y_1, z_0 - z_1 \rangle $ \\
+    \textbf{2. Distance Formula:} $d = \frac{|\overrightarrow{QP} \times \vec{d}|}{|\vec{d}|} $ \\
+    where \(\overrightarrow{QP} \times \vec{d}\) is the cross product of \(\overrightarrow{QP}\) and the direction vector \(\vec{d} = \langle d_x, d_y, d_z \rangle\).
+\end{tcolorbox}
 
 \end{multicols}
 \end{document}
