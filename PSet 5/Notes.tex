@@ -1,0 +1,75 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Math 120}}
+\author{\huge{PSet 5}}
+\date{Oct 3 2024}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{}
+\section{PSet 5}
+
+\qs{}{
+    (a) Find the directional derivative of the function $f(x, y) = x^2y^3 - y^4$ at the point $(2, 1)$ in the direction indicated by the angle $\theta = \pi / 4$.
+    
+    (b) Find the directional derivative of the function $f(x, y, z) = \sqrt{xyz}$ at the point $(3, 2, 6)$ in the direction of $\vec{v} = \langle -1, -2, 2 \rangle$.
+    
+    (c) Find the maximum rate of change of $f(x, y, z) = (x + y)/z$ at the point $(1, 1, -1)$, and the direction in which it occurs.
+}
+
+\sol{
+	
+}
+
+
+
+\qs{}{
+	Suppose you are climbing a hill whose shape is given by the equation $z = 100 - 0.01x^2 - 0.02y^4$, where $x$, $y$ and $z$ are measured in meters, and you are standing at a point with coordinates $(5, -1)$. The positive $x$-axis points east, and the positive $y$-axis points north.
+    \begin{enumerate}
+        \item If you walk due south, will you start to ascend or descend? At what rate?
+        \item If you walk northwest, will you start to ascend or descend? At what rate?
+        \item In which direction should you walk if you want to ascend as steeply as possible? What is the rate of ascent in that direction? At what angle above the horizontal (i.e., above the horizontal plane $z = f(5, -1)$) does the path in that direction begin?
+    \end{enumerate}}
+
+\sol{
+
+}
+
+\qs{}{
+    We have seen that if a surface $S$ is defined by the equation $f(x, y, z) = k$, and $(a, b, c)$ is a point on $S$, then the gradient vector $\nabla f(a, b, c)$ is perpendicular to $S$ at that point. Use this property to find an equation of the tangent plane to the surface $x^2 + xy^3 - z = 3$ at the point $(2, 2, 17)$.}
+\sol{
+
+}
+
+
+\qs{}{
+	Use the contour plot below to predict the location of the critical points of
+    \[
+    f(x, y) = x^3 + y^3 - 3x^2 - 3y^2 - 9y
+    \]
+    and whether $f$ has a saddle point or a local maximum or minimum at each critical point. Critical points correspond to large valleys of flat and smooth or smaller valleys. Explain your reasoning. Then use the Second Derivative Test to confirm your predictions.
+}
+
+\sol{
+}
+
+\qs{}{
+	\begin{enumerate}
+		\item[(a)] $g_{xx}(0, 2) = -1$, $g_{xy}(0, 2) = 6$, $g_{yy}(0, 2) = 1$
+		\item[(b)] $g_{xx}(0, 2) = -1$, $g_{xy}(0, 2) = 2$, $g_{yy}(0, 2) = -8$
+		\item[(c)] $g_{xx}(0, 2) = 4$, $g_{xy}(0, 2) = 6$, $g_{yy}(0, 2) = 9$
+	\end{enumerate}
+}
+
+\end{document}
