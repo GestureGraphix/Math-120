@@ -64,9 +64,11 @@
         \item If you walk due south, will you start to ascend or descend? At what rate?
         \item If you walk northwest, will you start to ascend or descend? At what rate?
         \item In which direction should you walk if you want to ascend as steeply as possible? What is the rate of ascent in that direction? At what angle above the horizontal (i.e., above the horizontal plane $z = f(5, -1)$) does the path in that direction begin?
-    \end{enumerate}}
+    \end{enumerate}
+}
 
-\sol{
+\sol{ 
+    \\
     a) 
     \[ \nabla f(x,y) = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y} \right) \]
     \[ \nabla f(x,y) = \langle -0.02x, -0.08y^{3} \rangle \] 
@@ -84,11 +86,15 @@
     \[ \left|\nabla f(5,-1)\right| = \sqrt{ (-0.1)^{2} + (0.08)^{2}} = \sqrt{0.01 + 0.0064} = \sqrt{0.0164}\]
     \[ \tan \theta = \frac{\nabla f(5,-1)}{1} \approx 0.128 \] 
     \[ \arctan \left(\frac{\nabla f(5,-1)}{1}\right) \approx 7.3 \]  
-
 }
 
 \qs{}{
-    We have seen that if a surface $S$ is defined by the equation $f(x, y, z) = k$, and $(a, b, c)$ is a point on $S$, then the gradient vector $\nabla f(a, b, c)$ is perpendicular to $S$ at that point. Use this property to find an equation of the tangent plane to the surface $x^2 + xy^3 - z = 3$ at the point $(2, 2, 17)$.}
+    We have seen that if a surface $S$ is defined by the equation $f(x, y, z) = k$, 
+    and $(a, b, c)$ is a point on $S$, then the gradient vector $\nabla f(a, b, c)$ is 
+    perpendicular to $S$ at that point. Use this property to find an equation of the 
+    tangent plane to the surface $x^2 + xy^3 - z = 3$ at the point $(2, 2, 17)$.
+}
+
 \sol{
     \[ \nabla f(x,y,z) = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \right) \]
     \[ \nabla f(x,y,z) = \left( 2x + y^{3}, 3y^{2}x,  - 1\right)\] 
@@ -99,15 +105,43 @@
 
 \qs{}{
 	Use the contour plot below to predict the location of the critical points of
-    \[
-    f(x, y) = x^3 + y^3 - 3x^2 - 3y^2 - 9y
-    \]
+    \[ f(x, y) = x^3 + y^3 - 3x^2 - 3y^2 - 9y \]
     and whether $f$ has a saddle point or a local maximum or minimum at each critical point. Critical points correspond to large valleys of flat and smooth or smaller valleys. Explain your reasoning. Then use the Second Derivative Test to confirm your predictions.
 
 	\insertpng[0.5]{Prob4.png}
+
 }
 
 \sol{
+    \\
+    Critical points at (2,3) and (0,-1) because here there are closed loops. There are also 
+    critical points at (0,3) and (2, -1) because here you can see the values of the contour diverge and split in different directions. 
+    \[ \frac{\partial^{2}f}{\partial x^{2}} = 6x - 6 \]
+    \[ \frac{\partial^{2}f}{\partial x^{2}} = 6y - 6 \]
+    \[ f_{xy} = 0 \] 
+    \[ \] 
+    \[ D = D(a,b) = f_{xx}(a,b)f_{yy}(a,b) - [f_{xy}]^{2} \] 
+    Point (0,-1) 
+    \[ D = D(0,-1) = f_{xx}(0,3)f_{yy}(0,-1) - [f_{xy}(0,-1)]^{2}\]
+    \[ D = (6(0)-6)(6(3)-6) - 0^{2} \] 
+    local max 
+    \[ (6)(-12) = 72 \] 
+    Point (0,3) 
+    \[ D = D(0,3) = f_{xx}(0,3)f_{yy}(0,3) - [f_{xy}(0,3)]^{2}\]
+    \[ D = (6(0)-6)(6(3)-6) - 0^{2} \] 
+    \[ D = (-6)(12) = -72 \] 
+    saadle point 
+    Point (2,-1) 
+    \[ D = D(2,-1) = f_{xx}(2,-1)f_{yy}(2,-1) - [f_{xy}(2,-1)]^{2}\]
+    \[ D = (6(2)-6)(6(-1)-6) - 0^{2} \]  
+    \[ (6)(-12) = -72 \] 
+    saddle point 
+    Point (2,3) 
+    \[ D = D(2,3) = f_{xx}(2,3)f_{yy}(2,3) - [f_{xy}(2,3)]^{2}\]
+    \[ D = (6(2)-6)(6(3)-6) - 0^{2} \]
+    \[ (6)(12) = 72 \]   
+    local max 
+
 }
 
 \qs{}{
@@ -124,10 +158,10 @@
 \sol{ \\
     a) 
     \[ D = D(0,2) = (-1)(1) - [6]^{2} = 1 - 36 = - 35 \]
-    D < 0 so this is a saddle point. 
+    D $<$ 0 so this is a saddle point. 
     b) 
     \[ D = D(0,2) = (-1)(-8) - [2]^{2} = 8 - 4 = 4 \]
-    SInce D > 0 and $g_{xx}(0,2) < 0$, the point is (0,2) is a local maximum.
+    Since D $>$ 0 and $g_{xx}(0,2) < 0$, the point is (0,2) is a local maximum.
     c)
     \[ D = D(0,2) = (4)(9) - [6]^{2} = 26 - 26 = 0 \]   
     D = 0 menas the second derivative test is inconclusive. We do not what is going on at this point. 
