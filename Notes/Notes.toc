@@ -10,5 +10,5 @@
 \contentsline {section}{\numberline {1.9}Day 7 Notes}{11}{section.1.9}%
 \contentsline {section}{\numberline {1.10}Day 8 Notes}{11}{section.1.10}%
 \contentsline {section}{\numberline {1.11}Day 9 notes}{11}{section.1.11}%
-\contentsline {section}{\numberline {1.12}Day 13 Notes}{12}{section.1.12}%
+\contentsline {section}{\numberline {1.12}Day 12 Notes}{12}{section.1.12}%
 \contentsfinish 
