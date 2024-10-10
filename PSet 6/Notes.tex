@@ -91,12 +91,45 @@ on the region \(x^2 + y^2 \leq 3\), \(x \geq 0\), \(y \geq 0\).
     \item[(c)] The Extreme Value Theorem, which we covered last week, guarantees that under the right circumstances, we are guaranteed to find absolute minima and maxima for a function \( f \) on a certain constraint. Please explain why parts (a) and (b) don’t violate the Extreme Value Theorem.
 \end{itemize}}
 
-\sol{}
+\sol{
+    \\ 
+    a) \\
+    \[ \nabla f (x,y) = \lambda \nabla g(x,y) \]
+    \[ (ye^{yx} = \lambda (3x^{2}, 3y^{2})) \]
+    \[ ye^{yx} = \lambda 3x^{2} \]
+    \[ xe^{xy} = \lambda 3y^{2} \]
+    \[ \frac{ye^{yx}}{xe^{xy}} = \frac{\lambda 3x^{2}}{\lambda 3y^{2}} \]
+    \[ \frac{y}{x} = \frac{x^{2}}{y^{2}} \]
+    \[ y^{3} = x^{3} \]
+    \[ y = x \quad y = - x \]
+    \[ x^{3} + x^{3} = 16 \Rightarrow 2x^{3} = 16 \Rightarrow x = 2 \]
+    \[ x^{3} + (-x)^{3} = 16 \Rightarrow 0 = 16 \]
+    point is (2,2) \\
+    b) \\        
+}
 
 \qs{}{Use Lagrange multipliers to find the maximum and minimum values of the function \( f(x, y, z) = x^2 y^2 z^2 \) subject to the constraint \( x^2 + y^2 + z^2 = 1 \).
 }
 
-\sol{}
+\sol{
+    \[ \nabla f (x,y,z) = \lambda \nabla g(x,y,z) \]
+    \[ \nabla f = \left(2xy^{2}z^{2}, 2yx^{2}z^{2}, 2zx^{2}y^{2}\right) \]
+    \[ \nabla g = \left( 2x, 2y, 2z \right) \]
+    \[ 2xy^{2}z^{2} = \lambda 2x \]
+    \[ 2yx^{2}z^{2} = \lambda 2y \]
+    \[ 2zx^{2}y^{2} = \lambda 2z \]   
+    \[ y^{2}z^{2} = \lambda \]
+    \[ z^{2}x^{2} = \lambda \]
+    \[ x^{2}y^{2} = \lambda \]
+    \[ x^{2}y^{2} = z^{2}x^{2} = y^{2}z^{2} \]
+    \[ x = y = z \]
+    \[ x^{2} + y^{2} + z^{2} = 1 \]
+    \[ 3x^{2} = 1 \Rightarrow x^{2} = \frac{1}{3} \Rightarrow x = \pm \frac{1}{\sqrt{3}} \]
+    \[ y = x = z = \frac{1}{\sqrt{3}} \]
+    \[ f\left( \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}} \right) = \frac{1}{27} \]
+    max: $\frac{1}{27}$  \\
+    min: 0 
+}
 
 \qs{}{Use Lagrange multipliers to find the maximum and minimum values of \( f(x, y, z) = x^2 + y^2 + z^2 \) subject to the constraint \( x^4 + y^4 + z^4 = 1 \).
 }
