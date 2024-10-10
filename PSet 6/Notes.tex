@@ -44,7 +44,25 @@ on the closed triangular region with vertices \((0,0)\), \((0,2)\), and \((4,0)\
 on the region \(x^2 + y^2 \leq 3\), \(x \geq 0\), \(y \geq 0\).
 }
 
-\sol{}
+\sol{
+    \[ f_{x} = \frac{\partial}{\partial x} xy^2 = y^2 \]
+    \[ f_{y} = \frac{\partial}{\partial y} xy^2 = 2xy \]
+    \[ f_{x} = y^{2} = 0 \Rightarrow y = 0 \]
+    \[ f_{y} = 2xy = 0 \Rightarrow x = 0, y = 0 \]
+    \[ x^2 + y^2 \leq 3 \quad x \geq 0 \quad y \geq 0 \]
+    \[ x = \sqrt{3} \cos \theta \]
+    \[ y = \sqrt{3} \sin \theta \]
+    \[ f(\theta) = \left(\sqrt{3} \cos \theta \right) \left(\sqrt{3} \sin \theta \right)^{2} = 3\sqrt{3} \cos \theta \sin^{2} \theta \]
+    \[ \frac{d}{d \theta } = 3 \sqrt{3} \sin \theta \cos \theta (2 \cos \theta \sin \theta ) \]
+    \[ 3 \sqrt{3} \sin \theta \cos \theta (2 \cos \theta \sin \theta ) = 0 \]
+    \[ \sin \theta = 0 \Rightarrow \theta = 0 \]
+    \[ \cos \theta = 0 \Rightarrow \theta = \frac{\pi}{2} \]
+    \[ 2 \cos \theta = \sin \theta \Rightarrow \tan \theta = 2 \Rightarrow \theta = \arctan (2) \]
+    \[ f(0) = 3\sqrt{3} \cos(0) \sin^{2}(0) = 0 \]              
+    \[ f\left(\frac{\pi}{2}\right) = 3\sqrt{3} \cos\left(\frac{\pi}{2}\right) \sin^{2}\left(\frac{\pi}{2}\right) = 0 \] 
+    \[ f(\arctan (2)) = 3\sqrt{3} \left(\frac{1}{\sqrt{5}} \right) \left(\frac{2}{\sqrt{5}} \right)^{2} = \frac{24\sqrt{3}}{25}\]       
+    max o f$\frac{24\sqrt{3}}{25}$ and min of 0.
+}
 
 \qs{}{Find the maximum and minimum values of the function \(f(x, y) = x + 4y\) subject to the constraint
 \[
