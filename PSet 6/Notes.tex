@@ -69,6 +69,21 @@ on the region \(x^2 + y^2 \leq 3\), \(x \geq 0\), \(y \geq 0\).
     \sqrt{x} + \sqrt{y} = 3.
 \]}
 
+\sol{
+    \[ \nabla f(x,y) = \lambda \nabla g(x,y) \]
+    \[ \nabla f(x,y) = (1,4) \]
+    \[ \nabla g = \left( \frac{\partial }{\partial x } \sqrt{x} + \sqrt{y} - 3, \frac{\partial }{\partial y } \sqrt{x} + \sqrt{y} - 3\right)\]
+    \[ \nabla g = \left( \frac{1}{2\sqrt{x}}, \frac{1}{2 \sqrt{y}} \right)\]    
+    \[ 1 = \lambda \frac{1}{2\sqrt{x}} \]
+    \[ 4 = \lambda \frac{1}{2\sqrt{y}} \] 
+    \[ \lambda = 2 \sqrt{x} \]
+    \[ 4 = 2 \sqrt{x} \left( \frac{1}{2 \sqrt{y}} \right) = \frac{\sqrt{x}}{\sqrt{y}} \]
+    \[ \sqrt{16 y} + \sqrt{y} = 3 \Rightarrow 4 \sqrt{y} + \sqrt{y} = 3 \Rightarrow 5 \sqrt{3} = 3 \]
+    \[ \sqrt{y} = \frac{3}{5} \Rightarrow y = \frac{9}{25} \]
+    \[ x = 16 \cdot \frac{9}{25} = \frac{144}{25} \]
+    \[ f\left( \frac{144}{25}, \frac{9}{25} \right) = \frac{180}{25}\]       
+}
+
 \qs{}{Consider the function \( f(x, y) = e^{xy} \) and the constraint \( x^3 + y^3 = 16 \).
 \begin{itemize}
     \item[(a)] Use Lagrange multipliers to find the coordinates \( (x, y) \) of any points on the constraint where the function \( f \) could attain a maximum or minimum.
