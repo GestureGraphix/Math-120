@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  10 OCT 2024 20:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  10 OCT 2024 21:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1288,14 +1288,14 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 {/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc}]
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
 
  []
 
 
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 130--134
+Underfull \hbox (badness 10000) in paragraph at lines 148--152
 
  []
 
@@ -1322,13 +1322,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  46720 strings out of 475839
  1076412 string characters out of 5777281
- 1946905 words of memory out of 5000000
+ 1945905 words of memory out of 5000000
  68531 multiletter control sequences out of 15000+600000
  586796 words of font info for 117 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  99i,7n,102p,812b,1431s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
-Output written on Notes.pdf (8 pages, 178575 bytes).
+Output written on Notes.pdf (8 pages, 179638 bytes).
 PDF statistics:
  180 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)
