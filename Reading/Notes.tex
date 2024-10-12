@@ -892,6 +892,160 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 
 \section{14.4 Tangent Planes and Linear Approximation}
 
+\defrose{Tangent Planes}{
+	LLet's consider a surface \( S \) given by the equation \( z = f(x, y) \),
+	where \( f \) has continuous first derivatives. Let \( P(x_0, y_0, z_0) \) be a
+	point on the surface. Two curves, \( C_1 \) and \( C_2 \), are formed by slicing
+	the surface with vertical planes \( y = y_0 \) and \( x = x_0 \). These curves pass
+	through the point \( P \). The tangent lines to \( C_1 \) and \( C_2 \) at \( P \) 
+	are denoted \( T_1 \) and \( T_2 \). The \textbf{tangent plane} to the surface at \( P \) 
+	is the plane that contains both tangent lines \( T_1 \) and \( T_2 \).
+
+	\insertpng[0.25]{plane.png}
+}
+
+\defrose{Equation of a tangent plan}{
+	SSuppose $f$ has continuous partial derivatives. An equation of the tangent plane to the surface $z = f(x, y)$ at the point $P(x_0, y_0, z_0)$ is
+	\begin{equation}
+		z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0) 
+	\end{equation}
+}
+
+\defrose{Linear Approximations}{
+	IIf $z = f(x, y)$, then $f$ is \textbf{differentiable} at $(a, b)$ if $\Delta z$ can be expressed in the form
+	\begin{equation}
+		\Delta z = f_x(a, b) \Delta x + f_y(a, b) \Delta y + \epsilon_1 \Delta x + \epsilon_2 \Delta y
+	\end{equation}
+	where $\epsilon_1$ and $\epsilon_2$ are functions of $\Delta x$ and $\Delta y$ such that $\epsilon_1$ and $\epsilon_2 \to 0$ as $(\Delta x, \Delta y) \to (0, 0)$.
+}
+
+\section{14.5 The Chain Rule}
+
+\defrose{Chain Rule (Case 1)}{
+	SSuppose that $z = f(x, y)$ is a differentiable function of $x$ and $y$, where $x = g(t)$ and $y = h(t)$ are both differentiable functions of $t$. Then $z$ is a differentiable function of $t$ and
+	\begin{equation}
+		\frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}
+	\end{equation}
+	\begin{equation}
+		\frac{dz}{dt} = \frac{\partial z}{\partial z} \frac{dx}{dt} + \frac{\partial z}{\partial y} \frac{dy}{dt} 
+	\end{equation}
+}
+
+\defrose{Chain Rule (Case 2)}{
+	SSuppose that $z = f(x, y)$ is a differentiable function of $x$ and $y$, where $x = g(s, t)$ and $y = h(s, t)$ are differentiable functions of $s$ and $t$. Then
+	\begin{equation}
+		\frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}
+	\end{equation}
+	
+	\begin{equation}
+		\frac{\partial z}{\partial t} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial t}
+	\end{equation}
+	
+}
+
+\defrose{Chain Rule (General Case)}{
+	SSuppose that $u$ is a differentiable function of the $n$ variables $x_1, x_2, \dots, x_n$ and each $x_j$ is a differentiable function of the $m$ variables $t_1, t_2, \dots, t_m$. Then $u$ is a function of $t_1, t_2, \dots, t_m$ and
+	\begin{equation}
+		\frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \dots + \frac{\partial u}{\partial x_n} \frac{\partial x_n}{\partial t_i}
+	\end{equation}
+	for each $i = 1, 2, \dots, m$.
+}
+
+\defrose{Implicit Differentiation}{
+	DDefintion: 
+	\begin{equation}
+		\frac{dy}{dx} = - \frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial Y}} = - \frac{F_{x}}{F_{y}}
+	\end{equation}
+
+	\begin{equation}
+		\frac{\partial z}{\partial x} = - \frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial z}} = -\frac{F_x}{F_z}
+	\end{equation}
+
+	\begin{equation}
+		\frac{\partial z}{\partial y} = - \frac{\frac{\partial F}{\partial y}}{\frac{\partial F}{\partial z}} = -\frac{F_y}{F_z}
+	\end{equation}
+}
+
+\section{14.6 Directional Derivatives and the Gradient Vector}
+
+\defrose{Directional Derivative}{
+	DDefintion: The \textbf{directional derivative} of $f$ at $(x_0, y_0)$ in the direction of a unit vector $\mathbf{u} = \langle a, b \rangle$ is
+	\begin{equation}
+		D_{\mathbf{u}} f(x_0, y_0) = \lim_{h \to 0} \frac{f(x_0 + ha, y_0 + hb) - f(x_0, y_0)}{h}
+	\end{equation}
+	if this limit exists.
+}
+
+\thm{}{
+	If $f$ is a differentiable function of $x$ and $y$, then $f$ has a directional derivative in the direction of any unit vector $\mathbf{u} = \langle a, b \rangle$ and
+	\begin{equation}
+		D_{\mathbf{u}} f(x, y) = f_x(x, y) a + f_y(x, y) b
+	\end{equation}
+}
+
+\defrose{The Gradient Vector}{
+	IIf $f$ is a function of two variables $x$ and $y$, then the \textbf{gradient} of $f$ is the vector function $\nabla f$ defined by
+	\begin{equation}
+		\nabla f(x, y) = \langle f_x(x, y), f_y(x, y) \rangle = \frac{\partial f}{\partial x} \mathbf{i} + \frac{\partial f}{\partial y} \mathbf{j}	
+	\end{equation}
+}
+
+\ntimg{
+	Equation 3.12 can be rewritten as 
+	\begin{equation}
+		D_{u}f(x,y) = \nabla f(x,y) \cdot \textbf{u} 
+	\end{equation}
+}
+
+\defrose{Gradient of Three Variable Functions}{
+	DDefintion: 
+	\begin{equation}
+		\nabla f = \langle f_x, f_y, f_z \rangle = \frac{\partial f}{\partial x} \mathbf{i} + \frac{\partial f}{\partial y} \mathbf{j} + \frac{\partial f}{\partial z} \mathbf{k}
+	\end{equation}
+}
+
+\thm{Maximizing Directional Derivative}{
+	Suppose $f$ is a differentiable function of two or three variables. The maximum value of the 
+	directional derivative $D_{\mathbf{u}} f(\mathbf{x})$ is $\lvert \nabla f(\mathbf{x}) 
+	\rvert$ and it occurs when $\mathbf{u}$ has the same direction as the gradient vector 
+	$\nabla f(\mathbf{x})$.
+}
+
+\defrose{Tanget Planes to Level Surfaces}{
+	CConsider a surface \( S \) defined by \( F(x, y, z) = k \), where \( F \) is a function of three variables. 
+	Let \( P(x_0, y_0, z_0) \) be a point on \( S \) and \( C \) be a curve on \( S \) that passes \
+	through \( P \). The curve is given by a vector function \( \mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle \) 
+	such that \( \mathbf{r}(t_0) = \langle x_0, y_0, z_0 \rangle \). Since \( C \) lies on \( S \), 
+	the equation \( F(x(t), y(t), z(t)) = k \) must hold. \\
+
+	By using the Chain Rule to differentiate both sides of this equation, we get:
+	\[
+	\frac{\partial F}{\partial x} \frac{dx}{dt} + \frac{\partial F}{\partial y} \frac{dy}{dt} + \frac{\partial F}{\partial z} \frac{dz}{dt} = 0
+	\]
+	
+	This can be written as a dot product:
+	\[
+	\nabla F \cdot \mathbf{r}'(t) = 0
+	\]
+	which means that the gradient \( \nabla F \) is perpendicular to the tangent vector \( \mathbf{r}'(t) \) at \( P \).
+	
+	At \( t = t_0 \), the gradient at \( P \), \( \nabla F(x_0, y_0, z_0) \), is normal to the tangent plane at \( P \). The equation of the tangent plane is:
+	\begin{equation}
+		F_x(x_0, y_0, z_0)(x - x_0) + F_y(x_0, y_0, z_0)(y - y_0) + F_z(x_0, y_0, z_0)(z - z_0) = 0
+	\end{equation}
+}
+
+\ntimg{
+	\textbf{Properties of the Gradient Vecotr} \\
+	Let $f$ be a differentiable function of two or three variables and suppose that $\nabla f(\mathbf{x}) \neq 0$.
+	\begin{itemize}
+		\item The directional derivative of $f$ at $\mathbf{x}$ in the direction of a unit vector $\mathbf{u}$ is given by $D_{\mathbf{u}} f(\mathbf{x}) = \nabla f(\mathbf{x}) \cdot \mathbf{u}$.
+		\item $\nabla f(\mathbf{x})$ points in the direction of maximum rate of increase of $f$ at $\mathbf{x}$, and that maximum rate of change is $\lvert \nabla f(\mathbf{x}) \rvert$.
+		\item $\nabla f(\mathbf{x})$ is perpendicular to the level curve or level surface of $f$ through $\mathbf{x}$.
+	\end{itemize}
+}
+
+\section{14.7 Maxium and Minimum Values}
 
 
 
