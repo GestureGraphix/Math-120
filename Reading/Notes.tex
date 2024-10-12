@@ -778,6 +778,120 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 
 \section{13.4 Notes (Motion in Space: Velocity and Acceleration)}
 
+\chapter{}
+\section{14.1 Functions of Several Variables}
+\defrose{Functions of Two Variables}{
+	DDefintion: A function $f$ of two variables is a rule that assigns to each ordered pair of real numbers $(x, y)$ in a set $D$ a unique real number denoted by $f(x, y)$. The set $D$ is the \textit{domain} of $f$ and its \textit{range} is the set of values that $f$ takes on, that is, $\{ f(x, y) \mid (x, y) \in D \}$.
+
+}
+
+\defrose{Graph of a Function of Two Variables}{
+	DDefintion If $f$ is a function of two variables with domain $D$, then the \textit{graph} of $f$ is the set of all points $(x, y, z)$ in $\mathbb{R}^3$ such that $z = f(x, y)$ and $(x, y)$ is in $D$.
+}
+
+\defrose{Level Curves and Contour Maps}{
+	DDefintion: The \textit{level curves} of a function $f$ of two variables are the curves with equations $f(x, y) = k$, where $k$ is a constant (in the range of $f$).
+}
+
+\defrose{Functions of Three Variables}{
+	DDefintion: \textbf{A function of three variables}, $f$, is a rule that assigns to each ordered triple $(x, y, z)$ in a domain $D \subseteq \mathbb{R}^3$ a unique real number denoted by $f(x, y, z)$. For instance, the temperature...
+}
+
+\section{14.2 Limits and Continuity}
+
+\defrose{Limit of Two Variable Functions}{
+	DDefintion: Let $f$ be a function of two variables whose domain $D$ includes points arbitrarily close to $(a, b)$. Then we say that the \textit{limit of} $f(x, y)$ \textit{as} $(x, y)$ \textit{approaches} $(a, b)$ is $L$ and we write
+	\[
+	\lim_{(x, y) \to (a, b)} f(x, y) = L
+	\]
+	if for every number $\varepsilon > 0$ there is a corresponding number $\delta > 0$ such that 
+	if $(x, y) \in D$ and $0 < \sqrt{(x - a)^2 + (y - b)^2} < \delta$, then $\lvert f(x, y) - L \rvert < \varepsilon$.
+	
+}
+
+\section{14.3 Partial Derivatives}
+
+\defrose{Partial Derivatives}{
+	DDefintion Partial Derivative with respect to x  
+	\[ f_x(a, b) = g'(a) \quad \text{where} \quad g(x) = f(x, b) \]
+	Defintion Partial Derivative with respect to y  
+	\[ f_y(a, b) = h'(a) \quad \text{where} \quad h(x) = f(a, y) \]
+
+}
+
+\ntimg{
+	If $z = f(x, y)$, we write
+
+	\[
+	f_x(x, y) = f_x = \frac{\partial f}{\partial x} = \frac{\partial}{\partial x} f(x, y) = \frac{\partial z}{\partial x} = f_1 = D_1 f = D_x f
+	\]
+	
+	\[
+	f_y(x, y) = f_y = \frac{\partial f}{\partial y} = \frac{\partial}{\partial y} f(x, y) = \frac{\partial z}{\partial y} = f_2 = D_2 f = D_y f
+	\]
+}
+
+\ntimg{
+	{\textbf{Rule for Finding Partial Derivatives of $z = f(x, y)$}}
+
+	\begin{enumerate}
+		\item To find $f_x$, regard $y$ as a constant and differentiate $f(x, y)$ with respect to $x$.
+		\item To find $f_y$, regard $x$ as a constant and differentiate $f(x, y)$ with respect to $y$.
+	\end{enumerate}
+}
+
+\defrose{interpretation of Partial Derivatives}{
+	TTo understand partial derivatives geometrically, think of the equation 
+	$z = f(x, y)$ as representing a surface $S$ (the graph of $f$). If $f(a, b) = c$, 
+	then the point $P(a, b, c)$ lies on this surface. \\
+
+	By fixing $y = b$, we focus on the curve $C_1$ where the vertical plane $y = b$ 
+	intersects $S$. Similarly, fixing $x = a$ gives us the curve $C_2$, which is 
+	where the vertical plane $x = a$ intersects $S$. Both curves $C_1$ and $C_2$ 
+	pass through the point $P$. \\
+
+	The curve $C_1$ is the graph of the function $g(x) = f(x, b)$, and the slope of 
+	its tangent at $P$ is $f_x(a, b)$. The curve $C_2$ is the graph of $G(y) = f(a, y)$, 
+	and the slope of its tangent at $P$ is $f_y(a, b)$. \\
+
+	Thus, the partial derivatives $f_x(a, b)$ and $f_y(a, b)$ represent the slopes 
+	of the tangent lines at $P$ along these curves.
+
+	\insertpng[0.25]{partial.png}
+}
+
+\defrose{Higher Derivatives}{
+	IIf $f$ is a function of two variables, then its partial derivatives $f_x$ and $f_y$ are also functions of two variables, so we can consider their partial derivatives $(f_x)_x$, $(f_x)_y$, $(f_y)_x$, and $(f_y)_y$, which are called the \textit{second partial derivatives} of $f$. If $z = f(x, y)$, we use the following notation:
+
+	\[
+	(f_x)_x = f_{xx} = f_{11} = \frac{\partial}{\partial x} \left( \frac{\partial f}{\partial x} \right) = \frac{\partial^2 f}{\partial x^2} = \frac{\partial^2 z}{\partial x^2}
+	\]
+
+	\[
+	(f_x)_y = f_{xy} = f_{12} = \frac{\partial}{\partial y} \left( \frac{\partial f}{\partial x} \right) = \frac{\partial^2 f}{\partial y \partial x} = \frac{\partial^2 z}{\partial y \partial x}
+	\]
+
+	\[
+	(f_y)_x = f_{yx} = f_{21} = \frac{\partial}{\partial x} \left( \frac{\partial f}{\partial y} \right) = \frac{\partial^2 f}{\partial x \partial y} = \frac{\partial^2 z}{\partial x \partial y}
+	\]
+
+	\[
+	(f_y)_y = f_{yy} = f_{22} = \frac{\partial}{\partial y} \left( \frac{\partial f}{\partial y} \right) = \frac{\partial^2 f}{\partial y^2} = \frac{\partial^2 z}{\partial y^2}
+	\]
+
+	Thus the notation $f_{xy}$ (or $\frac{\partial^2 f}{\partial y \partial x}$) means that we first differentiate with respect to $x$ and then with respect to $y$, whereas in computing $f_{yx}$ the order is reversed.
+
+}
+
+\defrose{Clairut's Theorem}{
+	DDefintion: Suppose $f$ is defined on a disk $D$ that contains the point $(a,b)$. If the functions $f_{xy}$ and $f_{yx}$ are both continuous on $D$, then
+    \[
+    f_{xy}(a, b) = f_{yx}(a, b)
+    \]
+}
+
+\section{14.4 Tangent Planes and Linear Approximation}
+
 
 
 
