@@ -18,4 +18,7 @@
 \contentsline {section}{\numberline {3.5}14.5 The Chain Rule}{24}{section.3.5}%
 \contentsline {section}{\numberline {3.6}14.6 Directional Derivatives and the Gradient Vector}{25}{section.3.6}%
 \contentsline {section}{\numberline {3.7}14.7 Maxium and Minimum Values}{26}{section.3.7}%
+\contentsline {section}{\numberline {3.8}14.8 Lagrange Multipliers}{27}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Multiple Integerals}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}15.1 Double Integral Over Rectangles}{29}{section.4.1}%
 \contentsfinish 

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1728765190.13634 "/home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex" "Notes.pdf" "Notes" 1728765194.67114 0
+["pdflatex"] 1728780644.8704 "/home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex" "Notes.pdf" "Notes" 1728780649.40628 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1727200492.36116 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1720481779.2778 11548 a72ccb84d52a88897df751d2d1963cd5 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
@@ -317,15 +317,15 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xfrac/xfrac.sty" 1720481722.07727 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty" 1720481758.74561 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1720481720.24125 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex" 1728765185.44438 51289 f0cada2e2ea9ec147aa29db9ecce92a7 ""
+  "/home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex" 1728780639.83602 56870 4d6fc6049a87944db7c9cd10bf11b1f7 ""
   "Cone.png" 1726116953.92383 29098 05cb4e8598f36e004f045bf474ac57e0 ""
   "EllipticParaboloid.png" 1726116384.77081 17913 e47f4b49ec633d83ab0ceceabb6660f1 ""
   "HyperbolicParaboloid.png" 1726116409.34607 37190 83f9cf8440b57e0fdba2ec292299f56d ""
   "HyperboloidofOneSheet.png" 1726116914.42216 31338 9e50d27f42601c7408adbca095611ed4 ""
   "HyperboloidofTwoSheets.png" 1726116971.42109 19422 a50193076267b597840fdc552c03c0f4 ""
-  "Notes.aux" 1728765194.51951 17690 55d3dea1683d11768be0d9efdbc8cace "pdflatex"
-  "Notes.tex" 1728765185.44438 51289 f0cada2e2ea9ec147aa29db9ecce92a7 ""
-  "Notes.toc" 1728765194.52251 1863 d7275fae01ffdac24f6fc3caccefe306 "pdflatex"
+  "Notes.aux" 1728780649.2531 20225 e626146f0907c6e9306fda5dda73e247 "pdflatex"
+  "Notes.tex" 1728780639.83602 56870 4d6fc6049a87944db7c9cd10bf11b1f7 ""
+  "Notes.toc" 1728780649.2561 2122 3b8375635a5ddefaebfe52a20a2301ec "pdflatex"
   "distances.png" 1726111584.8942 10941 e0d683c6b83f5bd226cfde518e401b4d ""
   "ellipsoid.png" 1726116357.89806 22124 75f0d593276ac82b43960a373be44336 ""
   "flow.png" 1723602120.64709 3327 eab4ed35b4d13609c606e28f6c71b1ca ""
