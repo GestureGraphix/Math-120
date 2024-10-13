@@ -21,4 +21,5 @@
 \contentsline {section}{\numberline {3.8}14.8 Lagrange Multipliers}{27}{section.3.8}%
 \contentsline {chapter}{\numberline {4}Multiple Integerals}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}15.1 Double Integral Over Rectangles}{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}15.2 Double Integrals over General Regions}{32}{section.4.2}%
 \contentsfinish 

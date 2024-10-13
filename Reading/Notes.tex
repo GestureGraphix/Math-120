@@ -1155,6 +1155,105 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 
 \section{15.1 Double Integral Over Rectangles}
 
+\defrose{Volume of a Function}{
+	WWe start with a function \( f \) defined over a closed rectangle \( R \) in the \( xy \)-plane, denoted as:
+
+	\[ R = [a,b] \times [c,d] = \{(x,y) \in \mathbb{R}^2 \mid a \leq x \leq b, \, c \leq y \leq d\}. \]
+
+	The goal is to find the volume of the solid \( S \), which lies above the rectangle \( R \) and below the graph of the surface \( z = f(x,y) \), defined as:
+
+	\[ S = \{(x,y,z) \in \mathbb{R}^3 \mid 0 \leq z \leq f(x,y), \, (x,y) \in R\}. \]
+
+	\insertpng[0.3]{vol.png}
+}
+
+\defrose{Volume of a Function (PART II)}{
+	TTo compute this volume, we first divide the rectangle \( R \) into smaller subrectangles. The interval \( [a,b] \) is divided into \( m \) subintervals of equal width \( \Delta x = \frac{b-a}{m} \), and the interval \( [c,d] \) is divided into \( n \) subintervals of equal width \( \Delta y = \frac{d-c}{n} \). The subrectangles are denoted by:
+
+	\[
+	R_{ij} = [x_{i-1},x_i] \times [y_{j-1},y_j] = \{(x,y) \mid x_{i-1} \leq x \leq x_i, \, y_{j-1} \leq y \leq y_j\}.
+	\]
+
+	Each subrectangle has an area of \( \Delta A = \Delta x \Delta y \).
+
+	\insertpng[0.3]{rect.png}
+
+	Next, we approximate the volume of the solid \( S \) by choosing a sample point \( (x^*_{ij}, y^*_{ij}) \) in each subrectangle \( R_{ij} \). Using this point, we approximate the part of \( S \) above each \( R_{ij} \) by a thin rectangular box (or “column”) with base \( R_{ij} \) and height \( f(x^*_{ij}, y^*_{ij}) \). The volume of this box is:
+
+	\[
+	f(x^*_{ij}, y^*_{ij}) \Delta A.
+	\]
+	\insertpng[0.3]{approx.png}
+}
+
+\defrose{Volume of a Function (PART III)}{
+	WWe then sum the volumes of all these boxes over the entire grid of subrectangles, obtaining an approximation of the total volume \( V \) of the solid \( S \):
+
+	\[
+	V \approx \sum_{i=1}^{m} \sum_{j=1}^{n} f(x^*_{ij}, y^*_{ij}) \Delta A.
+	\]
+
+	As \( m \) and \( n \) become larger, our approximation becomes more accurate. The exact volume of \( S \) is given by the limit of the double sum as \( m, n \to \infty \):
+
+	\begin{equation}
+		\iint_R f(x, y) \, dA = \lim_{m,n \to \infty} \sum_{i=1}^{m} \sum_{j=1}^{n} f(x^*_{ij}, y^*_{ij}) \, \Delta A
+	\end{equation}
+
+	\insertpng[0.3]{approxVol.png}
+	This is the formal definition of the volume of the solid \( S \) that lies under the graph of the function \( f \) and above the rectangle \( R \). By taking the limit, we ensure that the approximation becomes exact.
+}
+
+
+\defrose{Double Integeral}{
+	DDefintion: The \textbf{double integral} of \(f \) over the rectangle \(R \) is 
+	\begin{equation}
+		\iint\limits_R f(x, y) \, dA = \lim_{m,n \to \infty} \sum_{i=1}^{m} \sum_{j=1}^{n} f(x^*_{ij}, y^*_{ij}) \, \Delta A
+	\end{equation}
+	if this limit exists
+}
+
+\defrose{Equation for Volume}{
+	IIf $f(x, y) \geq 0$, then the volume $V$ of the solid that lies above the rectangle $R$ and below the surface $z = f(x, y)$ is
+        \begin{equation}
+			V = \iint\limits_{R} f(x, y) \, dA
+		\end{equation}
+}
+
+\defrose{Midpoint Rule for Double Integerals}{
+	EEquation: 
+	\begin{equation} 
+		\iint\limits_{R} f(x, y) \, dA \approx \sum_{i=1}^{m} \sum_{j=1}^{n} f(\bar{x}_i, \bar{y}_j) \, \Delta A
+    \end{equation}
+    where $\bar{x}_i$ is the midpoint of $[x_{i-1}, x_i]$ and $\bar{y}_j$ is the midpoint of $[y_{j-1}, y_j]$.
+}
+
+\defrose{Fubini's Theorem}{
+	IIf \( f \) is continuous on the rectangle
+	\[ R = \{(x, y) \mid a \leq x \leq b, \ c \leq y \leq d\} \]
+	then
+	\[ \iint\limits_{R} f(x, y) \, dA = \int_a^b \int_c^d f(x, y) \, dy dx = \int_c^d \int_a^b f(x, y) \, dx dy \]
+	More generally, this is true if we assume that \( f \) is bounded on \( R \), \( f \) is discontinuous only on a finite number of smooth curves, and the iterated integrals exist.
+}
+
+\defrose{Average Value}{
+	WWe define the \textbf{average value} of a function \( f \) of two variables defined on a rectangle \( R \) to be
+	\[
+	f_{\text{avg}} = \frac{1}{A(R)} \iint\limits_{R} f(x, y) \, dA
+	\]
+	where \( A(R) \) is the area of \( R \).
+
+	If \( f(x, y) \geq 0 \), the equation
+	\[
+	A(R) \times f_{\text{avg}} = \iint\limits_{R} f(x, y) \, dA
+	\]
+	holds true.
+}
+
+\section{15.2 Double Integrals over General Regions}
+
+
+
+
 
 
 \end{document}
