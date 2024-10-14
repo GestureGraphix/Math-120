@@ -23,4 +23,7 @@
 \contentsline {section}{\numberline {4.1}15.1 Double Integral Over Rectangles}{29}{section.4.1}%
 \contentsline {section}{\numberline {4.2}15.2 Double Integrals over General Regions}{33}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Double Integrals in Polar Coodinates}{34}{section.4.3}%
+\contentsline {chapter}{\numberline {5}}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}16.1 Vector Fields}{35}{section.5.1}%
+\contentsline {section}{\numberline {5.2}16. 2 Line Integerals}{35}{section.5.2}%
 \contentsfinish 

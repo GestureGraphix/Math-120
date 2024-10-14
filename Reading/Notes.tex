@@ -1337,8 +1337,97 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 
 \section{Double Integrals in Polar Coodinates}
 
+\defrose{Rectangle to Polar Coordinates in Double Integerals}{
+	IIf \( f \) is continuous on a polar rectangle \( R \) given by \( 0 \leq a \leq r \leq b \), \( \alpha \leq \theta \leq \beta \), where \( 0 \leq \beta - \alpha \leq 2\pi \), then
+	\begin{equation}
+		\iint\limits_R f(x, y) \, dA = \int_{\alpha}^{\beta} \int_{a}^{b} f(r \cos \theta, r \sin \theta) \, r \, dr \, d\theta
+	\end{equation}
+}
 
+\defrose{Polar Region Double Integration}{
+	IIf \( f \) is continuous on a polar region of the form\\
+	\[
+	D = \{(r, \theta) \mid \alpha \leq \theta \leq \beta, h_1(\theta) \leq r \leq h_2(\theta)\}
+	\]
+	then
+	\begin{equation}
+		\iint\limits_D f(x, y) \, dA = \int_{\alpha}^{\beta} \int_{h_1(\theta)}^{h_2(\theta)} f(r \cos \theta, r \sin \theta) \, r \, dr \, d\theta
+	\end{equation}
+}
 
+\chapter{}
 
+\section{16.1 Vector Fields}
+
+\defrose{Vector Field}{
+	DDefintion: Let \( D \) be a set in \( \mathbb{R}^2 \) (a plane region). A \textbf{vector field on \( \mathbb{R}^2 \)} is a function \( \mathbf{F} \) that assigns to each point \( (x, y) \) in \( D \) a two-dimensional vector \( \mathbf{F}(x, y) \).
+}
+
+\defrose{3 Dimensional Vector Fields}{
+	DDefintion: Let \( E \) be a subset of \( \mathbb{R}^3 \). A \textbf{vector field on \( \mathbb{R}^3 \)} is a function \( \mathbf{F} \) that assigns to each point \( (x, y, z) \) in \( E \) a three-dimensional vector \( \mathbf{F}(x, y, z) \).
+}
+
+\defrose{Gradient Fields}{
+	DDefintion: If \( f \) is a scalar function of two variables, its gradient \( \nabla f \) (also called grad \( f \)) is defined by
+	\[
+	\nabla f(x, y) = f_x(x, y) \mathbf{i} + f_y(x, y) \mathbf{j}
+	\]
+	Therefore, \( \nabla f \) is a vector field on \( \mathbb{R}^2 \) and is called a \textbf{gradient vector field}. Similarly, if \( f \) is a scalar function of three variables, its gradient is a vector field on \( \mathbb{R}^3 \), given by
+	\[
+	\nabla f(x, y, z) = f_x(x, y, z) \mathbf{i} + f_y(x, y, z) \mathbf{j} + f_z(x, y, z) \mathbf{k}
+	\]
+}
+
+\section{16. 2 Line Integerals}
+
+\defrose{Line Integerals}{
+	IIf \( f \) is defined on a smooth curve \( C \) given by 
+	\[ x = x(t) \quad y = y(t) \quad a \leq t \leq b \] 
+	then the \textbf{line integral} of \( f \) along \( C \) is
+	\begin{equation}
+		\int_C f(x, y) \, ds = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*, y_i^*) \Delta s_i
+	\end{equation}
+	if this limit exists.
+}
+
+\defrose{Evaluation of Line Integerals}{
+	TThe length of the curve \( C \) is
+	\[
+	L = \int_a^b \sqrt{\left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2} \, dt
+	\]
+
+	If \( f \) is continuous, the following formula can be used to evaluate the line integral of \( f \) along \( C \):
+	\begin{equation}
+		\int_C f(x, y) \, ds = \int_a^b f(x(t), y(t)) \sqrt{\left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2} \, dt
+	\end{equation}
+}
+
+\defrose{Line Integrals with Respect to x or y}{
+	TTwo other types of line integrals are obtained by replacing \( \Delta s_i \) by either \( \Delta x_i = x_i - x_{i-1} \) or \( \Delta y_i = y_i - y_{i-1} \). They are called the \textbf{line integrals of \( f \) along \( C \) with respect to \( x \) and \( y \)}:
+	\begin{equation}
+		\int_C f(x, y) \, dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*, y_i^*) \Delta x_i
+	\end{equation}
+
+	\begin{equation}
+		\int_C f(x, y) \, dy = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*, y_i^*) \Delta y_i
+	\end{equation}	
+
+	These line integrals can also be evaluated in terms of a parameter \( t \), where \( x = x(t) \), \( y = y(t) \), and:
+	
+	\begin{equation}
+		\int_C f(x, y) \, dx = \int_a^b f(x(t), y(t)) x'(t) \, dt
+	\end{equation}
+
+	\begin{equation}
+		\int_C f(x, y) \, dy = \int_a^b f(x(t), y(t)) y'(t) \, dt
+	\end{equation}
+}
+
+\defrose{Line Integerals in Space}{
+	EEquation: 
+	\begin{equation}
+		\int_C f(x, y, z) \, ds = \int_a^b f(x(t), y(t), z(t)) \sqrt{\left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 + \left( \frac{dz}{dt} \right)^2} \, dt
+	\end{equation}
+}
 
 \end{document}
