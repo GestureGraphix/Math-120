@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1728850213.5618 "/home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex" "Notes.pdf" "Notes" 1728850218.42014 0
+["pdflatex"] 1728867628.62248 "/home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex" "Notes.pdf" "Notes" 1728867633.74126 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1727200492.36116 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1720481779.2778 11548 a72ccb84d52a88897df751d2d1963cd5 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
@@ -317,15 +317,15 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xfrac/xfrac.sty" 1720481722.07727 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty" 1720481758.74561 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1720481720.24125 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex" 1728850208.27567 61013 c6132a52ef2e1f9972864bb5362019fb ""
+  "/home/alexhernandezjuarez/Documents/Math 120/Reading/Notes.tex" 1728867623.16619 63758 261904e933a655d98318833321ffd79f ""
   "Cone.png" 1726116953.92383 29098 05cb4e8598f36e004f045bf474ac57e0 ""
   "EllipticParaboloid.png" 1726116384.77081 17913 e47f4b49ec633d83ab0ceceabb6660f1 ""
   "HyperbolicParaboloid.png" 1726116409.34607 37190 83f9cf8440b57e0fdba2ec292299f56d ""
   "HyperboloidofOneSheet.png" 1726116914.42216 31338 9e50d27f42601c7408adbca095611ed4 ""
   "HyperboloidofTwoSheets.png" 1726116971.42109 19422 a50193076267b597840fdc552c03c0f4 ""
-  "Notes.aux" 1728850218.27077 21683 382b62538fd6a6b115707a740a2235ee "pdflatex"
-  "Notes.tex" 1728850208.27567 61013 c6132a52ef2e1f9972864bb5362019fb ""
-  "Notes.toc" 1728850218.27377 2225 aa38fe7dc19d12f461a01bc4f821757d "pdflatex"
+  "Notes.aux" 1728867633.59126 22572 28af68fc975e673d4894accd48ff5891 "pdflatex"
+  "Notes.tex" 1728867623.16619 63758 261904e933a655d98318833321ffd79f ""
+  "Notes.toc" 1728867633.59426 2322 1d753438d6b438130529b332ea7fb440 "pdflatex"
   "approx.png" 1728848940.19244 92206 e9118d02ef5a3e0d060410f079a390ec ""
   "approxVol.png" 1728849053.7212 72335 4dad5eb9b4266d3c67ed1ba78be45f24 ""
   "distances.png" 1726111584.8942 10941 e0d683c6b83f5bd226cfde518e401b4d ""
@@ -339,6 +339,7 @@
   "plane.png" 1728756880.2797 117176 ed67581b2e69be1aaa60d9c58446338c ""
   "preamble.tex" 1725469965.42843 26657 cd8ecf15f1d49d3992109c29eb6f9cd6 ""
   "rect.png" 1728848769.08933 75875 1a62508a32575ee0a8d76fe05ce6749d ""
+  "region.png" 1728851346.93636 17296 e885922dd562292a090c916c125348fe ""
   "slime.png" 1723587585.41747 937180 3032107e4a9c1f8dedae965ebfd116af ""
   "vol.png" 1728782753.05333 77375 8c4f842c6b122a152adbbcdae1792834 ""
   (generated)

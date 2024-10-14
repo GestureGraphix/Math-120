@@ -1251,6 +1251,91 @@ the same as $\textbf{v}$ if $c > 0$ and is opposite to $\textbf{v}$ if $c=0$ or 
 
 \section{15.2 Double Integrals over General Regions}
 
+\defrose{General Regions}{
+	CConsider a general region \( D \) which is bounded, which means that \( D \) can be enclosed in a rectangular region \( R \). In order to integrate a function \( f \) over \( D \), we define a new function \( F \) with domain \( R \) by
+	\[
+	F(x, y) =
+	\begin{cases} 
+	f(x, y) & \text{if } (x, y) \text{ is in } D \\
+	0 & \text{if } (x, y) \text{ is in } R \text{ but not in } D
+	\end{cases}
+	\]
+	\insertpng[0.35]{region.png}
+	\[
+	\iint\limits_{D} f(x, y) \, dA = \iint\limits_{R} F(x, y) \, dA
+	\]
+	where \( F \) is given by the above equation.
+}
+
+\defrose{Type 1}{
+	AA plane region \( D \) is said to be of \textbf{type I} if it lies between the graphs of two continuous functions of \( x \), that is,
+	\begin{equation}
+		D = \{ (x, y) \mid a \leq x \leq b, \ g_1(x) \leq y \leq g_2(x) \}
+	\end{equation}
+	where \( g_1 \) and \( g_2 \) are continuous on \( [a, b] \).
+
+	If \( f \) is continuous on a type I region \( D \) described by
+	\[
+	D = \{(x, y) \mid a \leq x \leq b, \ g_1(x) \leq y \leq g_2(x)\}
+	\]
+	then
+	\begin{equation}
+		\iint\limits_{D} f(x, y) \, dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f(x, y) \, dy dx
+	\end{equation}
+
+}
+
+
+\defrose{Type II}{
+	I If \( f \) is continuous on a type II region \( D \) described by
+	\begin{equation}
+		D = \{(x, y) \mid c \leq y \leq d, \ h_1(y) \leq x \leq h_2(y)\}
+	\end{equation}
+	then
+	\begin{equation}
+		\iint\limits_{D} f(x, y) \, dA = \int_c^d \int_{h_1(y)}^{h_2(y)} f(x, y) \, dx dy	
+	\end{equation}
+}
+
+\newpage 
+
+\ntimg{
+	\textbf{Properties of Integerals}
+	\begin{itemize}
+		\item 
+		\begin{equation}
+			\iint\limits_{D} [f(x, y) + g(x, y)] \, dA = \iint\limits_{D} f(x, y) \, dA + \iint\limits_{D} g(x, y) \, dA
+		\end{equation}
+		
+		\item 
+		\begin{equation}
+			\iint\limits_{D} c f(x, y) \, dA = c \iint\limits_{D} f(x, y) \, dA \quad \text{where \( c \) is a constant.}
+		\end{equation}
+		
+		\item  If \( f(x, y) \geq g(x, y) \) for all \( (x, y) \in D \), then
+		\begin{equation}
+			\iint\limits_{D} f(x, y) \, dA \geq \iint\limits_{D} g(x, y) \, dA
+		\end{equation}
+		
+		\item If \( D = D_1 \cup D_2 \) where \( D_1 \) and \( D_2 \) don't overlap except perhaps on their boundaries, then
+		\begin{equation}
+			\iint\limits_{D} f(x, y) \, dA = \iint\limits_{D_1} f(x, y) \, dA + \iint\limits_{D_2} f(x, y) \, dA
+		\end{equation}	
+
+		\item If we integrate the constant function $f(x,y) = 1$ over a region \( D \), we get the area of \( D \)  
+		\begin{equation}
+			\iint\limits_D 1 \, dA = A(D)
+		\end{equation}
+		
+		\item If \( m \leq f(x, y) \leq M \) for all \( (x, y) \in D \), then
+		\begin{equation}
+			m \cdot A(D) \leq \iint\limits_D f(x, y) \, dA \leq M \cdot A(D)
+		\end{equation}
+	\end{itemize}
+}
+
+
+\section{Double Integrals in Polar Coodinates}
 
 
 
