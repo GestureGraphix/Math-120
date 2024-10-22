@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1729532164.37918 "/home/alexhernandezjuarez/Documents/Math 120/PSet 7/Notes.tex" "Notes.pdf" "Notes" 1729532165.72194 0
+["pdflatex"] 1729631669.67206 "/home/alexhernandezjuarez/Documents/Math 120/PSet 7/Notes.tex" "Notes.pdf" "Notes" 1729631679.60875 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1727200492.36116 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1720481779.2778 11548 a72ccb84d52a88897df751d2d1963cd5 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
@@ -13,6 +13,7 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1720481713.68919 940 228d6584342e91276bf566bcf9716b83 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm" 1720481666.70876 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm" 1720481666.70876 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/cm/cmbxti10.tfm" 1720481666.70876 1532 9162035f4e7176612125649e348e2195 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/cm/cmcsc10.tfm" 1720481666.70876 1300 63a6111ee6274895728663cf4b4e7e81 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/cm/cmr12.tfm" 1720481666.70876 1288 655e228510b4c2a1abe905c368440826 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/cm/cmr17.tfm" 1720481666.70876 1292 296a67155bdbfc32aa9c636f21e91433 ""
@@ -35,6 +36,7 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm" 1720481771.62573 920 99acdf374993fd46fd345f9cac168080 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1720481713.69319 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1720481713.69719 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb" 1720481713.70519 36554 b67dc2cfa451409e100b3fcf5f506509 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1720481713.72919 35752 024fb6c41858982481f6968b5fc26508 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1720481713.72919 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1720481713.72919 32362 179c33bbf43f19adbb3825bb4e36e57a ""
@@ -307,10 +309,10 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xfrac/xfrac.sty" 1720481722.07727 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty" 1720481758.74561 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1720481720.24125 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/alexhernandezjuarez/Documents/Math 120/PSet 7/Notes.tex" 1729532164.0199 4702 e475bc6f1fe9ec1c67bc344c6eb62dba ""
-  "Notes.aux" 1729532165.59491 1195 666a316ce8c8ea3ea3a17abbd941f593 "pdflatex"
-  "Notes.tex" 1729532164.0199 4702 e475bc6f1fe9ec1c67bc344c6eb62dba ""
-  "Notes.toc" 1729532165.59591 139 c7cd388ad1c556664e7bec7246dc0120 "pdflatex"
+  "/home/alexhernandezjuarez/Documents/Math 120/PSet 7/Notes.tex" 1729631669.04478 5216 24855fe1288a985396afb52da5158953 ""
+  "Notes.aux" 1729631679.33386 1195 666a316ce8c8ea3ea3a17abbd941f593 "pdflatex"
+  "Notes.tex" 1729631669.04478 5216 24855fe1288a985396afb52da5158953 ""
+  "Notes.toc" 1729631679.33586 139 c7cd388ad1c556664e7bec7246dc0120 "pdflatex"
   "letterfonts.tex" 1720527956.72324 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "macros.tex" 1720527956.72324 3389 93000260d2aea292d29c76d4ace77a29 ""
   "preamble.tex" 1725409883.65774 26657 cd8ecf15f1d49d3992109c29eb6f9cd6 ""

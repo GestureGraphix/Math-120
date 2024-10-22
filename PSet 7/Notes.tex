@@ -42,6 +42,24 @@
     \end{enumerate}
 }
 
+\sol{
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+              view={60}{30}, 
+              xlabel={$x$}, ylabel={$y$}, zlabel={$z$},
+              domain=0:1, y domain=0:2,
+              samples=30,
+              colormap/viridis,
+              mesh/interior colormap={bluewhite}{color=(blue) color=(white)},
+              ]
+              \addplot3[surf, shader=interp] 
+              {exp(-x^2 - y^2)};
+            \end{axis}
+          \end{tikzpicture}       
+    \end{center}
+}
+
 \qs{}{
     \begin{enumerate}
         \item[(a)] Find the average value of the function \( f(x, y) = \sin x \cos y \) on the rectangle \( R = [0, \pi] \times [-\pi/2, \pi/2]. \)

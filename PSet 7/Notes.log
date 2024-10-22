@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  21 OCT 2024 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  22 OCT 2024 17:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1282,6 +1282,10 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 29.
 
 
+Package pgfplots Warning: the combination 'shader=interp,interior colormap name' is inefficient (it uses 'shader=faceted interp,faceted color=none') and may slow down the *display* of your document on input line 58.
+
+ [warning /pgfplots/warning/interior colormap inefficient]
+
 
 [2
 
@@ -1304,17 +1308,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 46760 strings out of 475839
- 1077216 string characters out of 5777281
- 1961905 words of memory out of 5000000
- 68558 multiletter control sequences out of 15000+600000
- 587642 words of font info for 120 fonts, out of 8000000 for 9000
+ 47267 strings out of 475839
+ 1091566 string characters out of 5777281
+ 2340878 words of memory out of 5000000
+ 69064 multiletter control sequences out of 15000+600000
+ 588001 words of font info for 121 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 99i,7n,102p,812b,1431s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
-Output written on Notes.pdf (5 pages, 172027 bytes).
+ 99i,9n,102p,812b,2840s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
+Output written on Notes.pdf (5 pages, 1154355 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
+ 3554 PDF objects out of 3580 (max. 8388607)
  30 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11955 words of extra memory for PDF output out of 12000 (max. 10000000)
 
