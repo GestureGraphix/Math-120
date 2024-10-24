@@ -172,6 +172,20 @@
 }
 
 \sol{
+    \[ \int_{0}^{4} \int_{0}^{x} x^{2}e^{-yx} \, dy \, dx \]
+    \[ \int_{0}^{4} \int_{y}^{4} x^{2}e^{-yx} \, dx \, dy \]  
+    \[ x^{2} \int_{y}^{4} e^{-yx} dy \] 
+    \[ \left. \left( x^{2} \right) \frac{e^{-yx}}{x}  \right|_{0}^{x} \left(x^{2}\right) \frac{e^{-yx}}{x} - \left(x^{2} \right) \frac{e^{-0 \cdot x}}{x} \] 
+    \[ xe^{-x^{2}} - x^{2}\cdot \frac{1}{x} \Rightarrow -xe^{-x^{2}} + x \]
+    \[ \int_{0}^{4} -xe^{-x^{2}} + x \, dx  \Rightarrow \int_{0}^{4} -xe^{-x^{2}} \, dx \int_{0}^{4} x \, dx \]
+    \[ -x^{2} = t \quad -2x = dt \]\
+    \[ \int_{0}^{4} \frac{1}{2} e^{t} \, dt \Rightarrow \frac{1}{2} \int_{0}^{4} e^{t} \, dt \] 
+    \[ \left. \frac{1}{2} e^{t} \right|_{0}^{4} \Rightarrow \left. \frac{1}{2} ^{x^{2}} \right|_{0}^{4} \] 
+    \[ \frac{1}{2}e^{-4^{2}} - \frac{1}{2}e^{-0^{2}} \Rightarrow \frac{1}{2}e^{-16} - \frac{1}{2} \] 
+    \[ \int_{0}^{4} x \, dx \]
+    \[ \left. \frac{x^{2}}{2} \right|_{0}^{4} \] 
+    \[ \frac{4^{2}}{2} - \frac{0^{2}}{2} = \frac{16}{2} = 8 \]
+    \[ \int_{0}^{4} -xe^{-x^{2}} + x \, dx  = \frac{1}{2}e^{-16} + \frac{15}{2}\]      
 
 }
 
@@ -182,6 +196,10 @@
         \item[(b)] Sketch the solid whose volume is given by the iterated integral 
         \[ \int_0^1 \int_0^{1-x} (2 - y^2) \, dy \, dx. \]
     \end{enumerate}
+}
+
+\sol{
+
 }
 
 \qs{}{
