@@ -113,7 +113,18 @@
     \[ -\cos \pi - (-2)\cos(0) = 4 \]
     \[ \frac{1}{\pi^{2}} \cdot 4 = \frac{4}{\pi^{2}} \]    
     b) 
-    \[ \] 
+    \[ f(x,y) = \frac{4 \sin y}{e^{x^{2}}} - \frac{\cos x}{\ln y} + 3 \]
+    \[ R = [2 \pi, 4 \pi ] \times [2\pi, 6 \pi] \]
+    \[ f_{avg} = \iint\limits_{R} f(x,y) dA \] 
+    \[ A(R) = [4 \pi - 2 \pi ] \times [6\pi - 2 \pi] = 8 \pi^{2} \] 
+    \[ \int_{2\pi}^{4 \pi} \int_{2 \pi}^{6 \pi} \frac{4 \sin y}{e^{x^{2}}} - \frac{\cos x}{\ln y }  + 3 \, dy \, dx \]
+    \[ \iint\limits_{R} f(x,y) dA  - \iint\limits_{R} \frac{4 \sin y}{e^{x^{2}}} dA - \iint\limits_{R} \frac{\cos x}{\ln y } dA  + \iint\limits_{R} 3 dA\] 
+    \[ \int_{2\pi}^{6 \pi} 4 \sin y \, dy = -4\left[ \cos y\right]_{2 \pi}^{6 \pi} = -4(6 \cos \pi - \cos 2 \pi) = -4(1 - 1) = 0 \]
+    \[ \iint\limits_{R} f(x,y) \frac{4 \sin y}{e^{x^{2}}} dA = \int_{2 \pi}^{4 \pi} \frac{1}{e^{x^{2}}}dx \times 0 = 0 \]
+    \[ \int_{2 \pi}^{4 \pi} {\cos x} dx = \left. \sin x \right|_{2 \pi}^{4 \pi} = sin 4 \pi - \sin 2 \pi = 0 - 0 = 0\] 
+    \[ \iint\limits_{R} \frac{\cos x}{\ln y } dA = \int_{2 \pi}^{6 \pi} \frac{1}{\ln y} \times 0 = 0 \] 
+    \[ \iint\limits_{R} 3 dA = 3 \times A(R) = 3 \times 8 \pi^{2} = 24 \pi^{2} \]
+    \[ \frac{24 \pi^{2}}{8 \pi^{2}} = 3 \]  
 }
 
 \qs{}{
@@ -122,6 +133,22 @@
         \item \( \iint_D \frac{y}{x^5 + 1} \, dA \), where \( D \) is the region \( D = \{(x, y) \mid 0 \leq x \leq 1, \, 0 \leq y \leq x^2 \}. \)
         \item \( \iint_D x^3 \, dA \), where \( D = \{(x, y) \mid 1 \leq x \leq e, \, 0 \leq y \leq \ln x \}. \)
     \end{enumerate}
+}
+
+\sol{
+    1. 
+    \[ \iint_D \frac{y}{x^5 + 1} \, dA  \quad D = \{(x, y) \mid 0 \leq x \leq 1, \, 0 \leq y \leq x^2 \} \]
+    \[ \int_{0}^{1} \int_{0}^{x^{2}} \frac{y}{x^{5} + 1} \, dy \, dx \] 
+    \[ \frac{1}{x^{5} + 1} \int_{0}^{x^{2}} y dy \]
+    \[ \left. \frac{y^{2}}{2}\right|_{0}^{x^{2}} \Rightarrow \frac{\left(x^{2}\right)^{2}}{2} - \frac{0}{2} = \frac{x^{4}}{2} \]  
+    \[ \int_{0}^{1} \frac{1}{x^{5} + 1} \times \frac{x^{4}}{2} dx \] 
+    \[ x^{5} + 1 = t \quad dt = 5x^{4} dx \] 
+    \[ \frac{1}{10} \int_{0}^{1} \frac{1}{t} dt \]
+    \[ \left. \frac{1}{10} \ln|t| \right|_{0}^{1} \]
+    \[ \left. \frac{1}{10} | x^{5} + 1 | \right|_{0}^{1} \]
+    \[ \frac{1}{10} \ln(1^{5} + 1)   - \frac{1}{10}\ln(1) \]
+    \[ \frac{1}{10} \ln(2) - \frac{1}{10} \ln(1) = \frac{1}{10} \ln(2) \]  
+    2.    
 }
 
 \qs{}{
