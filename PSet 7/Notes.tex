@@ -149,12 +149,30 @@
     \[ \frac{1}{10} \ln(1^{5} + 1)   - \frac{1}{10}\ln(1) \]
     \[ \frac{1}{10} \ln(2) - \frac{1}{10} \ln(1) = \frac{1}{10} \ln(2) \]  
     2.    
+    \[ \iint_D x^3 \, dA  \quad D = \{(x, y) \mid 1 \leq x \leq e, \, 0 \leq y \leq \ln x \} \]
+    \[ \int_{1}^{e} \int_{0}^{\ln x} x^{3} \, dy \, dx \]  
+    \[ x^{3} \int_{0}^{\ln x} 1 dy \]
+    \[ \left. \left(x^{3}\right) y \right|_{0}^{\ln x} \]
+    \[ x^{3} \ln x - 0 \]
+    \[ uv - \int v \, du \] 
+    \[ u = \ln x \quad du = \frac{1}{x}  \, dx \]
+    \[ v = \frac{x^{4}}{4} \quad x^{3} dx \]   
+    \[ \frac{\ln x \cdot x^{4}}{4} - \int \frac{x^{3}}{4} \, dx \]
+    \[ \left[ \frac{\ln x^{4} \cdot x^{4}}{4} - \frac{x^{4}}{16}\right]_{1}^{e} \]
+    \[ \left( \frac{\ln e \cdot e^{4} }{4} - \frac{e^{4}}{16} \right) - \left( \frac{\ln 1 \cdot 1^{4}}{4} - \frac{1^{4}}{16}\right)\] 
+    \[ \left( \frac{\ln e \cdot e^{4} }{4} \right) - \left( 0 - \frac {1}{16} \right) \]
+    \[ \left( \frac{e^{4}}{4} - \frac{e^{4}}{16}\right) + \frac{1}{16} \]   
+
 }
 
 \qs{}{
     Draw the region \( D \). Set up the iterated integrals for both orders of integration. 
     Then evaluate the double integral using the easier order and explain why it's easier.
     \[ \iint_D x^2 e^{-xy} \, dA \quad \text{where } D \text{ is bounded by } y = x, \, x = 4, \, \text{and } y = 0. \]
+}
+
+\sol{
+
 }
 
 \qs{}{
