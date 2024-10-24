@@ -199,7 +199,20 @@
 }
 
 \sol{
-
+    \[ y = - x^{2} \quad z = 2 - y \quad z = y \]
+    \[ x,y,z \geq 0 \]
+    \[ 2 - y = y \Rightarrow 2y = 2 \Rightarrow y = 1 \Rightarrow 0 \leq y \leq 1 - x^{2} \]
+    \[ \text{height } = (2 -y) - y \Rightarrow 2 - 2y \]
+    \[ V = \int_{0}^{1} \int_{0}^{1-x^{2}} 2 - 2y \, dy \, dx \]
+    \[ \int_{0}^{1-x^{2}} 2 - 2y \, dy \]
+    \[ \left. 2y - y^{2} \right|_{0}^{1-x^{2}} \]
+    \[ 2\left(1-x^{2}\right) - \left(1-x^{2} \right) - 2(0) - (0)^{2} \] 
+    \[ 2 - 2x^{2} - 1 + 2x^{2} - x^{4} \]
+    \[ 1 - x^{4} \]
+    \[ \int_{0}^{1} 1- x^{4} dx \]
+    \[ \left. x - \frac{x^{5}}{5} \right|_{0}^{1} \]
+    \[ 1 - \frac{1^{5}}{5} - 0 - \frac{0^{5}}{5} \]
+    \[ 1 - \frac{1}{5} = \frac{4}{5} \]            
 }
 
 \qs{}{
@@ -211,10 +224,36 @@
     \end{enumerate}
 }
 
+\sol{\\
+    a) 
+    \[ \int_{0}^{1} \int_{4x}^{4} f(x,y) \, dy \, dx \]
+    \[ \iint\limits_{D} f(x,y) dA \]
+    \[ D = \{ (x,y)| 0 \leq x \leq 1, 4x \leq y \leq 4 \} \]
+    \[ D = \{ (x,y) | 0 \leq y \leq 4 , 0 \leq x \leq \frac{1}{4} y \} \]\
+    \[ \iint_{D} f(x,y) dA = \int_{0}^{4}\int_{0}^{\frac{1}{4}y} f(x,y) \, dx \, dy \]
+    b)     
+    \[ \int_{0}^{3} \int_{\sqrt{9-y}}^{3} f(x,y) \, dx \, dy \]
+    \[ \iint\limits_{D} f(x,y) dA \quad D = \{ (x,y) | \sqrt{4 - y} \leq x \leq 3, 0 \leq y \leq 3 \} \]
+    \[ x = \sqrt{9 -y} \Rightarrow x^{2} = 9 - y \Rightarrow x^{2} - 9 = -y \Rightarrow -x^{2} + 9 = y \] 
+    \[ 3 = 9 - x^{2} \Rightarrow -6 = - x^{2} \Rightarrow 6 = x^{2} \Rightarrow x = \sqrt{6} \]
+    \[ \iint_{D} f(x,y) dA \quad D = \{ (x,y)| -x^{2} + 9 \leq y \leq 3, \sqrt{6} \leq x \leq 3 \} \] 
+    \[ \int_{\sqrt{6}}^{3} \int_{-x^{2} + 9}^{3} f(x,y) \, dy \, dx \]  
+    c) 
+    \[ \int_{0}^{4} \int_{0}^{ln 2x} \]
+    \[ \iint\limits_{D} f(x,y) dA \quad D = \{ 0 \leq x \leq 4, 0 \leq y \leq ln x \} \]
+    \[ y = ln 2x \Rightarrow y = ln 2(4) \Rightarrow y = ln 8 \Rightarrow 0 = ln 2x \Rightarrow ln 1 = \ln 2x 2x \Rightarrow x = \frac{1}{2} \] 
+    \[ \iint\limits_{D} f(x,y) dA \quad D = \{ (x,y)| 0 \leq y \leq \ln 8 , \, \frac{1}{2} \leq x \leq \frac{e^{y}}{2} \} \]
+    \[ \int_{0}^{\ln 8 } \int_{\frac{1}{2}}^{\frac{e^{y}}{2}}f(x,y) \, dx \, dy \]      
+}
+
 \qs{}{
     Evaluate the integral 
-    \[ \int_0^1 \int_x^1 \frac{e^x}{y} \, dy \, dx \]
+    \[ \int_0^1 \int_x^1 e^\frac{x}{y} \, dy \, dx \]
     by reversing the order of integration.
+}
+
+\sol{
+    \[ \] 
 }
 
 \qs{}{
@@ -223,6 +262,18 @@
         \item \( \iint_R (x + y) \, dA \), where \( R \) is the region that lies to the left of the \( y \)-axis between the circles \( x^2 + y^2 = 1 \) and \( x^2 + y^2 = 4 \).
         \item \( \iint_R y e^x \, dA \), where \( R \) is the region in the first quadrant enclosed by the circle \( x^2 + y^2 = 25 \).
     \end{enumerate}
+}
+
+\sol{
+    \[ x \leq 0 \quad x + y^{2} = 1 \quad x^{2} + y^{2} = 4 \]
+    \[ x = r \cos \theta \quad y = r \sin \theta \quad dA = r dr \, d \theta \]
+    \[ R: 1 \leq r \leq 2 \]
+    \[ x + y = r \cos \theta + r \sin \theta \Rightarrow r ( \cos \theta \sin \theta ) \]
+    \[ \int_{\frac{\pi}{2}}^{\frac{\pi}{2}} \int_{1}^{2} r(\cos \theta \sin \theta ) r \, dr \, d\theta\] 
+    \[ \cos \theta + \sin \theta \int_{1}^{2} r^{2} dr \]
+    \[ \left. \frac{r^{3}}{3} \right|_{1}^{2} \]
+    \[ \frac{2^{3}}{3} - \frac{1}{3} =  \frac{7}{3} \]
+    \[ \frac{7}{3} \int_{}\]        
 }
 
 \qs{}{
