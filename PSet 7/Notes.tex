@@ -310,6 +310,24 @@
     \end{enumerate}
 }
 
+\sol{
+    a) 
+    \[ x^{2} + y^{2} + z^{2} = 4 \quad  x^{2} + y^{1} = 1  \] 
+    \[ x = r \cos \theta \quad y = r \sin \theta \quad 0 \leq \theta \leq 2 \pi \]
+    \[ r^{2} + z^{2} = 4 \quad x^{2} + y^{2} = 1 \Rightarrow r^{2} = 1 \Rightarrow r = 1 \]
+    \[ r^{2} + z^{2} = 4 \Rightarrow r^{2} = 4 - z^{2} \Rightarrow r = \sqrt{4 - z^{2}} \]
+    \[ V = \iint\limits_{D} \left[ z_{\text{upper}} - z_{\text{lower}} \right]\]
+    \[ V = \int_{0}^{2\pi}\int_{1}^{2}   r \sqrt{4 - r^{2} - \left( - \sqrt{4 - r^{2}} \right)}  r \, dr \, d \theta \]
+    \[ V = 2 \int_{0}^{2 \pi} \int_{1}^{2} \sqrt{4 - r^{2}} \, dr \, d \theta \]
+    \[ 4 - r^{2} = t \quad -2r = dt \]
+    \[ - \int_{1}^{2} \frac{1}{2} \sqrt{t} dt \Rightarrow - \frac{1}{2} \int_{1}^{2} \sqrt{t} dt = \left. - \frac{1}{2} \cdot \frac{2t\sqrt{t}}{3} \right|_{1}^{2} \]
+    \[ \left. - \frac{1}{2} \cdot \frac{2(4-r^{2})\sqrt{4-r^{2}}}{3} \right|_{1}^{2} \left( - \frac{1}{2} \cdot \frac{2(4-2^{2})\sqrt{4-2^{2}}}{3} \right) - \left( - \frac{1}{2} \cdot \frac{2(4-1^{2})\sqrt{4-1^{2}}}{3}\right) \]    
+    \[ V = 2 \left( \int_{2}^{2\pi} d \theta \right) \left(\int_{1}^{2} r\sqrt{4-r^{2}} dr \right)\]   
+    \[ \int_{0}^{2 \pi} d \theta = 2 \pi \quad V = 2 \cdot 2 \pi \cdot \int_{1}^{2} r \sqrt{4-r^{2}} dr = 4 \pi \int_{1}^{2} r \sqrt{4 - r^{2}} dr \]
+    \[ - \left(- \frac{1}{2} \cdot \frac{2(3)\sqrt{3}}{3} \right) \Rightarrow \left( \frac{1}{2} \sqrt{3} \right)  \Rightarrow - (- \sqrt{3}) \]
+    \[ 4 \pi \sqrt{3} \]      
+}
+
 \qs{}{
     Evaluate the iterated integral 
     \[ \int_0^b \int_{-\sqrt{b^2 - y^2}}^0 x^2 y \, dx \, dy \]
