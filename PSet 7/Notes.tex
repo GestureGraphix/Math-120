@@ -281,6 +281,25 @@
     \[ - \frac{7}{3} (0) + \frac{7}{3} = 0 \]
     \[ - \frac{14}{2}\]
     b)           
+    \[ \iint\limits_{R} ye^{x} dA \]
+    \[ x = r \cos \theta \quad y = r \sin theta \quad x^{2} + y^{2} = 25 \]
+    \[ \text{ 1st quadrant } \quad 0 \leq \theta \leq \frac{\pi}{2} \]
+    \[ ye^{x} \Rightarrow r \sin \theta e ^{r \cos \theta } \]
+    \[ dA = r \, dr \, d\theta \]
+    \[ \int_{0}^{\frac{\pi}{2}} \int_{0}^{5} r \sin \theta e^{r \cos \theta }\] 
+    \[  I(\theta) = \int_{0}^{5} r^{2} \sin \theta \, e^{r \cos \theta} \, dr \] 
+    \[ \frac{\partial}{\partial \theta} e^{r \cos \theta} = -r \sin \theta \, e^{r \cos \theta} \]
+    \[ r \sin \theta e^{r \cos \theta} = - \frac{\partial}{\partial \theta} e^{r \cos \theta} \]
+    \[ I = \int_{0}^{\frac{\pi}{2}} \int_{0}^{5} - r \frac{\partial}{\partial \theta} e^{r \cos \theta} \, dr \, d\theta \]
+    \[ I = - \int_{0}^{5} r \left( \int_{0}^{\frac{\pi}{2}} \frac{\partial }{\partial \theta} e^{r \cos \theta} \, d\theta \right) dr \]
+    \[ \int_{0}^{\frac{\pi}{2}} \frac{\partial}{\partial \theta} e^{r \cos } \, d \theta = \left. e^{r \cos \frac{\pi}{2}} \right|_{0}^{\frac{\pi}{2}} \] 
+    \[ e^{r \cos \frac{\pi}{2}} - e^{r \cos \theta} = e^{r \cdot 0} - e^{r \cdot 1} = 1 - e^{r} \] 
+    \[ I = \int_{0}^{5} re^{r} dr - \int_{0}^{3} r dr \]
+    \[ u = r \quad du = dr \quad v = e^{r} \quad dv = e^{r} dr \]
+    \[ \int_{0}^{5} re^{r} dr = re^{r} - \int_{0}^{5} e^{r} dr = re^{r} -e^{r} + K \]
+    \[ \int_{0}^{5} re^{r} dr = \left[ re^{r} - e^{r} \right]_{0}^{5} = \left( 5e^{5} - e^{5} \right) - (0 - e^{0}) = 4e^{5} + 1 \]
+    \[ \int_{0}^{5} r dr = \left. \frac{1}{2}r^{2} \right|_{0}^{5} = \frac{1}{2} (25 - 0 ) = \frac{25}{2} \] \
+    \[ I = (4e^{5} + 1) - \frac{25}{2} = 4e^{5} - 11.5  \]              
 }
 
 \qs{}{
