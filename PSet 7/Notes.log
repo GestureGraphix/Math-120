@@ -1230,4 +1230,149 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Font Info:    Trying to load font information
+LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+npxmia on input line 14.
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/newpx/unpxmia.fd
+File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
+)
+LaTeX Font Info:    Trying to load font information for U+npxsym on input line 14.
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/newpx/unpxsym.fd
+File: unpxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/npxsym.
+)
+LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 14.
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/newpx/unpxsyc.fd
+File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
+)
+
+[1
+
+{/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}]
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 17.
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+(Notes.toc
+Missing character: There is no ; in font nullfont!
+)
+\tf@toc=\write5
+\openout5 = `Notes.toc'.
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19 
+      [1
+
+]
+Chapter 1.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 29.
+
+
+
+[2
+
+{/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc}]
+
+[3]
+
+Package pgfplots Warning: the combination 'shader=interp,interior colormap name' is inefficient (it uses 'shader=faceted interp,faceted color=none') and may slow down the *display* of your document on input line 90.
+
+ [warning /pgfplots/warning/interior colormap inefficient]
+
+
+[4]
+
+[5]
+
+[6]
+
+[7]
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+
+ []
+
+
+
+[9]
+<B.png, id=3480, 3035.34pt x 4047.12pt>
+File: B.png Graphic file (type png)
+<use B.png>
+Package pdftex.def Info: B.png  used on input line 364.
+(pdftex.def)             Requested size: 151.7759pt x 202.36786pt.
+
+
+[10]
+<C.png, id=3489, 391.4625pt x 342.27875pt>
+File: C.png Graphic file (type png)
+<use C.png>
+Package pdftex.def Info: C.png  used on input line 373.
+(pdftex.def)             Requested size: 195.73076pt x 171.13895pt.
+
+
+[11 <./B.png> <./C.png>]
+
+[12]
+
+[13]
+
+[14]
+
+[15]
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 561--566
+
+ []
+
+
+
+[17] (Notes.aux)
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-05-27>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 47669 strings out of 475839
+ 1100056 string characters out of 5777281
+ 2327255 words of memory out of 5000000
+ 69451 multiletter control sequences out of 15000+600000
+ 588620 words of font info for 123 fonts, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 99i,9n,102p,812b,2840s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
+Output written on Notes.pdf (18 pages, 13286798 bytes).
+PDF statistics:
+ 3616 PDF objects out of 4296 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 11965 words of extra memory for PDF output out of 12000 (max. 10000000)
+
