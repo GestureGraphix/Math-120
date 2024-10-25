@@ -88,6 +88,11 @@
             \end{axis}
           \end{tikzpicture}       
     \end{center}
+    b) \\
+    It is because $e^{-x^{2}y^{2} = e^{x^{2}} \cdot e^{y^{2}}}$ and the bounds of y are independent of x, so that allows $e^{-x^{2}}$ to be treated as a constant when
+    integrating with respect to y and vice versa. \\
+    c) 
+    \[ \int_0^1 \int_0^2 e^{-x^2 - y^2} \, dy \, dx \approx 0.6588\]
 }
 
 \qs{}{
@@ -148,6 +153,22 @@
     \[ \left. \frac{1}{10} | x^{5} + 1 | \right|_{0}^{1} \]
     \[ \frac{1}{10} \ln(1^{5} + 1)   - \frac{1}{10}\ln(1) \]
     \[ \frac{1}{10} \ln(2) - \frac{1}{10} \ln(1) = \frac{1}{10} \ln(2) \]  
+
+    \begin{center}
+        \begin{tikzpicture}[scale=6]
+            % Axes
+            \draw[thick,->] (0,0) -- (1.2,0) node[anchor=north] {$x$};
+            \draw[thick,->] (0,0) -- (0,1.2) node[anchor=east] {$y$};
+            % Plot of y = x^2
+            \draw[domain=0:1,samples=100,thick] plot (\x,{(\x)^2});
+            % Vertical line at x = 1
+            \draw[thick] (1,0) -- (1,1);
+            % Shading the region D
+            \fill[blue,opacity=0.3] (0,0) -- plot[domain=0:1] (\x,{(\x)^2}) -- (1,0) -- cycle;
+            % Label the region
+            \node at (0.5,0.3) {$D$};
+        \end{tikzpicture}
+    \end{center}
     2.    
     \[ \iint_D x^3 \, dA  \quad D = \{(x, y) \mid 1 \leq x \leq e, \, 0 \leq y \leq \ln x \} \]
     \[ \int_{1}^{e} \int_{0}^{\ln x} x^{3} \, dy \, dx \]  
@@ -162,6 +183,15 @@
     \[ \left( \frac{\ln e \cdot e^{4} }{4} - \frac{e^{4}}{16} \right) - \left( \frac{\ln 1 \cdot 1^{4}}{4} - \frac{1^{4}}{16}\right)\] 
     \[ \left( \frac{\ln e \cdot e^{4} }{4} \right) - \left( 0 - \frac {1}{16} \right) \]
     \[ \left( \frac{e^{4}}{4} - \frac{e^{4}}{16}\right) + \frac{1}{16} \]   
+    \begin{center}
+        \begin{tikzpicture}[scale=1.5]
+            \draw[thick,->] (0,0) -- (3.2,0) node[anchor=north] {$x$};
+            \draw[thick,->] (0,0) -- (0,1.5) node[anchor=east] {$y$};
+            \draw[domain=1:2.718,samples=100,thick] plot (\x,{ln(\x)});
+            \fill[green,opacity=0.2] (1,0) -- plot[domain=1:2.718] (\x,{ln(\x)}) -- (2.718,0) -- cycle;
+            \node at (1.8,0.3) {$D$};
+        \end{tikzpicture}
+    \end{center}
 
 }
 
@@ -283,7 +313,7 @@
     \[ - \frac{14}{2}\]
     b)           
     \[ \iint\limits_{R} ye^{x} dA \]
-    \[ x = r \cos \theta \quad y = r \sin theta \quad x^{2} + y^{2} = 25 \]
+    \[ x = r \cos \theta \quad y = r \sin \theta \quad x^{2} + y^{2} = 25 \]
     \[ \text{ 1st quadrant } \quad 0 \leq \theta \leq \frac{\pi}{2} \]
     \[ ye^{x} \Rightarrow r \sin \theta e ^{r \cos \theta } \]
     \[ dA = r \, dr \, d\theta \]
