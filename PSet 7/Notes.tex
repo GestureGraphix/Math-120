@@ -232,7 +232,13 @@
     \[ D = \{ (x,y) | 0 \leq y \leq 4 , 0 \leq x \leq \frac{1}{4} y \} \]\
     \[ \iint_{D} f(x,y) dA = \int_{0}^{4}\int_{0}^{\frac{1}{4}y} f(x,y) \, dx \, dy \]
     b)     
-    \[ \int_{0}^{3} \int_{0}^{\sqrt{9-y}} \]  
+    \[ \int_{0}^{3} \int_{0}^{\sqrt{9-y}} f(x,y) \, dx \, dy \]  
+    \[ \iint\limits_{D} f(x,y) dA \]
+    \[ D = \{ (x,y)| 0 \leq x \leq \sqrt{9 - y}, 0 \leq y \leq 3 \} \]
+    \[ x = \sqrt{9 -y} \quad x^{2} - 9 = - y \quad -x^{2} + 9 = y \]
+    \[ -x^{2} + 9 = 3 \quad -x^{2} = - 6 \Rightarrow x^{2} = 6 \Rightarrow x = \sqrt{6} \]  
+    \[ D = \{ (x,y)| 0 \leq y \leq -x^{2} + 9, \sqrt{6} \leq x \leq 3 \} \]
+    \[ \int_{\sqrt{6}}^{3} \int_{0}^{-x^{2} + 9} f(x,y) \, dy \, dx  \]  
     c) 
     \[ \int_{0}^{4} \int_{0}^{ln 2x} \]
     \[ \iint\limits_{D} f(x,y) dA \quad D = \{ 0 \leq x \leq 4, 0 \leq y \leq ln x \} \]
