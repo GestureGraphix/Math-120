@@ -361,21 +361,112 @@
     \[ D = \{ (x,y) | 0 \leq y \leq 4 , 0 \leq x \leq \frac{1}{4} y \} \]\
     \[ \iint_{D} f(x,y) dA = \int_{0}^{4}\int_{0}^{\frac{1}{4}y} f(x,y) \, dx \, dy \]
     b)     
-    \insertpng[0.03]{B.png}
-    \[ \int_{0}^{3} \int_{0}^{\sqrt{9-y}} f(x,y) \, dx \, dy \]  
-    \[ \iint\limits_{D} f(x,y) dA \]
-    \[ D = \{ (x,y)| 0 \leq x \leq \sqrt{9 - y}, 0 \leq y \leq 3 \} \]
-    \[ x = \sqrt{9 -y} \quad x^{2} - 9 = - y \quad -x^{2} + 9 = y \]
-    \[ -x^{2} + 9 = 3 \quad -x^{2} = - 6 \Rightarrow x^{2} = 6 \Rightarrow x = \sqrt{6} \]  
-    \[ D = \{ (x,y)| 0 \leq y \leq -x^{2} + 9, \sqrt{6} \leq x \leq 3 \} \]
-    \[ \int_{\sqrt{6}}^{3} \int_{0}^{-x^{2} + 9} f(x,y) \, dy \, dx  \]  
+    \begin{center}
+        \begin{tikzpicture}[scale=1.5]
+          % Draw axes
+          \draw[->] (0,0) -- (3.5,0) node[right] {$x$};
+          \draw[->] (0,0) -- (0,3.5) node[above] {$y$};
+        
+          % Label ticks on axes
+          \draw (0,3) node[left] {$3$} -- (0.1,3);
+          \draw ({sqrt(6)},0) node[below] {$\sqrt{6}$} -- ({sqrt(6)},0.1);
+          \draw (3,0) node[below] {$3$} -- (3,0.1);
+        
+          % Draw the rectangle region for the first integral
+          \fill[blue!20,opacity=0.5] (0,0) rectangle ({sqrt(6)},3);
+        
+          % Draw the curve y = 9 - x^2
+          \draw[domain=sqrt(6):3,samples=100] plot (\x, {9 - \x*\x});
+        
+          % Shade the region under the curve for the second integral
+          \fill[blue!20,opacity=0.5,domain=sqrt(6):3,samples=100,variable=\x]
+            ({sqrt(6)},0) -- plot ({\x}, {9 - \x*\x}) -- (3,0) -- cycle;
+        
+          % Draw dashed lines to indicate boundaries
+          \draw[dashed] ({sqrt(6)},0) -- ({sqrt(6)},3) -- (0,3);
+        
+          % Mark and label key points
+          \draw[fill=black] ({sqrt(6)},3) circle (0.03) node[above right] {$(\sqrt{6},\, 3)$};
+          \draw[fill=black] (3,0) circle (0.03) node[below right] {$(3,\, 0)$};
+          \draw[fill=black] (0,3) circle (0.03) node[above left] {$(0,\, 3)$};
+        
+          % Label the curve
+          \node at (2.2,0.7) {$y = 9 - x^2$};
+        
+        \end{tikzpicture}
+    \end{center}
+    \[  x^2 + y = 9 \implies y = 9 - x^2 \]
+    \[ 0 \leq y \leq 3, \quad 0 \leq x \leq \sqrt{9 - y} \implies 0 \leq x \leq 3, \quad 0 \leq y \leq 9 - x^2 \]
+    \[ \int_0^{\sqrt{6}} \int_0^3 f(x, y) \, dy \, dx + \int_{\sqrt{6}}^3 \int_0^{9 - x^2} f(x, y) \, dy \, dx \]
     c) 
     \insertpng[0.5]{C.png}
-    \[ \int_{0}^{4} \int_{0}^{ln 2x} \]
-    \[ \iint\limits_{D} f(x,y) dA \quad D = \{ 0 \leq x \leq 4, 0 \leq y \leq ln x \} \]
-    \[ y = ln 2x \Rightarrow y = ln 2(4) \Rightarrow y = ln 8 \Rightarrow 0 = ln 2x \Rightarrow ln 1 = \ln 2x 2x \Rightarrow x = \frac{1}{2} \] 
-    \[ \iint\limits_{D} f(x,y) dA \quad D = \{ (x,y)| 0 \leq y \leq \ln 8 , \, \frac{1}{2} \leq x \leq \frac{e^{y}}{2} \} \]
-    \[ \int_{0}^{\ln 8 } \int_{\frac{1}{2}}^{\frac{e^{y}}{2}}f(x,y) \, dx \, dy \]      
+    
+    \begin{center}
+        \begin{tikzpicture}[scale=2]
+        % Set up the axes
+        \draw[->] (0,0) -- (4.5,0) node[right] {$x$};
+        \draw[->] (0,0) -- (0,2.5) node[above] {$y$};
+        
+        % Extend axes to x=0.5 and y=0
+        \draw[dashed] (0.5,0) -- (0.5,2.5);
+        
+        % Label x-axis ticks
+        \draw (0.5,0) -- (0.5,-0.05) node[below] {$0.5$};
+        \draw (1,0) -- (1,-0.05) node[below] {$1$};
+        \draw (4,0) -- (4,-0.05) node[below] {$4$};
+        
+        % Draw horizontal lines at y=ln2 and y=ln8
+        \draw[dashed] (0,{ln(2)}) -- (4.5,{ln(2)});
+        \draw[dashed] (0,{ln(8)}) -- (4.5,{ln(8)});
+        
+        % Label y-axis ticks
+        \draw (0,{ln(2)}) -- (-0.05,{ln(2)}) node[left] {$\ln 2$};
+        \draw (0,{ln(8)}) -- (-0.05,{ln(8)}) node[left] {$\ln 8$};
+        
+        % Plot the curve x = e^y / 2
+        \draw[domain={ln(0.5)}:{ln(8)},samples=100,variable=\y,thick]
+            plot ({exp(\y)/2}, {\y});
+        
+        % Label the curve
+        \node at (1.5,1.2) [above] {$x = \dfrac{e^y}{2}$};
+        
+        % Fill the first region (rectangle)
+        \fill[blue!20,opacity=0.5] (1,0) rectangle (4,{ln(2)});
+        
+        % Fill the second region
+        \fill[blue!20,opacity=0.5,domain=ln(2):ln(8),variable=\y]
+            plot ({exp(\y)/2}, {\y}) -- (4,{ln(8)}) -- (4,{ln(2)}) -- cycle;
+        
+        % Mark key points
+        \draw[fill=black] (1,{ln(2)}) circle (0.03) node[below left] {$(1,\, \ln 2)$};
+        \draw[fill=black] (4,{ln(8)}) circle (0.03) node[above right] {$(4,\, \ln 8)$};
+        \draw[fill=black] (0.5,0) circle (0.03) node[below left] {$(0.5,\, 0)$};
+        
+        % Annotations
+        \node at (2.5, {ln(2)/2}) {$\text{First Region}$};
+        \node at (3.2, {1.5}) {$\text{Second Region}$};
+        
+        \end{tikzpicture}
+        \end{center}
+    \[
+    \int_0^4 \int_0^{\ln 2x} f(x, y) \, dy \, dx
+    \]
+
+    \[
+    y \leq \ln(2x) \quad \Rightarrow \quad e^y \leq 2x \quad \Rightarrow \quad x \geq \frac{e^y}{2}
+    \]
+
+    \[
+    x \in \left[1, 4\right] \quad \text{for} \quad y \in \left[0, \ln 2\right]
+    \]
+
+    \[
+    x \in \left[\frac{e^y}{2}, 4\right] \quad \text{for} \quad y \in \left[\ln 2, \ln 8\right]
+    \]
+
+    \[
+    \int_0^{\ln 2} \int_1^4 f(x, y) \, dx \, dy + \int_{\ln 2}^{\ln 8} \int_{\frac{e^y}{2}}^4 f(x, y) \, dx \, dy
+    \]
 }
 
 \newpage 

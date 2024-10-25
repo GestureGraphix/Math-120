@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  24 OCT 2024 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  24 OCT 2024 22:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -988,11 +988,13 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.colormaps.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/tikzsymbols/tikzsymbols.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
+))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.colormaps.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.fillbetween.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfcontrib/tikzlibraryfillbetween.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryintersections.code.tex
+\pgf@intersect@solutions=\count372
+)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecorations.softclip.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfcontrib/pgflibraryfillbetween.code.tex))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decorations.softclip.code.tex)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/tikzsymbols/tikzsymbols.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
 Package: expl3 2024-05-27 L3 programming layer (loader) 
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count372
+\l__color_backend_stack_int=\count373
 \l__pdf_internal_box=\box144
 ))
 Package: xparse 2024-05-08 L3 Experimental document command parser
@@ -1004,114 +1006,114 @@ Package: l3keys2e 2024-05-08 LaTeX2e option processing using LaTeX3 keys
 File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 \l__tikzsymbols_Moai_thickness_dim=\dimen338
-\l__tikzsymbols_Kochtopf_nr_arguments_int=\count373
-\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count374
-\l__tikzsymbols_Schneebesen_nr_arguments_int=\count375
-\l__tikzsymbols_Sieb_nr_arguments_int=\count376
-\l__tikzsymbols_Purierstab_nr_arguments_int=\count377
-\l__tikzsymbols_Dreizack_nr_arguments_int=\count378
-\l__tikzsymbols_Backblech_nr_arguments_int=\count379
-\l__tikzsymbols_Ofen_nr_arguments_int=\count380
-\l__tikzsymbols_Pfanne_nr_arguments_int=\count381
-\l__tikzsymbols_Herd_nr_arguments_int=\count382
-\l__tikzsymbols_Saftpresse_nr_arguments_int=\count383
-\l__tikzsymbols_Schussel_nr_arguments_int=\count384
-\l__tikzsymbols_Schaler_nr_arguments_int=\count385
-\l__tikzsymbols_Reibe_nr_arguments_int=\count386
-\l__tikzsymbols_Flasche_nr_arguments_int=\count387
-\l__tikzsymbols_Nudelholz_nr_arguments_int=\count388
-\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count389
-\l__tikzsymbols_Sadey_nr_arguments_int=\count390
-\l__tikzsymbols_dSadey_nr_arguments_int=\count391
-\l__tikzsymbols_Changey_nr_arguments_int=\count392
-\l__tikzsymbols_dChangey_nr_arguments_int=\count393
-\l__tikzsymbols_cChangey_nr_arguments_int=\count394
-\l__tikzsymbols_dcChangey_nr_arguments_int=\count395
-\l__tikzsymbols_Annoey_nr_arguments_int=\count396
-\l__tikzsymbols_dAnnoey_nr_arguments_int=\count397
-\l__tikzsymbols_Smiley_nr_arguments_int=\count398
-\l__tikzsymbols_dSmiley_nr_arguments_int=\count399
-\l__tikzsymbols_Laughey_nr_arguments_int=\count400
-\l__tikzsymbols_dLaughey_nr_arguments_int=\count401
-\l__tikzsymbols_Neutrey_nr_arguments_int=\count402
-\l__tikzsymbols_dNeutrey_nr_arguments_int=\count403
-\l__tikzsymbols_Winkey_nr_arguments_int=\count404
-\l__tikzsymbols_oldWinkey_nr_arguments_int=\count405
-\l__tikzsymbols_dWinkey_nr_arguments_int=\count406
-\l__tikzsymbols_olddWinkey_nr_arguments_int=\count407
-\l__tikzsymbols_Sey_nr_arguments_int=\count408
-\l__tikzsymbols_dSey_nr_arguments_int=\count409
-\l__tikzsymbols_Xey_nr_arguments_int=\count410
-\l__tikzsymbols_dXey_nr_arguments_int=\count411
-\l__tikzsymbols_Innocey_nr_arguments_int=\count412
-\l__tikzsymbols_wInnocey_nr_arguments_int=\count413
-\l__tikzsymbols_dInnocey_nr_arguments_int=\count414
-\l__tikzsymbols_Cooley_nr_arguments_int=\count415
-\l__tikzsymbols_dCooley_nr_arguments_int=\count416
-\l__tikzsymbols_Tongey_nr_arguments_int=\count417
-\l__tikzsymbols_dTongey_nr_arguments_int=\count418
-\l__tikzsymbols_Nursey_nr_arguments_int=\count419
-\l__tikzsymbols_dNursey_nr_arguments_int=\count420
-\l__tikzsymbols_Vomey_nr_arguments_int=\count421
-\l__tikzsymbols_dVomey_nr_arguments_int=\count422
-\l__tikzsymbols_Walley_nr_arguments_int=\count423
-\l__tikzsymbols_rWalley_nr_arguments_int=\count424
-\l__tikzsymbols_dWalley_nr_arguments_int=\count425
-\l__tikzsymbols_drWalley_nr_arguments_int=\count426
-\l__tikzsymbols_Cat_nr_arguments_int=\count427
-\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count428
-\l__tikzsymbols_Ninja_nr_arguments_int=\count429
-\l__tikzsymbols_dNinja_nr_arguments_int=\count430
-\l__tikzsymbols_Sleepey_nr_arguments_int=\count431
-\l__tikzsymbols_dSleepey_nr_arguments_int=\count432
-\l__tikzsymbols_Maskey_nr_arguments_int=\count433
-\l__tikzsymbols_NiceReapey_nr_arguments_int=\count434
-\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count435
-\l__tikzsymbols_Person_nr_arguments_int=\count436
-\l__tikzsymbols_Heart_nr_arguments_int=\count437
-\l__tikzsymbols_dHeart_nr_arguments_int=\count438
-\l__tikzsymbols_HeartBroken_nr_arguments_int=\count439
-\l__tikzsymbols_Candle_nr_arguments_int=\count440
-\l__tikzsymbols_Fire_nr_arguments_int=\count441
-\l__tikzsymbols_Coffeecup_nr_arguments_int=\count442
-\l__tikzsymbols_Chair_nr_arguments_int=\count443
-\l__tikzsymbols_Bed_nr_arguments_int=\count444
-\l__tikzsymbols_Tribar_nr_arguments_int=\count445
-\l__tikzsymbols_Moai_nr_arguments_int=\count446
-\l__tikzsymbols_Snowman_nr_arguments_int=\count447
-\l__tikzsymbols_BasicTree_nr_arguments_int=\count448
-\l__tikzsymbols_WorstTree_nr_arguments_int=\count449
-\l__tikzsymbols_Springtree_nr_arguments_int=\count450
-\l__tikzsymbols_Summertree_nr_arguments_int=\count451
-\l__tikzsymbols_Autumntree_nr_arguments_int=\count452
-\l__tikzsymbols_Wintertree_nr_arguments_int=\count453
+\l__tikzsymbols_Kochtopf_nr_arguments_int=\count374
+\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count375
+\l__tikzsymbols_Schneebesen_nr_arguments_int=\count376
+\l__tikzsymbols_Sieb_nr_arguments_int=\count377
+\l__tikzsymbols_Purierstab_nr_arguments_int=\count378
+\l__tikzsymbols_Dreizack_nr_arguments_int=\count379
+\l__tikzsymbols_Backblech_nr_arguments_int=\count380
+\l__tikzsymbols_Ofen_nr_arguments_int=\count381
+\l__tikzsymbols_Pfanne_nr_arguments_int=\count382
+\l__tikzsymbols_Herd_nr_arguments_int=\count383
+\l__tikzsymbols_Saftpresse_nr_arguments_int=\count384
+\l__tikzsymbols_Schussel_nr_arguments_int=\count385
+\l__tikzsymbols_Schaler_nr_arguments_int=\count386
+\l__tikzsymbols_Reibe_nr_arguments_int=\count387
+\l__tikzsymbols_Flasche_nr_arguments_int=\count388
+\l__tikzsymbols_Nudelholz_nr_arguments_int=\count389
+\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count390
+\l__tikzsymbols_Sadey_nr_arguments_int=\count391
+\l__tikzsymbols_dSadey_nr_arguments_int=\count392
+\l__tikzsymbols_Changey_nr_arguments_int=\count393
+\l__tikzsymbols_dChangey_nr_arguments_int=\count394
+\l__tikzsymbols_cChangey_nr_arguments_int=\count395
+\l__tikzsymbols_dcChangey_nr_arguments_int=\count396
+\l__tikzsymbols_Annoey_nr_arguments_int=\count397
+\l__tikzsymbols_dAnnoey_nr_arguments_int=\count398
+\l__tikzsymbols_Smiley_nr_arguments_int=\count399
+\l__tikzsymbols_dSmiley_nr_arguments_int=\count400
+\l__tikzsymbols_Laughey_nr_arguments_int=\count401
+\l__tikzsymbols_dLaughey_nr_arguments_int=\count402
+\l__tikzsymbols_Neutrey_nr_arguments_int=\count403
+\l__tikzsymbols_dNeutrey_nr_arguments_int=\count404
+\l__tikzsymbols_Winkey_nr_arguments_int=\count405
+\l__tikzsymbols_oldWinkey_nr_arguments_int=\count406
+\l__tikzsymbols_dWinkey_nr_arguments_int=\count407
+\l__tikzsymbols_olddWinkey_nr_arguments_int=\count408
+\l__tikzsymbols_Sey_nr_arguments_int=\count409
+\l__tikzsymbols_dSey_nr_arguments_int=\count410
+\l__tikzsymbols_Xey_nr_arguments_int=\count411
+\l__tikzsymbols_dXey_nr_arguments_int=\count412
+\l__tikzsymbols_Innocey_nr_arguments_int=\count413
+\l__tikzsymbols_wInnocey_nr_arguments_int=\count414
+\l__tikzsymbols_dInnocey_nr_arguments_int=\count415
+\l__tikzsymbols_Cooley_nr_arguments_int=\count416
+\l__tikzsymbols_dCooley_nr_arguments_int=\count417
+\l__tikzsymbols_Tongey_nr_arguments_int=\count418
+\l__tikzsymbols_dTongey_nr_arguments_int=\count419
+\l__tikzsymbols_Nursey_nr_arguments_int=\count420
+\l__tikzsymbols_dNursey_nr_arguments_int=\count421
+\l__tikzsymbols_Vomey_nr_arguments_int=\count422
+\l__tikzsymbols_dVomey_nr_arguments_int=\count423
+\l__tikzsymbols_Walley_nr_arguments_int=\count424
+\l__tikzsymbols_rWalley_nr_arguments_int=\count425
+\l__tikzsymbols_dWalley_nr_arguments_int=\count426
+\l__tikzsymbols_drWalley_nr_arguments_int=\count427
+\l__tikzsymbols_Cat_nr_arguments_int=\count428
+\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count429
+\l__tikzsymbols_Ninja_nr_arguments_int=\count430
+\l__tikzsymbols_dNinja_nr_arguments_int=\count431
+\l__tikzsymbols_Sleepey_nr_arguments_int=\count432
+\l__tikzsymbols_dSleepey_nr_arguments_int=\count433
+\l__tikzsymbols_Maskey_nr_arguments_int=\count434
+\l__tikzsymbols_NiceReapey_nr_arguments_int=\count435
+\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count436
+\l__tikzsymbols_Person_nr_arguments_int=\count437
+\l__tikzsymbols_Heart_nr_arguments_int=\count438
+\l__tikzsymbols_dHeart_nr_arguments_int=\count439
+\l__tikzsymbols_HeartBroken_nr_arguments_int=\count440
+\l__tikzsymbols_Candle_nr_arguments_int=\count441
+\l__tikzsymbols_Fire_nr_arguments_int=\count442
+\l__tikzsymbols_Coffeecup_nr_arguments_int=\count443
+\l__tikzsymbols_Chair_nr_arguments_int=\count444
+\l__tikzsymbols_Bed_nr_arguments_int=\count445
+\l__tikzsymbols_Tribar_nr_arguments_int=\count446
+\l__tikzsymbols_Moai_nr_arguments_int=\count447
+\l__tikzsymbols_Snowman_nr_arguments_int=\count448
+\l__tikzsymbols_BasicTree_nr_arguments_int=\count449
+\l__tikzsymbols_WorstTree_nr_arguments_int=\count450
+\l__tikzsymbols_Springtree_nr_arguments_int=\count451
+\l__tikzsymbols_Summertree_nr_arguments_int=\count452
+\l__tikzsymbols_Autumntree_nr_arguments_int=\count453
+\l__tikzsymbols_Wintertree_nr_arguments_int=\count454
 )
-\c@tcb@cnt@Theorem=\count454
-\c@tcb@cnt@theorem=\count455
-\c@tcb@cnt@Corollary=\count456
-\c@tcb@cnt@corollary=\count457
-\c@tcb@cnt@Lenma=\count458
-\c@tcb@cnt@lenma=\count459
-\c@tcb@cnt@Prop=\count460
-\c@tcb@cnt@prop=\count461
-\c@tcb@cnt@claim=\count462
-\c@tcb@cnt@Exercise=\count463
-\c@tcb@cnt@exercise=\count464
-\c@tcb@cnt@Example=\count465
-\c@tcb@cnt@example=\count466
-\c@tcb@cnt@ExampleWithRose=\count467
-\c@tcb@cnt@Definition=\count468
-\c@tcb@cnt@definition=\count469
-\c@tcb@cnt@DefinitionWithImage=\count470
-\c@tcb@cnt@question=\count471
-\c@tcb@cnt@qstion=\count472
-\c@tcb@cnt@wconc=\count473
+\c@tcb@cnt@Theorem=\count455
+\c@tcb@cnt@theorem=\count456
+\c@tcb@cnt@Corollary=\count457
+\c@tcb@cnt@corollary=\count458
+\c@tcb@cnt@Lenma=\count459
+\c@tcb@cnt@lenma=\count460
+\c@tcb@cnt@Prop=\count461
+\c@tcb@cnt@prop=\count462
+\c@tcb@cnt@claim=\count463
+\c@tcb@cnt@Exercise=\count464
+\c@tcb@cnt@exercise=\count465
+\c@tcb@cnt@Example=\count466
+\c@tcb@cnt@example=\count467
+\c@tcb@cnt@ExampleWithRose=\count468
+\c@tcb@cnt@Definition=\count469
+\c@tcb@cnt@definition=\count470
+\c@tcb@cnt@DefinitionWithImage=\count471
+\c@tcb@cnt@question=\count472
+\c@tcb@cnt@qstion=\count473
+\c@tcb@cnt@wconc=\count474
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pgf-blur/tikzlibraryshadows.blur.code.tex  v1.02, 2012/12/09 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\pgfbs@fading@count=\count474
+\pgfbs@fading@count=\count475
 )
-\c@mylabelcounter=\count475
+\c@mylabelcounter=\count476
 \diffdbox=\box145
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2023/10/27 v2.16 TOC entries
@@ -1196,16 +1198,16 @@ LaTeX Info: Command `\dddot' is already robust on input line 11.
 LaTeX Info: Command `\ddddot' is already robust on input line 11.
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count476
+\scratchcounter=\count477
 \scratchdimen=\dimen340
 \scratchbox=\box146
-\nofMPsegments=\count477
-\nofMParguments=\count478
+\nofMPsegments=\count478
+\nofMParguments=\count479
 \everyMPshowfont=\toks62
-\MPscratchCnt=\count479
+\MPscratchCnt=\count480
 \MPscratchDim=\dimen341
-\MPnumerator=\count480
-\makeMPintoPDFobject=\count481
+\MPnumerator=\count481
+\makeMPintoPDFobject=\count482
 \everyMPtoPDFconversion=\toks63
 ) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1214,20 +1216,5 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 11.
-\c@lstlisting=\count482
- (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks64
-\inpenc@posthook=\toks65
-) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape.sty
-Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
- (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape-nometadata.sty
-Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
- (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/graphics/lscape.sty
-Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
-)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-))
-Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
-
-LaTeX Font Info:    Trying to load font information
+\c@lstlisting=\count483
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/inp
