@@ -331,7 +331,26 @@
 
 \sol{\\
     a) 
-    \insertpng[0.5]{A.png}
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            % Axes
+            \draw[->] (-0.5,0) -- (2,0) node[anchor=north]{$x$};
+            \draw[->] (0,-0.5) -- (0,5) node[anchor=west]{$y$};
+    
+            % Lines
+            \draw[thick] (0,0) -- (0,4); % x = 0 (y-axis)
+            \draw[thick] (0,0) -- (1,4); % x = (1/4)y
+            \draw[thick] (0,4) -- (1,4); % y = 4
+    
+            % Shaded region
+            \fill[blue!30, opacity=0.5] (0,0) -- (0,4) -- (1,4) -- cycle;
+    
+            % Labels
+            \node at (0.5,2) [anchor=west] {$x = \tfrac{1}{4} y$};
+            \node at (0,4) [anchor=east] {$(0,4)$};
+            \node at (1,4) [anchor=west] {$(1,4)$};
+        \end{tikzpicture}
+    \end{center}
     \[ \int_{0}^{1} \int_{4x}^{4} f(x,y) \, dy \, dx \]
     \[ \iint\limits_{D} f(x,y) dA \]
     \[ D = \{ (x,y)| 0 \leq x \leq 1, 4x \leq y \leq 4 \} \]
@@ -362,7 +381,12 @@
 }
 
 \sol{
-    \[ \] 
+    \[ \int_{0}^{1}\int_{0}^{y} e^{\frac{x}{y}} dx dy \]
+    \[ \left. ye^{\frac{x}{y}} \right|_{0}^{y} \]  
+    \[ \int_{0}^{1} ye-y dy \]
+    \[ \left. \frac{ey^{2}}{2} - \frac{y^{2}}{2} \right|_{0}^{1} \] \
+    \[ \frac{e-1}{2} \] 
+
 }
 
 \qs{}{
@@ -381,10 +405,10 @@
             \draw[thick] (0,0) circle (1); % Inner circle
             \draw[thick] (0,0) circle (2); % Outer circle
     
-            % Shaded region on the left intersection
-            \fill[blue!30, opacity=0.5] 
-                (-1,0) arc[start angle=180, end angle=270, radius=1] --
-                (-2,0) arc[start angle=270, end angle=180, radius=2] -- cycle;
+            % Shaded region between the circles on the left
+            \fill[blue!30, opacity=0.5]
+                (0,1) arc (90:270:1) --
+                (0,-2) arc (270:90:2) -- cycle;
     
             % x-axis and y-axis
             \draw[->] (-2.5,0) -- (2.5,0) node[anchor=north]{$x$}; % x-axis
@@ -394,7 +418,7 @@
             \node at (-0.7,1.2) {$x^2 + y^2 = 1$};
             \node at (-1.7,2.2) {$x^2 + y^2 = 4$};
         \end{tikzpicture}
-    \end{center}
+    \end{center}    
     \[ x \leq 0 \quad x + y^{2} = 1 \quad x^{2} + y^{2} = 4 \]
     \[ x = r \cos \theta \quad y = r \sin \theta \quad dA = r dr \, d \theta \]
     \[ R: 1 \leq r \leq 2 \]
@@ -408,7 +432,7 @@
     \[ \frac{7}{3}(-1) - \frac{7}{3}(1) = -\frac{14}{3} \]
     \[ -\frac{7}{3} \cos \frac{3 \pi}{2} + \frac{7}{3} \cos \frac{\pi}{2} \]
     \[ - \frac{7}{3} (0) + \frac{7}{3} = 0 \]
-    \[ - \frac{14}{2}\]
+    \[ - \frac{14}{3}\]
     b)           
     \begin{center}
         \begin{tikzpicture}[scale=1.5]
