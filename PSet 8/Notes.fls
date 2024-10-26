@@ -1,6 +1,6 @@
-PWD /home/alexhernandezjuarez/Documents/Math 120/PSet 7
+PWD /home/alexhernandezjuarez/Documents/Math 120/PSet 8
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
-INPUT /home/alexhernandezjuarez/Documents/Math 120/PSet 7/Notes.tex
+INPUT /home/alexhernandezjuarez/Documents/Math 120/PSet 8/Notes.tex
 OUTPUT Notes.log
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/report.cls
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/report.cls
@@ -573,7 +573,6 @@ INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/zp
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/zplexa.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplexx.vf
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/ntxexx.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newtx/ntxexx.vf
@@ -588,22 +587,12 @@ INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zpl
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/NewPXMI_gnu.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/NewPXMI.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplmi.vf
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/NewPXMI_gnu.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/NewPXMI.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplmia.vf
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/pxmiaX.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplmia.vf
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/pxmiaX.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplsym.vf
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/ntxsym.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplmia.vf
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/pxmiaX.tfm
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT Notes.aux
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb
@@ -612,8 +601,6 @@ INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfon
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
