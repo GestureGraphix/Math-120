@@ -80,7 +80,25 @@
 }
 
 \sol{
-    \[ \] 
+    \[ x = \cos t \quad y = \sin t \quad z = t \]
+    \[ 0 \leq t \leq 4\pi \] 
+    \[ \rho(x,y,x) = x^{2}z \frac{\text{grams}}{\text{cm}} \] \
+    \[ \text{Mass: } = \int\limits_{C} \rho(x,y,z) ds \] 
+    \[ \frac{dx}{dt} = - \sin t \quad \frac{dy}{dt} = \cos t \quad \frac{dz}{dt} = 1 \] 
+    \[ ds = \sqrt{\left(\frac{dx}{dt}\right)^{2} + \left(\frac{dy}{dt}\right)^{2} + \left(\frac{dz}{dt}\right)^{2} } \, dt \] 
+    \[ ds = \sqrt{\left(-\sin(t)\right)^{2} + \left(\cos (t)\right)^{2} + \left(1\right)^{2} } \, dt \]  
+    \[ ds = \sqrt{1 + 1} \, dt = \sqrt{2} \, dt \] 
+    \[ \rho(x,y,z) = x^{2}z \Rightarrow \cos^{2}t \cdot t \Rightarrow t \cos^{2} t \]
+    \[ \text{Mass: } \int_{0}^{4\pi} \rho(t) ds = \int_{0}^{4\pi} t \cos^{2} t \sqrt{2} \, dt \]
+    \[ \sqrt{2} \int_{0}^{4} t \cos ^{2} t dt \quad \cos^{2}t = \frac{1 + \cos 2t}{2} \] 
+    \[ \sqrt{2} \int_{0}^{4\pi} t \left(\frac{1 + \cos 2t}{2}\right) \, dt \Rightarrow \frac{\sqrt{2}}{2} \int_{0}^{4\pi} t (1 + \cos 2t )\, dt \]
+    \[ \frac{\sqrt{2}}{2} \int_{0}^{4\pi} t \, dt + \frac{\sqrt{2}}{2} \int_{0}^{4\pi} t \cos 2t \, dt \] 
+    \[ \int_{0}^{4\pi} t \, dt = \left. \frac{t^{2}}{2}\right|_{0}^{4\pi} \Rightarrow \frac{\sqrt{2}}{2} \frac{16 \pi^{2}}{2} - \frac{\sqrt{2}}{2} \frac{0}{2} = 4\sqrt{2}\pi^{2} \] 
+    \[ u = t \quad du = dt \]
+    \[ v = \frac{1}{2} \sin 2t \quad dv = \cos 2t \]
+    \[ \int t \cos 2t \, dt = t \cdot \frac{1}{2} \sin 2t - \int \frac{1}{2} \sin 2t dt = \frac{1}{2} t \sin 2t + \frac{1}{4} \cos 2t + k \]
+    \[ \left[ \frac{1}{2} t \sin 2t + \frac{1}{4} \cos 2t \right]_{0}^{4 \pi} = \left( \frac{1}{2} \cdot 4 \pi \cdot 0 + \frac{1}{4} \cdot 1 \right) - \left(0 + \frac{1}{4} \cdot 1\right) = 0 \]
+    \[ 4 \sqrt{2} \pi^{2} + 0 = 4 \sqrt{2}\pi^{2} \]       
 }
 
 \qs{}{
