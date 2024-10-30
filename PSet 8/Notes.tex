@@ -95,6 +95,7 @@
 
 \qs{}{
     Given the contour diagram for a function \(f\) shown below, in which dark colors correspond to low values of \(f\) and light colors correspond to high values of \(f\), sketch the gradient vector field \(\vec{F} = \nabla f\).
+    \insertpng[0.25]{prob4.png}
 }
 
 \qs{}{
@@ -129,6 +130,17 @@
     \int_C \vec{F} \cdot d\vec{r}
     \]
     positive, negative, or zero? Explain your reasoning.
+    \insertpng[0.25]{prob6.png}
+}
+
+\sol{ 
+    \\ 
+    In the first quadrant (top right), the vectors point in the counterclockwise direction. In the second quadrant (top left), the vectors still circulate in a way consistent with a counterclockwise motion.
+    In the third and fourth quadrants, the vectors similarly maintain this pattern, suggesting the field is rotating counterclockwise overall. \\
+    Since the problem states the circle C is clockwise oriented, the direction of the field is opposite to the direction of the curve's traversal. \\
+    The line integral $\int_{C} \vec{F} \, d\vec{r} $ measures the component of the vector field $\vec{F}$
+    that aligns with the direction of traversal around the curve C. Here, the vector field rotates counterclockwise, but the traversal of CC is clockwise.
+    Since the field vectors mostly oppose the direction of movement along the curve, the dot product $ \vec{F} \cdot \, d \vec{r} $ will tend to be negative along the path.
 }
 
 \qs{}{
