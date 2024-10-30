@@ -607,6 +607,10 @@ INPUT ./prob6.png
 INPUT ./prob6.png
 INPUT ./prob6.png
 INPUT ./prob6.png
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplmi.vf
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/NewPXMI_gnu.tfm
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/NewPXMI.tfm
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
 INPUT Notes.aux
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb

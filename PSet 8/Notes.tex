@@ -98,6 +98,28 @@
     \insertpng[0.25]{prob4.png}
 }
 
+\sol{
+    \begin{center}
+        \begin{tikzpicture}
+            % Draw the contour lines based on the diagram
+            \foreach \i in {-4,-3,...,4} {
+                \draw[thin] plot[domain=-1.5:1.5, smooth] (\x,{(\x)^2 - \i/2});
+            }
+        
+            % Add gradient vectors (hypothetical) at sample points
+            \foreach \x in {-1.5,-1,-0.5,0,0.5,1,1.5} {
+                \foreach \y in {-1,-0.5,0,0.5,1} {
+                    % Compute a generic direction for the gradient (upward and away from the center)
+                    \draw[->, thick, blue] (\x, \y) -- ++(0.3*\x, 0.5);
+                }
+            }
+        
+            % Axes for reference
+            \draw[->] (-2,0) -- (2,0) node[right] {$x$};
+            \draw[->] (0,-2) -- (0,2) node[above] {$y$};
+        \end{tikzpicture}        
+    \end{center}
+}
 \qs{}{
     A thin wire has the shape of the curve \(C\) parameterized by \(x = \cos t\), \(y = \sin t\), \(z = t\), \(0 \leq t \leq 4\pi\), where \(x, y,\) and \(z\) are measured in centimeters. The linear density of the wire is given by \(\rho(x, y, z) = x^2 z\) grams per centimeter. Find the mass of the wire.
 }
@@ -142,6 +164,8 @@
     that aligns with the direction of traversal around the curve C. Here, the vector field rotates counterclockwise, but the traversal of CC is clockwise.
     Since the field vectors mostly oppose the direction of movement along the curve, the dot product $ \vec{F} \cdot \, d \vec{r} $ will tend to be negative along the path.
 }
+
+\newpage 
 
 \qs{}{
     Evaluate the line integral 
@@ -296,6 +320,8 @@
     \[ \left( \frac{1}{2} - \frac{1}{5} + \frac{5}{6} \right) - 0 = \frac{17}{15} \]   
 }
 
+\newpage 
+
 \qs{}{
     For each of the following vector fields \(\vec{F}\) and curves \(C\), find a function \(f\) such that \(\vec{F} = \nabla f\) and use this function to evaluate 
     \[
@@ -359,6 +385,133 @@
         \]
     \end{enumerate}
 }
+
+\sol{ 
+    \\
+    a) 
+    \[
+    \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}, \quad 
+    \frac{\partial P}{\partial z} = \frac{\partial R}{\partial x}, \quad 
+    \frac{\partial Q}{\partial z} = \frac{\partial R}{\partial y}.
+    \]
+
+    \[
+    P = x, \quad Q = 2x, \quad R = xz.
+    \]
+
+    \[
+    \frac{\partial P}{\partial y} = \frac{\partial x}{\partial y} = 0, \quad 
+    \frac{\partial Q}{\partial x} = \frac{\partial 2x}{\partial x} = 2.
+    \]
+
+    \[
+    \frac{\partial P}{\partial z} = \frac{\partial x}{\partial z} = 0, \quad 
+    \frac{\partial R}{\partial x} = \frac{\partial (xz)}{\partial x} = z.
+    \]
+
+    \[
+    \frac{\partial Q}{\partial z} = \frac{\partial 2x}{\partial z} = 0, \quad 
+    \frac{\partial R}{\partial y} = \frac{\partial (xz)}{\partial y} = 0.
+    \]
+
+    The first inequality does not hold true nor does teh second but third does. This means that it is not conservative \\
+
+    b) 
+    \[
+    \int_C x \, dx + 2x \, dy + xz \, dz
+    \]
+
+    \[
+    A = (0, 0, 0), \quad B = (1, 0, 0)
+    \]
+
+    \[
+    x = t, \quad y = 0, \quad z = 0, \quad t \in [0, 1]
+    \]
+
+    \[
+    dx = dt, \quad dy = 0, \quad dz = 0
+    \]
+
+    \[
+    \int_{C_1} x \, dx + 2x \, dy + xz \, dz = \int_{0}^{1} t \, dt = \left[ \frac{1}{2} t^2 \right]_0^1 = \frac{1}{2}
+    \]
+
+    \[
+    C_2: \quad C_{2a}, \quad C_{2b}, \quad C_{2c}
+    \]
+
+    \[
+    C_{2a}: \quad (0, 0, 0) \to (0, 1, 0)
+    \]
+
+    \[
+    x = 0, \quad y = t, \quad z = 0, \quad t \in [0, 1]
+    \]
+
+    \[
+    dx = 0, \quad dy = dt, \quad dz = 0
+    \]
+
+    \[
+    \int_{C_{2a}} x \, dx + 2x \, dy + xz \, dz = \int_{0}^{1} 0 \, dt = 0
+    \]
+
+    \[
+    C_{2b}: \quad (0, 1, 0) \to (1, 1, 0)
+    \]
+
+    \[
+    x = t, \quad y = 1, \quad z = 0, \quad t \in [0, 1]
+    \]
+
+    \[
+    dx = dt, \quad dy = 0, \quad dz = 0
+    \]
+
+    \[
+    \int_{C_{2b}} x \, dx + 2x \, dy + xz \, dz = \int_{0}^{1} t \, dt = \left[ \frac{1}{2} t^2 \right]_0^1 = \frac{1}{2}
+    \]
+
+    \[
+    C_{2c}: \quad (1, 1, 0) \to (1, 0, 0)
+    \]
+
+    \[
+    x = 1, \quad y = t, \quad z = 0, \quad t \in [1, 0]
+    \]
+
+    \[
+    dx = 0, \quad dy = dt, \quad dz = 0
+    \]
+
+    \[
+    \int_{C_{2c}} x \, dx + 2x \, dy + xz \, dz = 2 \int_{1}^{0} dt = 2 (0 - 1) = -2
+    \]
+
+    \[
+    \int_{C_2} = \int_{C_{2a}} + \int_{C_{2b}} + \int_{C_{2c}} = 0 + \frac{1}{2} + (-2) = -\frac{3}{2}
+    \]
+
+    \[
+    \int_{C_1} x \, dx + 2x \, dy + xz \, dz = \frac{1}{2}
+    \]
+
+    \[
+    \int_{C_2} x \, dx + 2x \, dy + xz \, dz = -\frac{3}{2}
+    \]
+
+    \[
+    \frac{1}{2} \neq -\frac{3}{2}
+    \]
+
+    \[
+    \int_{C_1} x \, dx + 2x \, dy + xz \, dz \ne \int_{C_2} x \, dx + 2x \, dy + xz \, dz
+    \]
+
+}
+
+\newpage 
 
 \qs{}{
     The force exerted by an electric charge at the origin on a charged particle at a point \((x, y, z)\) with position vector \(\vec{r} = \langle x, y, z \rangle\) is 
