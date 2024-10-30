@@ -315,7 +315,16 @@
     \[ f(x,y,z) = \int e^{y} \, dx = xe^{y} + \rho(y,z) \]
     \[ \frac{\partial f}{\partial y} = xe^{y} + \frac{\partial \rho}{\partial y} \quad xe^{y} + \frac{\partial \rho}{\partial y} \quad \frac{\partial \rho}{\partial y} = 0 \]
     \[ \rho(x,y,z) = \phi(z) \]
-    \[ \frac{\partial f}{\partial z} = (z+1)e^{z} \]      
+    \[ \frac{\partial f}{\partial z} = (z+1)e^{z} \]
+    \[ \rho(z) = \int (z+1)e^{z} \, dz \]
+    \[ u = z + 1 \quad du = 1 \, dz \] 
+    \[ v = e^{z} \, dv = e^{z} \, dz \] 
+    \[ \int (z+1)e^{z} \, dz = (z+1) e^{z} - \int e^{z} \, dz \] 
+    \[ (z+1)e^{z} - e^{z} \Rightarrow ze^{z} + e^{z} - e^{z} = ze^{z} \]
+    \[ f(x,y,z) = xe^{y} + ze^{z} \]
+    \[ f(1,1,1) = (1)e^{1} + (1)e^{1} = ze \] 
+    \[ f(0,0,0) = (0)e^{0} + + (0)e^{0} = 0 \]
+    \[ \int\limits_{C} \vec{F} \cdot d\vec{r} = f(1,1,1) - f(0,0,0) = 2e \]          
 }
 
 \qs{}{
@@ -354,6 +363,53 @@
         
         \item Although \(\vec{F}\) is not defined at the origin, it turns out that \(\vec{F}\) is conservative on its domain. Find a potential function \(f\), and use the Fundamental Theorem of Line Integrals to compute the work done on the particle.
     \end{enumerate}
+}
+
+\sol{
+    \\
+    a) 
+    \[
+    \vec{r}(t) = (t, 3, 2t), \quad t \in [0, 1]
+    \]
+    \[
+    \vec{r}'(t) = \langle 1, 0, 2 \rangle
+    \]
+    \[
+    |\vec{r}(t)| = \sqrt{5t^2 + 9}
+    \]
+    \[
+    \vec{F}(\vec{r}(t)) = K \frac{\langle t, 3, 2t \rangle}{(5t^2 + 9)^{3/2}}
+    \]
+    \[
+    \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) = K \frac{5t}{(5t^2 + 9)^{3/2}}
+    \]
+    \[
+    W = \int_0^1 K \frac{5t}{(5t^2 + 9)^{3/2}} \, dt
+    \]
+    Substitution: \( u = 5t^2 + 9 \), \( du = 10t \, dt \)
+    \[
+    W = K \int_9^{14} \frac{du}{2u^{3/2}}
+    \]
+    \[
+    W = \frac{K}{2} \int_9^{14} u^{-3/2} \, du
+    \]
+    \[
+    W = -K \left[ u^{-1/2} \right]_9^{14} = K \left( \frac{1}{3} - \frac{1}{\sqrt{14}} \right)
+    \]
+
+    b) 
+    \[
+    f(\vec{r}) = -\frac{K}{|\vec{r}|}
+    \]
+    \[
+    W = f(\vec{r}_B) - f(\vec{r}_A)
+    \]
+    \[
+    |\vec{r}_A| = 3, \quad |\vec{r}_B| = \sqrt{14}
+    \]
+    \[
+    W = K \left( \frac{1}{3} - \frac{1}{\sqrt{14}} \right)
+    \]
 }
 
 \end{document}
