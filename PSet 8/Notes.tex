@@ -5,8 +5,8 @@
 \input{letterfonts}
 
 \title{\Huge{Math 120}}
-\author{\huge{PSet 7}}
-\date{Oct 24 2024}
+\author{\huge{PSet 8}}
+\date{Oct 31 2024}
 
 \begin{document}
 
@@ -18,7 +18,7 @@
 \pagebreak
 
 \chapter{}
-\section{PSet 7}
+\section{PSet 8}
 
 \qs{}{
     Evaluate the scalar line integral
@@ -67,29 +67,36 @@
     $\therefore$ the scalar line integral is independent of the parameterization and the equality holds true for any continuous function f          
 }
 
+\newpage 
+
 \qs{}{
     Sketch the vector field \(\vec{F}(x, y) = xy \, \hat{\imath} + \frac{1}{2} \, \hat{\jmath} \).
 }
 
 \sol{
     \begin{center}
-        \begin{tikzpicture}
-          \begin{axis}[
-            axis equal,
-            axis lines=middle,
-            xmin=-3, xmax=3, ymin=-3, ymax=3,
-            xlabel={$x$}, ylabel={$y$},
-            samples=15,
-            domain=-3:3, y domain=-3:3,
-            quiver={
-              u={x*y},
-              v={0.5},
-            },
-            every arrow/.append style={-stealth, blue},
-          ]
-          \addplot3[quiver] {0};
-          \end{axis}
-        \end{tikzpicture}
+        \begin{tikzpicture}[scale=1]
+            % Draw axes
+            \draw[->] (-3.5,0) -- (3.5,0) node[right] {$x$};
+            \draw[->] (0,-3.5) -- (0,3.5) node[above] {$y$};
+          
+            % Loop over grid points
+            \foreach \x in {-3,-2.5,...,3}
+            \foreach \y in {-3,-2.5,...,3}
+            {
+              % Calculate vector components
+              \pgfmathsetmacro{\u}{\x*\y}
+              \pgfmathsetmacro{\v}{0.5}
+          
+              % Normalize vector length for consistent arrow sizes
+              \pgfmathsetmacro{\len}{sqrt((\u)^2+(\v)^2)}
+              \pgfmathsetmacro{\unorm}{\u/\len*0.3}
+              \pgfmathsetmacro{\vnorm}{\v/\len*0.3}
+          
+              % Draw vector arrow
+              \draw[->, blue] (\x,\y) -- +(\unorm,\vnorm);
+            }
+          \end{tikzpicture}
     \end{center}
 }
 
@@ -100,24 +107,7 @@
 
 \sol{
     \begin{center}
-        \begin{tikzpicture}
-            % Draw the contour lines based on the diagram
-            \foreach \i in {-4,-3,...,4} {
-                \draw[thin] plot[domain=-1.5:1.5, smooth] (\x,{(\x)^2 - \i/2});
-            }
-        
-            % Add gradient vectors (hypothetical) at sample points
-            \foreach \x in {-1.5,-1,-0.5,0,0.5,1,1.5} {
-                \foreach \y in {-1,-0.5,0,0.5,1} {
-                    % Compute a generic direction for the gradient (upward and away from the center)
-                    \draw[->, thick, blue] (\x, \y) -- ++(0.3*\x, 0.5);
-                }
-            }
-        
-            % Axes for reference
-            \draw[->] (-2,0) -- (2,0) node[right] {$x$};
-            \draw[->] (0,-2) -- (0,2) node[above] {$y$};
-        \end{tikzpicture}        
+        \insertpng[0.05]{prob4ans.png}
     \end{center}
 }
 \qs{}{
@@ -146,6 +136,8 @@
     \[ 4 \sqrt{2} \pi^{2} + 0 = 4 \sqrt{2}\pi^{2} \]       
 }
 
+\newpage 
+
 \qs{}{
     Let \(\vec{F}\) be the vector field shown below, and let \(C\) be the unit circle, oriented clockwise. Is the vector line integral
     \[
@@ -156,16 +148,9 @@
 }
 
 \sol{ 
-    \\ 
-    In the first quadrant (top right), the vectors point in the counterclockwise direction. In the second quadrant (top left), the vectors still circulate in a way consistent with a counterclockwise motion.
-    In the third and fourth quadrants, the vectors similarly maintain this pattern, suggesting the field is rotating counterclockwise overall. \\
-    Since the problem states the circle C is clockwise oriented, the direction of the field is opposite to the direction of the curve's traversal. \\
-    The line integral $\int_{C} \vec{F} \, d\vec{r} $ measures the component of the vector field $\vec{F}$
-    that aligns with the direction of traversal around the curve C. Here, the vector field rotates counterclockwise, but the traversal of CC is clockwise.
-    Since the field vectors mostly oppose the direction of movement along the curve, the dot product $ \vec{F} \cdot \, d \vec{r} $ will tend to be negative along the path.
+    \\
+    The vector field is in the same direction as C, so it is positive. 
 }
-
-\newpage 
 
 \qs{}{
     Evaluate the line integral 
@@ -274,6 +259,8 @@
     \]
 
 }
+
+\newpage
 
 \qs{}{
     Compute the line integral of the vector field 
