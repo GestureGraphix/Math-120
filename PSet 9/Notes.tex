@@ -1,0 +1,84 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Math 120}}
+\author{\huge{PSet 8}}
+\date{Oct 31 2024}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{}
+\section{PSet 8}
+
+\qs{}{
+    Let \(\vec{F}(x, y) = \langle y^2 \cos x, x^2 + 2y \sin x \rangle\), and let \(C\) be the triangle from \((0, 0)\) to \((2, 6)\) to \((2, 0)\) to \((0, 0)\).
+    Use Green's Theorem to evaluate \(\oint_C \vec{F} \cdot d\vec{r}\). (Check the orientation of the curve before applying the theorem.)
+}
+
+\qs{}{
+    Let \(P(x, y) = -x^2 y^3\) and \(Q(x, y) = xy^2\), and let \(C\) be the circle \(x^2 + y^2 = 4\), oriented counterclockwise.
+    \begin{enumerate}
+        \item[(a)] Compute \(\oint_C \vec{F} \cdot d\vec{r}\) directly, by parameterizing \(C\) and finding the line integral.
+        \item[(b)] Compute \(\oint_C \vec{F} \cdot d\vec{r}\) using Green's Theorem.
+    \end{enumerate}
+}
+
+\qs{}{
+    Use Green's Theorem to find the area enclosed by the parametric curve \(\vec{r}(t) = \langle \sin t, \sin 2t \rangle\), \(0 \leq t \leq \pi\).
+}
+
+\qs{}{
+    Consider the vector field \(\vec{F} = -\frac{y}{x^2 + y^2} \hat{i} + \frac{x}{x^2 + y^2} \hat{j}\).
+    \begin{enumerate}
+        \item[(a)] Show that \(\frac{\partial Q}{\partial x} = \frac{\partial P}{\partial y}\) at every point in the domain of \(\vec{F}\).
+
+        \item[(b)] Let \(C\) be the short arc of the circle \(x^2 + y^2 = 2\) from \((1, 1)\) to \((-1, 1)\). Evaluate \(\int_C \vec{F} \cdot d\vec{r}\) directly, by parameterizing the curve and computing \(\int_a^b \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) \, dt\).
+
+        \item[(c)] Integrate \(P(x, y) = -\frac{y}{x^2 + y^2}\) with respect to \(x\), and check that the partial derivative of the result with respect to \(y\) is \(Q(x, y) = \frac{x}{x^2 + y^2}\). You have now found a function \(f\) such that \(\nabla f = \vec{F}\).
+
+        What is the domain of this function \(f\)? Is it the same as the domain of \(\vec{F}\)?
+
+        \item[(d)] Use your answer to part (c) and the Fundamental Theorem of Line Integrals to check your answer to part (b).
+
+        \item[(e)] Now let \(C\) be the circle of radius \(R\) centered at the origin, oriented counterclockwise. Compute \(\oint_C \vec{F} \cdot d\vec{r}\). Explain why your answer doesn't contradict the statement that the integral of a conservative vector field around any closed curve must be zero. Hint: Look carefully at the domain of the potential function \(f\) you found in part (b).
+    \end{enumerate}
+}
+
+\qs{}{
+    Again consider the vector field \(\vec{F} = -\frac{y}{x^2 + y^2} \hat{i} + \frac{x}{x^2 + y^2} \hat{j}\). Let \(C_1\) be any closed curve going counterclockwise around the origin, such as the orange curve below. Let \(C_2\) be a circle, centered around the origin, with radius less than the shortest distance between \(C_1\) and the origin. (This condition guarantees that the two curves don't intersect.) Let \(D\) be the region between the two curves.
+    \begin{enumerate}
+        \item[(a)] Explain why Green's Theorem applies on the region \(D\).
+        
+        \item[(b)] The boundary of \(D\) is the union of the two curves \(C_1\) and \(-C_2\), where by \(-C_2\) we mean the inside circle oriented clockwise. Since \(\int_{-C_2} \vec{F} \cdot d\vec{r} = -\int_{C_2} \vec{F} \cdot d\vec{r}\), Green’s Theorem implies that
+        \[
+        \int_{C_1} \vec{F} \cdot d\vec{r} - \int_{C_2} \vec{F} \cdot d\vec{r} = \iint_D (Q_x - P_y) \, dA.
+        \]
+        
+        Use the results of Problem \# 4 above to determine the value of \(\int_{C_1} \vec{F} \cdot d\vec{r}\).
+    \end{enumerate}
+}
+
+\qs{}{
+    Let \(\vec{F} = \langle 2y - x^2, 4x + y e^{\cos y} \rangle\), and let \(C\) be the curve \(y = x^2 - 9\), \(-3 \leq x \leq 3\), oriented from left to right.
+
+    \begin{enumerate}
+        \item[(a)] Parameterize the curve \(C\), and write the vector line integral \(\int_C \vec{F} \cdot d\vec{r} = \int_a^b \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) \, dt\). Do not try to compute this integral directly!
+        
+        \item[(b)] Let \(C^*\) be the line segment along the \(x\)-axis from \((3, 0)\) to \((-3, 0)\). Compute \(\int_{C^*} \vec{F} \cdot d\vec{r}\).
+        
+        \item[(c)] Let \(D\) be the region bounded by the parabola \(y = x^2 - 9\) and the \(x\)-axis. Compute \(\iint_D (Q_x - P_y) \, dA\).
+        
+        \item[(d)] Use your answers to (b) and (c) to compute \(\int_C \vec{F} \cdot d\vec{r}\).
+    \end{enumerate}
+}
+\end{document}
