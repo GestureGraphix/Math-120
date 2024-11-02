@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  17 OCT 2024 15:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  1 NOV 2024 13:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -988,12 +988,102 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.colormaps.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/tikzsymbols/tikzsymbols.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
+))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/minted/minted.sty
+Package: minted 2024/10/07 v3.1.2 Yet another Pygments shim for LaTeX
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2024/09/14 v1.8.0 fvextra - extensions and patches for fancyvrb
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count372
+\FV@InFile=\read5
+\FV@TabBox=\box144
+\c@FancyVerbLine=\count373
+\FV@StepNumber=\count374
+\FV@OutFile=\write5
+) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/lineno/lineno.sty
+Package: lineno 2023/05/20 line numbers on paragraphs v5.3
+\linenopenalty=\count375
+\output=\toks62
+\linenoprevgraf=\count376
+\linenumbersep=\dimen338
+\linenumberwidth=\dimen339
+\c@linenumber=\count377
+\c@pagewiselinenumber=\count378
+\c@LN@truepage=\count379
+\c@internallinenumber=\count380
+\c@internallinenumbers=\count381
+\quotelinenumbersep=\dimen340
+\bframerule=\dimen341
+\bframesep=\dimen342
+\bframebox=\box145
+\linenoamsmath@ams@eqpen=\count382
+LaTeX Info: Redefining \\ on input line 3180.
+)
+\c@FancyVerbWriteLine=\count383
+\c@FancyVerbBufferIndex=\count384
+\c@FancyVerbBufferLength=\count385
+\c@FancyVerbBufferLine=\count386
+\c@FV@oldbufferlength=\count387
+\c@FV@TrueTabGroupLevel=\count388
+\c@FV@TrueTabCounter=\count389
+\FV@TabBox@Group=\box146
+\FV@TmpLength=\skip86
+\c@FV@HighlightLinesStart=\count390
+\c@FV@HighlightLinesStop=\count391
+\FV@LoopCount=\count392
+\FV@NCharsBox=\box147
+\FV@BreakIndent=\dimen343
+\FV@BreakIndentNChars=\count393
+\FV@BreakSymbolSepLeft=\dimen344
+\FV@BreakSymbolSepLeftNChars=\count394
+\FV@BreakSymbolSepRight=\dimen345
+\FV@BreakSymbolSepRightNChars=\count395
+\FV@BreakSymbolIndentLeft=\dimen346
+\FV@BreakSymbolIndentLeftNChars=\count396
+\FV@BreakSymbolIndentRight=\dimen347
+\FV@BreakSymbolIndentRightNChars=\count397
+\c@FancyVerbLineBreakLast=\count398
+\FV@LineBox=\box148
+\FV@LineIndentBox=\box149
+\c@FV@BreakBufferDepth=\count399
+\FV@LineWidth=\dimen348
+) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/latex2pydata/latex2pydata.sty
+Package: latex2pydata 2024/05/16 v0.2.0 latex2pydata - write data to file in Python literal format
+\c@pydata@bufferindex=\count400
+\c@pydata@defaultbufferlength=\count401
+) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks63
+\pgfopts@list@add@b@toks=\toks64
+) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count402
+\float@exts=\toks65
+\float@box=\box150
+\@float@everytoks=\toks66
+\@floatcapt=\box151
+)
+\c@minted@tmpcnt=\count403
+\c@minted@tmpcodebufferlength=\count404
+\c@minted@numcachefiles=\count405
+\c@minted@FancyVerbLineTemp=\count406
+\@float@every@listing=\toks67
+\c@listing=\count407
+) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.colormaps.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/tikzsymbols/tikzsymbols.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
 Package: expl3 2024-05-27 L3 programming layer (loader) 
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count372
-\l__pdf_internal_box=\box144
+\l__color_backend_stack_int=\count408
+\l__pdf_internal_box=\box152
 ))
 Package: xparse 2024-05-08 L3 Experimental document command parser
 )
@@ -1003,119 +1093,119 @@ Package: l3keys2e 2024-05-08 LaTeX2e option processing using LaTeX3 keys
 ) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\l__tikzsymbols_Moai_thickness_dim=\dimen338
-\l__tikzsymbols_Kochtopf_nr_arguments_int=\count373
-\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count374
-\l__tikzsymbols_Schneebesen_nr_arguments_int=\count375
-\l__tikzsymbols_Sieb_nr_arguments_int=\count376
-\l__tikzsymbols_Purierstab_nr_arguments_int=\count377
-\l__tikzsymbols_Dreizack_nr_arguments_int=\count378
-\l__tikzsymbols_Backblech_nr_arguments_int=\count379
-\l__tikzsymbols_Ofen_nr_arguments_int=\count380
-\l__tikzsymbols_Pfanne_nr_arguments_int=\count381
-\l__tikzsymbols_Herd_nr_arguments_int=\count382
-\l__tikzsymbols_Saftpresse_nr_arguments_int=\count383
-\l__tikzsymbols_Schussel_nr_arguments_int=\count384
-\l__tikzsymbols_Schaler_nr_arguments_int=\count385
-\l__tikzsymbols_Reibe_nr_arguments_int=\count386
-\l__tikzsymbols_Flasche_nr_arguments_int=\count387
-\l__tikzsymbols_Nudelholz_nr_arguments_int=\count388
-\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count389
-\l__tikzsymbols_Sadey_nr_arguments_int=\count390
-\l__tikzsymbols_dSadey_nr_arguments_int=\count391
-\l__tikzsymbols_Changey_nr_arguments_int=\count392
-\l__tikzsymbols_dChangey_nr_arguments_int=\count393
-\l__tikzsymbols_cChangey_nr_arguments_int=\count394
-\l__tikzsymbols_dcChangey_nr_arguments_int=\count395
-\l__tikzsymbols_Annoey_nr_arguments_int=\count396
-\l__tikzsymbols_dAnnoey_nr_arguments_int=\count397
-\l__tikzsymbols_Smiley_nr_arguments_int=\count398
-\l__tikzsymbols_dSmiley_nr_arguments_int=\count399
-\l__tikzsymbols_Laughey_nr_arguments_int=\count400
-\l__tikzsymbols_dLaughey_nr_arguments_int=\count401
-\l__tikzsymbols_Neutrey_nr_arguments_int=\count402
-\l__tikzsymbols_dNeutrey_nr_arguments_int=\count403
-\l__tikzsymbols_Winkey_nr_arguments_int=\count404
-\l__tikzsymbols_oldWinkey_nr_arguments_int=\count405
-\l__tikzsymbols_dWinkey_nr_arguments_int=\count406
-\l__tikzsymbols_olddWinkey_nr_arguments_int=\count407
-\l__tikzsymbols_Sey_nr_arguments_int=\count408
-\l__tikzsymbols_dSey_nr_arguments_int=\count409
-\l__tikzsymbols_Xey_nr_arguments_int=\count410
-\l__tikzsymbols_dXey_nr_arguments_int=\count411
-\l__tikzsymbols_Innocey_nr_arguments_int=\count412
-\l__tikzsymbols_wInnocey_nr_arguments_int=\count413
-\l__tikzsymbols_dInnocey_nr_arguments_int=\count414
-\l__tikzsymbols_Cooley_nr_arguments_int=\count415
-\l__tikzsymbols_dCooley_nr_arguments_int=\count416
-\l__tikzsymbols_Tongey_nr_arguments_int=\count417
-\l__tikzsymbols_dTongey_nr_arguments_int=\count418
-\l__tikzsymbols_Nursey_nr_arguments_int=\count419
-\l__tikzsymbols_dNursey_nr_arguments_int=\count420
-\l__tikzsymbols_Vomey_nr_arguments_int=\count421
-\l__tikzsymbols_dVomey_nr_arguments_int=\count422
-\l__tikzsymbols_Walley_nr_arguments_int=\count423
-\l__tikzsymbols_rWalley_nr_arguments_int=\count424
-\l__tikzsymbols_dWalley_nr_arguments_int=\count425
-\l__tikzsymbols_drWalley_nr_arguments_int=\count426
-\l__tikzsymbols_Cat_nr_arguments_int=\count427
-\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count428
-\l__tikzsymbols_Ninja_nr_arguments_int=\count429
-\l__tikzsymbols_dNinja_nr_arguments_int=\count430
-\l__tikzsymbols_Sleepey_nr_arguments_int=\count431
-\l__tikzsymbols_dSleepey_nr_arguments_int=\count432
-\l__tikzsymbols_Maskey_nr_arguments_int=\count433
-\l__tikzsymbols_NiceReapey_nr_arguments_int=\count434
-\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count435
-\l__tikzsymbols_Person_nr_arguments_int=\count436
-\l__tikzsymbols_Heart_nr_arguments_int=\count437
-\l__tikzsymbols_dHeart_nr_arguments_int=\count438
-\l__tikzsymbols_HeartBroken_nr_arguments_int=\count439
-\l__tikzsymbols_Candle_nr_arguments_int=\count440
-\l__tikzsymbols_Fire_nr_arguments_int=\count441
-\l__tikzsymbols_Coffeecup_nr_arguments_int=\count442
-\l__tikzsymbols_Chair_nr_arguments_int=\count443
-\l__tikzsymbols_Bed_nr_arguments_int=\count444
-\l__tikzsymbols_Tribar_nr_arguments_int=\count445
-\l__tikzsymbols_Moai_nr_arguments_int=\count446
-\l__tikzsymbols_Snowman_nr_arguments_int=\count447
-\l__tikzsymbols_BasicTree_nr_arguments_int=\count448
-\l__tikzsymbols_WorstTree_nr_arguments_int=\count449
-\l__tikzsymbols_Springtree_nr_arguments_int=\count450
-\l__tikzsymbols_Summertree_nr_arguments_int=\count451
-\l__tikzsymbols_Autumntree_nr_arguments_int=\count452
-\l__tikzsymbols_Wintertree_nr_arguments_int=\count453
+\l__tikzsymbols_Moai_thickness_dim=\dimen349
+\l__tikzsymbols_Kochtopf_nr_arguments_int=\count409
+\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count410
+\l__tikzsymbols_Schneebesen_nr_arguments_int=\count411
+\l__tikzsymbols_Sieb_nr_arguments_int=\count412
+\l__tikzsymbols_Purierstab_nr_arguments_int=\count413
+\l__tikzsymbols_Dreizack_nr_arguments_int=\count414
+\l__tikzsymbols_Backblech_nr_arguments_int=\count415
+\l__tikzsymbols_Ofen_nr_arguments_int=\count416
+\l__tikzsymbols_Pfanne_nr_arguments_int=\count417
+\l__tikzsymbols_Herd_nr_arguments_int=\count418
+\l__tikzsymbols_Saftpresse_nr_arguments_int=\count419
+\l__tikzsymbols_Schussel_nr_arguments_int=\count420
+\l__tikzsymbols_Schaler_nr_arguments_int=\count421
+\l__tikzsymbols_Reibe_nr_arguments_int=\count422
+\l__tikzsymbols_Flasche_nr_arguments_int=\count423
+\l__tikzsymbols_Nudelholz_nr_arguments_int=\count424
+\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count425
+\l__tikzsymbols_Sadey_nr_arguments_int=\count426
+\l__tikzsymbols_dSadey_nr_arguments_int=\count427
+\l__tikzsymbols_Changey_nr_arguments_int=\count428
+\l__tikzsymbols_dChangey_nr_arguments_int=\count429
+\l__tikzsymbols_cChangey_nr_arguments_int=\count430
+\l__tikzsymbols_dcChangey_nr_arguments_int=\count431
+\l__tikzsymbols_Annoey_nr_arguments_int=\count432
+\l__tikzsymbols_dAnnoey_nr_arguments_int=\count433
+\l__tikzsymbols_Smiley_nr_arguments_int=\count434
+\l__tikzsymbols_dSmiley_nr_arguments_int=\count435
+\l__tikzsymbols_Laughey_nr_arguments_int=\count436
+\l__tikzsymbols_dLaughey_nr_arguments_int=\count437
+\l__tikzsymbols_Neutrey_nr_arguments_int=\count438
+\l__tikzsymbols_dNeutrey_nr_arguments_int=\count439
+\l__tikzsymbols_Winkey_nr_arguments_int=\count440
+\l__tikzsymbols_oldWinkey_nr_arguments_int=\count441
+\l__tikzsymbols_dWinkey_nr_arguments_int=\count442
+\l__tikzsymbols_olddWinkey_nr_arguments_int=\count443
+\l__tikzsymbols_Sey_nr_arguments_int=\count444
+\l__tikzsymbols_dSey_nr_arguments_int=\count445
+\l__tikzsymbols_Xey_nr_arguments_int=\count446
+\l__tikzsymbols_dXey_nr_arguments_int=\count447
+\l__tikzsymbols_Innocey_nr_arguments_int=\count448
+\l__tikzsymbols_wInnocey_nr_arguments_int=\count449
+\l__tikzsymbols_dInnocey_nr_arguments_int=\count450
+\l__tikzsymbols_Cooley_nr_arguments_int=\count451
+\l__tikzsymbols_dCooley_nr_arguments_int=\count452
+\l__tikzsymbols_Tongey_nr_arguments_int=\count453
+\l__tikzsymbols_dTongey_nr_arguments_int=\count454
+\l__tikzsymbols_Nursey_nr_arguments_int=\count455
+\l__tikzsymbols_dNursey_nr_arguments_int=\count456
+\l__tikzsymbols_Vomey_nr_arguments_int=\count457
+\l__tikzsymbols_dVomey_nr_arguments_int=\count458
+\l__tikzsymbols_Walley_nr_arguments_int=\count459
+\l__tikzsymbols_rWalley_nr_arguments_int=\count460
+\l__tikzsymbols_dWalley_nr_arguments_int=\count461
+\l__tikzsymbols_drWalley_nr_arguments_int=\count462
+\l__tikzsymbols_Cat_nr_arguments_int=\count463
+\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count464
+\l__tikzsymbols_Ninja_nr_arguments_int=\count465
+\l__tikzsymbols_dNinja_nr_arguments_int=\count466
+\l__tikzsymbols_Sleepey_nr_arguments_int=\count467
+\l__tikzsymbols_dSleepey_nr_arguments_int=\count468
+\l__tikzsymbols_Maskey_nr_arguments_int=\count469
+\l__tikzsymbols_NiceReapey_nr_arguments_int=\count470
+\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count471
+\l__tikzsymbols_Person_nr_arguments_int=\count472
+\l__tikzsymbols_Heart_nr_arguments_int=\count473
+\l__tikzsymbols_dHeart_nr_arguments_int=\count474
+\l__tikzsymbols_HeartBroken_nr_arguments_int=\count475
+\l__tikzsymbols_Candle_nr_arguments_int=\count476
+\l__tikzsymbols_Fire_nr_arguments_int=\count477
+\l__tikzsymbols_Coffeecup_nr_arguments_int=\count478
+\l__tikzsymbols_Chair_nr_arguments_int=\count479
+\l__tikzsymbols_Bed_nr_arguments_int=\count480
+\l__tikzsymbols_Tribar_nr_arguments_int=\count481
+\l__tikzsymbols_Moai_nr_arguments_int=\count482
+\l__tikzsymbols_Snowman_nr_arguments_int=\count483
+\l__tikzsymbols_BasicTree_nr_arguments_int=\count484
+\l__tikzsymbols_WorstTree_nr_arguments_int=\count485
+\l__tikzsymbols_Springtree_nr_arguments_int=\count486
+\l__tikzsymbols_Summertree_nr_arguments_int=\count487
+\l__tikzsymbols_Autumntree_nr_arguments_int=\count488
+\l__tikzsymbols_Wintertree_nr_arguments_int=\count489
 )
-\c@tcb@cnt@Theorem=\count454
-\c@tcb@cnt@theorem=\count455
-\c@tcb@cnt@Corollary=\count456
-\c@tcb@cnt@corollary=\count457
-\c@tcb@cnt@Lenma=\count458
-\c@tcb@cnt@lenma=\count459
-\c@tcb@cnt@Prop=\count460
-\c@tcb@cnt@prop=\count461
-\c@tcb@cnt@claim=\count462
-\c@tcb@cnt@Exercise=\count463
-\c@tcb@cnt@exercise=\count464
-\c@tcb@cnt@Example=\count465
-\c@tcb@cnt@example=\count466
-\c@tcb@cnt@ExampleWithRose=\count467
-\c@tcb@cnt@Definition=\count468
-\c@tcb@cnt@definition=\count469
-\c@tcb@cnt@DefinitionWithImage=\count470
-\c@tcb@cnt@question=\count471
-\c@tcb@cnt@qstion=\count472
-\c@tcb@cnt@wconc=\count473
+\c@tcb@cnt@Theorem=\count490
+\c@tcb@cnt@theorem=\count491
+\c@tcb@cnt@Corollary=\count492
+\c@tcb@cnt@corollary=\count493
+\c@tcb@cnt@Lenma=\count494
+\c@tcb@cnt@lenma=\count495
+\c@tcb@cnt@Prop=\count496
+\c@tcb@cnt@prop=\count497
+\c@tcb@cnt@claim=\count498
+\c@tcb@cnt@Exercise=\count499
+\c@tcb@cnt@exercise=\count500
+\c@tcb@cnt@Example=\count501
+\c@tcb@cnt@example=\count502
+\c@tcb@cnt@ExampleWithRose=\count503
+\c@tcb@cnt@Definition=\count504
+\c@tcb@cnt@definition=\count505
+\c@tcb@cnt@DefinitionWithImage=\count506
+\c@tcb@cnt@question=\count507
+\c@tcb@cnt@qstion=\count508
+\c@tcb@cnt@wconc=\count509
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pgf-blur/tikzlibraryshadows.blur.code.tex  v1.02, 2012/12/09 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\pgfbs@fading@count=\count474
+\pgfbs@fading@count=\count510
 )
-\c@mylabelcounter=\count475
-\diffdbox=\box145
+\c@mylabelcounter=\count511
+\diffdbox=\box153
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2023/10/27 v2.16 TOC entries
-\ttl@leftsep=\dimen339
+\ttl@leftsep=\dimen350
 )) (macros.tex) (letterfonts.tex) (Notes.aux
 
 LaTeX Warning: Label `def:D' multiply defined.
@@ -1309,6 +1399,12 @@ LaTeX Warning: Label `def:T' multiply defined.
 
 LaTeX Warning: Label `def:E' multiply defined.
 
+
+LaTeX Warning: Label `def:T' multiply defined.
+
+
+LaTeX Warning: Label `def:T' multiply defined.
+
 )
 \openout1 = `Notes.aux'.
 
@@ -1389,17 +1485,17 @@ LaTeX Info: Command `\dddot' is already robust on input line 11.
 LaTeX Info: Command `\ddddot' is already robust on input line 11.
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count476
-\scratchdimen=\dimen340
-\scratchbox=\box146
-\nofMPsegments=\count477
-\nofMParguments=\count478
-\everyMPshowfont=\toks62
-\MPscratchCnt=\count479
-\MPscratchDim=\dimen341
-\MPnumerator=\count480
-\makeMPintoPDFobject=\count481
-\everyMPtoPDFconversion=\toks63
+\scratchcounter=\count512
+\scratchdimen=\dimen351
+\scratchbox=\box154
+\nofMPsegments=\count513
+\nofMParguments=\count514
+\everyMPshowfont=\toks68
+\MPscratchCnt=\count515
+\MPscratchDim=\dimen352
+\MPnumerator=\count516
+\makeMPintoPDFobject=\count517
+\everyMPtoPDFconversion=\toks69
 ) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1407,11 +1503,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 11.
-\c@lstlisting=\count482
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+\c@lstlisting=\count518
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks64
-\inpenc@posthook=\toks65
+\inpenc@prehook=\toks70
+\inpenc@posthook=\toks71
 ) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -1459,9 +1558,10 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 )
-\tf@toc=\write5
-\openout5 = `Notes.toc'.
+\tf@toc=\write6
+\openout6 = `Notes.toc'.
 
 
 
@@ -1473,12 +1573,14 @@ l.19
       [1
 
 ]
+
+[2]
 Chapter 1.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 27.
 
-<slime.png, id=143, 867.24pt x 530.2209pt>
+<slime.png, id=153, 867.24pt x 530.2209pt>
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 27.
@@ -1495,21 +1597,21 @@ File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 48.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-<flow.png, id=145, 692.5875pt x 492.84125pt>
+<flow.png, id=155, 692.5875pt x 492.84125pt>
 File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 56.
 (pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
 
 
-[2
+[3
 
 {/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc} <./slime.png>]
 File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 75.
 (pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
-<lot.png, id=166, 2007.5pt x 2007.5pt>
+<lot.png, id=176, 2007.5pt x 2007.5pt>
 File: lot.png Graphic file (type png)
 <use lot.png>
 Package pdftex.def Info: lot.png  used on input line 88.
@@ -1525,7 +1627,7 @@ Package pdftex.def Info: slime.png  used on input line 106.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[3 <./flow.png> <./lot.png>]
+[4 <./flow.png> <./lot.png>]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 139.
@@ -1536,7 +1638,7 @@ Package pdftex.def Info: lot.png  used on input line 143.
 (pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
 
 
-[4]
+[5]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 177.
@@ -1547,7 +1649,7 @@ Package pdftex.def Info: slime.png  used on input line 211.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[5]
+[6]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 219.
@@ -1566,7 +1668,7 @@ Package pdftex.def Info: slime.png  used on input line 278.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[6]
+[7]
 File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 299.
@@ -1577,7 +1679,7 @@ Package pdftex.def Info: slime.png  used on input line 324.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[7]
+[8]
 File: lot.png Graphic file (type png)
 <use lot.png>
 Package pdftex.def Info: lot.png  used on input line 329.
@@ -1604,12 +1706,12 @@ Package pdftex.def Info: slime.png  used on input line 398.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[8]
+[9]
 File: lot.png Graphic file (type png)
 <use lot.png>
 Package pdftex.def Info: lot.png  used on input line 404.
 (pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
-<lines.png, id=257, 1012.78375pt x 673.51625pt>
+<lines.png, id=267, 1012.78375pt x 673.51625pt>
 File: lines.png Graphic file (type png)
 <use lines.png>
 Package pdftex.def Info: lines.png  used on input line 425.
@@ -1620,7 +1722,7 @@ Package pdftex.def Info: slime.png  used on input line 425.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[9 <./lines.png>]
+[10 <./lines.png>]
 File: lot.png Graphic file (type png)
 <use lot.png>
 Package pdftex.def Info: lot.png  used on input line 436.
@@ -1648,8 +1750,8 @@ Package pdftex.def Info: slime.png  used on input line 502.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[10]
-<distances.png, id=280, 241.90375pt x 164.615pt>
+[11]
+<distances.png, id=290, 241.90375pt x 164.615pt>
 File: distances.png Graphic file (type png)
 <use distances.png>
 Package pdftex.def Info: distances.png  used on input line 520.
@@ -1664,12 +1766,12 @@ Package pdftex.def Info: slime.png  used on input line 527.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[11 <./distances.png>]
+[12 <./distances.png>]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 536.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-<ellipsoid.png, id=290, 159.59625pt x 121.45375pt>
+<ellipsoid.png, id=301, 159.59625pt x 121.45375pt>
 File: ellipsoid.png Graphic file (type png)
 <use ellipsoid.png>
 Package pdftex.def Info: ellipsoid.png  used on input line 549.
@@ -1679,7 +1781,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 549--549
 
  []
 
-<EllipticParaboloid.png, id=291, 158.5925pt x 154.5775pt>
+<EllipticParaboloid.png, id=302, 158.5925pt x 154.5775pt>
 File: EllipticParaboloid.png Graphic file (type png)
 <use EllipticParaboloid.png>
 Package pdftex.def Info: EllipticParaboloid.png  used on input line 549.
@@ -1689,7 +1791,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 549--549
 
  []
 
-<HyperbolicParaboloid.png, id=292, 198.7425pt x 134.5025pt>
+<HyperbolicParaboloid.png, id=303, 198.7425pt x 134.5025pt>
 File: HyperbolicParaboloid.png Graphic file (type png)
 <use HyperbolicParaboloid.png>
 Package pdftex.def Info: HyperbolicParaboloid.png  used on input line 549.
@@ -1705,8 +1807,8 @@ Package pdftex.def Info: flow.png  used on input line 549.
 (pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
 
 
-[12]
-<Cone.png, id=300, 173.64874pt x 167.62625pt>
+[13]
+<Cone.png, id=310, 173.64874pt x 167.62625pt>
 File: Cone.png Graphic file (type png)
 <use Cone.png>
 Package pdftex.def Info: Cone.png  used on input line 561.
@@ -1716,7 +1818,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 561--561
 
  []
 
-<HyperboloidofOneSheet.png, id=301, 180.675pt x 155.58125pt>
+<HyperboloidofOneSheet.png, id=311, 180.675pt x 155.58125pt>
 File: HyperboloidofOneSheet.png Graphic file (type png)
 <use HyperboloidofOneSheet.png>
 Package pdftex.def Info: HyperboloidofOneSheet.png  used on input line 561.
@@ -1726,7 +1828,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 561--561
 
  []
 
-<HyperboloidofTwoSheets.png, id=302, 148.555pt x 155.58125pt>
+<HyperboloidofTwoSheets.png, id=312, 148.555pt x 155.58125pt>
 File: HyperboloidofTwoSheets.png Graphic file (type png)
 <use HyperboloidofTwoSheets.png>
 Package pdftex.def Info: HyperboloidofTwoSheets.png  used on input line 561.
@@ -1742,9 +1844,9 @@ Package pdftex.def Info: flow.png  used on input line 561.
 (pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
 
 
-[13 <./ellipsoid.png> <./EllipticParaboloid.png> <./HyperbolicParaboloid.png>]
+[14 <./ellipsoid.png> <./EllipticParaboloid.png> <./HyperbolicParaboloid.png>]
 
-[14 <./Cone.png> <./HyperboloidofOneSheet.png> <./HyperboloidofTwoSheets.png>]
+[15 <./Cone.png> <./HyperboloidofOneSheet.png> <./HyperboloidofTwoSheets.png>]
 Chapter 2.
 File: slime.png Graphic file (type png)
 <use slime.png>
@@ -1768,7 +1870,7 @@ Package pdftex.def Info: slime.png  used on input line 603.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[15
+[16
 
 ]
 File: flow.png Graphic file (type png)
@@ -1789,21 +1891,21 @@ Package pdftex.def Info: slime.png  used on input line 645.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[16]
+[17]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 679.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[17]
+[18]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 697.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[18]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 724--724
 
  []
@@ -1819,7 +1921,7 @@ Package pdftex.def Info: slime.png  used on input line 724.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[19]
+[20]
 File: lot.png Graphic file (type png)
 <use lot.png>
 Package pdftex.def Info: lot.png  used on input line 732.
@@ -1838,7 +1940,7 @@ Package pdftex.def Info: slime.png  used on input line 777.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[20]
+[21]
 Chapter 3.
 File: slime.png Graphic file (type png)
 <use slime.png>
@@ -1866,7 +1968,7 @@ Package pdftex.def Info: slime.png  used on input line 820.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[21
+[22
 
 ]
 File: lot.png Graphic file (type png)
@@ -1892,7 +1994,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 861--861
 
  []
 
-<partial.png, id=406, 796.9775pt x 582.175pt>
+<partial.png, id=416, 796.9775pt x 582.175pt>
 File: partial.png Graphic file (type png)
 <use partial.png>
 Package pdftex.def Info: partial.png  used on input line 861.
@@ -1907,12 +2009,12 @@ Package pdftex.def Info: slime.png  used on input line 884.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[22 <./partial.png>]
+[23 <./partial.png>]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 891.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-<plane.png, id=416, 808.01875pt x 729.72626pt>
+<plane.png, id=426, 808.01875pt x 729.72626pt>
 File: plane.png Graphic file (type png)
 <use plane.png>
 Package pdftex.def Info: plane.png  used on input line 905.
@@ -1927,7 +2029,7 @@ Package pdftex.def Info: slime.png  used on input line 912.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[23 <./plane.png>]
+[24 <./plane.png>]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 920.
@@ -1950,7 +2052,7 @@ Package pdftex.def Info: slime.png  used on input line 967.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[24]
+[25]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 977.
@@ -1978,7 +2080,7 @@ Package pdftex.def Info: slime.png  used on input line 1036.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[25]
+[26]
 File: lot.png Graphic file (type png)
 <use lot.png>
 Package pdftex.def Info: lot.png  used on input line 1046.
@@ -1993,7 +2095,7 @@ Package pdftex.def Info: slime.png  used on input line 1068.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[26]
+[27]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 1076.
@@ -2026,7 +2128,7 @@ Package pdftex.def Info: slime.png  used on input line 1132.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[27]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 1152--1152
 
  []
@@ -2042,9 +2144,9 @@ Package pdftex.def Info: slime.png  used on input line 1152.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[28]
+[29]
 Chapter 4.
-<vol.png, id=503, 769.87625pt x 607.26875pt>
+<vol.png, id=513, 769.87625pt x 607.26875pt>
 File: vol.png Graphic file (type png)
 <use vol.png>
 Package pdftex.def Info: vol.png  used on input line 1168.
@@ -2053,12 +2155,12 @@ File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 1168.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-<rect.png, id=504, 1071.00125pt x 630.355pt>
+<rect.png, id=514, 1071.00125pt x 630.355pt>
 File: rect.png Graphic file (type png)
 <use rect.png>
 Package pdftex.def Info: rect.png  used on input line 1187.
 (pdftex.def)             Requested size: 321.30286pt x 189.10796pt.
-<approx.png, id=505, 869.2475pt x 650.43pt>
+<approx.png, id=515, 869.2475pt x 650.43pt>
 File: approx.png Graphic file (type png)
 <use approx.png>
 Package pdftex.def Info: approx.png  used on input line 1187.
@@ -2069,10 +2171,10 @@ Package pdftex.def Info: slime.png  used on input line 1187.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[29
+[30
 
  <./vol.png>]
-<approxVol.png, id=512, 869.2475pt x 650.43pt>
+<approxVol.png, id=523, 869.2475pt x 650.43pt>
 File: approxVol.png Graphic file (type png)
 <use approxVol.png>
 Package pdftex.def Info: approxVol.png  used on input line 1204.
@@ -2083,7 +2185,7 @@ Package pdftex.def Info: slime.png  used on input line 1204.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[30 <./rect.png> <./approx.png>]
+[31 <./rect.png> <./approx.png>]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 1213.
@@ -2098,7 +2200,7 @@ Package pdftex.def Info: slime.png  used on input line 1228.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[31 <./approxVol.png>]
+[32 <./approxVol.png>]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 1236.
@@ -2107,7 +2209,7 @@ File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 1250.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-<region.png, id=532, 465.74pt x 313.17pt>
+<region.png, id=542, 465.74pt x 313.17pt>
 File: region.png Graphic file (type png)
 <use region.png>
 Package pdftex.def Info: region.png  used on input line 1268.
@@ -2118,7 +2220,7 @@ Package pdftex.def Info: slime.png  used on input line 1268.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[32]
+[33]
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 1286.
@@ -2129,7 +2231,7 @@ Package pdftex.def Info: slime.png  used on input line 1298.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[33 <./region.png>]
+[34 <./region.png>]
 File: lot.png Graphic file (type png)
 <use lot.png>
 Package pdftex.def Info: lot.png  used on input line 1335.
@@ -2149,7 +2251,7 @@ Package pdftex.def Info: slime.png  used on input line 1356.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[34]
+[35]
 Chapter 5.
 File: slime.png Graphic file (type png)
 <use slime.png>
@@ -2173,7 +2275,7 @@ Package pdftex.def Info: slime.png  used on input line 1403.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[35
+[36
 
 ]
 File: slime.png Graphic file (type png)
@@ -2186,7 +2288,21 @@ Package pdftex.def Info: slime.png  used on input line 1431.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[36] (Notes.aux)
+[37]
+Chapter 6.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 1444.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 1452.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[38
+
+] (Notes.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -2204,17 +2320,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 47672 strings out of 475839
- 1095026 string characters out of 5777281
+ 51287 strings out of 475839
+ 1196978 string characters out of 5777281
  1971905 words of memory out of 5000000
- 69254 multiletter control sequences out of 15000+600000
+ 72815 multiletter control sequences out of 15000+600000
  603517 words of font info for 163 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  99i,16n,102p,869b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmb10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
-Output written on Notes.pdf (37 pages, 1979733 bytes).
+Output written on Notes.pdf (39 pages, 1985706 bytes).
 PDF statistics:
- 815 PDF objects out of 1000 (max. 8388607)
- 241 named destinations out of 1000 (max. 500000)
- 725 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 841 PDF objects out of 1000 (max. 8388607)
+ 250 named destinations out of 1000 (max. 500000)
+ 741 words of extra memory for PDF output out of 10000 (max. 10000000)
 
