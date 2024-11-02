@@ -5,8 +5,8 @@
 \input{letterfonts}
 
 \title{\Huge{Math 120}}
-\author{\huge{PSet 8}}
-\date{Oct 31 2024}
+\author{\huge{PSet 9}}
+\date{Nov 5 2024}
 
 \begin{document}
 
@@ -18,7 +18,7 @@
 \pagebreak
 
 \chapter{}
-\section{PSet 8}
+\section{PSet 9}
 
 \qs{}{
     Let \(\vec{F}(x, y) = \langle y^2 \cos x, x^2 + 2y \sin x \rangle\), and let \(C\) be the triangle from \((0, 0)\) to \((2, 6)\) to \((2, 0)\) to \((0, 0)\).
@@ -90,7 +90,7 @@
     \[ I_3 = 8 \left(2\pi - 0 - \pi + 0\right) = 8 \cdot \pi = 8\pi \]
     \[ \int_{C} \vec{F} \cdot d\vec{r} = I_1 + I_2 + I_3 = 0 + 4\pi + 8\pi = \boxed{12\pi} \]
 
-\textbf{Part (b)}
+    b) 
 
     \[ \int_{C} P\,dx + Q\,dy = \iint_{D} \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dx\,dy \]
     \[ \frac{\partial Q}{\partial x} = y^2 \]
@@ -129,6 +129,8 @@
     \[ A = 2 - \frac{2}{3} = \frac{4}{3}\]  
 }
 
+\newpage 
+
 \qs{}{
     Consider the vector field \(\vec{F} = -\frac{y}{x^2 + y^2} \hat{i} + \frac{x}{x^2 + y^2} \hat{j}\).
     \begin{enumerate}
@@ -146,6 +148,40 @@
     \end{enumerate}
 }
 
+\sol{
+    a)
+    \[ P(x, y) = -\frac{y}{x^2 + y^2}, \quad Q(x, y) = \frac{x}{x^2 + y^2} \]
+    \[ \frac{\partial Q}{\partial x} = \frac{\partial}{\partial x}\left(\frac{x}{x^2 + y^2}\right) = \frac{(x^2 + y^2) - 2x^2}{(x^2 + y^2)^2} = \frac{-x^2 + y^2}{(x^2 + y^2)^2} \] 
+    \[ \frac{\partial P}{\partial y} = \frac{\partial}{\partial y}\left(-\frac{y}{x^2 + y^2}\right) = \frac{-\left[(x^2 + y^2) - 2y^2\right]}{(x^2 + y^2)^2} = \frac{-x^2 + y^2}{(x^2 + y^2)^2} \]    
+
+    b)
+    \[ x = \sqrt{2}\cos\theta, \quad y = \sqrt{2}\sin\theta \quad \theta \in \left[\frac{\pi}{4}, \frac{3\pi}{4}\right] \]
+    \[ dx = -\sqrt{2}\sin\theta \, d\theta, \quad dy = \sqrt{2}\cos\theta \, d\theta \]
+    \[ \vec{F} \cdot d\vec{r} = \sin^2\theta \, d\theta + \cos^2\theta \, d\theta = d\theta \]
+    \[ \int_C \vec{F} \cdot d\vec{r} = \int_{\pi/4}^{3\pi/4} d\theta = \frac{\pi}{2} \] 
+    
+    
+    c) 
+    \[
+    f(x, y) = \int P(x, y) \, dx = -\int \frac{y}{x^2 + y^2} \, dx = -\arctan\left(\frac{x}{y}\right) + h(y)
+    \]
+    \[
+    \frac{\partial f}{\partial y} = -\frac{\partial}{\partial y}\left[\arctan\left(\frac{x}{y}\right)\right] + h'(y) = \frac{x}{x^2 + y^2} + h'(y)
+    \]
+    \[
+    h'(y) = 0 \Rightarrow f(x, y) = -\arctan\left(\frac{x}{y}\right) + C
+    \]
+    
+    d)
+    \[
+    \int_C \vec{F} \cdot d\vec{r} = f(-1, 1) - f(1, 1) = \left(-\arctan\left(\frac{-1}{1}\right)\right) - \left(-\arctan\left(\frac{1}{1}\right)\right) = \frac{\pi}{2}
+    \]
+    
+    e) 
+    \[  x = R\cos\theta, \quad y = R\sin\theta \quad 0 \leq \theta \leq 2\pi \]
+    \[ \vec{F} \cdot d\vec{r} = \sin^2\theta \, d\theta + \cos^2\theta \, d\theta = d\theta \]
+    \[ \int_C \vec{F} \cdot d\vec{r} = \int_0^{2\pi} d\theta = 2\pi \]
+
 \qs{}{
     Again consider the vector field \(\vec{F} = -\frac{y}{x^2 + y^2} \hat{i} + \frac{x}{x^2 + y^2} \hat{j}\). Let \(C_1\) be any closed curve going counterclockwise around the origin, such as the orange curve below. Let \(C_2\) be a circle, centered around the origin, with radius less than the shortest distance between \(C_1\) and the origin. (This condition guarantees that the two curves don't intersect.) Let \(D\) be the region between the two curves.
     \begin{enumerate}
@@ -160,6 +196,23 @@
     \end{enumerate}
 }
 
+\sol{
+    \\
+    a)  \\
+    Green's Theorem connects a line integral around a closed curve \( C \) to a double integral over the region \( D \) enclosed by \( C \), given a vector field \( \vec{F} = P\hat{i} + Q\hat{j} \) with continuous partial derivatives in the area around \( D \) and \( C \). Here, the vector field \( \vec{F} = \left(-\frac{y}{x^2 + y^2}\right)\hat{i} + \left(\frac{x}{x^2 + y^2}\right)\hat{j} \) is not defined at the origin due to division by zero, creating a singularity. However, the region \( D \) is bounded by two curves, \( C_1 \) and \( C_2 \), where \( C_2 \) is a smaller circle within \( C_1 \) that avoids the origin. This exclusion of the origin ensures \( \vec{F} \) remains continuously differentiable in \( D \), satisfying Green's Theorem's conditions. Therefore, Green's Theorem is applicable to \( D \). \\
+    b) 
+    \[ \int_{C_1} \vec{F} \cdot d\vec{r} - \oint_{C_2} \vec{F} \cdot d\vec{r} = \iint_{D} \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \, dA. \]
+    \[ \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 0 \]
+    \[ \iint_{D} \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \, dA = \iint_{D} 0 \, dA = 0. \]
+    \[ \int_{C_1} \vec{F} \cdot d\vec{r} - \int_{C_2} \vec{F} \cdot d\vec{r} = 0 \implies \int_{C_1} \vec{F} \cdot d\vec{r} = \int_{C_2} \vec{F} \cdot d\vec{r}. \]
+    \[ \int_{C} \vec{F} \cdot d\vec{r} = 2\pi \]
+    \[ \int_{C_2} \vec{F} \cdot d\vec{r} = 2\pi \]
+    \[ \int_{C_1} \vec{F} \cdot d\vec{r} = 2\pi \]
+
+}
+
+\newpage 
+
 \qs{}{
     Let \(\vec{F} = \langle 2y - x^2, 4x + y e^{\cos y} \rangle\), and let \(C\) be the curve \(y = x^2 - 9\), \(-3 \leq x \leq 3\), oriented from left to right.
 
@@ -172,5 +225,66 @@
         
         \item[(d)] Use your answers to (b) and (c) to compute \(\int_C \vec{F} \cdot d\vec{r}\).
     \end{enumerate}
+}
+
+\sol{ \\
+    a)
+    \[
+    \vec{r}(t) = \langle t, t^2 - 9 \rangle, \quad t \in [-3, 3].
+    \]
+    \[
+    \vec{r}'(t) = \langle 1, 2t \rangle.
+    \]
+    \[
+    \int_C \vec{F} \cdot d\vec{r} = \int_{-3}^{3} \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) \, dt.
+    \]
+    
+    b)
+    \[
+    \vec{r}(t) = \langle t, 0 \rangle, \quad t \in [3, -3].
+    \]
+    \[
+    \vec{r}'(t) = \langle 1, 0 \rangle.
+    \]
+    \[
+    \vec{F}(\vec{r}(t)) = \langle -t^2, 4t \rangle.
+    \]
+    \[
+    \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) = -t^2.
+    \]
+    \[
+    \int_{C^*} \vec{F} \cdot d\vec{r} = -\int_{3}^{-3} t^2 \, dt = \int_{-3}^{3} t^2 \, dt = \left[ \frac{t^3}{3} \right]_{-3}^{3} = 18.
+    \]
+    \[
+    \int_{C^*} \vec{F} \cdot d\vec{r} = 18.
+    \]
+    
+    c)
+    \[
+    P = 2y - x^2 \implies P_y = 2, \quad Q = 4x + y e^{\cos y} \implies Q_x = 4.
+    \]
+    \[
+    Q_x - P_y = 4 - 2 = 2.
+    \]
+    \[
+    \text{Area} = \int_{-3}^{3} [0 - (x^2 - 9)] \, dx = \int_{-3}^{3} (9 - x^2) \, dx = 36.
+    \]
+    \[
+    \iint_D (Q_x - P_y) \, dA = 2 \times 36 = 72.
+    \]
+    \[
+    \iint_D (Q_x - P_y) \, dA = 72.
+    \]
+    
+    d) 
+    \[
+    \int_{C} \vec{F} \cdot d\vec{r} + \int_{C^*} \vec{F} \cdot d\vec{r} = \iint_D (Q_x - P_y) \, dA.
+    \]
+    \[
+    \int_{C} \vec{F} \cdot d\vec{r} = \iint_D (Q_x - P_y) \, dA - \int_{C^*} \vec{F} \cdot d\vec{r} = 72 - 18 = 54.
+    \]
+    \[
+    \int_C \vec{F} \cdot d\vec{r} = 54.
+    \]    
 }
 \end{document}
