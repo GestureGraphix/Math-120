@@ -25,6 +25,19 @@
     Use Green's Theorem to evaluate \(\int_{C} \vec{F} \cdot d\vec{r}\). (Check the orientation of the curve before applying the theorem.)
 }
 
+\sol{
+    \[ \vec{F}(x, y) = \langle y^2 \cos x, x^2 + 2y \sin x \rangle \] 
+    \[ \int_{C} \vec{F} \cdot d\vec{r} = -\iint_{D} \left( \frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y} \right) \, dx \, dy \]
+    \[ \frac{\partial F_2}{\partial x} = \frac{\partial}{\partial x} (x^2 + 2y \sin x) = 2x + 2y \cos x \] 
+    \[ \frac{\partial F_1}{\partial y} = \frac{\partial}{\partial y} (y^2 \cos x) = 2y \cos x \]
+    \[ \frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y} = [2x + 2y \cos x] - [2y \cos x] = 2x \]
+    \[ \int_{C} \vec{F} \cdot d\vec{r} = -\iint_{D} 2x \, dx \, dy \]
+    \[ \int_{y=0}^{y=3x} 2x \, dy = 2x (3x - 0) = 6x^2 \]
+    \[ -\int_{x=0}^{2} 6x^2 \, dx = -6 \int_{0}^{2} x^2 \, dx = -6 \left[ \frac{x^3}{3} \right]_0^2 = -6 \left( \frac{8}{3} \right) = -16 \] 
+    \[ \int_{C} \vec{F} \cdot d\vec{r} = -16 \]      
+}
+
+
 \qs{}{
     Let \(P(x, y) = -x^2 y^3\) and \(Q(x, y) = xy^2\), and let \(C\) be the circle \(x^2 + y^2 = 4\), oriented counterclockwise.
     \begin{enumerate}
