@@ -39,7 +39,7 @@
 
 
 \qs{}{
-    Let \(P(x, y) = -x^2 y^3\) and \(Q(x, y) = xy^2\), and let \(C\) be the circle \(x^2 + y^2 = 4\), oriented counterclockwise.
+    Let \(P(x, y) = x-x^2 y^3\) and \(Q(x, y) = xy^2\), and let \(C\) be the circle \(x^2 + y^2 = 4\), oriented counterclockwise.
     \begin{enumerate}
         \item[(a)] Compute \(\int_{C} \vec{F} \cdot d\vec{r}\) directly, by parameterizing \(C\) and finding the line integral.
         \item[(b)] Compute \(\int_{C} \vec{F} \cdot d\vec{r}\) using Green's Theorem.
@@ -48,6 +48,18 @@
 
 \qs{}{
     Use Green's Theorem to find the area enclosed by the parametric curve \(\vec{r}(t) = \langle \sin t, \sin 2t \rangle\), \(0 \leq t \leq \pi\).
+}
+
+\sol{
+    \[ A = \frac{1}{2}_{C} x \, dy - y \, dx \Rightarrow \frac{1}{2} \int_{C} \left(x \, \frac{dy}{dy} - y \, \frac{dx}{dt} \right) \, dt  \]
+    \[ x = \sin t \quad y = \sin 2t \quad \frac{dx}{dt} = \cos t \quad \frac{dy}{dt} = - 2 \cos t \] 
+    \[ \sin 2t = 2 \sin t \cos t \quad \cos 2t = \cos^{2}t - \sin^{2} t \] 
+    \[ x \frac{dy}{dt} - y \frac{dx}{dt} = 2 \sin t\left(\cos^{2}t - \sin^{2} t \right) - 2\sin t \cos t (\cos t)\] 
+    \[ = 2 \sin t \left(\cos^{2}t - \sin^{2}t - \cos^{2} t \right) = - 2 \sin^{3}t \]
+    \[ A = \frac{1}{2} -2 \sin^{3}t \, dt = - \int \sin^{3}t \, dt \]
+    \[ \sin^{3}t = \sin t \left(1 - \cos^{2}t\right) = \sin t - \sin t \cos^{2} t\]
+    \[ \int_{0}^{\pi} \sin t \, dt - \int_{0}^{\pi} \sin t \cos^{2} t \]    
+    \[ \int_{0}^{\pi} \sin t \, dt \Rightarrow \left. - \cos t \right|_{0}^{\pi} = 2 \] 
 }
 
 \qs{}{
