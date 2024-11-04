@@ -1,0 +1,228 @@
+\documentclass[2pt]{article}
+\usepackage{amsmath, amssymb, graphicx, geometry, multicol, tcolorbox, titlesec, parskip, xcolor}
+\geometry{a4paper, margin=0.3in} % Reduce margin to 0.3 inches
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\linespread{0.85} % Reduce line spacing further
+\titlespacing{\section}{0pt}{1pt}{1pt}
+\definecolor{lightblue}{HTML}{D3E6FE}
+\definecolor{lightgreen}{HTML}{E2F0D9}
+\definecolor{lightpink}{HTML}{FDE7E8}
+\definecolor{lightyellow}{HTML}{FFF9DB}
+
+% Reduce padding inside tcolorbox
+\tcbset{
+    boxrule=0.5mm, % Box border thickness
+    colback=white,
+    fonttitle=\bfseries,
+    sharp corners,
+    coltitle=black,
+    top=0pt,
+    bottom=0pt,
+    left=1mm,
+    right=1mm,
+    boxsep=0.5mm, % Space between box content and border
+    arc=1mm % Rounded corners
+}
+
+\title{\small \textbf{Math 120 Cheat Sheet}} % Reduce title size
+\date{} % Disable date
+
+\begin{document}
+\maketitle
+\vspace{-10pt} % Adjust the value as needed to remove space below the title
+\begin{multicols}{2}
+
+% Directional Derivatives and Gradient Vector
+\begin{tcolorbox}[title=\textbf{Directional Derivatives and Gradient Vector}, colframe=lightblue]
+    \textbf{Directional Derivative:} 	
+    \[ D_{\mathbf{u}} f(x, y) = \nabla f(x, y) \cdot \mathbf{u} \]
+    where \( \mathbf{u} \) is a unit vector. \\
+    \textbf{Gradient Vector:}
+    \[ \nabla f(x, y) = \left\langle f_x(x, y), \, f_y(x, y) \right\rangle \]
+    \textbf{Properties:}
+    - \( \nabla f \) points in the direction of maximum increase of \( f \). \\
+    - \( \nabla f \) is perpendicular to level curves (surfaces) of \( f \). \\
+    \textbf{Maximum Rate of Change:}
+    \[ \text{Max Rate} = |\nabla f(x, y)| \]
+\end{tcolorbox}
+
+% Maximum and Minimum Values
+\begin{tcolorbox}[title=\textbf{Maximum and Minimum Values}, colframe=lightgreen]
+    \textbf{Second Derivative Test:} \\
+    Compute \( D = f_{xx}(a,b) f_{yy}(a,b) - [f_{xy}(a,b)]^2 \). \\
+    - If \( D > 0 \) and \( f_{xx}(a,b) > 0 \), then local minimum at \( (a, b) \). \\
+    - If \( D > 0 \) and \( f_{xx}(a,b) < 0 \), then local maximum at \( (a, b) \). \\
+    - If \( D < 0 \), saddle point at \( (a, b) \). \\
+    - If \( D = 0 \), test is inconclusive. \\
+    \textbf{Critical Points:} Solve \( f_x = 0 \) and \( f_y = 0 \).
+\end{tcolorbox}
+
+% Lagrange Multipliers
+\begin{tcolorbox}[title=\textbf{Lagrange Multipliers}, colframe=lightpink]
+    To find extrema of \( f(x, y, z) \) subject to constraint \( g(x, y, z) = 0 \):
+    \[ \nabla f = \lambda \nabla g \]
+    Solve:
+    \[ f_x = \lambda g_x, \quad f_y = \lambda g_y, \quad f_z = \lambda g_z \]
+    \[ g(x, y, z) = 0 \]
+    \textbf{For Two Variables:}
+    \[ f_x = \lambda g_x, \quad f_y = \lambda g_y, \quad g(x, y) = 0 \]
+\end{tcolorbox}
+
+% Double Integrals over Rectangles
+\begin{tcolorbox}[title=\textbf{Double Integrals over Rectangles}, colframe=lightyellow]
+    \textbf{Definition:}
+    \[ \iint_R f(x, y) \, dA = \int_a^b \int_c^d f(x, y) \, dy \, dx \]
+    where \( R = [a, b] \times [c, d] \). \\
+    \textbf{Fubini's Theorem:} If \( f \) is continuous on \( R \):
+    \[ \iint_R f(x, y) \, dA = \int_c^d \int_a^b f(x, y) \, dx \, dy \]
+\end{tcolorbox}
+
+% Double Integrals over General Regions
+\begin{tcolorbox}[title=\textbf{Double Integrals over General Regions}, colframe=lightblue]
+    \textbf{Type I Region (Vertical):}
+    \[ D = \{ (x, y) \mid a \leq x \leq b, \ g_1(x) \leq y \leq g_2(x) \} \]
+    \[ \iint_D f(x, y) \, dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f(x, y) \, dy \, dx \]
+    \textbf{Type II Region (Horizontal):}
+    \[ D = \{ (x, y) \mid c \leq y \leq d, \ h_1(y) \leq x \leq h_2(y) \} \]
+    \[ \iint_D f(x, y) \, dA = \int_c^d \int_{h_1(y)}^{h_2(y)} f(x, y) \, dx \, dy \]
+\end{tcolorbox}
+
+% Double Integrals in Polar Coordinates
+\begin{tcolorbox}[title=\textbf{Double Integrals in Polar Coordinates}, colframe=lightgreen]
+    \textbf{Transformation:}
+    \[ x = r \cos \theta, \quad y = r \sin \theta \]
+    \textbf{Jacobian:}
+    \[ dA = r \, dr \, d\theta \]
+    \textbf{Integral:}
+    \[ \iint_D f(x, y) \, dA = \int_{\theta_1}^{\theta_2} \int_{r_1(\theta)}^{r_2(\theta)} f(r \cos \theta, r \sin \theta) \, r \, dr \, d\theta \]
+\end{tcolorbox}
+
+% Vector Fields
+\begin{tcolorbox}[title=\textbf{Vector Fields}, colframe=lightpink]
+    \textbf{Definition:} \\
+    In \( \mathbb{R}^2 \):
+    \[ \mathbf{F}(x, y) = P(x, y) \, \mathbf{i} + Q(x, y) \, \mathbf{j} \]
+    \textbf{Gradient Field:} \( \mathbf{F} = \nabla f \) \\
+    \textbf{Conservative Field:} If \( \mathbf{F} = \nabla f \), then \( \mathbf{F} \) is conservative. \\
+    \textbf{Curl in \( \mathbb{R}^2 \):}
+    \[ \text{curl } \mathbf{F} = \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \]
+\end{tcolorbox}
+
+% Line Integrals
+\begin{tcolorbox}[title=\textbf{Line Integrals}, colframe=lightyellow]
+    \textbf{Scalar Function:}
+    \[ \int_C f(x, y) \, ds = \int_a^b f(x(t), y(t)) \, |\mathbf{r}'(t)| \, dt \]
+    \textbf{Vector Field:}
+    \[ \int_C \mathbf{F} \cdot d\mathbf{r} = \int_C P \, dx + Q \, dy \]
+    \[ = \int_a^b \left[ P(x(t), y(t)) x'(t) + Q(x(t), y(t)) y'(t) \right] dt \]
+\end{tcolorbox}
+
+% Fundamental Theorem for Line Integrals
+\begin{tcolorbox}[title=\textbf{Fundamental Theorem for Line Integrals}, colframe=lightblue]
+    If \( \mathbf{F} = \nabla f \) is conservative, then for any curve \( C \) from \( A \) to \( B \):
+    \[ \int_C \mathbf{F} \cdot d\mathbf{r} = f(B) - f(A) \]
+    \textbf{Conservative Field Test:}
+    - In \( \mathbb{R}^2 \), if \( \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \) in a simply connected domain, then \( \mathbf{F} \) is conservative.
+\end{tcolorbox}
+
+% Green's Theorem
+\begin{tcolorbox}[title=\textbf{Green's Theorem}, colframe=lightgreen]
+    For a positively oriented, piecewise smooth, simple closed curve \( C \) enclosing region \( D \):
+    \[ \oint_C P \, dx + Q \, dy = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \, dA \]
+    \textbf{Area Using Green's Theorem:}
+    \[ \text{Area} = \frac{1}{2} \oint_C x \, dy - y \, dx \]
+\end{tcolorbox}
+
+% Trigonometric Identities
+\begin{tcolorbox}[title=\textbf{Trigonometric Identities}, colframe=lightpink]
+    \textbf{Pythagorean Identities:}
+    \[ \sin^2 \theta + \cos^2 \theta = 1 \]
+    \[ 1 + \tan^2 \theta = \sec^2 \theta \]
+    \[ 1 + \cot^2 \theta = \csc^2 \theta \]
+    \textbf{Double Angle Formulas:}
+    \[ \sin 2\theta = 2 \sin \theta \cos \theta \]
+    \[ \cos 2\theta = \cos^2 \theta - \sin^2 \theta = 2 \cos^2 \theta - 1 = 1 - 2 \sin^2 \theta \]
+    \[ \tan 2\theta = \frac{2 \tan \theta}{1 - \tan^2 \theta} \]
+    \textbf{Sum and Difference Formulas:}
+    \[ \sin (A \pm B) = \sin A \cos B \pm \cos A \sin B \]
+    \[ \cos (A \pm B) = \cos A \cos B \mp \sin A \sin B \]
+    \[ \tan (A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A \tan B} \]
+    \textbf{Half-Angle Formulas:}
+    \[ \sin^2 \theta = \frac{1 - \cos 2\theta}{2} \]
+    \[ \cos^2 \theta = \frac{1 + \cos 2\theta}{2} \]
+    \textbf{Product to Sum:}
+    \[ \sin A \sin B = \frac{1}{2} [ \cos(A - B) - \cos(A + B) ] \]
+    \[ \cos A \cos B = \frac{1}{2} [ \cos(A - B) + \cos(A + B) ] \]
+    \[ \sin A \cos B = \frac{1}{2} [ \sin(A + B) + \sin(A - B) ] \]
+\end{tcolorbox}
+
+% Common Derivatives and Integrals
+\begin{tcolorbox}[title=\textbf{Common Derivatives and Integrals}, colframe=lightyellow]
+    \textbf{Derivatives:}
+    \[ \frac{d}{dx} [e^{ax}] = a e^{ax} \]
+    \[ \frac{d}{dx} [\ln x] = \frac{1}{x} \]
+    \[ \frac{d}{dx} [\sin ax] = a \cos ax \]
+    \[ \frac{d}{dx} [\cos ax] = -a \sin ax \]
+    \[ \frac{d}{dx} [\tan ax] = a \sec^2 ax \]
+    \textbf{Integrals:}
+    \[ \int e^{ax} \, dx = \frac{1}{a} e^{ax} + C \]
+    \[ \int \frac{1}{x} \, dx = \ln |x| + C \]
+    \[ \int \sin ax \, dx = -\frac{1}{a} \cos ax + C \]
+    \[ \int \cos ax \, dx = \frac{1}{a} \sin ax + C \]
+    \[ \int \sec^2 ax \, dx = \frac{1}{a} \tan ax + C \]
+    \textbf{Integration Techniques:}
+    - \textbf{Substitution:} Let \( u = g(x) \), then \( \int f(g(x)) g'(x) \, dx = \int f(u) \, du \). \\
+    - \textbf{Integration by Parts:} \( \int u \, dv = uv - \int v \, du \).
+\end{tcolorbox}
+
+% Jacobian Determinant
+\begin{tcolorbox}[title=\textbf{Jacobian Determinant}, colframe=lightgreen]
+    For a transformation from \( (x, y) \) to \( (u, v) \):
+    \[ J = \left| \frac{\partial(x, y)}{\partial(u, v)} \right| = 
+    \begin{vmatrix}
+    \dfrac{\partial x}{\partial u} & \dfrac{\partial x}{\partial v} \\[2ex]
+    \dfrac{\partial y}{\partial u} & \dfrac{\partial y}{\partial v}
+    \end{vmatrix}
+    = \frac{\partial x}{\partial u} \frac{\partial y}{\partial v} - \frac{\partial x}{\partial v} \frac{\partial y}{\partial u} \]
+    \textbf{Use in Integration:}
+    \[ \iint_D f(x, y) \, dA = \iint_{D'} f(x(u, v), y(u, v)) \left| J \right| \, du \, dv \]
+\end{tcolorbox}
+
+% Properties of Conservative Vector Fields
+\begin{tcolorbox}[title=\textbf{Conservative Vector Fields}, colframe=lightblue]
+    \textbf{Tests for Conservativeness in \( \mathbb{R}^2 \):}
+    - \( \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \) \\
+    \textbf{Finding Potential Function \( f \):}
+    - Integrate \( P \) with respect to \( x \), then \( Q \) with respect to \( y \), and combine results.
+    \textbf{Zero Curl Condition:}
+    - For \( \mathbf{F} = P \mathbf{i} + Q \mathbf{j} + R \mathbf{k} \), if \( \nabla \times \mathbf{F} = \mathbf{0} \), then \( \mathbf{F} \) is conservative (in simply connected domains).
+\end{tcolorbox}
+
+% Common Coordinate Transformations
+\begin{tcolorbox}[title=\textbf{Common Coordinate Transformations}, colframe=lightgreen]
+    \textbf{Polar to Cartesian:}
+    \[ x = r \cos \theta, \quad y = r \sin \theta \]
+    \textbf{Cartesian to Polar:}
+    \[ r = \sqrt{x^2 + y^2}, \quad \theta = \arctan \left( \frac{y}{x} \right) \]
+    \textbf{Cylindrical Coordinates:}
+    \[ x = r \cos \theta, \quad y = r \sin \theta, \quad z = z \]
+    \textbf{Spherical Coordinates:}
+    \[ x = \rho \sin \phi \cos \theta \]
+    \[ y = \rho \sin \phi \sin \theta \]
+    \[ z = \rho \cos \phi \]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{Derivative Rules}, colframe=lightblue]
+    \[ \frac{d}{dx} [c] = 0 \]
+    \[ \frac{d}{dx} [x^n] = nx^{n-1} \]
+    \[ \frac{d}{dx} [c \cdot f(x)] = c \cdot f'(x) \]
+    \[ \frac{d}{dx} [f(x) + g(x)] = f'(x) + g'(x) \]
+    \[ \frac{d}{dx} [f(x) - g(x)] = f'(x) - g'(x) \]
+    \[ \frac{d}{dx} [f(x) \cdot g(x)] = f'(x) g(x) + f(x) g'(x) \]
+    \[ \frac{d}{dx} \left[ \frac{f(x)}{g(x)} \right] = \frac{f'(x) g(x) - f(x) g'(x)}{[g(x)]^2} \]
+    \[ \frac{d}{dx} [f(g(x))] = f'(g(x)) \cdot g'(x) \]
+\end{tcolorbox}
+
+\end{multicols}
+\end{document}
