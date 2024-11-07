@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1730589810.52877 "/home/alexhernandezjuarez/Documents/Math 120/PSet 9/Notes.tex" "Notes.pdf" "Notes" 1730589813.49555 0
+["pdflatex"] 1731015331.14227 "/home/alexhernandezjuarez/Documents/Math 120/PSet 9/Notes.tex" "Notes.pdf" "Notes" 1731015333.95357 0
   "/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1730481535.13683 102210 594230a8db9705ddc17b471ed59cab5b ""
   "/home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1720481676.53285 21086769 199704c7fa1ab56f08185f2a01667ed0 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc" 1720481717.39723 3877 2ca811886181a05a861d20a35de75e06 ""
@@ -314,10 +314,10 @@
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xfrac/xfrac.sty" 1720481722.07727 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty" 1720481758.74561 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1720481720.24125 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/alexhernandezjuarez/Documents/Math 120/PSet 9/Notes.tex" 1730589809.83327 15693 c257d89e2c5134dc9fc9043294564426 ""
-  "Notes.aux" 1730589813.12331 1195 163733e3e1625f217fa27082088c2a6b "pdflatex"
-  "Notes.tex" 1730589809.83327 15693 c257d89e2c5134dc9fc9043294564426 ""
-  "Notes.toc" 1730589813.12531 139 c76e1951a842ed80881380f94c3955e9 "pdflatex"
+  "/home/alexhernandezjuarez/Documents/Math 120/PSet 9/Notes.tex" 1731015327.65146 16373 2ceac1e4315c03027dce736eee7949ff ""
+  "Notes.aux" 1731015333.69351 1195 163733e3e1625f217fa27082088c2a6b "pdflatex"
+  "Notes.tex" 1731015327.65146 16373 2ceac1e4315c03027dce736eee7949ff ""
+  "Notes.toc" 1731015333.69551 139 c76e1951a842ed80881380f94c3955e9 "pdflatex"
   "letterfonts.tex" 1720527956.72324 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "macros.tex" 1720527956.72324 3389 93000260d2aea292d29c76d4ace77a29 ""
   "preamble.tex" 1729821858.43324 26728 3130a83826ff0f6e305c097486e4a915 ""

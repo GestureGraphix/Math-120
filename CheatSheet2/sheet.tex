@@ -1,10 +1,12 @@
-\documentclass[2pt]{article}
-\usepackage{amsmath, amssymb, graphicx, geometry, multicol, tcolorbox, titlesec, parskip, xcolor}
-\geometry{a4paper, margin=0.3in} % Reduce margin to 0.3 inches
+\documentclass[9pt]{article}
+\usepackage{amsmath, amssymb, graphicx, geometry, multicol, tcolorbox, titlesec, xcolor, titling}
+\geometry{a4paper, margin=0.1in} % Reduce margin to 0.1 inches
 \setlength{\parskip}{0pt}
 \setlength{\parindent}{0pt}
-\linespread{0.85} % Reduce line spacing further
+\linespread{0.7} % Reduce line spacing further
 \titlespacing{\section}{0pt}{1pt}{1pt}
+\setlength{\columnsep}{0.2cm} % Reduce column separation
+
 \definecolor{lightblue}{HTML}{D3E6FE}
 \definecolor{lightgreen}{HTML}{E2F0D9}
 \definecolor{lightpink}{HTML}{FDE7E8}
@@ -12,216 +14,363 @@
 
 % Reduce padding inside tcolorbox
 \tcbset{
-    boxrule=0.5mm, % Box border thickness
+    boxrule=0.3mm, % Box border thickness
     colback=white,
-    fonttitle=\bfseries,
+    fonttitle=\bfseries\footnotesize,
     sharp corners,
     coltitle=black,
     top=0pt,
     bottom=0pt,
-    left=1mm,
-    right=1mm,
-    boxsep=0.5mm, % Space between box content and border
-    arc=1mm % Rounded corners
+    left=0.3mm,
+    right=0.3mm,
+    boxsep=0.2mm, % Space between box content and border
+    arc=0.3mm % Rounded corners
 }
 
-\title{\small \textbf{Math 120 Cheat Sheet}} % Reduce title size
+\setlength{\droptitle}{-70pt} % Remove space above the title
+
+\title{\footnotesize \textbf{Math 120 Cheat Sheet}} % Reduce title size
 \date{} % Disable date
 
 \begin{document}
 \maketitle
-\vspace{-10pt} % Adjust the value as needed to remove space below the title
+\vspace{-15pt} % Remove space below the title
 \begin{multicols}{2}
+\footnotesize % Reduce font size for the content
 
 % Directional Derivatives and Gradient Vector
 \begin{tcolorbox}[title=\textbf{Directional Derivatives and Gradient Vector}, colframe=lightblue]
-    \textbf{Directional Derivative:} 	
-    \[ D_{\mathbf{u}} f(x, y) = \nabla f(x, y) \cdot \mathbf{u} \]
-    where \( \mathbf{u} \) is a unit vector. \\
-    \textbf{Gradient Vector:}
-    \[ \nabla f(x, y) = \left\langle f_x(x, y), \, f_y(x, y) \right\rangle \]
-    \textbf{Properties:}
-    - \( \nabla f \) points in the direction of maximum increase of \( f \). \\
-    - \( \nabla f \) is perpendicular to level curves (surfaces) of \( f \). \\
-    \textbf{Maximum Rate of Change:}
-    \[ \text{Max Rate} = |\nabla f(x, y)| \]
+\textbf{Directional Derivative:} 	
+\[ D_{\mathbf{u}} f(x, y) = \nabla f(x, y) \cdot \mathbf{u} \]
+where \( \mathbf{u} \) is a unit vector. \\
+\textbf{Gradient Vector:}
+\[ \nabla f(x, y) = \langle f_x, f_y \rangle \]
+\textbf{Properties:}
+- \( \nabla f \) points in the direction of max increase of \( f \). \\
+- \( \nabla f \) is perpendicular to level curves of \( f \). \\
+\textbf{Max Rate of Change:}
+\[ \text{Max Rate} = |\nabla f(x, y)| \]
 \end{tcolorbox}
 
 % Maximum and Minimum Values
 \begin{tcolorbox}[title=\textbf{Maximum and Minimum Values}, colframe=lightgreen]
-    \textbf{Second Derivative Test:} \\
-    Compute \( D = f_{xx}(a,b) f_{yy}(a,b) - [f_{xy}(a,b)]^2 \). \\
-    - If \( D > 0 \) and \( f_{xx}(a,b) > 0 \), then local minimum at \( (a, b) \). \\
-    - If \( D > 0 \) and \( f_{xx}(a,b) < 0 \), then local maximum at \( (a, b) \). \\
-    - If \( D < 0 \), saddle point at \( (a, b) \). \\
-    - If \( D = 0 \), test is inconclusive. \\
-    \textbf{Critical Points:} Solve \( f_x = 0 \) and \( f_y = 0 \).
+\textbf{Second Derivative Test:} \\
+Compute \( D = f_{xx} f_{yy} - (f_{xy})^2 \). \\
+- If \( D > 0 \) and \( f_{xx} > 0 \), local min at \( (a, b) \). \\
+- If \( D > 0 \) and \( f_{xx} < 0 \), local max at \( (a, b) \). \\
+- If \( D < 0 \), saddle point at \( (a, b) \). \\
+- If \( D = 0 \), test inconclusive. \\
+\textbf{Critical Points:} Solve \( f_x = 0 \), \( f_y = 0 \).
 \end{tcolorbox}
 
 % Lagrange Multipliers
 \begin{tcolorbox}[title=\textbf{Lagrange Multipliers}, colframe=lightpink]
-    To find extrema of \( f(x, y, z) \) subject to constraint \( g(x, y, z) = 0 \):
-    \[ \nabla f = \lambda \nabla g \]
-    Solve:
-    \[ f_x = \lambda g_x, \quad f_y = \lambda g_y, \quad f_z = \lambda g_z \]
-    \[ g(x, y, z) = 0 \]
-    \textbf{For Two Variables:}
-    \[ f_x = \lambda g_x, \quad f_y = \lambda g_y, \quad g(x, y) = 0 \]
+\textbf{Purpose:} Find extrema of \( f(x, y) \) subject to \( g(x, y) = 0 \). \\
+\textbf{Method:}
+1. \( \nabla f = \lambda \nabla g \) \\
+   \( f_x = \lambda g_x, \quad f_y = \lambda g_y \) \\
+2. Include \( g(x, y) = 0 \). \\
+3. Solve for \( x, y, \lambda \). \\
+4. Evaluate \( f \) at solutions.
 \end{tcolorbox}
 
 % Double Integrals over Rectangles
 \begin{tcolorbox}[title=\textbf{Double Integrals over Rectangles}, colframe=lightyellow]
-    \textbf{Definition:}
-    \[ \iint_R f(x, y) \, dA = \int_a^b \int_c^d f(x, y) \, dy \, dx \]
-    where \( R = [a, b] \times [c, d] \). \\
-    \textbf{Fubini's Theorem:} If \( f \) is continuous on \( R \):
-    \[ \iint_R f(x, y) \, dA = \int_c^d \int_a^b f(x, y) \, dx \, dy \]
+\textbf{Definition:}
+\[ \iint_R f(x, y) \, dA = \int_a^b \int_c^d f(x, y) \, dy \, dx \]
+where \( R = [a, b] \times [c, d] \). \\
+\textbf{Fubini's Theorem:} If \( f \) is continuous:
+\[ \iint_R f(x, y) \, dA = \int_c^d \int_a^b f(x, y) \, dx \, dy \]
+\end{tcolorbox}
+
+% Average Value of a Function
+\begin{tcolorbox}[title=\textbf{Average Value of a Function}, colframe=lightpink]
+\textbf{Average Value over \( R \):}
+\[ f_{\text{avg}} = \frac{1}{(b - a)(d - c)} \iint_R f(x, y) \, dA \]
 \end{tcolorbox}
 
 % Double Integrals over General Regions
 \begin{tcolorbox}[title=\textbf{Double Integrals over General Regions}, colframe=lightblue]
-    \textbf{Type I Region (Vertical):}
-    \[ D = \{ (x, y) \mid a \leq x \leq b, \ g_1(x) \leq y \leq g_2(x) \} \]
-    \[ \iint_D f(x, y) \, dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f(x, y) \, dy \, dx \]
-    \textbf{Type II Region (Horizontal):}
-    \[ D = \{ (x, y) \mid c \leq y \leq d, \ h_1(y) \leq x \leq h_2(y) \} \]
-    \[ \iint_D f(x, y) \, dA = \int_c^d \int_{h_1(y)}^{h_2(y)} f(x, y) \, dx \, dy \]
+\textbf{Type I Region (Vertical):}
+\[ D = \{ (x, y) \mid a \leq x \leq b,\ g_1(x) \leq y \leq g_2(x) \} \]
+\[ \iint_D f \, dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f \, dy \, dx \]
+\textbf{Type II Region (Horizontal):}
+\[ D = \{ (x, y) \mid c \leq y \leq d,\ h_1(y) \leq x \leq h_2(y) \} \]
+\[ \iint_D f \, dA = \int_c^d \int_{h_1(y)}^{h_2(y)} f \, dx \, dy \]
 \end{tcolorbox}
 
 % Double Integrals in Polar Coordinates
 \begin{tcolorbox}[title=\textbf{Double Integrals in Polar Coordinates}, colframe=lightgreen]
-    \textbf{Transformation:}
-    \[ x = r \cos \theta, \quad y = r \sin \theta \]
-    \textbf{Jacobian:}
-    \[ dA = r \, dr \, d\theta \]
-    \textbf{Integral:}
-    \[ \iint_D f(x, y) \, dA = \int_{\theta_1}^{\theta_2} \int_{r_1(\theta)}^{r_2(\theta)} f(r \cos \theta, r \sin \theta) \, r \, dr \, d\theta \]
+\textbf{When to Convert:}
+- Circular regions or integrands with \( x^2 + y^2 \). \\
+- When \( f(x, y) \) is easier to integrate in polar form. \\
+\textbf{Transformation:}
+\[ x = r \cos \theta,\ y = r \sin \theta \]
+\[ dA = r \, dr \, d\theta \]
+\textbf{Integral:}
+\[ \iint_D f(x, y) \, dA = \int_{\theta_1}^{\theta_2} \int_{r_1(\theta)}^{r_2(\theta)} f(r \cos \theta, r \sin \theta) r \, dr \, d\theta \]
+\textbf{Tips:}
+- Adjust limits of \( r \) and \( \theta \) to match \( D \). \\
+- Common for circles, sectors, annuli.
 \end{tcolorbox}
 
 % Vector Fields
 \begin{tcolorbox}[title=\textbf{Vector Fields}, colframe=lightpink]
-    \textbf{Definition:} \\
-    In \( \mathbb{R}^2 \):
-    \[ \mathbf{F}(x, y) = P(x, y) \, \mathbf{i} + Q(x, y) \, \mathbf{j} \]
-    \textbf{Gradient Field:} \( \mathbf{F} = \nabla f \) \\
-    \textbf{Conservative Field:} If \( \mathbf{F} = \nabla f \), then \( \mathbf{F} \) is conservative. \\
-    \textbf{Curl in \( \mathbb{R}^2 \):}
-    \[ \text{curl } \mathbf{F} = \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \]
+\textbf{Definition:}
+\( \mathbf{F}(x, y) = P(x, y) \mathbf{i} + Q(x, y) \mathbf{j} \) \\
+\textbf{Gradient Field:} \( \mathbf{F} = \nabla f \) \\
+\textbf{Conservative Field:} \( \mathbf{F} = \nabla f \). \\
+\textbf{Curl in \( \mathbb{R}^2 \):}
+\[ \text{curl } \mathbf{F} = Q_x - P_y \]
 \end{tcolorbox}
 
 % Line Integrals
 \begin{tcolorbox}[title=\textbf{Line Integrals}, colframe=lightyellow]
-    \textbf{Scalar Function:}
-    \[ \int_C f(x, y) \, ds = \int_a^b f(x(t), y(t)) \, |\mathbf{r}'(t)| \, dt \]
-    \textbf{Vector Field:}
-    \[ \int_C \mathbf{F} \cdot d\mathbf{r} = \int_C P \, dx + Q \, dy \]
-    \[ = \int_a^b \left[ P(x(t), y(t)) x'(t) + Q(x(t), y(t)) y'(t) \right] dt \]
+\textbf{When to Use:}
+- To compute work done by a force field along a path. \\
+- To integrate a scalar function over a curve (mass, length). \\
+\textbf{Types of Line Integrals:}
+- \textbf{Scalar Line Integral} (with respect to arc length): \( \int_C f \, ds \) \\
+- \textbf{Vector Line Integral} (work): \( \int_C \mathbf{F} \cdot d\mathbf{r} \) \\
+\textbf{How to Compute:}
+1. Parameterize \( C \) by \( \mathbf{r}(t) \), \( t \in [a, b] \). \\
+2. Compute \( \mathbf{r}'(t) \) and \( |\mathbf{r}'(t)| \) if necessary. \\
+3. Substitute into the integral:
+   - Scalar: \( \int_a^b f(\mathbf{r}(t)) |\mathbf{r}'(t)| dt \) \\
+   - Vector: \( \int_a^b \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t) dt \) \\
+\textbf{When to Convert to Polar Coordinates:}
+- When \( C \) is a circle or curve naturally described in polar coordinates. \\
+- When integrand involves \( x^2 + y^2 \) or trigonometric functions. \\
+\textbf{Converting to Polar Coordinates:}
+- Use \( x = r \cos \theta \), \( y = r \sin \theta \). \\
+- Express \( \mathbf{F} \) and \( d\mathbf{r} \) in terms of \( r \) and \( \theta \). \\
+\textbf{Tips:}
+- Choose the simplest parameterization possible. \\
+- For circles: \( x = a \cos t,\ y = a \sin t \), \( t \in [0, 2\pi] \). \\
+- For straight lines, use linear parameterizations. \\
+\textbf{Applications:}
+- Calculating work, circulation, or flux. \\
+- Finding mass of a wire with variable density.
 \end{tcolorbox}
 
 % Fundamental Theorem for Line Integrals
 \begin{tcolorbox}[title=\textbf{Fundamental Theorem for Line Integrals}, colframe=lightblue]
-    If \( \mathbf{F} = \nabla f \) is conservative, then for any curve \( C \) from \( A \) to \( B \):
-    \[ \int_C \mathbf{F} \cdot d\mathbf{r} = f(B) - f(A) \]
-    \textbf{Conservative Field Test:}
-    - In \( \mathbb{R}^2 \), if \( \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \) in a simply connected domain, then \( \mathbf{F} \) is conservative.
+If \( \mathbf{F} = \nabla f \), then:
+\[ \int_C \mathbf{F} \cdot d\mathbf{r} = f(B) - f(A) \]
+\textbf{Conservative Field Test:}
+- If \( P_y = Q_x \), then \( \mathbf{F} \) is conservative.
 \end{tcolorbox}
 
 % Green's Theorem
 \begin{tcolorbox}[title=\textbf{Green's Theorem}, colframe=lightgreen]
-    For a positively oriented, piecewise smooth, simple closed curve \( C \) enclosing region \( D \):
-    \[ \oint_C P \, dx + Q \, dy = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \, dA \]
-    \textbf{Area Using Green's Theorem:}
-    \[ \text{Area} = \frac{1}{2} \oint_C x \, dy - y \, dx \]
+\textbf{When to Use:}
+- To convert a difficult line integral into a double integral (or vice versa). \\
+- When dealing with circulation or flux over a closed curve \( C \) in the plane. \\
+- \( C \) must be a positively oriented (counter-clockwise) simple closed curve. \\
+\textbf{Statement:}
+\[ \oint_C P\,dx + Q\,dy = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA \]
+\textbf{Applications:}
+- Calculating area: \( \text{Area} = \frac{1}{2} \oint_C x\, dy - y\, dx \) \\
+- Computing work done by a force field around a closed path. \\
+\textbf{How to Apply:}
+1. Verify conditions (closed curve, positive orientation). \\
+2. Identify \( P(x, y) \) and \( Q(x, y) \). \\
+3. Compute \( Q_x - P_y \). \\
+4. Evaluate \( \iint_D (Q_x - P_y) dA \). \\
+\textbf{Tips:}
+- Simplify the integrand before integrating. \\
+- Choose the order of integration based on \( D \). \\
+- For circular regions, consider polar coordinates.
+\end{tcolorbox}
+
+% Example Problem: Evaluating a Line Integral Using Green's Theorem
+\begin{tcolorbox}[title=\textbf{Example: Evaluating a Line Integral Using Green's Theorem}, colframe=lightpink]
+\textbf{Problem:} Let \( \vec{F}(x, y) = \left( x^2 + y^2,\ \frac{1}{3} x^3 + 2xy + x \right) \). Compute \( \int_C \vec{F} \cdot d\vec{r} \) along the semicircle \( C \) defined by \( x^2 + y^2 = 16 \) for \( y \geq 0 \).
+
+\textbf{Solution:}
+1. \textbf{Close the Curve:}
+   - Add the interval from \( x = 4 \) to \( x = -4 \) along \( y = 0 \) to form a closed curve \( C' \).
+2. \textbf{Apply Green's Theorem:}
+   \[ \int_{C'} \vec{F} \cdot d\vec{r} = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dx dy \]
+   - Compute \( \frac{\partial Q}{\partial x} = x^2 + 2y + 1 \), \( \frac{\partial P}{\partial y} = 2y \).
+   - Integrand: \( x^2 + 1 \).
+3. \textbf{Compute the Double Integral:}
+   \[ \iint_D (x^2 + 1)\, dx dy = \int_{0}^{\pi} \int_{0}^{4} (r^2 \cos^2 \theta + 1)\, r dr d\theta \]
+   - Evaluate:
+     \[ \int_{0}^{\pi} \left( \frac{64}{4} \cos^2 \theta + 8 \right) d\theta = 40\pi \]
+4. \textbf{Compute Integral over Straight Segment:}
+   - Parametrize: \( x = t,\ y = 0,\ t \in [4, -4] \).
+   - \( \vec{F} \cdot d\vec{r} = x^2 dx \).
+   - Integral: \( \int_{4}^{-4} x^2 dx = -\frac{128}{3} \).
+5. \textbf{Find Integral along \( C \):}
+   \[ \int_C \vec{F} \cdot d\vec{r} = \int_{C'} \vec{F} \cdot d\vec{r} - \left( -\frac{128}{3} \right) = 40\pi + \frac{128}{3} \]
+
+\textbf{Answer:} \( \int_C \vec{F} \cdot d\vec{r} = 40\pi + \dfrac{128}{3} \)
 \end{tcolorbox}
 
 % Trigonometric Identities
 \begin{tcolorbox}[title=\textbf{Trigonometric Identities}, colframe=lightpink]
-    \textbf{Pythagorean Identities:}
-    \[ \sin^2 \theta + \cos^2 \theta = 1 \]
-    \[ 1 + \tan^2 \theta = \sec^2 \theta \]
-    \[ 1 + \cot^2 \theta = \csc^2 \theta \]
-    \textbf{Double Angle Formulas:}
-    \[ \sin 2\theta = 2 \sin \theta \cos \theta \]
-    \[ \cos 2\theta = \cos^2 \theta - \sin^2 \theta = 2 \cos^2 \theta - 1 = 1 - 2 \sin^2 \theta \]
-    \[ \tan 2\theta = \frac{2 \tan \theta}{1 - \tan^2 \theta} \]
-    \textbf{Sum and Difference Formulas:}
-    \[ \sin (A \pm B) = \sin A \cos B \pm \cos A \sin B \]
-    \[ \cos (A \pm B) = \cos A \cos B \mp \sin A \sin B \]
-    \[ \tan (A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A \tan B} \]
-    \textbf{Half-Angle Formulas:}
-    \[ \sin^2 \theta = \frac{1 - \cos 2\theta}{2} \]
-    \[ \cos^2 \theta = \frac{1 + \cos 2\theta}{2} \]
-    \textbf{Product to Sum:}
-    \[ \sin A \sin B = \frac{1}{2} [ \cos(A - B) - \cos(A + B) ] \]
-    \[ \cos A \cos B = \frac{1}{2} [ \cos(A - B) + \cos(A + B) ] \]
-    \[ \sin A \cos B = \frac{1}{2} [ \sin(A + B) + \sin(A - B) ] \]
+\textbf{Pythagorean:}
+\[ \sin^2 \theta + \cos^2 \theta = 1 \]
+\[ 1 + \tan^2 \theta = \sec^2 \theta \]
+\textbf{Double Angle:}
+\[ \sin 2\theta = 2 \sin \theta \cos \theta \]
+\[ \cos 2\theta = \cos^2 \theta - \sin^2 \theta \]
+\textbf{Sum and Difference:}
+\[ \sin (A \pm B) = \sin A \cos B \pm \cos A \sin B \]
+\[ \cos (A \pm B) = \cos A \cos B \mp \sin A \sin B \]
 \end{tcolorbox}
 
 % Common Derivatives and Integrals
 \begin{tcolorbox}[title=\textbf{Common Derivatives and Integrals}, colframe=lightyellow]
-    \textbf{Derivatives:}
-    \[ \frac{d}{dx} [e^{ax}] = a e^{ax} \]
-    \[ \frac{d}{dx} [\ln x] = \frac{1}{x} \]
-    \[ \frac{d}{dx} [\sin ax] = a \cos ax \]
-    \[ \frac{d}{dx} [\cos ax] = -a \sin ax \]
-    \[ \frac{d}{dx} [\tan ax] = a \sec^2 ax \]
-    \textbf{Integrals:}
-    \[ \int e^{ax} \, dx = \frac{1}{a} e^{ax} + C \]
-    \[ \int \frac{1}{x} \, dx = \ln |x| + C \]
-    \[ \int \sin ax \, dx = -\frac{1}{a} \cos ax + C \]
-    \[ \int \cos ax \, dx = \frac{1}{a} \sin ax + C \]
-    \[ \int \sec^2 ax \, dx = \frac{1}{a} \tan ax + C \]
-    \textbf{Integration Techniques:}
-    - \textbf{Substitution:} Let \( u = g(x) \), then \( \int f(g(x)) g'(x) \, dx = \int f(u) \, du \). \\
-    - \textbf{Integration by Parts:} \( \int u \, dv = uv - \int v \, du \).
+\textbf{Derivatives:}
+\[ \frac{d}{dx} e^{ax} = a e^{ax} \]
+\[ \frac{d}{dx} \ln x = \frac{1}{x} \]
+\[ \frac{d}{dx} \sqrt{x} = \frac{1}{2 \sqrt{x}} \]
+\[ \frac{d}{dx} \sin ax = a \cos ax \]
+\[ \frac{d}{dx} \cos ax = -a \sin ax \]
+\[ \frac{d}{dx} \tan ax = a \sec^2 ax \]
+\textbf{Integrals:}
+\[ \int e^{ax} dx = \frac{1}{a} e^{ax} + C \]
+\[ \int \frac{1}{x} dx = \ln |x| + C \]
+\[ \int \sqrt{x}\, dx = \frac{2}{3} x^{3/2} + C \]
+\[ \int \sin ax\, dx = -\frac{1}{a} \cos ax + C \]
+\[ \int \cos ax\, dx = \frac{1}{a} \sin ax + C \]
+\[ \int \sec^2 ax\, dx = \frac{1}{a} \tan ax + C \]
+\textbf{Techniques:}
+- \textbf{Substitution:} Let \( u = g(x) \). \\
+- \textbf{Integration by Parts:} \( \int u\, dv = uv - \int v\, du \).
 \end{tcolorbox}
 
 % Jacobian Determinant
 \begin{tcolorbox}[title=\textbf{Jacobian Determinant}, colframe=lightgreen]
-    For a transformation from \( (x, y) \) to \( (u, v) \):
-    \[ J = \left| \frac{\partial(x, y)}{\partial(u, v)} \right| = 
-    \begin{vmatrix}
-    \dfrac{\partial x}{\partial u} & \dfrac{\partial x}{\partial v} \\[2ex]
-    \dfrac{\partial y}{\partial u} & \dfrac{\partial y}{\partial v}
-    \end{vmatrix}
-    = \frac{\partial x}{\partial u} \frac{\partial y}{\partial v} - \frac{\partial x}{\partial v} \frac{\partial y}{\partial u} \]
-    \textbf{Use in Integration:}
-    \[ \iint_D f(x, y) \, dA = \iint_{D'} f(x(u, v), y(u, v)) \left| J \right| \, du \, dv \]
+Transformation from \( (x, y) \) to \( (u, v) \):
+\[ J = \left| \frac{\partial(x, y)}{\partial(u, v)} \right| = 
+\begin{vmatrix}
+x_u & x_v \\
+y_u & y_v
+\end{vmatrix}
+= x_u y_v - x_v y_u \]
+\textbf{Use in Integration:}
+\[ \iint_D f(x, y)\, dA = \iint_{D'} f(x(u, v), y(u, v)) |J|\, du\, dv \]
 \end{tcolorbox}
 
-% Properties of Conservative Vector Fields
+% Conservative Vector Fields
 \begin{tcolorbox}[title=\textbf{Conservative Vector Fields}, colframe=lightblue]
-    \textbf{Tests for Conservativeness in \( \mathbb{R}^2 \):}
-    - \( \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \) \\
-    \textbf{Finding Potential Function \( f \):}
-    - Integrate \( P \) with respect to \( x \), then \( Q \) with respect to \( y \), and combine results.
-    \textbf{Zero Curl Condition:}
-    - For \( \mathbf{F} = P \mathbf{i} + Q \mathbf{j} + R \mathbf{k} \), if \( \nabla \times \mathbf{F} = \mathbf{0} \), then \( \mathbf{F} \) is conservative (in simply connected domains).
+\textbf{Tests:}
+- If \( P_y = Q_x \), \( \mathbf{F} \) is conservative. \\
+\textbf{Finding Potential \( f \):}
+1. Integrate \( P \) w.r.t \( x \) to get \( f \). \\
+2. Differentiate \( f \) w.r.t \( y \), compare with \( Q \). \\
+3. Adjust \( f \) as needed.
 \end{tcolorbox}
 
-% Common Coordinate Transformations
-\begin{tcolorbox}[title=\textbf{Common Coordinate Transformations}, colframe=lightgreen]
-    \textbf{Polar to Cartesian:}
-    \[ x = r \cos \theta, \quad y = r \sin \theta \]
-    \textbf{Cartesian to Polar:}
-    \[ r = \sqrt{x^2 + y^2}, \quad \theta = \arctan \left( \frac{y}{x} \right) \]
-    \textbf{Cylindrical Coordinates:}
-    \[ x = r \cos \theta, \quad y = r \sin \theta, \quad z = z \]
-    \textbf{Spherical Coordinates:}
-    \[ x = \rho \sin \phi \cos \theta \]
-    \[ y = \rho \sin \phi \sin \theta \]
-    \[ z = \rho \cos \phi \]
+% Coordinate Transformations
+\begin{tcolorbox}[title=\textbf{Coordinate Transformations}, colframe=lightgreen]
+\textbf{Polar to Cartesian:}
+\[ x = r \cos \theta,\ y = r \sin \theta \]
+\textbf{Cartesian to Polar:}
+\[ r = \sqrt{x^2 + y^2},\ \theta = \arctan \left( \frac{y}{x} \right) \]
+\textbf{Cylindrical:}
+\[ x = r \cos \theta,\ y = r \sin \theta,\ z = z \]
+\textbf{Spherical:}
+\[ x = \rho \sin \phi \cos \theta \]
+\[ y = \rho \sin \phi \sin \theta \]
+\[ z = \rho \cos \phi \]
 \end{tcolorbox}
 
+% Derivative Rules
 \begin{tcolorbox}[title=\textbf{Derivative Rules}, colframe=lightblue]
-    \[ \frac{d}{dx} [c] = 0 \]
-    \[ \frac{d}{dx} [x^n] = nx^{n-1} \]
-    \[ \frac{d}{dx} [c \cdot f(x)] = c \cdot f'(x) \]
-    \[ \frac{d}{dx} [f(x) + g(x)] = f'(x) + g'(x) \]
-    \[ \frac{d}{dx} [f(x) - g(x)] = f'(x) - g'(x) \]
-    \[ \frac{d}{dx} [f(x) \cdot g(x)] = f'(x) g(x) + f(x) g'(x) \]
-    \[ \frac{d}{dx} \left[ \frac{f(x)}{g(x)} \right] = \frac{f'(x) g(x) - f(x) g'(x)}{[g(x)]^2} \]
-    \[ \frac{d}{dx} [f(g(x))] = f'(g(x)) \cdot g'(x) \]
+\[ \frac{d}{dx} c = 0 \]
+\[ \frac{d}{dx} x^n = nx^{n-1} \]
+\[ \frac{d}{dx} [cf(x)] = c f'(x) \]
+\[ \frac{d}{dx} [f \pm g] = f' \pm g' \]
+\[ \frac{d}{dx} [fg] = f'g + fg' \]
+\[ \frac{d}{dx} \left( \frac{f}{g} \right) = \frac{f'g - fg'}{g^2} \]
+\[ \frac{d}{dx} f(g(x)) = f'(g(x)) g'(x) \]
+\end{tcolorbox}
+
+% Example Problem: Computing Area Between Circles
+\begin{tcolorbox}[title=\textbf{Example: Computing Area Between Circles}, colframe=lightpink]
+    \textbf{Problem:} Compute the area of the region \( R \) with \( y \geq 0 \) outside \( C_2 \) and inside \( C_1 \), where:
+    \[ C_1: (x - 1)^2 + y^2 = 1, \quad C_2: x^2 + y^2 = 2 \]
+    
+    \textbf{Solution Steps:}
+    1. \textbf{Express the curves in polar coordinates:}
+       - For \( C_1 \):
+         \[ (x - 1)^2 + y^2 = 1 \]
+         Substitute \( x = r \cos \theta \), \( y = r \sin \theta \):
+         \[ (r \cos \theta - 1)^2 + (r \sin \theta)^2 = 1 \]
+         Simplify:
+         \[ r^2 - 2 r \cos \theta = 0 \]
+         So \( r = 0 \) or \( r = 2 \cos \theta \).
+         Since \( r = 0 \) is trivial, \( C_1 \) corresponds to \( r = 2 \cos \theta \).
+    
+       - For \( C_2 \):
+         \[ x^2 + y^2 = 2 \]
+         In polar coordinates:
+         \[ r^2 = 2 \]
+         So \( r = \sqrt{2} \).
+    
+    2. \textbf{Determine the limits of integration:}
+       - Find the angle \( \theta \) where the curves intersect:
+         \[ r = \sqrt{2} = 2 \cos \theta \]
+         \[ \cos \theta = \frac{\sqrt{2}}{2} \]
+         \[ \theta = \frac{\pi}{4} \]
+       - Therefore, \( \theta \) ranges from \( 0 \) to \( \frac{\pi}{4} \).
+    
+    3. \textbf{Set up the double integral in polar coordinates:}
+       \[ A = \int_{\theta = 0}^{\frac{\pi}{4}} \int_{r = \sqrt{2}}^{r = 2 \cos \theta} r \, dr \, d\theta \]
+    
+    4. \textbf{Compute the integral:}
+       - Integrate with respect to \( r \):
+         \[ \int_{r = \sqrt{2}}^{r = 2 \cos \theta} r \, dr = \left[ \frac{1}{2} r^2 \right]_{r = \sqrt{2}}^{r = 2 \cos \theta} = \frac{1}{2} \left( (2 \cos \theta)^2 - (\sqrt{2})^2 \right) = \frac{1}{2} \left( 4 \cos^2 \theta - 2 \right) \]
+       - Integrate with respect to \( \theta \):
+         \[ A = \int_{0}^{\frac{\pi}{4}} \left( 2 \cos^2 \theta - 1 \right) d\theta \]
+    
+    5. \textbf{Simplify and evaluate the integral:}
+       - Use the identity \( \cos 2\theta = 2 \cos^2 \theta - 1 \):
+         \[ 2 \cos^2 \theta - 1 = \cos 2\theta \]
+       - Therefore:
+         \[ A = \int_{0}^{\frac{\pi}{4}} \cos 2\theta \, d\theta = \left[ \frac{1}{2} \sin 2\theta \right]_{0}^{\frac{\pi}{4}} = \frac{1}{2} \left( \sin \frac{\pi}{2} - \sin 0 \right) = \frac{1}{2} (1 - 0) = \frac{1}{2} \]
+    
+    6. \textbf{Final Answer:}
+       - The area \( A = \frac{1}{2} \) square units.
+\end{tcolorbox} 
+
+
+% Example Problem: Evaluating a Line Integral
+\begin{tcolorbox}[title=\textbf{Example: Evaluating a Line Integral}, colframe=lightpink]
+    \textbf{Problem:} Evaluate the line integral \( \int_C \vec{F} \cdot d\vec{r} \) where \( \vec{F} = \langle 4xy^2 + 9x^2, 3e^y + 4x^2 y \rangle \) and \( C \) is the part of the parabola \( 4y = x^2 \) from \( (2, 1) \) to \( (-2, 1) \).
+    
+    \textbf{Solution:}
+    1. \textbf{Verify if the Vector Field is Conservative:}
+       - Let \( P = 4xy^2 + 9x^2 \) and \( Q = 3e^y + 4x^2 y \).
+       - Compute \( \frac{\partial P}{\partial y} = 8xy \) and \( \frac{\partial Q}{\partial x} = 8xy \).
+       - Since \( \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \), \( \vec{F} \) is conservative.
+    
+    2. \textbf{Find the Potential Function \( f(x, y) \):}
+       - \( f_x = 4xy^2 + 9x^2 \implies f(x, y) = \int (4xy^2 + 9x^2) \, dx = 2x^2 y^2 + 3x^3 + g(y) \).
+       - Differentiate with respect to \( y \): \( f_y = 4x^2 y + g'(y) \).
+       - Set equal to \( Q \): \( 4x^2 y + g'(y) = 3e^y + 4x^2 y \implies g'(y) = 3e^y \).
+       - Integrate \( g'(y) \): \( g(y) = 3e^y \).
+       - Potential function: \( f(x, y) = 2x^2 y^2 + 3x^3 + 3e^y \).
+    
+    3. \textbf{Apply the Fundamental Theorem for Line Integrals:}
+       \[ \int_C \vec{F} \cdot d\vec{r} = f(-2, 1) - f(2, 1). \]
+       - Compute \( f(2, 1) = 2(2)^2(1)^2 + 3(2)^3 + 3e^1 = 8 + 24 + 3e \).
+       - Compute \( f(-2, 1) = 2(-2)^2(1)^2 + 3(-2)^3 + 3e^1 = 8 - 24 + 3e \).
+       - Result: \[ \int_C \vec{F} \cdot d\vec{r} = (8 - 24 + 3e) - (8 + 24 + 3e) = -48. \]
+    
+    4. \textbf{Path Independence Verification:}
+       - Choose the line segment \( C' \) from \( (2, 1) \) to \( (-2, 1) \) and parametrize by \( \vec{r}(t) = \langle -t, 1 \rangle \) with \( -2 \leq t \leq 2 \).
+       - \( d\vec{r} = \langle -1, 0 \rangle dt \) and \( \vec{F}(\vec{r}(t)) = \langle 4t + 9t^2, 3e + 4t^2 \rangle \).
+       - \( \vec{F} \cdot d\vec{r} = -4t - 9t^2 \).
+    
+    5. \textbf{Evaluate the Integral Directly:}
+       \[ \int_{-2}^{2} (-4t - 9t^2) \, dt = \left[ -2t^2 - 3t^3 \right]_{-2}^{2} = -48. \]
+    
+    \textbf{Answer:} \( \int_C \vec{F} \cdot d\vec{r} = -48 \).
 \end{tcolorbox}
 
 \end{multicols}

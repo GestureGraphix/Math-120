@@ -157,7 +157,11 @@
     b)
     \[ x = \sqrt{2}\cos\theta, \quad y = \sqrt{2}\sin\theta \quad \theta \in \left[\frac{\pi}{4}, \frac{3\pi}{4}\right] \]
     \[ dx = -\sqrt{2}\sin\theta \, d\theta, \quad dy = \sqrt{2}\cos\theta \, d\theta \]
-    \[ \vec{F} \cdot d\vec{r} = \sin^2\theta \, d\theta + \cos^2\theta \, d\theta = d\theta \]
+    \[ \vec{F} = -\frac{y}{x^2 + y^2} \, \hat{i} + \frac{x}{x^2 + y^2} \, \hat{j}. \]
+    \[ \vec{F} = -\frac{\sqrt{2} \sin \theta}{2} \, \hat{i} + \frac{\sqrt{2} \cos \theta}{2} \, \hat{j} = \left\langle -\frac{\sin \theta}{\sqrt{2}}, \frac{\cos \theta}{\sqrt{2}} \right\rangle. \]
+    \[ \vec{F} \cdot d\vec{r} = \left\langle -\frac{\sin \theta}{\sqrt{2}}, \frac{\cos \theta}{\sqrt{2}} \right\rangle \cdot \left\langle -\sqrt{2} \sin \theta, \sqrt{2} \cos \theta \right\rangle. \]
+    \[ \vec{F} \cdot d\vec{r} = d \theta \, \left( -\frac{\sin \theta}{\sqrt{2}} \right)( -\sqrt{2} \sin \theta ) + d \theta \left( \frac{\cos \theta}{\sqrt{2}} \right)( \sqrt{2} \cos \theta ). \] 
+    \[ = \sin^2 \theta \, d \theta + \cos^2 \theta \, d \theta = 1 \Rightarrow d \theta . \]
     \[ \int_C \vec{F} \cdot d\vec{r} = \int_{\pi/4}^{3\pi/4} d\theta = \frac{\pi}{2} \] 
     
     
@@ -287,4 +291,5 @@
     \int_C \vec{F} \cdot d\vec{r} = 54.
     \]    
 }
+
 \end{document}
