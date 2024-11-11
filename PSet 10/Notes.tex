@@ -1,0 +1,295 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Math 120}}
+\author{\huge{PSet 9}}
+\date{Nov 5 2024}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{}
+\section{PSet 9}
+
+\qs{}{
+    Let \(\vec{F}(x, y) = \langle y^2 \cos x, x^2 + 2y \sin x \rangle\), and let \(C\) be the triangle from \((0, 0)\) to \((2, 6)\) to \((2, 0)\) to \((0, 0)\).
+    Use Green's Theorem to evaluate \(\int_{C} \vec{F} \cdot d\vec{r}\). (Check the orientation of the curve before applying the theorem.)
+}
+
+\sol{
+    \[ \vec{F}(x, y) = \langle y^2 \cos x, x^2 + 2y \sin x \rangle \] 
+    \[ \int_{C} \vec{F} \cdot d\vec{r} = -\iint_{D} \left( \frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y} \right) \, dx \, dy \]
+    \[ \frac{\partial F_2}{\partial x} = \frac{\partial}{\partial x} (x^2 + 2y \sin x) = 2x + 2y \cos x \] 
+    \[ \frac{\partial F_1}{\partial y} = \frac{\partial}{\partial y} (y^2 \cos x) = 2y \cos x \]
+    \[ \frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y} = [2x + 2y \cos x] - [2y \cos x] = 2x \]
+    \[ \int_{C} \vec{F} \cdot d\vec{r} = -\iint_{D} 2x \, dx \, dy \]
+    \[ \int_{y=0}^{y=3x} 2x \, dy = 2x (3x - 0) = 6x^2 \]
+    \[ -\int_{x=0}^{2} 6x^2 \, dx = -6 \int_{0}^{2} x^2 \, dx = -6 \left[ \frac{x^3}{3} \right]_0^2 = -6 \left( \frac{8}{3} \right) = -16 \] 
+    \[ \int_{C} \vec{F} \cdot d\vec{r} = -16 \]      
+}
+
+\newpage 
+
+\qs{}{
+    Let \(P(x, y) = x-x^2 y^3\) and \(Q(x, y) = xy^2\), and let \(C\) be the circle \(x^2 + y^2 = 4\), oriented counterclockwise.
+    \begin{enumerate}
+        \item[(a)] Compute \(\int_{C} \vec{F} \cdot d\vec{r}\) directly, by parameterizing \(C\) and finding the line integral.
+        \item[(b)] Compute \(\int_{C} \vec{F} \cdot d\vec{r}\) using Green's Theorem.
+    \end{enumerate}
+}
+
+
+\sol{
+    \\ a) 
+    \[ x(t) = 2\cos t, \quad y(t) = 2\sin t, \quad t \in [0, 2\pi] \]
+    \[ dx = -2\sin t\,dt, \quad dy = 2\cos t \,dt \]
+    \[\begin{aligned}
+        P &= x - x^2 y^3 = 2\cos t - (2\cos t)^2 (2\sin t)^3 \\
+        &= 2\cos t - 4\cos^2 t \cdot 8\sin^3 t = 2\cos t - 32\cos^2 t \sin^3 t
+        \end{aligned}\]
+    \[  Q = x y^2 = (2\cos t)(2\sin t)^2 = 2\cos t \cdot 4\sin^2 t = 8\cos t \sin^2 t \]
+
+    \[ \begin{aligned}
+        P\,dx &= \left(2\cos t - 32\cos^2 t \sin^3 t\right)(-2\sin t\,dt) \\
+        &= -4\cos t \sin t\,dt + 64\cos^2 t \sin^4 t\,dt
+        \end{aligned} \]
+
+    \[ Q\,dy = \left(8\cos t \sin^2 t\right)(2\cos t\,dt) = 16\cos^2 t \sin^2 t\,dt \]
+    \[ P\,dx + Q\,dy = \left[ -4\cos t \sin t + 64\cos^2 t \sin^4 t + 16\cos^2 t \sin^2 t \right] dt \] 
+    \[ P\,dx + Q\,dy = \left[ -4\cos t \sin t + 16\cos^2 t \sin^2 t (1 + 4\sin^2 t) \right] dt \]
+    \[ \int_{C} \vec{F} \cdot d\vec{r} = \int_{0}^{2\pi} \left[ -4\cos t \sin t + 16\cos^2 t \sin^2 t (1 + 4\sin^2 t) \right] dt \]
+    \[ I = I_1 + I_2 + I_3 \]
+    \[ I_1 = \int_{0}^{2\pi} -4\cos t \sin t\,dt = -2 \int_{0}^{2\pi} \sin 2t\,dt = 0 \]
+    \[ I_2 = 16 \int_{0}^{2\pi} \cos^2 t \sin^2 t\,dt \]
+    \[ I_3 = 64 \int_{0}^{2\pi} \cos^2 t \sin^4 t\,dt \]
+    \[ \cos^2 t \sin^2 t = \frac{1}{4} \sin^2 2t = \frac{1}{8} (1 - \cos 4t) \]
+    \[ I_2 = 16 \cdot \frac{1}{8} \int_{0}^{2\pi} (1 - \cos 4t)\,dt = 2 \left[ t - \frac{\sin 4t}{4} \right]_0^{2\pi} = 4\pi \]
+    \[ \sin^4 t = \left( \sin^2 t \right)^2 = \left( \frac{1 - \cos 2t}{2} \right)^2 = \frac{1 - 2\cos 2t + \cos^2 2t}{4} \]
+    \[ \cos^2 t = \frac{1 + \cos 2t}{2} \]
+    \[ \cos^2 t \sin^4 t = \frac{1 + \cos 2t}{2} \cdot \frac{1 - 2\cos 2t + \cos^2 2t}{4} = \frac{(1 + \cos 2t)(1 - 2\cos 2t + \cos^2 2t)}{8} \]
+    \[ \begin{aligned}
+        (1 + \cos 2t)(1 - 2\cos 2t + \cos^2 2t) &= (1)(1 - 2\cos 2t + \cos^2 2t) + \cos 2t (1 - 2\cos 2t + \cos^2 2t) \\
+        &= 1 - 2\cos 2t + \cos^2 2t + \cos 2t - 2\cos^2 2t + \cos^3 2t \\
+        &= 1 - \cos 2t - \cos^2 2t + \cos^3 2t
+        \end{aligned} \]
+    \[ \cos^2 t \sin^4 t = \frac{1 - \cos 2t - \cos^2 2t + \cos^3 2t}{8} \]
+    \[ I_3 = 64 \int_{0}^{2\pi} \cos^2 t \sin^4 t\,dt = 8 \int_{0}^{2\pi} \left(1 - \cos 2t - \cos^2 2t + \cos^3 2t\right) dt \]
+    \[ \int_{0}^{2\pi} 1\,dt = 2\pi \]
+    \[ \int_{0}^{2\pi} \cos 2t\,dt = 0 \]
+    \[ \int_{0}^{2\pi} \cos^2 2t\,dt = \int_{0}^{2\pi} \frac{1 + \cos 4t}{2}\,dt = \pi \]
+    \[ \cos^3 2t = \frac{3\cos 2t + \cos 6t}{4} \implies \int_{0}^{2\pi} \cos^3 2t\,dt = 0 \]
+    \[ I_3 = 8 \left(2\pi - 0 - \pi + 0\right) = 8 \cdot \pi = 8\pi \]
+    \[ \int_{C} \vec{F} \cdot d\vec{r} = I_1 + I_2 + I_3 = 0 + 4\pi + 8\pi = \boxed{12\pi} \]
+
+    b) 
+
+    \[ \int_{C} P\,dx + Q\,dy = \iint_{D} \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dx\,dy \]
+    \[ \frac{\partial Q}{\partial x} = y^2 \]
+    \[ \frac{\partial P}{\partial y} = -3x^2 y^2 \]
+    \[ \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = y^2 + 3x^2 y^2 = y^2 (1 + 3x^2) \]
+    \[ \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = (r\sin\theta)^2 \left(1 + 3r^2 \cos^2\theta\right) = r^2 \sin^2\theta \left(1 + 3r^2 \cos^2\theta\right) \]
+    \[ \int_{0}^{2\pi} \int_{0}^{2} r^2 \sin^2\theta \left(1 + 3r^2 \cos^2\theta\right) r\,dr\,d\theta = \int_{0}^{2\pi} \sin^2\theta \left( \int_{0}^{2} r^3 (1 + 3r^2 \cos^2\theta)\,dr \right) d\theta \]
+    \[ I = \int_{0}^{2\pi} \sin^2\theta \left( \int_{0}^{2} r^3\,dr + 3\cos^2\theta \int_{0}^{2} r^5\,dr \right) d\theta \]
+    \[ \int_{0}^{2} r^3\,dr = \left[ \frac{r^4}{4} \right]_0^2 = \frac{16}{4} = 4 \]
+    \[ \int_{0}^{2} r^5\,dr = \left[ \frac{r^6}{6} \right]_0^2 = \frac{64}{6} = \frac{32}{3} \]
+    \[ I = \int_{0}^{2\pi} \sin^2\theta \left( 4 + 3\cos^2\theta \cdot \frac{32}{3} \right) d\theta = \int_{0}^{2\pi} \sin^2\theta \left(4 + 32\cos^2\theta \right) d\theta \]
+    \[ I = \int_{0}^{2\pi} \left( 4\sin^2\theta + 32\sin^2\theta \cos^2\theta \right) d\theta \]
+    \[ I_1 = 4 \int_{0}^{2\pi} \sin^2\theta\,d\theta = 4 \cdot \pi \]
+    \[ I_2 = 32 \int_{0}^{2\pi} \sin^2\theta \cos^2\theta\,d\theta = 32 \cdot \frac{1}{8} \int_{0}^{2\pi} (1 - \cos 4\theta)\,d\theta = 4 \left( 2\pi - 0 \right) = 8\pi \]
+    \[ I = I_1 + I_2 = 4\pi + 8\pi = \boxed{12\pi} \]
+}
+
+\qs{}{
+    Use Green's Theorem to find the area enclosed by the parametric curve \(\vec{r}(t) = \langle \sin t, \sin 2t \rangle\), \(0 \leq t \leq \pi\).
+}
+
+\sol{
+    \[ A = \frac{1}{2}_{C} x \, dy - y \, dx \Rightarrow \frac{1}{2} \int_{C} \left(x \, \frac{dy}{dy} - y \, \frac{dx}{dt} \right) \, dt  \]
+    \[ x = \sin t \quad y = \sin 2t \quad \frac{dx}{dt} = \cos t \quad \frac{dy}{dt} = - 2 \cos t \] 
+    \[ \sin 2t = 2 \sin t \cos t \quad \cos 2t = \cos^{2}t - \sin^{2} t \] 
+    \[ x \frac{dy}{dt} - y \frac{dx}{dt} = 2 \sin t\left(\cos^{2}t - \sin^{2} t \right) - 2\sin t \cos t (\cos t)\] 
+    \[ = 2 \sin t \left(\cos^{2}t - \sin^{2}t - \cos^{2} t \right) = - 2 \sin^{3}t \]
+    \[ A = \frac{1}{2} -2 \sin^{3}t \, dt = - \int \sin^{3}t \, dt \]
+    \[ \sin^{3}t = \sin t \left(1 - \cos^{2}t\right) = \sin t - \sin t \cos^{2} t\]
+    \[ \int_{0}^{\pi} \sin t \, dt - \int_{0}^{\pi} \sin t \cos^{2} t \]    
+    \[ \int_{0}^{\pi} \sin t \, dt \Rightarrow \left. - \cos t \right|_{0}^{\pi} = 2 \] 
+    \[ \int_{0}^{\pi} \sin t \cos^{2} t\] 
+    \[ u = \cos t \quad du = - \sin t \, dt \] 
+    \[ - \int_{0}^{\pi} u^{2} \Rightarrow \left. \frac{u^{3}}{3}\right|_{0}^{\pi}\] 
+    \[ \left. - \frac{\cos^{3} t}{3} \right|_{0}^{\pi} = \frac{2}{3} \]
+    \[ A = 2 - \frac{2}{3} = \frac{4}{3}\]  
+}
+
+\newpage 
+
+\qs{}{
+    Consider the vector field \(\vec{F} = -\frac{y}{x^2 + y^2} \hat{i} + \frac{x}{x^2 + y^2} \hat{j}\).
+    \begin{enumerate}
+        \item[(a)] Show that \(\frac{\partial Q}{\partial x} = \frac{\partial P}{\partial y}\) at every point in the domain of \(\vec{F}\).
+
+        \item[(b)] Let \(C\) be the short arc of the circle \(x^2 + y^2 = 2\) from \((1, 1)\) to \((-1, 1)\). Evaluate \(\int_C \vec{F} \cdot d\vec{r}\) directly, by parameterizing the curve and computing \(\int_a^b \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) \, dt\).
+
+        \item[(c)] Integrate \(P(x, y) = -\frac{y}{x^2 + y^2}\) with respect to \(x\), and check that the partial derivative of the result with respect to \(y\) is \(Q(x, y) = \frac{x}{x^2 + y^2}\). You have now found a function \(f\) such that \(\nabla f = \vec{F}\).
+
+        What is the domain of this function \(f\)? Is it the same as the domain of \(\vec{F}\)?
+
+        \item[(d)] Use your answer to part (c) and the Fundamental Theorem of Line Integrals to check your answer to part (b).
+
+        \item[(e)] Now let \(C\) be the circle of radius \(R\) centered at the origin, oriented counterclockwise. Compute \(\oint_C \vec{F} \cdot d\vec{r}\). Explain why your answer doesn't contradict the statement that the integral of a conservative vector field around any closed curve must be zero. Hint: Look carefully at the domain of the potential function \(f\) you found in part (b).
+    \end{enumerate}
+}
+
+\sol{
+    a)
+    \[ P(x, y) = -\frac{y}{x^2 + y^2}, \quad Q(x, y) = \frac{x}{x^2 + y^2} \]
+    \[ \frac{\partial Q}{\partial x} = \frac{\partial}{\partial x}\left(\frac{x}{x^2 + y^2}\right) = \frac{(x^2 + y^2) - 2x^2}{(x^2 + y^2)^2} = \frac{-x^2 + y^2}{(x^2 + y^2)^2} \] 
+    \[ \frac{\partial P}{\partial y} = \frac{\partial}{\partial y}\left(-\frac{y}{x^2 + y^2}\right) = \frac{-\left[(x^2 + y^2) - 2y^2\right]}{(x^2 + y^2)^2} = \frac{-x^2 + y^2}{(x^2 + y^2)^2} \]    
+
+    b)
+    \[ x = \sqrt{2}\cos\theta, \quad y = \sqrt{2}\sin\theta \quad \theta \in \left[\frac{\pi}{4}, \frac{3\pi}{4}\right] \]
+    \[ dx = -\sqrt{2}\sin\theta \, d\theta, \quad dy = \sqrt{2}\cos\theta \, d\theta \]
+    \[ \vec{F} = -\frac{y}{x^2 + y^2} \, \hat{i} + \frac{x}{x^2 + y^2} \, \hat{j}. \]
+    \[ \vec{F} = -\frac{\sqrt{2} \sin \theta}{2} \, \hat{i} + \frac{\sqrt{2} \cos \theta}{2} \, \hat{j} = \left\langle -\frac{\sin \theta}{\sqrt{2}}, \frac{\cos \theta}{\sqrt{2}} \right\rangle. \]
+    \[ \vec{F} \cdot d\vec{r} = \left\langle -\frac{\sin \theta}{\sqrt{2}}, \frac{\cos \theta}{\sqrt{2}} \right\rangle \cdot \left\langle -\sqrt{2} \sin \theta, \sqrt{2} \cos \theta \right\rangle. \]
+    \[ \vec{F} \cdot d\vec{r} = d \theta \, \left( -\frac{\sin \theta}{\sqrt{2}} \right)( -\sqrt{2} \sin \theta ) + d \theta \left( \frac{\cos \theta}{\sqrt{2}} \right)( \sqrt{2} \cos \theta ). \] 
+    \[ = \sin^2 \theta \, d \theta + \cos^2 \theta \, d \theta = 1 \Rightarrow d \theta . \]
+    \[ \int_C \vec{F} \cdot d\vec{r} = \int_{\pi/4}^{3\pi/4} d\theta = \frac{\pi}{2} \] 
+    
+    
+    c) 
+    \[
+    f(x, y) = \int P(x, y) \, dx = -\int \frac{y}{x^2 + y^2} \, dx = -\arctan\left(\frac{x}{y}\right) + h(y)
+    \]
+    \[
+    \frac{\partial f}{\partial y} = -\frac{\partial}{\partial y}\left[\arctan\left(\frac{x}{y}\right)\right] + h'(y) = \frac{x}{x^2 + y^2} + h'(y)
+    \]
+    \[
+    h'(y) = 0 \Rightarrow f(x, y) = -\arctan\left(\frac{x}{y}\right) + C
+    \]
+    
+    d)
+    \[
+    \int_C \vec{F} \cdot d\vec{r} = f(-1, 1) - f(1, 1) = \left(-\arctan\left(\frac{-1}{1}\right)\right) - \left(-\arctan\left(\frac{1}{1}\right)\right) = \frac{\pi}{2}
+    \]
+    
+    e) 
+    \[  x = R\cos\theta, \quad y = R\sin\theta \quad 0 \leq \theta \leq 2\pi \]
+    \[ \vec{F} \cdot d\vec{r} = \sin^2\theta \, d\theta + \cos^2\theta \, d\theta = d\theta \]
+    \[ \int_C \vec{F} \cdot d\vec{r} = \int_0^{2\pi} d\theta = 2\pi \]
+
+\qs{}{
+    Again consider the vector field \(\vec{F} = -\frac{y}{x^2 + y^2} \hat{i} + \frac{x}{x^2 + y^2} \hat{j}\). Let \(C_1\) be any closed curve going counterclockwise around the origin, such as the orange curve below. Let \(C_2\) be a circle, centered around the origin, with radius less than the shortest distance between \(C_1\) and the origin. (This condition guarantees that the two curves don't intersect.) Let \(D\) be the region between the two curves.
+    \begin{enumerate}
+        \item[(a)] Explain why Green's Theorem applies on the region \(D\).
+        
+        \item[(b)] The boundary of \(D\) is the union of the two curves \(C_1\) and \(-C_2\), where by \(-C_2\) we mean the inside circle oriented clockwise. Since \(\int_{-C_2} \vec{F} \cdot d\vec{r} = -\int_{C_2} \vec{F} \cdot d\vec{r}\), Green’s Theorem implies that
+        \[
+        \int_{C_1} \vec{F} \cdot d\vec{r} - \int_{C_2} \vec{F} \cdot d\vec{r} = \iint_D (Q_x - P_y) \, dA.
+        \]
+        
+        Use the results of Problem \# 4 above to determine the value of \(\int_{C_1} \vec{F} \cdot d\vec{r}\).
+    \end{enumerate}
+}
+
+\sol{
+    \\
+    a)  \\
+    Green's Theorem connects a line integral around a closed curve \( C \) to a double integral over the region \( D \) enclosed by \( C \), given a vector field \( \vec{F} = P\hat{i} + Q\hat{j} \) with continuous partial derivatives in the area around \( D \) and \( C \). Here, the vector field \( \vec{F} = \left(-\frac{y}{x^2 + y^2}\right)\hat{i} + \left(\frac{x}{x^2 + y^2}\right)\hat{j} \) is not defined at the origin due to division by zero, creating a singularity. However, the region \( D \) is bounded by two curves, \( C_1 \) and \( C_2 \), where \( C_2 \) is a smaller circle within \( C_1 \) that avoids the origin. This exclusion of the origin ensures \( \vec{F} \) remains continuously differentiable in \( D \), satisfying Green's Theorem's conditions. Therefore, Green's Theorem is applicable to \( D \). \\
+    b) 
+    \[ \int_{C_1} \vec{F} \cdot d\vec{r} - \oint_{C_2} \vec{F} \cdot d\vec{r} = \iint_{D} \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \, dA. \]
+    \[ \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 0 \]
+    \[ \iint_{D} \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \, dA = \iint_{D} 0 \, dA = 0. \]
+    \[ \int_{C_1} \vec{F} \cdot d\vec{r} - \int_{C_2} \vec{F} \cdot d\vec{r} = 0 \implies \int_{C_1} \vec{F} \cdot d\vec{r} = \int_{C_2} \vec{F} \cdot d\vec{r}. \]
+    \[ \int_{C} \vec{F} \cdot d\vec{r} = 2\pi \]
+    \[ \int_{C_2} \vec{F} \cdot d\vec{r} = 2\pi \]
+    \[ \int_{C_1} \vec{F} \cdot d\vec{r} = 2\pi \]
+
+}
+
+\newpage 
+
+\qs{}{
+    Let \(\vec{F} = \langle 2y - x^2, 4x + y e^{\cos y} \rangle\), and let \(C\) be the curve \(y = x^2 - 9\), \(-3 \leq x \leq 3\), oriented from left to right.
+
+    \begin{enumerate}
+        \item[(a)] Parameterize the curve \(C\), and write the vector line integral \(\int_C \vec{F} \cdot d\vec{r} = \int_a^b \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) \, dt\). Do not try to compute this integral directly!
+        
+        \item[(b)] Let \(C^*\) be the line segment along the \(x\)-axis from \((3, 0)\) to \((-3, 0)\). Compute \(\int_{C^*} \vec{F} \cdot d\vec{r}\).
+        
+        \item[(c)] Let \(D\) be the region bounded by the parabola \(y = x^2 - 9\) and the \(x\)-axis. Compute \(\iint_D (Q_x - P_y) \, dA\).
+        
+        \item[(d)] Use your answers to (b) and (c) to compute \(\int_C \vec{F} \cdot d\vec{r}\).
+    \end{enumerate}
+}
+
+\sol{ \\
+    a)
+    \[
+    \vec{r}(t) = \langle t, t^2 - 9 \rangle, \quad t \in [-3, 3].
+    \]
+    \[
+    \vec{r}'(t) = \langle 1, 2t \rangle.
+    \]
+    \[
+    \int_C \vec{F} \cdot d\vec{r} = \int_{-3}^{3} \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) \, dt.
+    \]
+    
+    b)
+    \[
+    \vec{r}(t) = \langle t, 0 \rangle, \quad t \in [3, -3].
+    \]
+    \[
+    \vec{r}'(t) = \langle 1, 0 \rangle.
+    \]
+    \[
+    \vec{F}(\vec{r}(t)) = \langle -t^2, 4t \rangle.
+    \]
+    \[
+    \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) = -t^2.
+    \]
+    \[
+    \int_{C^*} \vec{F} \cdot d\vec{r} = -\int_{3}^{-3} t^2 \, dt = \int_{-3}^{3} t^2 \, dt = \left[ \frac{t^3}{3} \right]_{-3}^{3} = 18.
+    \]
+    \[
+    \int_{C^*} \vec{F} \cdot d\vec{r} = 18.
+    \]
+    
+    c)
+    \[
+    P = 2y - x^2 \implies P_y = 2, \quad Q = 4x + y e^{\cos y} \implies Q_x = 4.
+    \]
+    \[
+    Q_x - P_y = 4 - 2 = 2.
+    \]
+    \[
+    \text{Area} = \int_{-3}^{3} [0 - (x^2 - 9)] \, dx = \int_{-3}^{3} (9 - x^2) \, dx = 36.
+    \]
+    \[
+    \iint_D (Q_x - P_y) \, dA = 2 \times 36 = 72.
+    \]
+    \[
+    \iint_D (Q_x - P_y) \, dA = 72.
+    \]
+    
+    d) 
+    \[
+    \int_{C} \vec{F} \cdot d\vec{r} + \int_{C^*} \vec{F} \cdot d\vec{r} = \iint_D (Q_x - P_y) \, dA.
+    \]
+    \[
+    \int_{C} \vec{F} \cdot d\vec{r} = \iint_D (Q_x - P_y) \, dA - \int_{C^*} \vec{F} \cdot d\vec{r} = 72 - 18 = 54.
+    \]
+    \[
+    \int_C \vec{F} \cdot d\vec{r} = 54.
+    \]    
+}
+
+\end{document}
