@@ -1,6 +1,6 @@
-PWD /home/alexhernandezjuarez/Documents/Math 120/PSet 9
+PWD /home/alexhernandezjuarez/Documents/Math 120/PSet 10
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
-INPUT /home/alexhernandezjuarez/Documents/Math 120/PSet 9/Notes.tex
+INPUT /home/alexhernandezjuarez/Documents/Math 120/PSet 10/Notes.tex
 OUTPUT Notes.log
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/report.cls
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/report.cls
@@ -582,18 +582,15 @@ INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/st
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplmia.vf
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/pxmiaX.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplmi.vf
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/NewPXMI_gnu.tfm
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/NewPXMI.tfm
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplexx.vf
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/ntxexx.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newtx/ntxexx.vf
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txexs.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplmi.vf
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/NewPXMI_gnu.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/NewPXMI.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplmia.vf
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newpx/pxmiaX.tfm
-INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/vf/public/newpx/zplsym.vf
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/newtx/ntxsym.tfm
 INPUT Notes.aux

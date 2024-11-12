@@ -3,9 +3,9 @@
 \geometry{a4paper, margin=0.1in} % Reduce margin to 0.1 inches
 \setlength{\parskip}{0pt}
 \setlength{\parindent}{0pt}
-\linespread{0.7} % Reduce line spacing further
-\titlespacing{\section}{0pt}{1pt}{1pt}
-\setlength{\columnsep}{0.2cm} % Reduce column separation
+\linespread{0.3} % Reduce line spacing further
+\titlespacing{\section}{0pt}{0pt}{0pt}
+\setlength{\columnsep}{0.1cm} % Reduce column separation
 
 \definecolor{lightblue}{HTML}{D3E6FE}
 \definecolor{lightgreen}{HTML}{E2F0D9}
@@ -14,7 +14,7 @@
 
 % Reduce padding inside tcolorbox
 \tcbset{
-    boxrule=0.3mm, % Box border thickness
+    boxrule=0.1mm, % Box border thickness
     colback=white,
     fonttitle=\bfseries\footnotesize,
     sharp corners,
@@ -124,6 +124,14 @@ where \( R = [a, b] \times [c, d] \). \\
 \[ \text{curl } \mathbf{F} = Q_x - P_y \]
 \end{tcolorbox}
 
+% Fundamental Theorem for Line Integrals
+\begin{tcolorbox}[title=\textbf{Fundamental Theorem for Line Integrals}, colframe=lightblue]
+   If \( \mathbf{F} = \nabla f \), then:
+   \[ \int_C \mathbf{F} \cdot d\mathbf{r} = f(B) - f(A) \]
+   \textbf{Conservative Field Test:}
+   - If \( P_y = Q_x \), then \( \mathbf{F} \) is conservative.
+   \end{tcolorbox}   
+
 % Line Integrals
 \begin{tcolorbox}[title=\textbf{Line Integrals}, colframe=lightyellow]
 \textbf{When to Use:}
@@ -153,13 +161,6 @@ where \( R = [a, b] \times [c, d] \). \\
 - Finding mass of a wire with variable density.
 \end{tcolorbox}
 
-% Fundamental Theorem for Line Integrals
-\begin{tcolorbox}[title=\textbf{Fundamental Theorem for Line Integrals}, colframe=lightblue]
-If \( \mathbf{F} = \nabla f \), then:
-\[ \int_C \mathbf{F} \cdot d\mathbf{r} = f(B) - f(A) \]
-\textbf{Conservative Field Test:}
-- If \( P_y = Q_x \), then \( \mathbf{F} \) is conservative.
-\end{tcolorbox}
 
 % Green's Theorem
 \begin{tcolorbox}[title=\textbf{Green's Theorem}, colframe=lightgreen]
@@ -185,28 +186,42 @@ If \( \mathbf{F} = \nabla f \), then:
 
 % Example Problem: Evaluating a Line Integral Using Green's Theorem
 \begin{tcolorbox}[title=\textbf{Example: Evaluating a Line Integral Using Green's Theorem}, colframe=lightpink]
-\textbf{Problem:} Let \( \vec{F}(x, y) = \left( x^2 + y^2,\ \frac{1}{3} x^3 + 2xy + x \right) \). Compute \( \int_C \vec{F} \cdot d\vec{r} \) along the semicircle \( C \) defined by \( x^2 + y^2 = 16 \) for \( y \geq 0 \).
-
-\textbf{Solution:}
-1. \textbf{Close the Curve:}
-   - Add the interval from \( x = 4 \) to \( x = -4 \) along \( y = 0 \) to form a closed curve \( C' \).
-2. \textbf{Apply Green's Theorem:}
-   \[ \int_{C'} \vec{F} \cdot d\vec{r} = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dx dy \]
-   - Compute \( \frac{\partial Q}{\partial x} = x^2 + 2y + 1 \), \( \frac{\partial P}{\partial y} = 2y \).
-   - Integrand: \( x^2 + 1 \).
-3. \textbf{Compute the Double Integral:}
-   \[ \iint_D (x^2 + 1)\, dx dy = \int_{0}^{\pi} \int_{0}^{4} (r^2 \cos^2 \theta + 1)\, r dr d\theta \]
-   - Evaluate:
-     \[ \int_{0}^{\pi} \left( \frac{64}{4} \cos^2 \theta + 8 \right) d\theta = 40\pi \]
-4. \textbf{Compute Integral over Straight Segment:}
-   - Parametrize: \( x = t,\ y = 0,\ t \in [4, -4] \).
-   - \( \vec{F} \cdot d\vec{r} = x^2 dx \).
-   - Integral: \( \int_{4}^{-4} x^2 dx = -\frac{128}{3} \).
-5. \textbf{Find Integral along \( C \):}
-   \[ \int_C \vec{F} \cdot d\vec{r} = \int_{C'} \vec{F} \cdot d\vec{r} - \left( -\frac{128}{3} \right) = 40\pi + \frac{128}{3} \]
-
-\textbf{Answer:} \( \int_C \vec{F} \cdot d\vec{r} = 40\pi + \dfrac{128}{3} \)
-\end{tcolorbox}
+   \textbf{Problem:} Let \( \vec{F}(x, y) = \left\langle x^2 y + y^2,\; \dfrac{1}{3} x^3 + 2 x y + x \right\rangle \). Compute \( \displaystyle \int_C \vec{F} \cdot d\vec{r} \) along the semicircle \( C \) defined by \( x^2 + y^2 = 16 \) for \( y \geq 0 \).
+   
+   \textbf{Solution Steps:}
+   1. \textbf{Close the Curve:}
+      - Since \( C \) is not closed, add the line segment \( L \) along the \( x \)-axis from \( (4, 0) \) to \( (-4, 0) \) to form a closed curve \( C' \).
+   
+   2. \textbf{Apply Green's Theorem:}
+      \[ \oint_{C'} \vec{F} \cdot d\vec{r} = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dx\, dy \]
+      - Identify \( P(x, y) = x^2 y + y^2 \), \( Q(x, y) = \dfrac{1}{3} x^3 + 2 x y + x \).
+      - Compute \( \dfrac{\partial Q}{\partial x} = x^2 + 2 y + 1 \).
+      - Compute \( \dfrac{\partial P}{\partial y} = x^2 + 2 y \).
+      - The integrand simplifies to \( 1 \):
+        \[ \dfrac{\partial Q}{\partial x} - \dfrac{\partial P}{\partial y} = 1 \]
+   
+   3. \textbf{Compute the Double Integral:}
+      - Since the integrand is \( 1 \), the double integral equals the area of \( D \).
+      - Area of the upper half-circle of radius \( 4 \):
+        \[ \text{Area} = \dfrac{1}{2} \pi (4)^2 = 8\pi \]
+      - Therefore:
+        \[ \oint_{C'} \vec{F} \cdot d\vec{r} = 8\pi \]
+   
+   4. \textbf{Compute the Line Integral over \( L \):}
+      - Along \( L \): \( y = 0 \), \( dy = 0 \), \( d\vec{r} = \langle dx, 0 \rangle \).
+      - Evaluate \( \vec{F} \) on \( L \):
+        \[ \vec{F}(x, 0) = \left\langle 0,\; \dfrac{1}{3} x^3 + x \right\rangle \]
+      - Compute \( \vec{F} \cdot d\vec{r} \):
+        \[ \vec{F} \cdot d\vec{r} = 0 \cdot dx + \left( \dfrac{1}{3} x^3 + x \right) \cdot 0 = 0 \]
+      - Thus:
+        \[ \int_L \vec{F} \cdot d\vec{r} = 0 \]
+   
+   5. \textbf{Compute the Original Line Integral:}
+      - Since \( \oint_{C'} = \int_C + \int_L \):
+        \[ \int_C \vec{F} \cdot d\vec{r} = \oint_{C'} \vec{F} \cdot d\vec{r} - \int_L \vec{F} \cdot d\vec{r} = 8\pi - 0 = 8\pi \]
+   
+   \textbf{Answer:} \( \displaystyle \int_C \vec{F} \cdot d\vec{r} = 8\pi \)
+   \end{tcolorbox}
 
 % Trigonometric Identities
 \begin{tcolorbox}[title=\textbf{Trigonometric Identities}, colframe=lightpink]
@@ -224,19 +239,13 @@ If \( \mathbf{F} = \nabla f \), then:
 % Common Derivatives and Integrals
 \begin{tcolorbox}[title=\textbf{Common Derivatives and Integrals}, colframe=lightyellow]
 \textbf{Derivatives:}
-\[ \frac{d}{dx} e^{ax} = a e^{ax} \]
-\[ \frac{d}{dx} \ln x = \frac{1}{x} \]
-\[ \frac{d}{dx} \sqrt{x} = \frac{1}{2 \sqrt{x}} \]
-\[ \frac{d}{dx} \sin ax = a \cos ax \]
-\[ \frac{d}{dx} \cos ax = -a \sin ax \]
-\[ \frac{d}{dx} \tan ax = a \sec^2 ax \]
+\[ \frac{d}{dx} e^{ax} = a e^{ax} \quad \frac{d}{dx} \ln x = \frac{1}{x} \]
+\[ \frac{d}{dx} \sqrt{x} = \frac{1}{2 \sqrt{x}} \quad \frac{d}{dx} \sin ax = a \cos ax \]
+\[ \frac{d}{dx} \cos ax = -a \sin ax \quad \frac{d}{dx} \tan ax = a \sec^2 ax \]
 \textbf{Integrals:}
-\[ \int e^{ax} dx = \frac{1}{a} e^{ax} + C \]
-\[ \int \frac{1}{x} dx = \ln |x| + C \]
-\[ \int \sqrt{x}\, dx = \frac{2}{3} x^{3/2} + C \]
-\[ \int \sin ax\, dx = -\frac{1}{a} \cos ax + C \]
-\[ \int \cos ax\, dx = \frac{1}{a} \sin ax + C \]
-\[ \int \sec^2 ax\, dx = \frac{1}{a} \tan ax + C \]
+\[ \int e^{ax} dx = \frac{1}{a} e^{ax} + C \quad \int \frac{1}{x} dx = \ln |x| + C \]
+\[ \int \sqrt{x}\, dx = \frac{2}{3} x^{3/2} + C \quad \int \sin ax\, dx = -\frac{1}{a} \cos ax + C \]
+\[ \int \cos ax\, dx = \frac{1}{a} \sin ax + C \quad  \int \sec^2 ax\, dx = \frac{1}{a} \tan ax + C \]
 \textbf{Techniques:}
 - \textbf{Substitution:} Let \( u = g(x) \). \\
 - \textbf{Integration by Parts:} \( \int u\, dv = uv - \int v\, du \).
@@ -281,12 +290,9 @@ y_u & y_v
 
 % Derivative Rules
 \begin{tcolorbox}[title=\textbf{Derivative Rules}, colframe=lightblue]
-\[ \frac{d}{dx} c = 0 \]
-\[ \frac{d}{dx} x^n = nx^{n-1} \]
-\[ \frac{d}{dx} [cf(x)] = c f'(x) \]
-\[ \frac{d}{dx} [f \pm g] = f' \pm g' \]
-\[ \frac{d}{dx} [fg] = f'g + fg' \]
-\[ \frac{d}{dx} \left( \frac{f}{g} \right) = \frac{f'g - fg'}{g^2} \]
+\[ \frac{d}{dx} c = 0 \quad \frac{d}{dx} x^n = nx^{n-1} \]
+\[ \frac{d}{dx} [cf(x)] = c f'(x) \quad \frac{d}{dx} [f \pm g] = f' \pm g' \]
+\[ \frac{d}{dx} [fg] = f'g + fg' \quad \frac{d}{dx} \left( \frac{f}{g} \right) = \frac{f'g - fg'}{g^2} \]
 \[ \frac{d}{dx} f(g(x)) = f'(g(x)) g'(x) \]
 \end{tcolorbox}
 
