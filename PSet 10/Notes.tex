@@ -122,12 +122,12 @@ R &= y \arctan\left( \dfrac{x}{z} \right).
 \newpage 
 
 \qs{}{
-    Consider the surface given by \( \sin(x - y) - x - y + z = 0 \). Find a parametrization of the part of the surface that has \( |x| \leq 3 \) and \( |y| \leq 3 \). Be sure to include the bounds for your parameters.
     \begin{enumerate}
-        \item[(a)] Look at the parametrization that you found in part (a). It should be of the form \( \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \). Explain why it is not possible to find a parametrization of the surface \( x^2 - y + z^2 = 1 \) that is of the form \( \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \).
-        \item[(b)] Find a parametrization of \( x^2 - y + z^2 = 1 \) that is of the form \( \vec{r}(u, v) = \langle u, f(u, v), v \rangle \).
-        \item[(c)] Consider the surface \( x^2 - y^2 + \frac{z^2}{4} = 1 \). Explain why it is not possible to find a parametrization of this surface that is of the form \( \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \), or of the form \( \vec{r}(u, v) = \langle f(u, v), u, v \rangle \).
-        \item[(d)] Find a parametrization of the surface \( x^2 - y^2 + \frac{z^2}{4} = 1 \) of the form
+        \item[(a)] Consider the surface given by \( \sin(x - y) - x - y + z = 0 \). Find a parametrization of the part of the surface that has \( |x| \leq 3 \) and \( |y| \leq 3 \). Be sure to include the bounds for your parameters.
+        \item[(b)] Look at the parametrization that you found in part (a). It should be of the form \( \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \). Explain why it is not possible to find a parametrization of the surface \( x^2 - y + z^2 = 1 \) that is of the form \( \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \).
+        \item[(c)] Find a parametrization of \( x^2 - y + z^2 = 1 \) that is of the form \( \vec{r}(u, v) = \langle u, f(u, v), v \rangle \).
+        \item[(d)] Consider the surface \( x^2 - y^2 + \frac{z^2}{4} = 1 \). Explain why it is not possible to find a parametrization of this surface that is of the form \( \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \), or of the form \( \vec{r}(u, v) = \langle f(u, v), u, v \rangle \).
+        \item[(e)] Find a parametrization of the surface \( x^2 - y^2 + \frac{z^2}{4} = 1 \) of the form
         \[
         \vec{r}(u, v) = \langle f(v) \cos u, v, g(v) \sin u \rangle,
         \]
@@ -137,6 +137,8 @@ R &= y \arctan\left( \dfrac{x}{z} \right).
 
 \sol{
 
+    \subsection*{Part (a):}
+
     \[ \sin(x - y) - x - y + z = 0 \]
     \[ |x| \leq 3 \quad \text{ and } \quad |y| \leq 3 \].
 
@@ -145,21 +147,19 @@ R &= y \arctan\left( \dfrac{x}{z} \right).
 
     \[ -3 \leq u \leq 3 \quad \text{and} \quad -3 \leq v \leq 3 \]
 
-    \subsection*{Part (a):}
+    \subsection*{Part (b):}
 
     \[ \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \]
     \[ z^2 = 1 - x^2 + y \]
     \[ z = \pm \sqrt{1 - x^2 + y} \]
 However, the expression under the square root, \( 1 - x^2 + y \), can be negative for certain values of \( x \) and \( y \), which means \( z \) is not defined over the entire domain of \( x \) and \( y \). Additionally, \( z \) has two possible values (positive and negative square roots) for each \( (x, y) \), so \( z \) is not a single-valued function of \( x \) and \( y \). Therefore, it's impossible to express \( z \) as a function \( f(u, v) \) over the entire surface, making such a parametrization infeasible.
 
-\subsection*{Part (b):}
-
+\subsection*{Part (c):}
+    \[ x^{2} - y + z^{2} = 1 \] 
     \[ y = x^2 + z^2 - 1 \]
     \[ \vec{r}(u, v) = \langle u, u^2 + v^2 - 1, v \rangle \]
 
-\subsection*{Part (c):}
-
-\textbf{Explanation:}
+\subsection*{Part (d):}
 
 For the surface \( x^2 - y^2 + \frac{z^2}{4} = 1 \), attempting to parametrize it as \( \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \) or \( \vec{r}(u, v) = \langle f(u, v), u, v \rangle \) is not feasible because:
 
@@ -179,7 +179,7 @@ For the surface \( x^2 - y^2 + \frac{z^2}{4} = 1 \), attempting to parametrize i
 
 In both cases, the variables cannot be separated into a single-valued function necessary for the parametrization.
 
-\subsection*{Part (d):}
+\subsection*{Part (e):}
     \[ \vec{r}(u, v) = \langle f(v) \cos u, v, g(v) \sin u \rangle \]
     \[ \left[ f(v) \cos u \right]^2 - v^2 + \frac{\left[ g(v) \sin u \right]^2}{4} = 1 \]
     \[ f(v)^2 \cos^2 u - v^2 + \frac{g(v)^2 \sin^2 u}{4} = 1 \]
@@ -361,13 +361,13 @@ In both cases, the variables cannot be separated into a single-valued function n
     x = [4y^2 - y^4] \cos\theta, \\
     z = [4y^2 - y^4] \sin\theta, \\
     y = y, \end{cases} \]
-    \[ -2 \leq y \leq 2 \quad \text{and}  0 \leq \theta < 2\pi \] 
+    \[ -2 \leq y \leq 2 \quad \text{and}  \quad 0 \leq \theta < 2\pi \] 
     \[ \begin{cases}
     x = \left(4y^2 - y^4\right) \cos\theta, \\
     y = y, \\
     z = \left(4y^2 - y^4\right) \sin\theta,
     \end{cases} \]
-    \[ -2 \leq y \leq 2 \quad \text{and} 0 \leq \theta < 2\pi \].
+    \[ -2 \leq y \leq 2 \quad \text{and} \quad 0 \leq \theta < 2\pi \].
 
 
 \subsection*{Part (c)}
