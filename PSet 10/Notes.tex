@@ -58,11 +58,12 @@
     Find the curl and divergence of the given vector field.
     \begin{enumerate}
         \item \( \vec{F}(x, y, z) = \langle x^2 yz, xy^2 z, xy z^2 \rangle \)
-    \item \( \vec{F}(x, y, z) = e^{xy} \sin z \, \hat{\jmath} + y \arctan(x/z) \, \hat{k} \)
+        \item \( \vec{F}(x, y, z) = e^{xy} \sin z \, \hat{\jmath} + y \arctan(x/z) \, \hat{k} \)
     \end{enumerate}
 }
 
-\sol{
+\sol{ \\
+    a) 
     \[ P = x^{2}yx \quad Q = xy^{2}z \quad R = xyz^{2} \] 
     \[ \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z} \] 
     \[ \text{div } \vec{F} = 2xyz + 2xyz + 2xyz = 6xyz \]
@@ -134,8 +135,7 @@
 
 \sol{
 
-    a) 
-
+    \subsection*{a}
     \[ \sin(x - y) - x - y + z = 0 \]
     \[ |x| \leq 3 \quad \text{ and } \quad |y| \leq 3 \].
 
@@ -144,19 +144,18 @@
 
     \[ -3 \leq u \leq 3 \quad \text{and} \quad -3 \leq v \leq 3 \]
 
-    b)
-    
+    \subsection*{b}
     \[ \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \]
     \[ z^2 = 1 - x^2 + y \]
     \[ z = \pm \sqrt{1 - x^2 + y} \]
-    However, the expression under the square root, \( 1 - x^2 + y \), can be negative for certain values of \( x \) and \( y \), which means \( z \) is not defined over the entire domain of \( x \) and \( y \). Additionally, \( z \) has two possible values (positive and negative square roots) for each \( (x, y) \), so \( z \) is not a single-valued function of \( x \) and \( y \). Therefore, it's impossible to express \( z \) as a function \( f(u, v) \) over the entire surface, making such a parametrization infeasible.
-
-    c)
+    However, the expression under the square root, \( 1 - x^2 + y \), can be negative for certain values of \( x \) and \( y \), which means \( z \) is not defined over the entire domain of \( x \) and \( y \). Additionally, \( z \) has two possible values (positive and negative square roots) for each \( (x, y) \), so \( z \) is not a single-valued function of \( x \) and \( y \). Therefore, it's impossible to express \( z \) as a function \( f(u, v) \) over the entire surface, making such a parametrization infeasible. 
+    
+    \subsection*{c}
     \[ x^{2} - y + z^{2} = 1 \] 
     \[ y = x^2 + z^2 - 1 \]
     \[ \vec{r}(u, v) = \langle u, u^2 + v^2 - 1, v \rangle \]
 
-    d) \\
+    \subsection*{d}
     For the surface \( x^2 - y^2 + \frac{z^2}{4} = 1 \), attempting to parametrize it as \( \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \) or \( \vec{r}(u, v) = \langle f(u, v), u, v \rangle \) is not feasible because:
 
     \begin{itemize}
@@ -170,7 +169,7 @@
     \end{itemize}
 
     In both cases, the variables cannot be separated into a single-valued function necessary for the parametrization. \\
-    e) 
+    \subsection*{e}
     \[ x = f(v) \cos u, \quad z = g(v) \sin u, \quad y = v \] 
     \[ f(v)^2 \cos^2 u - v^2 + \frac{g(v)^2}{4} \sin^2 u = 1 \] 
     \[ \cos^2 u + \sin^2 u = 1 \]
