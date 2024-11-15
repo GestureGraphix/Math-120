@@ -30,9 +30,27 @@
 
 \sol{
     \begin{enumerate}
-        \item[(a)] The divergence of \( \vec{F} \) is negative because the vectors converge toward the origin, indicating a net inward flux. This suggests material is "flowing in" rather than spreading out.
-        
-        \item[(b)] The curl of \( \vec{F} \) is zero, as there is no rotational pattern; the vectors are purely radial and do not exhibit any circular motion.
+        \item[(a)] Since $\vec{F}$ is independent of $z$ and the $y$-component is constant:
+        \begin{itemize}
+            \item $\text{div} \, \vec{F} = P_x + Q_y + R_z = (+) + (0) + (0)$, so positive 
+            \item $P_x$ is positive because the $x$-component increases as $x$ increases.
+            \item $Q_y$ is zero because the $y$-component is constant.
+            \item $R_z$ is zero because the $z$-component is constant.
+        \end{itemize}
+    
+        \item[(b)] $\text{Curl} \, \vec{F} \neq \vec{0}$:
+        \[
+        \text{Curl} \, \vec{F} = 
+        \begin{vmatrix}
+            \hat{i} & \hat{j} & \hat{k} \\
+            \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+            P & 0 & 0
+        \end{vmatrix} = \langle 0, 0, -P_y \rangle
+        \]
+        \begin{itemize}
+            \item $P_y$ is positive because the $x$-component increases as $y$ increases.
+            \item Therefore, $\text{Curl} \, \vec{F}$ is in the negative $z$-direction.
+        \end{itemize}
     \end{enumerate}
 }
 
@@ -59,63 +77,42 @@
     \operatorname{div} \vec{F} = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z} = 2 x y z + 2 x y z + 2 x y z = 6 x y z.
     \]
 
-    \[
-    \left( \operatorname{curl} \vec{F} \right)_x = \frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z} = x z^2 - x y^2.
-    \]
-    \[
-    \left( \operatorname{curl} \vec{F} \right)_y = \frac{\partial P}{\partial z} - \frac{\partial R}{\partial x} = x^2 y - y z^2.
-    \]
-    \[
-    \left( \operatorname{curl} \vec{F} \right)_z = \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = y^2 z - x^2 z.
-    \]
-    \[
-    \operatorname{curl} \vec{F} = \left( x z^2 - x y^2 \right) \hat{\imath} + \left( x^2 y - y z^2 \right) \hat{\jmath} + \left( y^2 z - x^2 z \right) \hat{k}.
-    \]
+    \[ \left( \operatorname{curl} \vec{F} \right)_x = \frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z} = x z^2 - x y^2. \]
+    \[ \left( \operatorname{curl} \vec{F} \right)_y = \frac{\partial P}{\partial z} - \frac{\partial R}{\partial x} = x^2 y - y z^2. \]
+    \[ \left( \operatorname{curl} \vec{F} \right)_z = \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = y^2 z - x^2 z. \]
+    \[ \operatorname{curl} \vec{F} = \left( x z^2 - x y^2 \right) \hat{\imath} + \left( x^2 y - y z^2 \right) \hat{\jmath} + \left( y^2 z - x^2 z \right) \hat{k}. \]
     b)
-    \[
-    \vec{F}(x, y, z) = e^{x y} \sin z \, \hat{\jmath} + y \arctan\left( \frac{x}{z} \right) \hat{k}
-    \]
+    \[ \vec{F}(x, y, z) = e^{x y} \sin z \, \hat{\jmath} + y \arctan\left( \frac{x}{z} \right) \hat{k} \]
 
-    \[
-    \begin{aligned}
+    \[ \begin{aligned}
     P &= 0, \\
     Q &= e^{x y} \sin z, \\
     R &= y \arctan\left( \dfrac{x}{z} \right).
-    \end{aligned}
-    \]
-    \[
-    \begin{aligned}
+    \end{aligned} \]
+
+    \[ \begin{aligned}
     \frac{\partial P}{\partial x} &= 0, \\
     \frac{\partial Q}{\partial y} &= x e^{x y} \sin z, \\
     \frac{\partial R}{\partial z} &= -\frac{x y}{x^2 + z^2}.
-    \end{aligned}
-    \]
-    \[
-    \operatorname{div} \vec{F} = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z} = 0 + x e^{x y} \sin z - \frac{x y}{x^2 + z^2}.
-    \]
-    \[
-    \begin{aligned}
+    \end{aligned} \]
+
+    \[ \operatorname{div} \vec{F} = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z} = 0 + x e^{x y} \sin z - \frac{x y}{x^2 + z^2}.  \]
+    \[ \begin{aligned}
     \left( \operatorname{curl} \vec{F} \right)_x &= \frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z} \\
     &= \arctan\left( \frac{x}{z} \right) - e^{x y} \cos z.
-    \end{aligned}
-    \]
-    \[
-    \begin{aligned}
+    \end{aligned} \]
+
+    \[ \begin{aligned}
     \left( \operatorname{curl} \vec{F} \right)_y &= \frac{\partial P}{\partial z} - \frac{\partial R}{\partial x} \\
     &= 0 - \left( y \cdot \frac{z}{x^2 + z^2} \right) \\
     &= -\frac{y z}{x^2 + z^2}.
-    \end{aligned}
-    \]
-    \[
-    \begin{aligned}
+    \end{aligned} \]
+    \[ \begin{aligned}
     \left( \operatorname{curl} \vec{F} \right)_z &= \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \\
     &= y e^{x y} \sin z - 0 \\
     &= y e^{x y} \sin z.
-    \end{aligned}
-    \]
-    \[
-    \operatorname{curl} \vec{F} = \left( \arctan\left( \frac{x}{z} \right) - e^{x y} \cos z \right) \hat{\imath} - \left( \frac{y z}{x^2 + z^2} \right) \hat{\jmath} + \left( y e^{x y} \sin z \right) \hat{k}.
-    \]
+    \end{aligned} \]
+    \[ \operatorname{curl} \vec{F} = \left( \arctan\left( \frac{x}{z} \right) - e^{x y} \cos z \right) \hat{\imath} - \left( \frac{y z}{x^2 + z^2} \right) \hat{\jmath} + \left( y e^{x y} \sin z \right) \hat{k}. \]
 
 }
 
@@ -137,7 +134,7 @@
 
 \sol{
 
-    \subsection*{Part (a):}
+    a) 
 
     \[ \sin(x - y) - x - y + z = 0 \]
     \[ |x| \leq 3 \quad \text{ and } \quad |y| \leq 3 \].
@@ -147,53 +144,43 @@
 
     \[ -3 \leq u \leq 3 \quad \text{and} \quad -3 \leq v \leq 3 \]
 
-    \subsection*{Part (b):}
-
+    b)
+    
     \[ \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \]
     \[ z^2 = 1 - x^2 + y \]
     \[ z = \pm \sqrt{1 - x^2 + y} \]
-However, the expression under the square root, \( 1 - x^2 + y \), can be negative for certain values of \( x \) and \( y \), which means \( z \) is not defined over the entire domain of \( x \) and \( y \). Additionally, \( z \) has two possible values (positive and negative square roots) for each \( (x, y) \), so \( z \) is not a single-valued function of \( x \) and \( y \). Therefore, it's impossible to express \( z \) as a function \( f(u, v) \) over the entire surface, making such a parametrization infeasible.
+    However, the expression under the square root, \( 1 - x^2 + y \), can be negative for certain values of \( x \) and \( y \), which means \( z \) is not defined over the entire domain of \( x \) and \( y \). Additionally, \( z \) has two possible values (positive and negative square roots) for each \( (x, y) \), so \( z \) is not a single-valued function of \( x \) and \( y \). Therefore, it's impossible to express \( z \) as a function \( f(u, v) \) over the entire surface, making such a parametrization infeasible.
 
-\subsection*{Part (c):}
+    c)
     \[ x^{2} - y + z^{2} = 1 \] 
     \[ y = x^2 + z^2 - 1 \]
     \[ \vec{r}(u, v) = \langle u, u^2 + v^2 - 1, v \rangle \]
 
-\subsection*{Part (d):}
+    d) \\
+    For the surface \( x^2 - y^2 + \frac{z^2}{4} = 1 \), attempting to parametrize it as \( \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \) or \( \vec{r}(u, v) = \langle f(u, v), u, v \rangle \) is not feasible because:
 
-For the surface \( x^2 - y^2 + \frac{z^2}{4} = 1 \), attempting to parametrize it as \( \vec{r}(u, v) = \langle u, v, f(u, v) \rangle \) or \( \vec{r}(u, v) = \langle f(u, v), u, v \rangle \) is not feasible because:
+    \begin{itemize}
+        \item \textbf{First Form (\( z \) in terms of \( x \) and \( y \)):} Solving for \( z \):
+        \[ z^2 = 4(1 - x^2 + y^2) \]
+        The right side depends on both \( x \) and \( y \) in a way that \( z \) cannot be uniquely expressed as a function of \( x \) and \( y \) over the entire surface, especially when the expression under the square root is negative.
 
-\begin{itemize}
-    \item \textbf{First Form (\( z \) in terms of \( x \) and \( y \)):} Solving for \( z \):
+        \item \textbf{Second Form (\( x \) in terms of \( y \) and \( z \)):} Solving for \( x \):
+        \[ x^2 = y^2 - \frac{z^2}{4} + 1 \]
+        Similar to the first form, \( x \) cannot be uniquely expressed as a function of \( y \) and \( z \) over the entire surface.
+    \end{itemize}
+
+    In both cases, the variables cannot be separated into a single-valued function necessary for the parametrization. \\
+    e) 
+    \[ x = f(v) \cos u, \quad z = g(v) \sin u, \quad y = v \] 
+    \[ f(v)^2 \cos^2 u - v^2 + \frac{g(v)^2}{4} \sin^2 u = 1 \] 
+    \[ \cos^2 u + \sin^2 u = 1 \]
+    \[ f(v)^2 = g(v)^2/4 = v^2 + 1 \] 
+    \[ f(v) = \sqrt{v^2 + 1}, \quad g(v) = 2\sqrt{v^2 + 1} \] 
     \[
-    z^2 = 4(1 - x^2 + y^2)
-    \]
-    The right side depends on both \( x \) and \( y \) in a way that \( z \) cannot be uniquely expressed as a function of \( x \) and \( y \) over the entire surface, especially when the expression under the square root is negative.
-
-    \item \textbf{Second Form (\( x \) in terms of \( y \) and \( z \)):} Solving for \( x \):
-    \[
-    x^2 = y^2 - \frac{z^2}{4} + 1
-    \]
-    Similar to the first form, \( x \) cannot be uniquely expressed as a function of \( y \) and \( z \) over the entire surface.
-\end{itemize}
-
-In both cases, the variables cannot be separated into a single-valued function necessary for the parametrization.
-
-\subsection*{Part (e):}
-    \[ \vec{r}(u, v) = \langle f(v) \cos u, v, g(v) \sin u \rangle \]
-    \[ \left[ f(v) \cos u \right]^2 - v^2 + \frac{\left[ g(v) \sin u \right]^2}{4} = 1 \]
-    \[ f(v)^2 \cos^2 u - v^2 + \frac{g(v)^2 \sin^2 u}{4} = 1 \]
-    \[ f(v)^2 = \frac{g(v)^2}{4} \]
-    \[ f(v)^2 + \frac{g(v)^2}{4} = 1 + v^2 \]
-    \[ g(v)^2 = 4 f(v)^2 \]
-
-    \[ f(v)^2 + f(v)^2 = 1 + v^2 \implies 2 f(v)^2 = 1 + v^2 \]
-    \[ f(v) = \sqrt{\frac{1 + v^2}{2}} \]
-
-    \[ g(v) = \sqrt{2(1 + v^2)} \]
-
-    \[ \vec{r}(u, v) = \left\langle \sqrt{\frac{1 + v^2}{2}} \cos u, \, v, \, \sqrt{2(1 + v^2)} \sin u \right\rangle \]
+    \vec{r}(u, v) = \left\langle \sqrt{v^2 + 1} \cos u, v, 2\sqrt{v^2 + 1} \sin u \right\rangle \] 
     \[ 0 \leq u \leq 2\pi, \quad -\infty < v < \infty \]
+    \[ x^2 - y^2 + \frac{z^2}{4} = (v^2 + 1)(\cos^2 u + \sin^2 u) - v^2 = (v^2 + 1) - v^2 = 1 \] 
+
 }
 
 \newpage
@@ -211,16 +198,10 @@ In both cases, the variables cannot be separated into a single-valued function n
 \begin{enumerate}
 
     \item[(a)] Given parameterization:
-    \[
-    \vec{r}(u, v) = (2 \sin u) \, \hat{\jmath} + (3 \cos u) \, \hat{\imath} + v \, \hat{k}, \quad 0 \leq u \leq \pi, \quad -2 \leq v \leq 2
-    \]
-
+    \[ \vec{r}(u, v) = (2 \sin u) \, \hat{\jmath} + (3 \cos u) \, \hat{\imath} + v \, \hat{k}, \quad 0 \leq u \leq \pi, \quad -2 \leq v \leq 2  \]
     \[ x(u, v) = 3 \cos u, \quad y(u, v) = 2 \sin u, \quad z(u, v) = v \]
-
     \[ \cos u = \frac{x}{3}, \quad \sin u = \frac{y}{2} \]
-
     \[ \left( \frac{x}{3} \right)^2 + \left( \frac{y}{2} \right)^2 = 1 \]
-
     \[ \frac{x^2}{9} + \frac{y^2}{4} = 1 \]
 
     \begin{center}
@@ -333,6 +314,8 @@ In both cases, the variables cannot be separated into a single-valued function n
 \end{enumerate}
 
 
+\newpage 
+
 \qs{}{
     Find parametric equations for each of the following surfaces.
     \begin{enumerate}
@@ -342,7 +325,7 @@ In both cases, the variables cannot be separated into a single-valued function n
     \end{enumerate}
 }
 
-\subsection*{Part (a)}
+    a)
 
     \[ x = r \cos\theta, \quad y = r \sin\theta, \]
     \[ r \in [0, 1] \quad  \text{and} \theta \in [0, 2\pi) \]
@@ -356,12 +339,7 @@ In both cases, the variables cannot be separated into a single-valued function n
     \end{cases} \]
     \[ 0 \leq r \leq 1 \quad  \text{and} \quad  0 \leq \theta < 2\pi \].
 
-\subsection*{Part (b)}
-    \[ \begin{cases}
-    x = [4y^2 - y^4] \cos\theta, \\
-    z = [4y^2 - y^4] \sin\theta, \\
-    y = y, \end{cases} \]
-    \[ -2 \leq y \leq 2 \quad \text{and}  \quad 0 \leq \theta < 2\pi \] 
+    b)
     \[ \begin{cases}
     x = \left(4y^2 - y^4\right) \cos\theta, \\
     y = y, \\
@@ -370,9 +348,7 @@ In both cases, the variables cannot be separated into a single-valued function n
     \[ -2 \leq y \leq 2 \quad \text{and} \quad 0 \leq \theta < 2\pi \].
 
 
-\subsection*{Part (c)}
-
-\textbf{Solution:}
+    c)
 
     \[ X = \dfrac{x}{2}, \quad Y = 2y, \quad Z = \dfrac{z}{3} \]
     \[ X^2 + Y^2 + Z^2 = 1 \]
