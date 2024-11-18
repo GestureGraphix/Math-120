@@ -22,7 +22,282 @@
 
 \qs{}{ 
     Find the surface area of the part of the paraboloid  $x = 3y^2 + 3z^2 $ satisfying  $x \leq 3$.
+}
+
+\sol{
+    \[
+    y = r \cos \theta, \quad z = r \sin \theta, \quad x = 3r^2
+    \]
+
+    \[
+    A = \iint_{\text{Domain}} \left\| \frac{\partial \mathbf{S}}{\partial r} \times \frac{\partial \mathbf{S}}{\partial \theta} \right\| dr d\theta
+    \]
+
+    \[
+    \mathbf{S}(r, \theta) = (3r^2, r \cos \theta, r \sin \theta)
+    \]
+
+    \[
+    \frac{\partial \mathbf{S}}{\partial r} = (6r, \cos \theta, \sin \theta), \quad \frac{\partial \mathbf{S}}{\partial \theta} = (0, -r \sin \theta, r \cos \theta)
+    \]
+
+    \[
+    \frac{\partial \mathbf{S}}{\partial r} \times \frac{\partial \mathbf{S}}{\partial \theta} = (r, -6r^2 \cos \theta, -6r^2 \sin \theta)
+    \]
+
+    \[
+    \left\| \frac{\partial \mathbf{S}}{\partial r} \times \frac{\partial \mathbf{S}}{\partial \theta} \right\| = r \sqrt{1 + 36r^2}
+    \]
+
+    \[
+    A = \int_{0}^{2\pi} \int_{0}^{1} r \sqrt{1 + 36r^2} dr d\theta
+    \]
+
+    \[
+    u = 1 + 36r^2, \quad du = 72r dr, \quad r dr = \frac{du}{72}
+    \]
+
+    \[
+    \int_{r=0}^{r=1} r \sqrt{1 + 36r^2} dr = \frac{1}{72} \int_{u=1}^{u=37} \sqrt{u} du = \frac{1}{72} \left[ \frac{2}{3} u^{3/2} \right]_{u=1}^{u=37}
+    \]
+
+    \[
+    \frac{1}{72} \left[ \frac{2}{3} u^{3/2} \right]_{u=1}^{u=37} = \frac{1}{108} \left( 37^{3/2} - 1 \right)
+    \]
+
+    \[
+    A = \frac{\pi}{54} \left( 37^{3/2} - 1 \right)
+    \]
+
+    \[
+    37^{3/2} = \sqrt{37^3} = 37 \sqrt{37}
+    \]
+
+    \[
+    A = \frac{\pi}{54} \left( 37 \sqrt{37} - 1 \right)
+    \]
 
 }
 
+\qs{}{
+    In this problem, we'll find the surface area of the part of the cylinder \(x^2 + y^2 = 9\) that lies between the planes \(x + y + z = -6\) and \(x + y + z = 5\).
+    \begin{enumerate}
+        \item[(a)] Find a parametrization \(\vec{r}_1(u)\) of the curve \(C_1\) of intersection of the plane \(x + y + z = 5\) with the cylinder \(x^2 + y^2 = 9\). Also find a parametrization \(\vec{r}_2(u)\) of the curve \(C_2\) of intersection of the plane \(x + y + z = -6\) with the cylinder.
+        
+        \item[(b)] Write down a parametrization \(\vec{s}(u, v)\) of the part of the cylinder that lies between the two planes. The curves \(C_1\) and \(C_2\) should be two grid curves of the parametrization, and the bounds on the parameters should be of the form \(a \leq v \leq b\) and \(c \leq u \leq d\) for constants \(a\), \(b\), \(c\), and \(d\).
+        
+        \item[(c)] Use the parametrization you found to calculate the surface area of the part of the cylinder that lies between the two planes.
+        
+        \item[(d)] Does your answer from (c) make sense? Give an intuitive geometric reason that the surface area you found is the same as the surface area of a cylinder of radius 3 and height 11.
+    \end{enumerate}
+}
+
+\sol{
+    \begin{enumerate}
+        \item[(a)]
+        \[
+        x = 3 \cos u, \quad y = 3 \sin u
+        \]
+        \[
+        z = 5 - x - y = 5 - (3 \cos u + 3 \sin u)
+        \]
+        \[
+        \vec{r}_1(u) = \left( 3 \cos u, \ 3 \sin u, \ 5 - 3 \cos u - 3 \sin u \right)
+        \]
+        \[
+        z = -6 - x - y = -6 - (3 \cos u + 3 \sin u)
+        \]
+        \[
+        \vec{r}_2(u) = \left( 3 \cos u, \ 3 \sin u, \ -6 - 3 \cos u - 3 \sin u \right)
+        \]
+        \item[(b)]
+        \[
+        \vec{s}(u, v) = \left( 3 \cos u, \ 3 \sin u, \ v - 3 \cos u - 3 \sin u \right)
+        \]
+        \[
+        0 \leq u \leq 2\pi, \quad -6 \leq v \leq 5
+        \]
+        \item[(c)]
+        \[
+        \frac{\partial \vec{s}}{\partial u} = \left( -3 \sin u, \ 3 \cos u, \ 3 \sin u - 3 \cos u \right)
+        \]
+        \[
+        \frac{\partial \vec{s}}{\partial v} = \left( 0, \ 0, \ 1 \right)
+        \]
+        \[
+        \frac{\partial \vec{s}}{\partial u} \times \frac{\partial \vec{s}}{\partial v} = \left( 3 \cos u, \ 3 \sin u, \ 0 \right)
+        \]
+        \[
+        \left\| \frac{\partial \vec{s}}{\partial u} \times \frac{\partial \vec{s}}{\partial v} \right\| = \sqrt{(3 \cos u)^2 + (3 \sin u)^2} = 3
+        \]
+        \[
+        A = \int_{v=-6}^{5} \int_{u=0}^{2\pi} 3 \, du \, dv = 3 \cdot \left( \int_{u=0}^{2\pi} du \right) \cdot \left( \int_{v=-6}^{5} dv \right) = 3 \cdot 2\pi \cdot 11 = 66\pi
+        \]
+        \item[(d)]
+        \[
+        A = 2\pi r h = 2\pi \times 3 \times 11 = 66\pi
+        \]
+    \end{enumerate}    
+}
+
+\newpage 
+
+\qs{}{
+    Evaluate the surface integral
+    \[
+    \iint_S (x^2 + y^2 + z^2) \, dS
+    \]
+    where $S$ is the surface of the solid cylinder defined by the inequalities $x^2 + z^2 \leq 1$ and $0 \leq y \leq 5$. Note that $S$ consists of a hollow cylinder and two disks. 
+}
+
+\sol{
+    \[
+    I = \iint_S (x^2 + y^2 + z^2) \, dS
+    \]
+
+    \[
+    x^2 + z^2 \leq 1, \quad 0 \leq y \leq 5
+    \]
+
+    \[
+    S = S_{\text{cyl}} \cup S_{\text{top}} \cup S_{\text{bot}}
+    \]
+
+    \[
+    \text{For } S_{\text{cyl}}, \quad x = \cos\theta, \quad z = \sin\theta, \quad y = y, \quad \theta \in [0, 2\pi), \quad y \in [0, 5]
+    \]
+
+    \[
+    \vec{r}(\theta, y) = (\cos\theta, y, \sin\theta)
+    \]
+
+    \[
+    \vec{r}_\theta = (-\sin\theta, 0, \cos\theta), \quad \vec{r}_y = (0, 1, 0)
+    \]
+
+    \[
+    \vec{r}_\theta \times \vec{r}_y = (-\cos\theta, 0, -\sin\theta), \quad |\vec{r}_\theta \times \vec{r}_y| = 1
+    \]
+
+    \[
+    dS_{\text{cyl}} = d\theta \, dy
+    \]
+
+    \[
+    x^2 + y^2 + z^2 = \cos^2\theta + y^2 + \sin^2\theta = 1 + y^2
+    \]
+
+    \[
+    I_{\text{cyl}} = \int_0^{2\pi} \int_0^5 (1 + y^2) \, dy \, d\theta
+    \]
+
+    \[
+    \int_0^5 (1 + y^2) \, dy = \int_0^5 1 \, dy + \int_0^5 y^2 \, dy = [y]_0^5 + \left[\frac{y^3}{3}\right]_0^5 = 5 + \frac{125}{3} = \frac{140}{3}
+    \]
+
+    \[
+    I_{\text{cyl}} = \int_0^{2\pi} \frac{140}{3} \, d\theta = \frac{140}{3} \cdot 2\pi = \frac{280\pi}{3}
+    \]
+
+    \[
+    \text{For } S_{\text{top}}, \quad x = r\cos\theta, \quad z = r\sin\theta, \quad y = 5, \quad r \in [0, 1], \quad \theta \in [0, 2\pi)
+    \]
+
+    \[
+    dS_{\text{top}} = r \, dr \, d\theta
+    \]
+
+    \[
+    x^2 + y^2 + z^2 = r^2 + 25
+    \]
+
+    \[
+    I_{\text{top}} = \int_0^{2\pi} \int_0^1 (r^2 + 25) r \, dr \, d\theta
+    \]
+
+    \[
+    \int_0^1 (r^2 + 25)r \, dr = \int_0^1 (r^3 + 25r) \, dr = \left[\frac{r^4}{4} + \frac{25r^2}{2}\right]_0^1 = \frac{1}{4} + \frac{25}{2} = \frac{51}{4}
+    \]
+
+    \[
+    I_{\text{top}} = \int_0^{2\pi} \frac{51}{4} \, d\theta = \frac{51}{4} \cdot 2\pi = \frac{51\pi}{2}
+    \]
+
+    \[
+    \text{For } S_{\text{bot}}, \quad x = r\cos\theta, \quad z = r\sin\theta, \quad y = 0
+    \]
+
+    \[
+    x^2 + y^2 + z^2 = r^2
+    \]
+
+    \[
+    dS_{\text{bot}} = r \, dr \, d\theta
+    \]
+
+    \[
+    I_{\text{bot}} = \int_0^{2\pi} \int_0^1 r^3 \, dr \, d\theta
+    \]
+
+    \[
+    \int_0^1 r^3 \, dr = \left[\frac{r^4}{4}\right]_0^1 = \frac{1}{4}
+    \]
+
+    \[
+    I_{\text{bot}} = \int_0^{2\pi} \frac{1}{4} \, d\theta = \frac{1}{4} \cdot 2\pi = \frac{\pi}{2}
+    \]
+
+    \[
+    I = I_{\text{cyl}} + I_{\text{top}} + I_{\text{bot}} = \frac{280\pi}{3} + \frac{51\pi}{2} + \frac{\pi}{2}
+    \]
+
+    \[
+    I = \frac{560\pi}{6} + \frac{153\pi}{6} + \frac{3\pi}{6} = \frac{716\pi}{6} = \frac{358\pi}{3}
+    \]
+
+    \[
+    \boxed{\frac{358\pi}{3}}
+    \]
+
+}
+\qs{}{
+    Find the mass of a thin funnel in the shape of a cone $z = \sqrt{x^2 + y^2}$, $1 \leq z \leq 4$, if its density function is $\rho(x, y, z) = z + 2$.
+}
+
+\qs{}{
+    Evaluate the surface integral
+    \[
+    \iint_S \vec{F} \cdot d\vec{S}, \quad \text{where } \vec{F} = \langle x, y, 2z \rangle
+    \]
+    and $S$ is the part of the paraboloid $z = 4 - x^2 - y^2$, oriented downwards, that lies above the unit square $[0, 1] \times [0, 1]$. 
+}
+
+\qs{}{
+    Evaluate the surface integral
+    \[
+    \iint_S \vec{F} \cdot d\vec{S}, \quad \text{where } \vec{F} = \langle -z, x, y \rangle
+    \]
+    and $S$ is the part of the unit sphere $x^2 + y^2 + z^2 = 1$ in the first octant, oriented upwards.
+}
+
+\qs{}{
+    Find the flux of $\vec{F}(x, y, z) = z \hat{i} + y \hat{j} + x \hat{k}$ across the helicoid
+    \[
+    \vec{r}(u, v) = \langle u \cos v, u \sin v, v \rangle, \quad 0 \leq u \leq 1, \, 0 \leq v \leq 2\pi,
+    \]
+    oriented upward.
+}
+
+\qs{}{
+    Let $S$ be the part of the elliptical cylinder $y^2 + 4z^2 = 4$ that lies above the $xy$-plane and between the planes $x = -2$ and $x = 2$. Let $S$ have the upward orientation; that is, let $S$ be oriented so that the normal vectors have positive $z$-component.
+    \begin{enumerate}
+        \item[(a)] Find a parameterization of $S$.
+        \item[(b)] Does your parameterization match the given orientation of $S$? Explain.
+        \item[(c)] Let $\vec{F}$ be the vector field
+        \[
+        \vec{F}(x, y, z) = e^{x^2 y^2 z^2} \hat{i} + x^2 y \hat{j} + z^2 e^{x/5} \hat{k}.
+        \]
+        Find the flux of $\vec{F}$ across the oriented surface $S$.
+    \end{enumerate}
+}
 \end{document}
