@@ -635,7 +635,123 @@ F_x = e^{4x^2 \sin^2\theta \cos^2\theta}, \quad F_y = 2x^2 \sin\theta, \quad F_z
     \begin{enumerate}
         \item[i.] Describe the surface $S$ that is parameterized by $\vec{r}(u, v)$.
         \item[ii.] Describe in words the positive orientation of $S$ given by the family of unit normal vectors $\vec{n} = (\vec{r}_u \times \vec{r}_v)/|\vec{r}_u \times \vec{r}_v|$. That is, give a description of which way the normal vectors point for this orientation.
+        \item[iii.] The flux of $\vec{F}$ through $S$ is
+        \[
+        \iint_S \vec{F} \cdot d\vec{S} = \iint_S \vec{F} \cdot \vec{n} \, dS = \iint_S \vec{F} \cdot (\vec{r}_u \times \vec{r}_v) \, du \, dv.
+        \]
+        Explain without any calculation whether the flux of $\vec{F}$ through $S$ is positive, negative, or zero; or explain why you don’t have enough information to do so.
+        
+        \begin{enumerate}
+            \item[(a)] $\vec{r}(u, v) = \langle u, v, \sqrt{1 - u^2 - v^2} \rangle$ where $u^2 + v^2 \leq 1$. The vector field is $\vec{F}(x, y, z) = \langle -x, -y, -z \rangle$.
+        
+            \item[(b)] $\vec{r}(u, v) = \langle u \cos v, u \sin v, -u^2 \rangle$ where $0 \leq v \leq 2\pi$ and $0 \leq u$. The vector field is $\vec{F}(x, y, z) = \langle 0, 0, 1 \rangle$.
+        
+            \item[(c)] $\vec{r}(u, v) = \langle \cos u \sin v, \sin u \sin v, \cos v \rangle$ where $0 \leq v \leq \pi$ and $0 \leq u \leq \pi$. The vector field is $\vec{F}(x, y, z) = \langle 0, 1, z \rangle$.
+        
+            \item[(d)] $\vec{r}(u, v) = \langle \cos u, v, \sin u \rangle$ where $0 \leq u \leq 2\pi$ and $-\infty < v < \infty$. The vector field is $\vec{F}(x, y, z) = \langle 0, e^x, 0 \rangle$.
+        \end{enumerate} 
     \end{enumerate}    
+}
+
+\sol{
+
+    \subsection*{(a)}
+
+    \textbf{Parameterization:} \(\vec{r}(u, v) = \langle u, v, \sqrt{1 - u^2 - v^2} \rangle\), where \(u^2 + v^2 \leq 1\). \\
+    \textbf{Vector Field:} \(\vec{F}(x, y, z) = \langle -x, -y, -z \rangle\).
+
+    \begin{enumerate}
+        \item[i.] \textbf{Description of Surface \(S\):} The parameterization maps the unit disk \(u^2 + v^2 \leq 1\) in the \(uv\)-plane to the upper hemisphere of the unit sphere centered at the origin, as:
+        \[
+        x = u, \quad y = v, \quad z = \sqrt{1 - u^2 - v^2}.
+        \]
+        This satisfies \(x^2 + y^2 + z^2 = 1\) with \(z \geq 0\).
+
+        \item[ii.] \textbf{Positive Orientation:} The normal vectors \(\vec{n}\) point outward from the sphere. The cross product \(\vec{r}_u \times \vec{r}_v\) aligns with the position vector, confirming the outward orientation.
+
+        \item[iii.] \textbf{Flux through \(S\):} The vector field \(\vec{F}(x, y, z) = \langle -x, -y, -z \rangle\) points inward toward the origin. Since \(\vec{F}\) is opposite to the outward normals, the dot product \(\vec{F} \cdot \vec{n} < 0\), so the flux is \textbf{negative}.
+    \end{enumerate}
+
+    ---
+
+    \subsection*{(b)}
+
+    \textbf{Parameterization:} \(\vec{r}(u, v) = \langle u \cos v, u \sin v, -u^2 \rangle\), where \(0 \leq v \leq 2\pi\) and \(0 \leq u\). \\
+    \textbf{Vector Field:} \(\vec{F}(x, y, z) = \langle 0, 0, 1 \rangle\).
+
+    \begin{enumerate}
+        \item[i.] \textbf{Description of Surface \(S\):} The parameterization describes the paraboloid:
+        \[
+        z = -(x^2 + y^2),
+        \]
+        which opens downward for \(u \geq 0\).
+
+        \item[ii.] \textbf{Positive Orientation:} The normal vectors point upward in the positive \(z\)-direction. The computation of \(\vec{r}_u \times \vec{r}_v\) confirms that the \(z\)-component is positive.
+
+        \item[iii.] \textbf{Flux through \(S\):} The vector field \(\vec{F} = \langle 0, 0, 1 \rangle\) points upward, aligning with the normals. Therefore, \(\vec{F} \cdot \vec{n} > 0\), and the flux is \textbf{positive}.
+    \end{enumerate}
+
+    ---
+
+    \subsection*{(c)}
+
+    \textbf{Parameterization:} \(\vec{r}(u, v) = \langle \cos u \sin v, \sin u \sin v, \cos v \rangle\), where \(0 \leq v \leq \pi\) and \(0 \leq u \leq \pi\). \\
+    \textbf{Vector Field:} \(\vec{F}(x, y, z) = \langle 0, 1, z \rangle\).
+
+    \begin{enumerate}
+        \item[i.] \textbf{Description of Surface \(S\):} The parameterization covers the entire unit sphere centered at the origin, as:
+        \[
+        x^2 + y^2 + z^2 = 1.
+        \]
+
+        \item[ii.] \textbf{Positive Orientation:} The normal vectors \(\vec{n}\) point inward toward the center of the sphere, as shown by the cross product \(\vec{r}_u \times \vec{r}_v \propto -\vec{r}(u, v)\).
+
+        \item[iii.] \textbf{Flux through \(S\):} The vector field \(\vec{F}\) has components that depend on \(z\). Without explicit calculation, it is unclear whether the contributions from the positive and negative flux cancel, so the sign of the flux cannot be determined.
+    \end{enumerate}
+
+    ---
+
+    \subsection*{(d)}
+
+    \textbf{Parameterization:} \(\vec{r}(u, v) = \langle \cos u, v, \sin u \rangle\), where \(0 \leq u \leq 2\pi\) and \(-\infty < v < \infty\). \\
+    \textbf{Vector Field:} \(\vec{F}(x, y, z) = \langle 0, e^x, 0 \rangle\).
+
+    \begin{enumerate}
+        \item[i.] \textbf{Description of Surface \(S\):} The parameterization describes an infinite circular cylinder of radius 1 centered along the \(y\)-axis.
+
+        \item[ii.] \textbf{Positive Orientation:} The normal vectors \(\vec{n}\) point radially inward toward the \(y\)-axis:
+        \[
+        \vec{n} \propto \langle -\cos u, 0, -\sin u \rangle.
+        \]
+
+        \item[iii.] \textbf{Flux through \(S\):} The vector field \(\vec{F} = \langle 0, e^x, 0 \rangle\) has only a \(y\)-component, while the normals have zero \(y\)-component. Therefore:
+        \[
+        \vec{F} \cdot \vec{n} = 0,
+        \]
+        and the flux is \textbf{zero}.
+    \end{enumerate}
+}
+
+\noindent
+Fourier's Law of Heat Conduction states that if the temperature at a point is given by $u(x, y, z)$, then the heat flow is given by the vector field $\vec{F} = -K \nabla u$, where $K$ is the thermal conductivity of the material through which the heat is flowing. The rate of heat flow across a surface $S$ is then given by the vector surface integral
+\[
+\iint_S \vec{F} \cdot d\vec{S} = -K \iint_S \nabla u \cdot d\vec{S}.
+\]
+
+\qs{}{
+    Suppose the temperature at a point in a ball with conductivity $K$ is inversely proportional to the distance from the center of the ball. Show that the rate of heat flow across a sphere $S$ of radius $a$ with center at the center of the ball and oriented outwards is independent of the radius $a$.
+}
+
+\qs{}{
+    Use Stokes’s Theorem to evaluate $\iint_S \text{curl} \, \vec{F} \cdot d\vec{S}$.
+
+\begin{enumerate}
+    \item[(a)] $\vec{F}(x, y, z) = x^2 y^3 z \, \hat{i} + \sin(xyz) \, \hat{j} + xyz \, \hat{k}$, \\
+    $S$ is the part of the cone $y^2 = x^2 + z^2$ that lies between the planes $y = 0$ and $y = 3$, oriented in the direction of the positive $y$-axis.
+
+    \item[(b)] $\vec{F}(x, y, z) = e^x \cos z \, \hat{i} + x^2 z \, \hat{j} + xy \, \hat{k}$, \\
+    $S$ is the hemisphere $x = \sqrt{1 - y^2 - z^2}$, oriented in the direction of the positive $x$-axis.
+\end{enumerate}
 }
 
 \end{document}
