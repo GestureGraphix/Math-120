@@ -360,6 +360,61 @@
     and $S$ is the part of the paraboloid $z = 4 - x^2 - y^2$, oriented downwards, that lies above the unit square $[0, 1] \times [0, 1]$. 
 }
 
+\sol{
+    \[
+    \iint_S \vec{F} \cdot d\vec{S}, \quad \vec{F} = \langle x, y, 2z \rangle
+    \]
+
+    \[
+    z = 4 - x^2 - y^2
+    \]
+
+    \[
+    \vec{n} = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, -1 \right)
+    \]
+
+    \[
+    \frac{\partial f}{\partial x} = -2x, \quad \frac{\partial f}{\partial y} = -2y
+    \]
+
+    \[
+    \vec{n} = (-2x, -2y, -1)
+    \]
+
+    \[
+    d\vec{S} = \vec{n} \, dx \, dy = (-2x, -2y, -1) \, dx \, dy
+    \]
+
+    \[
+    \vec{F} = (x, y, 2z) = \left( x, y, 2(4 - x^2 - y^2) \right)
+    \]
+
+    \[
+    \vec{F} \cdot d\vec{S} = (x, y, 2z) \cdot (-2x, -2y, -1) \, dx \, dy
+    \]
+
+    \[
+    \vec{F} \cdot d\vec{S} = [ -2x^2 - 2y^2 - 2(4 - x^2 - y^2) ] \, dx \, dy
+    \]
+
+    \[
+    \vec{F} \cdot d\vec{S} = [ -2x^2 - 2y^2 - 8 + 2x^2 + 2y^2 ] \, dx \, dy = -8 \, dx \, dy
+    \]
+
+    \[
+    \iint_S \vec{F} \cdot d\vec{S} = \iint_D (-8) \, dx \, dy = -8 \iint_D dx \, dy
+    \]
+
+    \[
+    \iint_S \vec{F} \cdot d\vec{S} = -8 \times 1 = -8
+    \]
+
+    \[
+    \iint_S \vec{F} \cdot d\vec{S} = -8
+    \]
+
+}
+
 \qs{}{
     Evaluate the surface integral
     \[
@@ -368,6 +423,96 @@
     and $S$ is the part of the unit sphere $x^2 + y^2 + z^2 = 1$ in the first octant, oriented upwards.
 }
 
+\sol{
+    \[
+\vec{F} = \langle -z, x, y \rangle
+\]
+
+\[
+x = \sin\phi \cos\theta, \quad y = \sin\phi \sin\theta, \quad z = \cos\phi
+\]
+
+\[
+0 \leq \phi \leq \frac{\pi}{2}, \quad 0 \leq \theta \leq \frac{\pi}{2}
+\]
+
+\[
+\vec{r}_\phi = \frac{\partial \vec{r}}{\partial \phi} = 
+\begin{pmatrix} 
+\cos\phi \cos\theta \\ 
+\cos\phi \sin\theta \\ 
+-\sin\phi 
+\end{pmatrix}, \quad
+\vec{r}_\theta = \frac{\partial \vec{r}}{\partial \theta} = 
+\begin{pmatrix} 
+-\sin\phi \sin\theta \\ 
+\sin\phi \cos\theta \\ 
+0 
+\end{pmatrix}
+\]
+
+\[
+\vec{r}_\phi \times \vec{r}_\theta = 
+\begin{vmatrix} 
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\ 
+\cos\phi \cos\theta & \cos\phi \sin\theta & -\sin\phi \\ 
+-\sin\phi \sin\theta & \sin\phi \cos\theta & 0 
+\end{vmatrix}
+\]
+
+\[
+\vec{r}_\phi \times \vec{r}_\theta = 
+\begin{pmatrix} 
+\sin^2\phi \cos\theta \\ 
+\sin^2\phi \sin\theta \\ 
+\cos\phi \sin\phi 
+\end{pmatrix}
+\]
+
+\[
+d\vec{S} = 
+\begin{pmatrix} 
+\sin^2\phi \cos\theta \\ 
+\sin^2\phi \sin\theta \\ 
+\cos\phi \sin\phi 
+\end{pmatrix} d\phi d\theta
+\]
+
+\[
+\vec{F} = \langle -z, x, y \rangle = 
+\langle -\cos\phi, \sin\phi \cos\theta, \sin\phi \sin\theta \rangle
+\]
+
+\[
+\vec{F} \cdot d\vec{S} = 
+\left( -\cos\phi \right) \left( \sin^2\phi \cos\theta \right) 
++ \left( \sin\phi \cos\theta \right) \left( \sin^2\phi \sin\theta \right) 
++ \left( \sin\phi \sin\theta \right) \left( \cos\phi \sin\phi \right)
+\]
+
+\[
+\vec{F} \cdot d\vec{S} = \cos\phi \sin^2\phi (-\cos\theta + \sin\theta) 
++ \sin^3\phi \cos\theta \sin\theta
+\]
+
+\[
+\int_{0}^{\frac{\pi}{2}} (-\cos\theta + \sin\theta) \, d\theta = 0, \quad 
+\int_{0}^{\frac{\pi}{2}} \sin 2\theta \, d\theta = 1
+\]
+
+\[
+\int_{0}^{\frac{\pi}{2}} \sin^3\phi \, d\phi = \frac{4}{3}
+\]
+
+\[
+\iint_S \vec{F} \cdot d\vec{S} = \frac{1}{2} \cdot \frac{4}{3} = \frac{2}{3}
+\]
+
+\[
+\boxed{\frac{2}{3}}
+\]
+
+}
 \qs{}{
     Find the flux of $\vec{F}(x, y, z) = z \hat{i} + y \hat{j} + x \hat{k}$ across the helicoid
     \[
