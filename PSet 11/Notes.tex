@@ -513,12 +513,60 @@ d\vec{S} =
 \]
 
 }
+
 \qs{}{
     Find the flux of $\vec{F}(x, y, z) = z \hat{i} + y \hat{j} + x \hat{k}$ across the helicoid
     \[
     \vec{r}(u, v) = \langle u \cos v, u \sin v, v \rangle, \quad 0 \leq u \leq 1, \, 0 \leq v \leq 2\pi,
     \]
     oriented upward.
+}
+
+\sol{
+    \[
+    \vec{r}(u, v) = \langle u \cos v, u \sin v, v \rangle
+    \]
+    \[
+    \vec{r}_u = \langle \cos v, \sin v, 0 \rangle, \quad \vec{r}_v = \langle -u \sin v, u \cos v, 1 \rangle
+    \]
+    \[
+    \vec{n} = \vec{r}_u \times \vec{r}_v = \begin{vmatrix}
+    \hat{i} & \hat{j} & \hat{k} \\
+    \cos v & \sin v & 0 \\
+    -u \sin v & u \cos v & 1
+    \end{vmatrix} = \langle \sin v, -\cos v, u \rangle
+    \]
+    \[
+    \vec{F}(x, y, z) = z\,\hat{i} + y\,\hat{j} + x\,\hat{k}, \quad \vec{F}(\vec{r}(u, v)) = \langle v, u \sin v, u \cos v \rangle
+    \]
+    \[
+    \vec{F} \cdot \vec{n} = v \sin v - u \sin v \cos v + u^2 \cos v
+    \]
+    \[
+    \Phi = \iint_D (\vec{F} \cdot \vec{n}) \, du \, dv = \int_0^{2\pi} \int_0^1 \left( v \sin v - u \sin v \cos v + u^2 \cos v \right) du \, dv
+    \]
+    \[
+    \int_0^1 v \sin v \, du = v \sin v, \quad \int_0^1 u \sin v \cos v \, du = \frac{1}{2} \sin v \cos v, \quad \int_0^1 u^2 \cos v \, du = \frac{1}{3} \cos v
+    \]
+    \[
+    \Phi = \int_0^{2\pi} \left( v \sin v - \frac{1}{2} \sin v \cos v + \frac{1}{3} \cos v \right) dv
+    \]
+    \[
+    \sin v \cos v = \frac{1}{2} \sin 2v
+    \]
+    \[
+    \Phi = \int_0^{2\pi} \left( v \sin v - \frac{1}{4} \sin 2v + \frac{1}{3} \cos v \right) dv
+    \]
+    \[
+    \int_0^{2\pi} v \sin v \, dv = -2\pi, \quad \int_0^{2\pi} \sin 2v \, dv = 0, \quad \int_0^{2\pi} \cos v \, dv = 0
+    \]
+    \[
+    \Phi = -2\pi - \frac{1}{4}(0) + \frac{1}{3}(0)
+    \]
+    \[
+    \Phi = -2\pi
+    \]
+
 }
 
 \qs{}{
@@ -533,4 +581,61 @@ d\vec{S} =
         Find the flux of $\vec{F}$ across the oriented surface $S$.
     \end{enumerate}
 }
+
+
+\sol{
+    \[
+\text{(a)} \quad \vec{r}(x,\theta) = \left\langle x, 2\sin\theta, \cos\theta \right\rangle, \quad -2 \leq x \leq 2, \quad 0 \leq \theta \leq \frac{\pi}{2}
+\]
+
+\[
+\text{(b)} \quad
+\vec{r}_x = \left\langle 1, 0, 0 \right\rangle, \quad \vec{r}_\theta = \left\langle 0, 2\cos\theta, -\sin\theta \right\rangle, \quad \vec{N} = \vec{r}_x \times \vec{r}_\theta = \left\langle 0, \sin\theta, 2\cos\theta \right\rangle
+\]
+
+\[
+\text{(c)} \quad
+F_x = e^{4x^2 \sin^2\theta \cos^2\theta}, \quad F_y = 2x^2 \sin\theta, \quad F_z = \cos^2\theta e^{x/5}
+\]
+
+\[
+\vec{F} \cdot \vec{N} = 2x^2 \sin^2\theta + 2\cos^3\theta e^{x/5}
+\]
+
+\[
+\Phi = \int_{x=-2}^{2} \int_{\theta=0}^{\frac{\pi}{2}} \left( 2x^2 \sin^2\theta + 2\cos^3\theta e^{x/5} \right) d\theta \, dx
+\]
+
+\[
+\int_{\theta=0}^{\frac{\pi}{2}} \sin^2\theta \, d\theta = \frac{\pi}{4}, \quad \int_{\theta=0}^{\frac{\pi}{2}} \cos^3\theta \, d\theta = \frac{2}{3}
+\]
+
+\[
+\Phi = \int_{x=-2}^{2} \left( 2x^2 \cdot \frac{\pi}{4} + 2 \cdot \frac{2}{3} e^{x/5} \right) dx
+\]
+
+\[
+\int_{x=-2}^{2} x^2 dx = \frac{16}{3}, \quad \int_{x=-2}^{2} e^{x/5} dx = 5 \left( e^{2/5} - e^{-2/5} \right)
+\]
+
+\[
+\Phi = \frac{\pi}{2} \cdot \frac{16}{3} + \frac{4}{3} \cdot 5 \left( e^{2/5} - e^{-2/5} \right)
+\]
+
+\[
+\Phi = \frac{8\pi}{3} + \frac{20}{3} \left( e^{2/5} - e^{-2/5} \right)
+\]
+
+
+}
+
+\qs{}{
+    For each of the following parameterizations $\vec{r}(u, v)$, and vector fields $\vec{F}(x, y, z)$:
+
+    \begin{enumerate}
+        \item[i.] Describe the surface $S$ that is parameterized by $\vec{r}(u, v)$.
+        \item[ii.] Describe in words the positive orientation of $S$ given by the family of unit normal vectors $\vec{n} = (\vec{r}_u \times \vec{r}_v)/|\vec{r}_u \times \vec{r}_v|$. That is, give a description of which way the normal vectors point for this orientation.
+    \end{enumerate}    
+}
+
 \end{document}
