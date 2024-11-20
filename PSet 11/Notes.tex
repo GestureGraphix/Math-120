@@ -742,8 +742,44 @@ Fourier's Law of Heat Conduction states that if the temperature at a point is gi
     Suppose the temperature at a point in a ball with conductivity $K$ is inversely proportional to the distance from the center of the ball. Show that the rate of heat flow across a sphere $S$ of radius $a$ with center at the center of the ball and oriented outwards is independent of the radius $a$.
 }
 
+\sol{
+    \[
+    u(x, y, z) = \frac{c}{r}, \quad r = \sqrt{x^2 + y^2 + z^2}.
+    \]
+
+    \[
+    \frac{\partial u}{\partial x} = -\frac{c x}{r^3}, \quad \frac{\partial u}{\partial y} = -\frac{c y}{r^3}, \quad \frac{\partial u}{\partial z} = -\frac{c z}{r^3}.
+    \]
+
+    \[
+    \nabla u = -\frac{c}{r^3} \langle x, y, z \rangle.
+    \]
+
+    \[
+    \vec{F} = -K \nabla u = \frac{K c}{r^3} \langle x, y, z \rangle.
+    \]
+
+    \[
+    \vec{n} = \frac{\langle x, y, z \rangle}{a}, \quad d\vec{S} = \vec{n} \, dS = \frac{\langle x, y, z \rangle}{a} dS.
+    \]
+
+    \[
+    \vec{F} \cdot d\vec{S} = \left( \frac{K c}{a^3} \langle x, y, z \rangle \right) \cdot \left( \frac{\langle x, y, z \rangle}{a} \right) dS = \frac{K c}{a^4} (x^2 + y^2 + z^2) dS.
+    \]
+
+    \[
+    x^2 + y^2 + z^2 = a^2 \implies \vec{F} \cdot d\vec{S} = \frac{K c}{a^4} a^2 dS = \frac{K c}{a^2} dS.
+    \]
+
+    \[
+    \iint_S \vec{F} \cdot d\vec{S} = \frac{K c}{a^2} \iint_S dS = \frac{K c}{a^2} (4\pi a^2) = 4\pi K c.
+    \]
+}
+
+\newpage 
+
 \qs{}{
-    Use Stokes’s Theorem to evaluate $\iint_S \text{curl} \, \vec{F} \cdot d\vec{S}$.
+    Use Stokesss Theorem to evaluate $\iint_S \text{curl} \, \vec{F} \cdot d\vec{S}$.
 
 \begin{enumerate}
     \item[(a)] $\vec{F}(x, y, z) = x^2 y^3 z \, \hat{i} + \sin(xyz) \, \hat{j} + xyz \, \hat{k}$, \\
@@ -754,4 +790,89 @@ Fourier's Law of Heat Conduction states that if the temperature at a point is gi
 \end{enumerate}
 }
 
+\sol{ \\
+    a) 
+
+    \[
+    \vec{F}(x, y, z) = x^2 y^3 z \, \hat{i} + \sin(xyz) \, \hat{j} + xyz \, \hat{k}
+    \]
+    
+    \[
+    C: \begin{cases}
+    x = 3\cos\theta \\
+    y = 3 \\
+    z = 3\sin\theta \\
+    \theta \in [0, 2\pi]
+    \end{cases}
+    \]
+    
+    \[
+    dx = -3\sin\theta \, d\theta, \quad dy = 0, \quad dz = 3\cos\theta \, d\theta
+    \]
+    
+    \[
+    d\vec{r} = dx\, \hat{i} + dy\, \hat{j} + dz\, \hat{k}
+    \]
+    
+    \[
+    \begin{aligned}
+    F_x &= x^2 y^3 z = (3\cos\theta)^2 \cdot 3^3 \cdot (3\sin\theta) = 243\cos^2\theta\sin\theta \\
+    F_y &= \sin(xyz) = \sin(9\cos\theta\sin\theta) \\
+    F_z &= xyz = (3\cos\theta)(3)(3\sin\theta) = 9\cos\theta\sin\theta
+    \end{aligned}
+    \]
+    
+    \[
+    \int_C \vec{F} \cdot d\vec{r} = \int_0^{2\pi} [F_x\,dx + F_z\,dz]
+    \]
+    
+    \[
+    \int_C \vec{F} \cdot d\vec{r} = \int_0^{2\pi} [-729\cos^2\theta\sin^2\theta + 27\cos^2\theta\sin\theta] \, d\theta
+    \]
+    
+    \[
+    \begin{aligned}
+    I &= \int_0^{2\pi} [-729\cos^2\theta\sin^2\theta + 27\cos^2\theta\sin\theta] \, d\theta \\
+    &= -729\int_0^{2\pi} \cos^2\theta\sin^2\theta \, d\theta + 27\int_0^{2\pi} \cos^2\theta\sin\theta \, d\theta \\
+    &= -729 \left( \frac{\pi}{4} \right) + 0 \\
+    &= -\frac{729\pi}{4}
+    \end{aligned}
+    \]
+    
+    \[
+    \iint_S \text{curl} \, \vec{F} \cdot d\vec{S} = -\frac{729\pi}{4}
+    \]
+
+    b)
+    \[
+    \vec{F}(x, y, z) = e^x \cos z \, \hat{i} + x^2 z \, \hat{j} + xy \, \hat{k}
+    \]
+
+    \[
+    C: \begin{cases}
+    x = 0 \\
+    y = \cos\theta \\
+    z = \sin\theta \\
+    \theta \in [0, 2\pi]
+    \end{cases}
+    \]
+
+    \[
+    \vec{F} = \cos z \, \hat{i}
+    \]
+
+    \[
+    d\vec{r} = dy\, \hat{j} + dz\, \hat{k} = (-\sin\theta\, \hat{j} + \cos\theta\, \hat{k})\, d\theta
+    \]
+
+    \[
+    \int_C \vec{F} \cdot d\vec{r} = \int_0^{2\pi} \cos (\sin\theta) \cdot 0 \, d\theta = 0
+    \]
+
+    \[
+    \iint_S \text{curl} \, \vec{F} \cdot d\vec{S} = 0
+    \]
+
+        
+}
 \end{document}
