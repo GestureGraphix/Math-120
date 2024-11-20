@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  20 NOV 2024 13:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  10 AUG 2024 02:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/alexhernandezjuarez/Documents/Math 120/PSet 11/Notes.tex"
-(/home/alexhernandezjuarez/Documents/Math 120/PSet 11/Notes.tex
+**"/home/alexhernandezjuarez/Documents/math/notes/Day 2 Notes/template.tex"
+(/home/alexhernandezjuarez/Documents/math/notes/Day 2 Notes/template.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/report.cls
@@ -851,20 +851,12 @@ File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowlength=\dimen309
 \pgfarrowwidth=\dimen310
 \pgfarrowlinewidth=\dimen311
-))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/tikz-3dplot/tikz-3dplot.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/ifthen.sty
-Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary3d.code.tex
-File: tikzlibrary3d.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen312
 ))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
 \c@AlgoLine=\count357
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
 \algocf@hangindent=\skip67
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
@@ -882,12 +874,12 @@ Package: relsize 2013/03/29 ver 4.1
 \skiplength=\skip73
 \algomargin=\skip74
 \skipalgocfslide=\skip75
-\algowidth=\dimen313
-\inoutsize=\dimen314
-\inoutindent=\dimen315
-\interspacetitleruled=\dimen316
-\interspacealgoruled=\dimen317
-\interspacetitleboxruled=\dimen318
+\algowidth=\dimen312
+\inoutsize=\dimen313
+\inoutindent=\dimen314
+\interspacetitleruled=\dimen315
+\interspacealgoruled=\dimen316
+\interspacetitleboxruled=\dimen317
 \algocf@ruledwidth=\skip76
 \algocf@inoutbox=\box133
 \algocf@inputbox=\box134
@@ -921,12 +913,12 @@ Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 Package: pdfpages 2024/05/29 v0.6a Insert pages of external PDF documents (AM)
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen319
-\ESO@tempdimb=\dimen320
+\ESO@tempdima=\dimen318
+\ESO@tempdimb=\dimen319
 )
-\AM@pagewidth=\dimen321
-\AM@pageheight=\dimen322
-\AM@fboxrule=\dimen323
+\AM@pagewidth=\dimen320
+\AM@pageheight=\dimen321
+\AM@fboxrule=\dimen322
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2024/05/29 v0.6a Pdfpages driver for pdfTeX (AM)
 )
@@ -944,182 +936,152 @@ Package: transparent 2022-10-27 v1.5 Transparency with color stacks
 Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pgfplots/pgfplots.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
- (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks55
-\t@pgfplots@tokb=\toks56
-\t@pgfplots@tokc=\toks57
-\pgfplots@tmpa=\dimen324
-\c@pgfplots@coordindex=\count365
-\c@pgfplots@scanlineindex=\count366
- (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
-Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks58
-\t@pgf@tokb=\toks59
-\t@pgf@tokc=\toks60
-(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count367
-) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count368
-\t@pgfplotstable@a=\toks61
-) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count369
- (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.markers.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsticks.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.paths.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen325
-\pgfdecoratedremainingdistance=\dimen326
-\pgfdecoratedinputsegmentcompleteddistance=\dimen327
-\pgfdecoratedinputsegmentremainingdistance=\dimen328
-\pgf@decorate@distancetomove=\dimen329
-\pgf@decorate@repeatstate=\count370
-\pgfdecorationsegmentamplitude=\dimen330
-\pgfdecorationsegmentlength=\dimen331
-)
-\tikz@lib@dec@box=\box143
-) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count371
-\pgfplots@xmin@reg=\dimen332
-\pgfplots@xmax@reg=\dimen333
-\pgfplots@ymin@reg=\dimen334
-\pgfplots@ymax@reg=\dimen335
-\pgfplots@zmin@reg=\dimen336
-\pgfplots@zmax@reg=\dimen337
-) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
-File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.colormaps.code.tex) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.fillbetween.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfcontrib/tikzlibraryfillbetween.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryintersections.code.tex
-\pgf@intersect@solutions=\count372
-)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecorations.softclip.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/pgfcontrib/pgflibraryfillbetween.code.tex))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decorations.softclip.code.tex)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/tikzsymbols/tikzsymbols.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
+))) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/tikzsymbols/tikzsymbols.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
 Package: expl3 2024-05-27 L3 programming layer (loader) 
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count373
-\l__pdf_internal_box=\box144
+\l__color_backend_stack_int=\count365
+\l__pdf_internal_box=\box143
 ))
 Package: xparse 2024-05-08 L3 Experimental document command parser
 )
 Package: tikzsymbols 2021/12/14 v4.12a Some symbols created using tikz and LaTeX3.
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2024-05-08 LaTeX2e option processing using LaTeX3 keys
-) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
+) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen323
+)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen324
+\pgfdecoratedremainingdistance=\dimen325
+\pgfdecoratedinputsegmentcompleteddistance=\dimen326
+\pgfdecoratedinputsegmentremainingdistance=\dimen327
+\pgf@decorate@distancetomove=\dimen328
+\pgf@decorate@repeatstate=\count366
+\pgfdecorationsegmentamplitude=\dimen329
+\pgfdecorationsegmentlength=\dimen330
+)
+\tikz@lib@dec@box=\box144
+) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\l__tikzsymbols_Moai_thickness_dim=\dimen338
-\l__tikzsymbols_Kochtopf_nr_arguments_int=\count374
-\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count375
-\l__tikzsymbols_Schneebesen_nr_arguments_int=\count376
-\l__tikzsymbols_Sieb_nr_arguments_int=\count377
-\l__tikzsymbols_Purierstab_nr_arguments_int=\count378
-\l__tikzsymbols_Dreizack_nr_arguments_int=\count379
-\l__tikzsymbols_Backblech_nr_arguments_int=\count380
-\l__tikzsymbols_Ofen_nr_arguments_int=\count381
-\l__tikzsymbols_Pfanne_nr_arguments_int=\count382
-\l__tikzsymbols_Herd_nr_arguments_int=\count383
-\l__tikzsymbols_Saftpresse_nr_arguments_int=\count384
-\l__tikzsymbols_Schussel_nr_arguments_int=\count385
-\l__tikzsymbols_Schaler_nr_arguments_int=\count386
-\l__tikzsymbols_Reibe_nr_arguments_int=\count387
-\l__tikzsymbols_Flasche_nr_arguments_int=\count388
-\l__tikzsymbols_Nudelholz_nr_arguments_int=\count389
-\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count390
-\l__tikzsymbols_Sadey_nr_arguments_int=\count391
-\l__tikzsymbols_dSadey_nr_arguments_int=\count392
-\l__tikzsymbols_Changey_nr_arguments_int=\count393
-\l__tikzsymbols_dChangey_nr_arguments_int=\count394
-\l__tikzsymbols_cChangey_nr_arguments_int=\count395
-\l__tikzsymbols_dcChangey_nr_arguments_int=\count396
-\l__tikzsymbols_Annoey_nr_arguments_int=\count397
-\l__tikzsymbols_dAnnoey_nr_arguments_int=\count398
-\l__tikzsymbols_Smiley_nr_arguments_int=\count399
-\l__tikzsymbols_dSmiley_nr_arguments_int=\count400
-\l__tikzsymbols_Laughey_nr_arguments_int=\count401
-\l__tikzsymbols_dLaughey_nr_arguments_int=\count402
-\l__tikzsymbols_Neutrey_nr_arguments_int=\count403
-\l__tikzsymbols_dNeutrey_nr_arguments_int=\count404
-\l__tikzsymbols_Winkey_nr_arguments_int=\count405
-\l__tikzsymbols_oldWinkey_nr_arguments_int=\count406
-\l__tikzsymbols_dWinkey_nr_arguments_int=\count407
-\l__tikzsymbols_olddWinkey_nr_arguments_int=\count408
-\l__tikzsymbols_Sey_nr_arguments_int=\count409
-\l__tikzsymbols_dSey_nr_arguments_int=\count410
-\l__tikzsymbols_Xey_nr_arguments_int=\count411
-\l__tikzsymbols_dXey_nr_arguments_int=\count412
-\l__tikzsymbols_Innocey_nr_arguments_int=\count413
-\l__tikzsymbols_wInnocey_nr_arguments_int=\count414
-\l__tikzsymbols_dInnocey_nr_arguments_int=\count415
-\l__tikzsymbols_Cooley_nr_arguments_int=\count416
-\l__tikzsymbols_dCooley_nr_arguments_int=\count417
-\l__tikzsymbols_Tongey_nr_arguments_int=\count418
-\l__tikzsymbols_dTongey_nr_arguments_int=\count419
-\l__tikzsymbols_Nursey_nr_arguments_int=\count420
-\l__tikzsymbols_dNursey_nr_arguments_int=\count421
-\l__tikzsymbols_Vomey_nr_arguments_int=\count422
-\l__tikzsymbols_dVomey_nr_arguments_int=\count423
-\l__tikzsymbols_Walley_nr_arguments_int=\count424
-\l__tikzsymbols_rWalley_nr_arguments_int=\count425
-\l__tikzsymbols_dWalley_nr_arguments_int=\count426
-\l__tikzsymbols_drWalley_nr_arguments_int=\count427
-\l__tikzsymbols_Cat_nr_arguments_int=\count428
-\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count429
-\l__tikzsymbols_Ninja_nr_arguments_int=\count430
-\l__tikzsymbols_dNinja_nr_arguments_int=\count431
-\l__tikzsymbols_Sleepey_nr_arguments_int=\count432
-\l__tikzsymbols_dSleepey_nr_arguments_int=\count433
-\l__tikzsymbols_Maskey_nr_arguments_int=\count434
-\l__tikzsymbols_NiceReapey_nr_arguments_int=\count435
-\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count436
-\l__tikzsymbols_Person_nr_arguments_int=\count437
-\l__tikzsymbols_Heart_nr_arguments_int=\count438
-\l__tikzsymbols_dHeart_nr_arguments_int=\count439
-\l__tikzsymbols_HeartBroken_nr_arguments_int=\count440
-\l__tikzsymbols_Candle_nr_arguments_int=\count441
-\l__tikzsymbols_Fire_nr_arguments_int=\count442
-\l__tikzsymbols_Coffeecup_nr_arguments_int=\count443
-\l__tikzsymbols_Chair_nr_arguments_int=\count444
-\l__tikzsymbols_Bed_nr_arguments_int=\count445
-\l__tikzsymbols_Tribar_nr_arguments_int=\count446
-\l__tikzsymbols_Moai_nr_arguments_int=\count447
-\l__tikzsymbols_Snowman_nr_arguments_int=\count448
-\l__tikzsymbols_BasicTree_nr_arguments_int=\count449
-\l__tikzsymbols_WorstTree_nr_arguments_int=\count450
-\l__tikzsymbols_Springtree_nr_arguments_int=\count451
-\l__tikzsymbols_Summertree_nr_arguments_int=\count452
-\l__tikzsymbols_Autumntree_nr_arguments_int=\count453
-\l__tikzsymbols_Wintertree_nr_arguments_int=\count454
+\l__tikzsymbols_Moai_thickness_dim=\dimen331
+\l__tikzsymbols_Kochtopf_nr_arguments_int=\count367
+\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count368
+\l__tikzsymbols_Schneebesen_nr_arguments_int=\count369
+\l__tikzsymbols_Sieb_nr_arguments_int=\count370
+\l__tikzsymbols_Purierstab_nr_arguments_int=\count371
+\l__tikzsymbols_Dreizack_nr_arguments_int=\count372
+\l__tikzsymbols_Backblech_nr_arguments_int=\count373
+\l__tikzsymbols_Ofen_nr_arguments_int=\count374
+\l__tikzsymbols_Pfanne_nr_arguments_int=\count375
+\l__tikzsymbols_Herd_nr_arguments_int=\count376
+\l__tikzsymbols_Saftpresse_nr_arguments_int=\count377
+\l__tikzsymbols_Schussel_nr_arguments_int=\count378
+\l__tikzsymbols_Schaler_nr_arguments_int=\count379
+\l__tikzsymbols_Reibe_nr_arguments_int=\count380
+\l__tikzsymbols_Flasche_nr_arguments_int=\count381
+\l__tikzsymbols_Nudelholz_nr_arguments_int=\count382
+\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count383
+\l__tikzsymbols_Sadey_nr_arguments_int=\count384
+\l__tikzsymbols_dSadey_nr_arguments_int=\count385
+\l__tikzsymbols_Changey_nr_arguments_int=\count386
+\l__tikzsymbols_dChangey_nr_arguments_int=\count387
+\l__tikzsymbols_cChangey_nr_arguments_int=\count388
+\l__tikzsymbols_dcChangey_nr_arguments_int=\count389
+\l__tikzsymbols_Annoey_nr_arguments_int=\count390
+\l__tikzsymbols_dAnnoey_nr_arguments_int=\count391
+\l__tikzsymbols_Smiley_nr_arguments_int=\count392
+\l__tikzsymbols_dSmiley_nr_arguments_int=\count393
+\l__tikzsymbols_Laughey_nr_arguments_int=\count394
+\l__tikzsymbols_dLaughey_nr_arguments_int=\count395
+\l__tikzsymbols_Neutrey_nr_arguments_int=\count396
+\l__tikzsymbols_dNeutrey_nr_arguments_int=\count397
+\l__tikzsymbols_Winkey_nr_arguments_int=\count398
+\l__tikzsymbols_oldWinkey_nr_arguments_int=\count399
+\l__tikzsymbols_dWinkey_nr_arguments_int=\count400
+\l__tikzsymbols_olddWinkey_nr_arguments_int=\count401
+\l__tikzsymbols_Sey_nr_arguments_int=\count402
+\l__tikzsymbols_dSey_nr_arguments_int=\count403
+\l__tikzsymbols_Xey_nr_arguments_int=\count404
+\l__tikzsymbols_dXey_nr_arguments_int=\count405
+\l__tikzsymbols_Innocey_nr_arguments_int=\count406
+\l__tikzsymbols_wInnocey_nr_arguments_int=\count407
+\l__tikzsymbols_dInnocey_nr_arguments_int=\count408
+\l__tikzsymbols_Cooley_nr_arguments_int=\count409
+\l__tikzsymbols_dCooley_nr_arguments_int=\count410
+\l__tikzsymbols_Tongey_nr_arguments_int=\count411
+\l__tikzsymbols_dTongey_nr_arguments_int=\count412
+\l__tikzsymbols_Nursey_nr_arguments_int=\count413
+\l__tikzsymbols_dNursey_nr_arguments_int=\count414
+\l__tikzsymbols_Vomey_nr_arguments_int=\count415
+\l__tikzsymbols_dVomey_nr_arguments_int=\count416
+\l__tikzsymbols_Walley_nr_arguments_int=\count417
+\l__tikzsymbols_rWalley_nr_arguments_int=\count418
+\l__tikzsymbols_dWalley_nr_arguments_int=\count419
+\l__tikzsymbols_drWalley_nr_arguments_int=\count420
+\l__tikzsymbols_Cat_nr_arguments_int=\count421
+\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count422
+\l__tikzsymbols_Ninja_nr_arguments_int=\count423
+\l__tikzsymbols_dNinja_nr_arguments_int=\count424
+\l__tikzsymbols_Sleepey_nr_arguments_int=\count425
+\l__tikzsymbols_dSleepey_nr_arguments_int=\count426
+\l__tikzsymbols_Maskey_nr_arguments_int=\count427
+\l__tikzsymbols_NiceReapey_nr_arguments_int=\count428
+\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count429
+\l__tikzsymbols_Person_nr_arguments_int=\count430
+\l__tikzsymbols_Heart_nr_arguments_int=\count431
+\l__tikzsymbols_dHeart_nr_arguments_int=\count432
+\l__tikzsymbols_HeartBroken_nr_arguments_int=\count433
+\l__tikzsymbols_Candle_nr_arguments_int=\count434
+\l__tikzsymbols_Fire_nr_arguments_int=\count435
+\l__tikzsymbols_Coffeecup_nr_arguments_int=\count436
+\l__tikzsymbols_Chair_nr_arguments_int=\count437
+\l__tikzsymbols_Bed_nr_arguments_int=\count438
+\l__tikzsymbols_Tribar_nr_arguments_int=\count439
+\l__tikzsymbols_Moai_nr_arguments_int=\count440
+\l__tikzsymbols_Snowman_nr_arguments_int=\count441
+\l__tikzsymbols_BasicTree_nr_arguments_int=\count442
+\l__tikzsymbols_WorstTree_nr_arguments_int=\count443
+\l__tikzsymbols_Springtree_nr_arguments_int=\count444
+\l__tikzsymbols_Summertree_nr_arguments_int=\count445
+\l__tikzsymbols_Autumntree_nr_arguments_int=\count446
+\l__tikzsymbols_Wintertree_nr_arguments_int=\count447
 )
-\c@tcb@cnt@Theorem=\count455
-\c@tcb@cnt@theorem=\count456
-\c@tcb@cnt@Corollary=\count457
-\c@tcb@cnt@corollary=\count458
-\c@tcb@cnt@Lenma=\count459
-\c@tcb@cnt@lenma=\count460
-\c@tcb@cnt@Prop=\count461
-\c@tcb@cnt@prop=\count462
-\c@tcb@cnt@claim=\count463
-\c@tcb@cnt@Exercise=\count464
-\c@tcb@cnt@exercise=\count465
-\c@tcb@cnt@Example=\count466
-\c@tcb@cnt@example=\count467
-\c@tcb@cnt@ExampleWithRose=\count468
-\c@tcb@cnt@Definition=\count469
-\c@tcb@cnt@definition=\count470
-\c@tcb@cnt@DefinitionWithImage=\count471
-\c@tcb@cnt@question=\count472
-\c@tcb@cnt@qstion=\count473
-\c@tcb@cnt@wconc=\count474
- (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pgf-blur/tikzlibraryshadows.blur.code.tex  v1.02, 2012/12/09 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
+\c@tcb@cnt@Theorem=\count448
+\c@tcb@cnt@theorem=\count449
+\c@tcb@cnt@Corollary=\count450
+\c@tcb@cnt@corollary=\count451
+\c@tcb@cnt@Lenma=\count452
+\c@tcb@cnt@lenma=\count453
+\c@tcb@cnt@Prop=\count454
+\c@tcb@cnt@prop=\count455
+\c@tcb@cnt@claim=\count456
+\c@tcb@cnt@Exercise=\count457
+\c@tcb@cnt@exercise=\count458
+\c@tcb@cnt@Example=\count459
+\c@tcb@cnt@example=\count460
+\c@tcb@cnt@Definition=\count461
+\c@tcb@cnt@definition=\count462
+\c@tcb@cnt@question=\count463
+\c@tcb@cnt@qstion=\count464
+\c@tcb@cnt@wconc=\count465
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pgf-blur/tikzlibraryshadows.blur.code.tex  v1.02, 2012/12/09 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\pgfbs@fading@count=\count475
+\pgfbs@fading@count=\count466
 )
-\c@mylabelcounter=\count476
+\c@mylabelcounter=\count467
 \diffdbox=\box145
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2023/10/27 v2.16 TOC entries
-\ttl@leftsep=\dimen339
-)) (macros.tex) (letterfonts.tex) (Notes.aux)
-\openout1 = `Notes.aux'.
+\ttl@leftsep=\dimen332
+)) (macros.tex) (letterfonts.tex) (template.aux)
+\openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 11.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 11.
@@ -1198,17 +1160,17 @@ LaTeX Info: Command `\dddot' is already robust on input line 11.
 LaTeX Info: Command `\ddddot' is already robust on input line 11.
 (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count477
-\scratchdimen=\dimen340
+\scratchcounter=\count468
+\scratchdimen=\dimen333
 \scratchbox=\box146
-\nofMPsegments=\count478
-\nofMParguments=\count479
-\everyMPshowfont=\toks62
-\MPscratchCnt=\count480
-\MPscratchDim=\dimen341
-\MPnumerator=\count481
-\makeMPintoPDFobject=\count482
-\everyMPtoPDFconversion=\toks63
+\nofMPsegments=\count469
+\nofMParguments=\count470
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count471
+\MPscratchDim=\dimen334
+\MPnumerator=\count472
+\makeMPintoPDFobject=\count473
+\everyMPtoPDFconversion=\toks56
 ) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1216,11 +1178,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 11.
-\c@lstlisting=\count483
+\c@lstlisting=\count474
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks64
-\inpenc@posthook=\toks65
+\inpenc@prehook=\toks57
+\inpenc@posthook=\toks58
 ) (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -1230,10 +1192,8 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
-
 LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
-(/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+ (/home/alexhernandezjuarez/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
@@ -1262,11 +1222,17 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-(Notes.toc
+(template.toc
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 \tf@toc=\write5
-\openout5 = `Notes.toc'.
+\openout5 = `template.toc'.
 
 
 
@@ -1281,39 +1247,211 @@ l.19
 Chapter 1.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 25.
+(Font)              size <5> substituted on input line 23.
 
 
-LaTeX Font Warning: Font shape `OT1/cmr/b/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 33.
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+
+ []
 
 
 
 [2
 
 {/home/alexhernandezjuarez/.miktex/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+
+ []
+
+
 
 [3]
+Chapter 2.
 
-[4]
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+
+ []
+
+
+
+[4
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
+
+ []
+
+
 
 [5]
+Chapter 3.
 
-[6]
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
+
+ []
+
+
+
+[6
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+
+ []
+
+
 
 [7]
 
 [8]
+Chapter 4.
 
-[9]
+Underfull \hbox (badness 10000) in paragraph at lines 215--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+
+ []
+
+
+
+[9
+
+]
 
 [10]
+Chapter 5.
 
-[11]
+
+[11
+
+]
 
 [12]
 
-[13] (Notes.aux)
+[13]
+Chapter 6.
+
+
+[14
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 441--441
+
+ []
+
+
+
+[15]
+
+[16]
+Chapter 7.
+
+
+[17
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
+
+ []
+
+
+
+[18]
+
+[19] (template.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1328,17 +1466,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 47298 strings out of 475839
- 1094430 string characters out of 5777281
- 1952905 words of memory out of 5000000
- 69068 multiletter control sequences out of 15000+600000
- 589215 words of font info for 125 fonts, out of 8000000 for 9000
+ 37231 strings out of 475839
+ 752016 string characters out of 5777281
+ 1950905 words of memory out of 5000000
+ 59121 multiletter control sequences out of 15000+600000
+ 588620 words of font info for 123 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 99i,8n,102p,813b,1444s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmb10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
-Output written on Notes.pdf (14 pages, 242328 bytes).
+ 99i,8n,102p,606b,1727s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
+Output written on template.pdf (20 pages, 277431 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 400 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 411 words of extra memory for PDF output out of 10000 (max. 10000000)
 
