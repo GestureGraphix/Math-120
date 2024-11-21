@@ -85,6 +85,139 @@
 \section*{16.5 Curl and Divergence}
 \addcontentsline{toc}{section}{Curl and Divergence}
 
+\subsection*{Curl}
+
+\defrose{Curl}{
+    TThe \textbf{curl} of a vector field $\mathbf{F}$ in $\mathbb{R}^3$, where $\mathbf{F} = P\mathbf{i} + Q\mathbf{j} + R\mathbf{k}$, is a vector field that measures the rotational tendency or circulation of $\mathbf{F}$ at a point. Mathematically, it is given by:
+    \[
+    \text{curl} \, \mathbf{F} = \nabla \times \mathbf{F}
+    \]
+    
+    This can be computed using the cross product of the del operator ($\nabla = \mathbf{i} \frac{\partial}{\partial x} + \mathbf{j} \frac{\partial}{\partial y} + \mathbf{k} \frac{\partial}{\partial z}$) and the vector field $\mathbf{F}$. The result is:
+    \[
+    \text{curl} \, \mathbf{F} = \begin{vmatrix}
+    \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+    \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+    P & Q & R
+    \end{vmatrix}
+    \]
+    
+    Explicitly, the components are:
+    \[
+    \text{curl} \, \mathbf{F} = \left( \frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z} \right) \mathbf{i} + \left( \frac{\partial P}{\partial z} - \frac{\partial R}{\partial x} \right) \mathbf{j} + \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \mathbf{k}
+    \]
+    
+    This definition captures the curl as the formal representation of the infinitesimal rotation of $\mathbf{F}$ in three-dimensional space.
+}
+
+\ntimg{
+    The curl of the gradient of a scalar function \( f \) with continuous second-order partial derivatives is always zero:
+    \[ \text{curl}(\nabla f) = 0 \]
+}
+
+\ntimg{
+    If a vector field \( \mathbf{F} \) is defined on all of \( \mathbb{R}^3 \), has continuous partial derivatives, and satisfies \( \text{curl} \, \mathbf{F} = 0 \), then \( \mathbf{F} \) is a conservative vector field.
+}
+
+\ntimg{
+    The term \textbf{curl} is associated with rotations in a vector field. Specifically:
+
+    \begin{enumerate}
+        \item \textbf{Curl and Rotation}: The curl vector indicates the axis and direction of rotation of nearby particles, following the right-hand rule. The magnitude of the curl measures the speed of this rotation.
+        
+        \item \textbf{Irrotational Flow}: If \( \text{curl} \, \mathbf{F} = 0 \) at a point \( P \), the vector field is called \textbf{irrotational} at \( P \). Here, particles move with the flow but do not rotate about their own axis.
+        
+        \item \textbf{Rotational Flow}: If \( \text{curl} \, \mathbf{F} \neq 0 \), the particles rotate about their axis. The direction of the curl vector points along the axis of rotation.
+        
+        \item \textbf{Illustration with Fluid Flow}:
+        \begin{itemize}
+            \item In a fluid velocity field, a paddle wheel at a point \( P_1 \) where \( \text{curl} \, \mathbf{F} \neq 0 \) would rotate about its axis, indicating rotational flow.
+            \item At a point \( P_2 \) where \( \text{curl} \, \mathbf{F} = 0 \), the paddle wheel moves with the flow but does not rotate, indicating irrotational flow.
+        \end{itemize}
+    \end{enumerate}
+}
+\defrose{Divergence}{
+    TThe \textbf{divergence} of a vector field \( \mathbf{F} \) in \( \mathbb{R}^3 \), where \( \mathbf{F} = P\mathbf{i} + Q\mathbf{j} + R\mathbf{k} \), is a scalar function that measures the rate at which the vector field spreads out (or converges) at a given point. It is defined as:
+    \[
+    \text{div} \, \mathbf{F} = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z}
+    \]
+    
+    Alternatively, using the del operator (\( \nabla = \mathbf{i} \frac{\partial}{\partial x} + \mathbf{j} \frac{\partial}{\partial y} + \mathbf{k} \frac{\partial}{\partial z} \)), the divergence can be expressed as the dot product of \( \nabla \) and \( \mathbf{F} \):
+    \[
+    \text{div} \, \mathbf{F} = \nabla \cdot \mathbf{F}
+    \]
+    
+    \subsection*{Key Property}
+    For a vector field \( \mathbf{F} \) in \( \mathbb{R}^3 \) with continuous second-order partial derivatives, the divergence of the curl of \( \mathbf{F} \) is always zero:
+    \[
+    \text{div} (\text{curl} \, \mathbf{F}) = 0
+    \]
+    
+    This captures the idea that the curl of a vector field does not "spread out" or "converge" in space.    
+}
+
+\ntimg{
+    \begin{enumerate}
+        \item \textbf{Divergence in Fluid Flow}:
+        \begin{itemize}
+            \item If $\mathbf{F}(x, y, z)$ represents the velocity of a fluid or gas, $\text{div} \, \mathbf{F}(x, y, z)$ measures the net rate of change of the mass of fluid (or gas) flowing from the point $(x, y, z)$ per unit volume.
+            \item It indicates the tendency of the fluid to spread out (diverge) from a point.
+        \end{itemize}
+
+        \item \textbf{Incompressible Flow}:
+        \begin{itemize}
+            \item If $\text{div} \, \mathbf{F} = 0$, the fluid is said to be \textbf{incompressible}, meaning there is no net outflow or inflow at that point.
+        \end{itemize}
+
+        \item \textbf{Illustration}:
+        \begin{itemize}
+            \item \textbf{Case 1 ($\text{div} \, \mathbf{F} \neq 0$)}: 
+            \begin{itemize}
+                \item At a point $P_1$, if $\text{div} \, \mathbf{F} < 0$, the flow is inward (net inflow).
+                \item At a point $P_2$, if $\text{div} \, \mathbf{F} > 0$, the flow is outward (net outflow).
+            \end{itemize}
+            \item \textbf{Case 2 ($\text{div} \, \mathbf{F} = 0$)}: 
+            \begin{itemize}
+                \item The flow is balanced (no net divergence or convergence).
+            \end{itemize}
+        \end{itemize}
+    \end{enumerate}
+}
+
+\subsection*{Vector Forms of Green's Theorem}
+
+\defrose{Vector Forms of Green's Theorem}{
+    Green's Theorem relates a line integral around a simple closed curve \( C \) to a double integral over the plane region \( D \) enclosed by \( C \). It provides two key vector forms:
+    
+    \subsection*{1. Curl Form (Tangential Component):}
+    The line integral of the tangential component of \( \mathbf{F} \) along \( C \) is equal to the double integral of the vertical component of \( \text{curl} \, \mathbf{F} \) over \( D \):
+    \[
+    \oint_C \mathbf{F} \cdot d\mathbf{r} = \oint_C \mathbf{F} \cdot \mathbf{T} \, ds = \iint_D (\text{curl} \, \mathbf{F}) \cdot \mathbf{k} \, dA
+    \]
+    where 
+    \[
+    (\text{curl} \, \mathbf{F}) \cdot \mathbf{k} = \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}.
+    \]
+    
+    \subsection*{2. Divergence Form (Normal Component):}
+    The line integral of the normal component of \( \mathbf{F} \) along \( C \) is equal to the double integral of the divergence of \( \mathbf{F} \) over \( D \):
+    \[
+    \oint_C \mathbf{F} \cdot \mathbf{n} \, ds = \iint_D \text{div} \, \mathbf{F} \, dA
+    \]
+    where 
+    \[
+    \text{div} \, \mathbf{F} = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y}.
+    \]
+    
+    \subsection*{Geometric Interpretation:}
+    \begin{itemize}
+        \item The curl form expresses the relationship between the circulation of \( \mathbf{F} \) along the boundary \( C \) and the "rotational tendency" of \( \mathbf{F} \) over the region \( D \).
+        \item The divergence form relates the flux of \( \mathbf{F} \) across \( C \) to the net outflow (or inflow) of \( \mathbf{F} \) over \( D \).
+    \end{itemize}
+    
+    These two forms of Green's Theorem are fundamental in understanding the relationship between local properties of vector fields and their global integrals.
+}
+
 \section*{16.6 Parametric Surfaces and Their Areas}
 \addcontentsline{toc}{section}{Parametric Surfaces and Their Areas}
 
