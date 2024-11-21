@@ -1,1 +1,8 @@
+\contentsline {chapter}{Vectors and the Geometry of Space }{2}{chapter*.2}%
+\contentsline {section}{Three-Dimensional Coordinate Systems}{2}{section*.3}%
+\contentsline {chapter}{Vector Calculus}{6}{chapter*.27}%
+\contentsline {section}{Curl and Divergence}{6}{section*.32}%
+\contentsline {section}{Parametric Surfaces and Their Areas}{6}{section*.33}%
+\contentsline {section}{Surface Integral}{10}{section*.43}%
+\contentsline {section}{Stokes' Theorem}{13}{section*.56}%
 \contentsfinish 
