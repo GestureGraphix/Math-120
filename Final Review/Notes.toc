@@ -4,5 +4,5 @@
 \contentsline {section}{Curl and Divergence}{6}{section*.32}%
 \contentsline {section}{Parametric Surfaces and Their Areas}{6}{section*.33}%
 \contentsline {section}{Surface Integral}{10}{section*.43}%
-\contentsline {section}{Stokes' Theorem}{13}{section*.56}%
+\contentsline {section}{Stokes' Theorem}{14}{section*.57}%
 \contentsfinish 

@@ -297,7 +297,7 @@
 
 \subsection*{Surface Integrals of Vector Fields; Flux}
 \defrose{Flux}{
-    TThe \textbf{surface integral of a vector field} (also called the \textbf{flux}) over an oriented surface \( S \) with a unit normal vector \( \mathbf{n} \) is defined as:
+    The \textbf{surface integral of a vector field} (also called the \textbf{flux}) over an oriented surface \( S \) with a unit normal vector \( \mathbf{n} \) is defined as:
     \[
     \iint_S \mathbf{F} \cdot d\mathbf{S} = \iint_S \mathbf{F} \cdot \mathbf{n} \, dS,
     \]
@@ -307,13 +307,16 @@
         \item \( \mathbf{n} \) is the unit normal vector to \( S \),
         \item \( dS \) represents the infinitesimal surface area element.
     \end{itemize}
-
-    \subsection*{Physical Interpretation}
-    This integral measures the total "flow" of \( \mathbf{F} \) through the surface \( S \) in the direction of the normal vector \( \mathbf{n} \). For example:
-    \begin{itemize}
-        \item If \( \mathbf{F} = \rho \mathbf{v} \), where \( \rho(x, y, z) \) is the density of a fluid and \( \mathbf{v}(x, y, z) \) is the velocity field, the flux represents the mass flow rate of the fluid through \( S \).
-    \end{itemize}
-
+    
+    \subsection*{Special Case: Surface Defined by \( z = g(x, y) \)}
+    If the surface \( S \) is defined by the graph \( z = g(x, y) \), and \( \mathbf{F}(x, y, z) = P \mathbf{i} + Q \mathbf{j} + R \mathbf{k} \), the surface integral can be expressed as:
+    \[
+    \iint_S \mathbf{F} \cdot d\mathbf{S} = \iint_D \left( -P \frac{\partial g}{\partial x} - Q \frac{\partial g}{\partial y} + R \right) \, dA,
+    \]
+    where \( D \) is the projection of the surface onto the \( xy \)-plane.
+    
+    This formula assumes the upward orientation of \( S \). For a downward orientation, the integral is multiplied by \( -1 \).
+    
     \subsection*{Parametric Form}
     If the surface \( S \) is parameterized by \( \mathbf{r}(u, v) \), with tangent vectors:
     \[
@@ -324,15 +327,50 @@
     \iint_S \mathbf{F} \cdot d\mathbf{S} = \iint_D \mathbf{F}(\mathbf{r}(u, v)) \cdot (\mathbf{r}_u \times \mathbf{r}_v) \, dA,
     \]
     where \( D \) is the parameter domain.
-
-    \subsection*{Notes}
-    \begin{itemize}
-        \item The orientation of \( S \) determines the sign of the flux.
-        \item If the opposite orientation is used, the flux is multiplied by \( -1 \).
-    \end{itemize}
-}
+    
+    \subsection*{Physical Interpretation}
+    The flux integral measures the total flow of the vector field \( \mathbf{F} \) across the surface \( S \), representing quantities like mass flow rate, electric flux, or fluid flow through \( S \).
+}    
 
 \section*{16.8 Stokes' Theorem} 
+
+\defrose{Stokes' Theorem}{
+    SStokes' Theorem relates the surface integral of the curl of a vector field over an oriented surface \( S \) to the line integral of the vector field along the boundary curve \( C \) of \( S \). Mathematically, it is expressed as:
+
+    \[
+    \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = \oint_C \mathbf{F} \cdot d\mathbf{r},
+    \]
+
+    where:
+    \begin{itemize}
+        \item \( S \) is a piecewise-smooth, oriented surface with unit normal vector \( \mathbf{n} \),
+        \item \( C \) is the positively oriented, closed boundary curve of \( S \),
+        \item \( \mathbf{F} \) is a vector field with continuous partial derivatives,
+        \item \( \nabla \times \mathbf{F} \) is the curl of \( \mathbf{F} \),
+        \item \( d\mathbf{S} = \mathbf{n} \, dS \) is the oriented surface element,
+        \item \( d\mathbf{r} \) is the infinitesimal vector along \( C \).
+    \end{itemize}
+
+    \subsection*{Key Notes}
+    \begin{itemize}
+        \item \textbf{Positive Orientation:} The orientation of \( C \) is determined by the right-hand rule: when you walk along \( C \) with your head pointing in the direction of \( \mathbf{n} \), the surface \( S \) remains on your left.
+        \item \textbf{Special Case:} If \( S \) lies flat in the \( xy \)-plane and \( \mathbf{n} = \mathbf{k} \), Stokes' Theorem reduces to Green's Theorem:
+        \[
+        \oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_D (\nabla \times \mathbf{F}) \cdot \mathbf{k} \, dA.
+        \]
+    \end{itemize}
+
+    Stokes' Theorem provides a fundamental relationship between the circulation of \( \mathbf{F} \) along \( C \) and the total rotational effects (curl) of \( \mathbf{F} \) over the surface \( S \).
+}
+
+\ntimg{
+    Stokes' Theorem allows us to compute a surface integral simply by knowing the values of \( \mathbf{F} \) on the boundary curve \( C \). This means that if we have another oriented surface with the same boundary curve \( C \), then we get exactly the same value for the surface integral. In general, if \( S_1 \) and \( S_2 \) are oriented surfaces with the same oriented boundary curve \( C \) and both satisfy the hypotheses of Stokes' Theorem, then:
+    \[
+    \int_{S_1} (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = \int_C \mathbf{F} \cdot d\mathbf{r} = \int_{S_2} (\nabla \times \mathbf{F}) \cdot d\mathbf{S}.
+    \]
+
+    This fact is useful when it is difficult to integrate over one surface but easy to integrate over the other.
+}
 \addcontentsline{toc}{section}{Stokes' Theorem}
 
 
