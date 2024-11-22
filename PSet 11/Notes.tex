@@ -424,94 +424,30 @@
 }
 
 \sol{
-    \[
-\vec{F} = \langle -z, x, y \rangle
-\]
-
-\[
-x = \sin\phi \cos\theta, \quad y = \sin\phi \sin\theta, \quad z = \cos\phi
-\]
-
-\[
-0 \leq \phi \leq \frac{\pi}{2}, \quad 0 \leq \theta \leq \frac{\pi}{2}
-\]
-
-\[
-\vec{r}_\phi = \frac{\partial \vec{r}}{\partial \phi} = 
-\begin{pmatrix} 
-\cos\phi \cos\theta \\ 
-\cos\phi \sin\theta \\ 
--\sin\phi 
-\end{pmatrix}, \quad
-\vec{r}_\theta = \frac{\partial \vec{r}}{\partial \theta} = 
-\begin{pmatrix} 
--\sin\phi \sin\theta \\ 
-\sin\phi \cos\theta \\ 
-0 
-\end{pmatrix}
-\]
-
-\[
-\vec{r}_\phi \times \vec{r}_\theta = 
-\begin{vmatrix} 
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\ 
-\cos\phi \cos\theta & \cos\phi \sin\theta & -\sin\phi \\ 
--\sin\phi \sin\theta & \sin\phi \cos\theta & 0 
-\end{vmatrix}
-\]
-
-\[
-\vec{r}_\phi \times \vec{r}_\theta = 
-\begin{pmatrix} 
-\sin^2\phi \cos\theta \\ 
-\sin^2\phi \sin\theta \\ 
-\cos\phi \sin\phi 
-\end{pmatrix}
-\]
-
-\[
-d\vec{S} = 
-\begin{pmatrix} 
-\sin^2\phi \cos\theta \\ 
-\sin^2\phi \sin\theta \\ 
-\cos\phi \sin\phi 
-\end{pmatrix} d\phi d\theta
-\]
-
-\[
-\vec{F} = \langle -z, x, y \rangle = 
-\langle -\cos\phi, \sin\phi \cos\theta, \sin\phi \sin\theta \rangle
-\]
-
-\[
-\vec{F} \cdot d\vec{S} = 
-\left( -\cos\phi \right) \left( \sin^2\phi \cos\theta \right) 
-+ \left( \sin\phi \cos\theta \right) \left( \sin^2\phi \sin\theta \right) 
-+ \left( \sin\phi \sin\theta \right) \left( \cos\phi \sin\phi \right)
-\]
-
-\[
-\vec{F} \cdot d\vec{S} = \cos\phi \sin^2\phi (-\cos\theta + \sin\theta) 
-+ \sin^3\phi \cos\theta \sin\theta
-\]
-
-\[
-\int_{0}^{\frac{\pi}{2}} (-\cos\theta + \sin\theta) \, d\theta = 0, \quad 
-\int_{0}^{\frac{\pi}{2}} \sin 2\theta \, d\theta = 1
-\]
-
-\[
-\int_{0}^{\frac{\pi}{2}} \sin^3\phi \, d\phi = \frac{4}{3}
-\]
-
-\[
-\iint_S \vec{F} \cdot d\vec{S} = \frac{1}{2} \cdot \frac{4}{3} = \frac{2}{3}
-\]
-
-\[
-\boxed{\frac{2}{3}}
-\]
-
+    \[ \text{Divergence theorem: } \iint_{S_{\text{closed}}} \vec{F} \cdot d\vec{S} = \iiint_V \nabla \cdot \vec{F} \, dV.  \]
+    \[ \nabla \cdot \vec{F} = \frac{\partial (-z)}{\partial x} + \frac{\partial x}{\partial y} + \frac{\partial y}{\partial z} = 0. \]
+    \[ \iint_{S_{\text{closed}}} \vec{F} \cdot d\vec{S} = 0. \]
+    \[ \iint_S \vec{F} \cdot d\vec{S} = -\left( \iint_{S_1} \vec{F} \cdot d\vec{S} + \iint_{S_2} \vec{F} \cdot d\vec{S} + \iint_{S_3} \vec{F} \cdot d\vec{S} \right). \]
+    \[ \iint_{S_1} \vec{F} \cdot d\vec{S}, \quad \vec{n}_1 = \langle -1, 0, 0 \rangle, \quad \vec{F} = \langle -z, 0, y \rangle.  \]
+    \[ \vec{F} \cdot \vec{n}_1 = (-z)(-1) = z.  \]
+    \[ \iint_{S_1} z \, dy \, dz, \quad y^2 + z^2 \leq 1, \quad y, z \geq 0. \]
+    \[ \text{Polar coordinates: } y = r \cos\theta, \, z = r \sin\theta, \, r \in [0, 1], \, \theta \in [0, \frac{\pi}{2}]. \]
+    \[ \iint_{S_1} z \, dy \, dz = \int_0^{\frac{\pi}{2}} \int_0^1 r^2 \sin\theta \, dr \, d\theta = \int_0^{\frac{\pi}{2}} \sin\theta \, d\theta \int_0^1 r^2 \, dr. \]
+    \[ \int_0^{\frac{\pi}{2}} \sin\theta \, d\theta = 1, \quad \int_0^1 r^2 \, dr = \frac{1}{3}. \]
+    \[ \iint_{S_1} z \, dy \, dz = \frac{1}{3} \]
+    \[ \iint_{S_2} \vec{F} \cdot d\vec{S}, \quad \vec{n}_2 = \langle 0, -1, 0 \rangle, \quad \vec{F} = \langle -z, x, 0 \rangle. \]
+    \[ \vec{F} \cdot \vec{n}_2 = x(-1) = -x. \]
+    \[ -\iint_{S_2} x \, dx \, dz, \quad x^2 + z^2 \leq 1, \quad x, z \geq 0. \]
+    \[ \iint_{S_2} x \, dx \, dz = \int_0^{\frac{\pi}{2}} \int_0^1 r^2 \cos\theta \, dr \, d\theta = \int_0^{\frac{\pi}{2}} \cos\theta \, d\theta \int_0^1 r^2 \, dr. \]
+    \[ \int_0^{\frac{\pi}{2}} \cos\theta \, d\theta = 1, \quad \int_0^1 r^2 \, dr = \frac{1}{3}. \]
+    \[ \iint_{S_2} x \, dx \, dz = \frac{1}{3}, \quad -\iint_{S_2} x \, dx \, dz = -\frac{1}{3}. \]
+    \[ \iint_{S_3} \vec{F} \cdot d\vec{S}, \quad \vec{n}_3 = \langle 0, 0, -1 \rangle, \quad \vec{F} = \langle -z, x, y \rangle. \]
+    \[ \vec{F} \cdot \vec{n}_3 = y(-1) = -y. \]
+    \[ -\iint_{S_3} y \, dx \, dy, \quad x^2 + y^2 \leq 1, \quad x, y \geq 0. \]
+    \[ \iint_{S_3} y \, dx \, dy = \int_0^{\frac{\pi}{2}} \int_0^1 r^2 \sin\theta \, dr \, d\theta = \int_0^{\frac{\pi}{2}} \sin\theta \, d\theta \int_0^1 r^2 \, dr.  \]
+    \[ \int_0^{\frac{\pi}{2}} \sin\theta \, d\theta = 1, \quad \int_0^1 r^2 \, dr = \frac{1}{3}. \]
+    \[ \iint_{S_3} y \, dx \, dy = \frac{1}{3}, \quad -\iint_{S_3} y \, dx \, dy = -\frac{1}{3}. \]
+    \[ \iint_S \vec{F} \cdot d\vec{S} = -\left( \frac{1}{3} - \frac{1}{3} - \frac{1}{3} \right) = \frac{1}{3}. \]
 }
 
 \qs{}{
@@ -584,49 +520,31 @@ d\vec{S} =
 
 
 \sol{
-    \[
-\text{(a)} \quad \vec{r}(x,\theta) = \left\langle x, 2\sin\theta, \cos\theta \right\rangle, \quad -2 \leq x \leq 2, \quad 0 \leq \theta \leq \frac{\pi}{2}
-\]
-
-\[
-\text{(b)} \quad
-\vec{r}_x = \left\langle 1, 0, 0 \right\rangle, \quad \vec{r}_\theta = \left\langle 0, 2\cos\theta, -\sin\theta \right\rangle, \quad \vec{N} = \vec{r}_x \times \vec{r}_\theta = \left\langle 0, \sin\theta, 2\cos\theta \right\rangle
-\]
-
-\[
-\text{(c)} \quad
-F_x = e^{4x^2 \sin^2\theta \cos^2\theta}, \quad F_y = 2x^2 \sin\theta, \quad F_z = \cos^2\theta e^{x/5}
-\]
-
-\[
-\vec{F} \cdot \vec{N} = 2x^2 \sin^2\theta + 2\cos^3\theta e^{x/5}
-\]
-
-\[
-\Phi = \int_{x=-2}^{2} \int_{\theta=0}^{\frac{\pi}{2}} \left( 2x^2 \sin^2\theta + 2\cos^3\theta e^{x/5} \right) d\theta \, dx
-\]
-
-\[
-\int_{\theta=0}^{\frac{\pi}{2}} \sin^2\theta \, d\theta = \frac{\pi}{4}, \quad \int_{\theta=0}^{\frac{\pi}{2}} \cos^3\theta \, d\theta = \frac{2}{3}
-\]
-
-\[
-\Phi = \int_{x=-2}^{2} \left( 2x^2 \cdot \frac{\pi}{4} + 2 \cdot \frac{2}{3} e^{x/5} \right) dx
-\]
-
-\[
-\int_{x=-2}^{2} x^2 dx = \frac{16}{3}, \quad \int_{x=-2}^{2} e^{x/5} dx = 5 \left( e^{2/5} - e^{-2/5} \right)
-\]
-
-\[
-\Phi = \frac{\pi}{2} \cdot \frac{16}{3} + \frac{4}{3} \cdot 5 \left( e^{2/5} - e^{-2/5} \right)
-\]
-
-\[
-\Phi = \frac{8\pi}{3} + \frac{20}{3} \left( e^{2/5} - e^{-2/5} \right)
-\]
-
-
+    \begin{enumerate}
+        \item[(a)] 
+        \[ \vec{r}(x, \theta) = \langle x,\ 2\cos\theta,\ \sin\theta \rangle, \quad x \in [-2, 2], \quad \theta \in [0, \pi]. \]
+    
+        \item[(b)]
+        \[ \vec{r}_x = \frac{\partial \vec{r}}{\partial x} = \langle 1, 0, 0 \rangle, \quad \vec{r}_\theta = \frac{\partial \vec{r}}{\partial \theta} = \langle 0, -2\sin\theta, \cos\theta \rangle. \]
+        \[ \vec{n} = \vec{r}_\theta \times \vec{r}_x = \left| \begin{array}{ccc}
+        \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+        0 & -2\sin\theta & \cos\theta \\
+        1 & 0 & 0 \\
+        \end{array} \right| = \langle 0, \cos\theta, 2\sin\theta \rangle. \]
+        \[ n_z = 2\sin\theta \geq 0 \quad \text{for} \quad \theta \in [0, \pi]. \]
+    
+        \item[(c)]
+        \[ \text{Flux} = \iint_S \vec{F} \cdot d\vec{S} = \iint_D \vec{F}(\vec{r}(x, \theta)) \cdot (\vec{r}_\theta \times \vec{r}_x) \, d\theta \, dx. \]
+        \[ \vec{F}(x, y, z) = \langle e^{x^2y^2z^2}, x^2y, z^2e^{x/5} \rangle.  \]
+        \[ \vec{F}(\vec{r}(x, \theta)) = \langle e^{4x^2\cos^2\theta\sin^2\theta},\ 2x^2\cos\theta,\ \sin^2\theta e^{x/5} \rangle. \]
+        \[ \vec{F} \cdot \vec{n} = 2x^2\cos^2\theta + 2\sin^3\theta e^{x/5}. \]
+        \[ \text{Flux} = \int_{x=-2}^{2} \int_{\theta=0}^\pi \left( 2x^2\cos^2\theta + 2\sin^3\theta e^{x/5} \right) d\theta \, dx. \]
+        \[ \int_{0}^\pi \cos^2\theta \, d\theta = \frac{\pi}{2}, \quad \int_{0}^\pi \sin^3\theta \, d\theta = \frac{4}{3}. \]
+        \[ \text{Flux} = \int_{x=-2}^2 \left[ 2x^2 \cdot \frac{\pi}{2} + 2 \cdot \frac{4}{3} \cdot e^{x/5} \right] dx. \]
+        \[ \int_{x=-2}^2 x^2 dx = \left[ \frac{x^3}{3} \right]_{-2}^2 = \frac{8}{3} - \left(-\frac{8}{3}\right) = \frac{16}{3}. \]
+        \[ \int_{x=-2}^2 e^{x/5} dx = 5\left[ e^{x/5} \right]_{-2}^2 = 5\left(e^{2/5} - e^{-2/5}\right). \]
+        \[ \text{Flux} = \frac{16\pi}{3} + \frac{40}{3}\left(e^{2/5} - e^{-2/5}\right). \]
+    \end{enumerate}
 }
 
 \qs{}{
@@ -731,6 +649,8 @@ F_x = e^{4x^2 \sin^2\theta \cos^2\theta}, \quad F_y = 2x^2 \sin\theta, \quad F_z
         and the flux is \textbf{zero}.
     \end{enumerate}
 }
+
+\newpage
 
 \noindent
 Fourier's Law of Heat Conduction states that if the temperature at a point is given by $u(x, y, z)$, then the heat flow is given by the vector field $\vec{F} = -K \nabla u$, where $K$ is the thermal conductivity of the material through which the heat is flowing. The rate of heat flow across a surface $S$ is then given by the vector surface integral
