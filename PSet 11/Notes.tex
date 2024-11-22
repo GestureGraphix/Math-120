@@ -25,57 +25,19 @@
 }
 
 \sol{
-    \[
-    y = r \cos \theta, \quad z = r \sin \theta, \quad x = 3r^2
-    \]
-
-    \[
-    A = \iint_{\text{Domain}} \left\| \frac{\partial \mathbf{S}}{\partial r} \times \frac{\partial \mathbf{S}}{\partial \theta} \right\| dr d\theta
-    \]
-
-    \[
-    \mathbf{S}(r, \theta) = (3r^2, r \cos \theta, r \sin \theta)
-    \]
-
-    \[
-    \frac{\partial \mathbf{S}}{\partial r} = (6r, \cos \theta, \sin \theta), \quad \frac{\partial \mathbf{S}}{\partial \theta} = (0, -r \sin \theta, r \cos \theta)
-    \]
-
-    \[
-    \frac{\partial \mathbf{S}}{\partial r} \times \frac{\partial \mathbf{S}}{\partial \theta} = (r, -6r^2 \cos \theta, -6r^2 \sin \theta)
-    \]
-
-    \[
-    \left\| \frac{\partial \mathbf{S}}{\partial r} \times \frac{\partial \mathbf{S}}{\partial \theta} \right\| = r \sqrt{1 + 36r^2}
-    \]
-
-    \[
-    A = \int_{0}^{2\pi} \int_{0}^{1} r \sqrt{1 + 36r^2} dr d\theta
-    \]
-
-    \[
-    u = 1 + 36r^2, \quad du = 72r dr, \quad r dr = \frac{du}{72}
-    \]
-
-    \[
-    \int_{r=0}^{r=1} r \sqrt{1 + 36r^2} dr = \frac{1}{72} \int_{u=1}^{u=37} \sqrt{u} du = \frac{1}{72} \left[ \frac{2}{3} u^{3/2} \right]_{u=1}^{u=37}
-    \]
-
-    \[
-    \frac{1}{72} \left[ \frac{2}{3} u^{3/2} \right]_{u=1}^{u=37} = \frac{1}{108} \left( 37^{3/2} - 1 \right)
-    \]
-
-    \[
-    A = \frac{\pi}{54} \left( 37^{3/2} - 1 \right)
-    \]
-
-    \[
-    37^{3/2} = \sqrt{37^3} = 37 \sqrt{37}
-    \]
-
-    \[
-    A = \frac{\pi}{54} \left( 37 \sqrt{37} - 1 \right)
-    \]
+    \[ y = r \cos \theta, \quad z = r \sin \theta, \quad x = 3r^2 \]
+    \[ A = \iint_{\text{Domain}} \left\| \frac{\partial \mathbf{S}}{\partial r} \times \frac{\partial \mathbf{S}}{\partial \theta} \right\| dr d\theta \]
+    \[ \mathbf{S}(r, \theta) = (3r^2, r \cos \theta, r \sin \theta) \]
+    \[ \frac{\partial \mathbf{S}}{\partial r} = (6r, \cos \theta, \sin \theta), \quad \frac{\partial \mathbf{S}}{\partial \theta} = (0, -r \sin \theta, r \cos \theta) \]
+    \[ \frac{\partial \mathbf{S}}{\partial r} \times \frac{\partial \mathbf{S}}{\partial \theta} = (r, -6r^2 \cos \theta, -6r^2 \sin \theta) \]
+    \[  \left\| \frac{\partial \mathbf{S}}{\partial r} \times \frac{\partial \mathbf{S}}{\partial \theta} \right\| = r \sqrt{1 + 36r^2} \]
+    \[ A = \int_{0}^{2\pi} \int_{0}^{1} r \sqrt{1 + 36r^2} dr d\theta \]
+    \[ u = 1 + 36r^2, \quad du = 72r dr, \quad r dr = \frac{du}{72} \]
+    \[ \int_{r=0}^{r=1} r \sqrt{1 + 36r^2} dr = \frac{1}{72} \int_{u=1}^{u=37} \sqrt{u} du = \frac{1}{72} \left[ \frac{2}{3} u^{3/2} \right]_{u=1}^{u=37} \]
+    \[ \frac{1}{72} \left[ \frac{2}{3} u^{3/2} \right]_{u=1}^{u=37} = \frac{1}{108} \left( 37^{3/2} - 1 \right)  \]
+    \[ A = \frac{\pi}{54} \left( 37^{3/2} - 1 \right) \]
+    \[ 37^{3/2} = \sqrt{37^3} = 37 \sqrt{37} \]
+    \[ A = \frac{\pi}{54} \left( 37 \sqrt{37} - 1 \right) \]
 
 }
 
@@ -95,48 +57,23 @@
 \sol{
     \begin{enumerate}
         \item[(a)]
-        \[
-        x = 3 \cos u, \quad y = 3 \sin u
-        \]
-        \[
-        z = 5 - x - y = 5 - (3 \cos u + 3 \sin u)
-        \]
-        \[
-        \vec{r}_1(u) = \left( 3 \cos u, \ 3 \sin u, \ 5 - 3 \cos u - 3 \sin u \right)
-        \]
-        \[
-        z = -6 - x - y = -6 - (3 \cos u + 3 \sin u)
-        \]
-        \[
-        \vec{r}_2(u) = \left( 3 \cos u, \ 3 \sin u, \ -6 - 3 \cos u - 3 \sin u \right)
-        \]
+        \[ x = 3 \cos u, \quad y = 3 \sin u \]
+        \[ z = 5 - x - y = 5 - (3 \cos u + 3 \sin u) \]
+        \[ \vec{r}_1(u) = \left( 3 \cos u, \ 3 \sin u, \ 5 - 3 \cos u - 3 \sin u \right) \]
+        \[ z = -6 - x - y = -6 - (3 \cos u + 3 \sin u) \]
+        \[ \vec{r}_2(u) = \left( 3 \cos u, \ 3 \sin u, \ -6 - 3 \cos u - 3 \sin u \right) \]
         \item[(b)]
-        \[
-        \vec{s}(u, v) = \left( 3 \cos u, \ 3 \sin u, \ v - 3 \cos u - 3 \sin u \right)
-        \]
-        \[
-        0 \leq u \leq 2\pi, \quad -6 \leq v \leq 5
-        \]
+        \[ \vec{s}(u, v) = \left( 3 \cos u, \ 3 \sin u, \ v - 3 \cos u - 3 \sin u \right) \]
+        \[ 0 \leq u \leq 2\pi, \quad -6 \leq v \leq 5 \]
         \item[(c)]
-        \[
-        \frac{\partial \vec{s}}{\partial u} = \left( -3 \sin u, \ 3 \cos u, \ 3 \sin u - 3 \cos u \right)
-        \]
-        \[
-        \frac{\partial \vec{s}}{\partial v} = \left( 0, \ 0, \ 1 \right)
-        \]
-        \[
-        \frac{\partial \vec{s}}{\partial u} \times \frac{\partial \vec{s}}{\partial v} = \left( 3 \cos u, \ 3 \sin u, \ 0 \right)
-        \]
-        \[
-        \left\| \frac{\partial \vec{s}}{\partial u} \times \frac{\partial \vec{s}}{\partial v} \right\| = \sqrt{(3 \cos u)^2 + (3 \sin u)^2} = 3
-        \]
-        \[
-        A = \int_{v=-6}^{5} \int_{u=0}^{2\pi} 3 \, du \, dv = 3 \cdot \left( \int_{u=0}^{2\pi} du \right) \cdot \left( \int_{v=-6}^{5} dv \right) = 3 \cdot 2\pi \cdot 11 = 66\pi
-        \]
+        \[ \frac{\partial \vec{s}}{\partial u} = \left( -3 \sin u, \ 3 \cos u, \ 3 \sin u - 3 \cos u \right) \]
+        \[ \frac{\partial \vec{s}}{\partial v} = \left( 0, \ 0, \ 1 \right) \]
+        \[ \frac{\partial \vec{s}}{\partial u} \times \frac{\partial \vec{s}}{\partial v} = \left( 3 \cos u, \ 3 \sin u, \ 0 \right) \]
+        \[ \left\| \frac{\partial \vec{s}}{\partial u} \times \frac{\partial \vec{s}}{\partial v} \right\| = \sqrt{(3 \cos u)^2 + (3 \sin u)^2} = 3 \]
+        \[ A = \int_{v=-6}^{5} \int_{u=0}^{2\pi} 3 \, du \, dv = 3 \cdot \left( \int_{u=0}^{2\pi} du \right) \cdot \left( \int_{v=-6}^{5} dv \right) = 3 \cdot 2\pi \cdot 11 = 66\pi \]
         \item[(d)]
-        \[
-        A = 2\pi r h = 2\pi \times 3 \times 11 = 66\pi
-        \]
+        \[ A = 2\pi r h = 2\pi \times 3 \times 11 = 66\pi \]
+        Yeah, because the cylinder has radius 3 and hiehgt of 11. The SA would be 2 $\pi$ rh which is 2$\pi$(3)(11) = $66 \pi$
     \end{enumerate}    
 }
 
@@ -144,120 +81,38 @@
 
 \qs{}{
     Evaluate the surface integral
-    \[
-    \iint_S (x^2 + y^2 + z^2) \, dS
-    \]
+    \[ \iint_S (x^2 + y^2 + z^2) \, dS \]
     where $S$ is the surface of the solid cylinder defined by the inequalities $x^2 + z^2 \leq 1$ and $0 \leq y \leq 5$. Note that $S$ consists of a hollow cylinder and two disks. 
 }
 
 \sol{
-    \[
-    I = \iint_S (x^2 + y^2 + z^2) \, dS
-    \]
-
-    \[
-    x^2 + z^2 \leq 1, \quad 0 \leq y \leq 5
-    \]
-
-    \[
-    S = S_{\text{cyl}} \cup S_{\text{top}} \cup S_{\text{bot}}
-    \]
-
-    \[
-    \text{For } S_{\text{cyl}}, \quad x = \cos\theta, \quad z = \sin\theta, \quad y = y, \quad \theta \in [0, 2\pi), \quad y \in [0, 5]
-    \]
-
-    \[
-    \vec{r}(\theta, y) = (\cos\theta, y, \sin\theta)
-    \]
-
-    \[
-    \vec{r}_\theta = (-\sin\theta, 0, \cos\theta), \quad \vec{r}_y = (0, 1, 0)
-    \]
-
-    \[
-    \vec{r}_\theta \times \vec{r}_y = (-\cos\theta, 0, -\sin\theta), \quad |\vec{r}_\theta \times \vec{r}_y| = 1
-    \]
-
-    \[
-    dS_{\text{cyl}} = d\theta \, dy
-    \]
-
-    \[
-    x^2 + y^2 + z^2 = \cos^2\theta + y^2 + \sin^2\theta = 1 + y^2
-    \]
-
-    \[
-    I_{\text{cyl}} = \int_0^{2\pi} \int_0^5 (1 + y^2) \, dy \, d\theta
-    \]
-
-    \[
-    \int_0^5 (1 + y^2) \, dy = \int_0^5 1 \, dy + \int_0^5 y^2 \, dy = [y]_0^5 + \left[\frac{y^3}{3}\right]_0^5 = 5 + \frac{125}{3} = \frac{140}{3}
-    \]
-
-    \[
-    I_{\text{cyl}} = \int_0^{2\pi} \frac{140}{3} \, d\theta = \frac{140}{3} \cdot 2\pi = \frac{280\pi}{3}
-    \]
-
-    \[
-    \text{For } S_{\text{top}}, \quad x = r\cos\theta, \quad z = r\sin\theta, \quad y = 5, \quad r \in [0, 1], \quad \theta \in [0, 2\pi)
-    \]
-
-    \[
-    dS_{\text{top}} = r \, dr \, d\theta
-    \]
-
-    \[
-    x^2 + y^2 + z^2 = r^2 + 25
-    \]
-
-    \[
-    I_{\text{top}} = \int_0^{2\pi} \int_0^1 (r^2 + 25) r \, dr \, d\theta
-    \]
-
-    \[
-    \int_0^1 (r^2 + 25)r \, dr = \int_0^1 (r^3 + 25r) \, dr = \left[\frac{r^4}{4} + \frac{25r^2}{2}\right]_0^1 = \frac{1}{4} + \frac{25}{2} = \frac{51}{4}
-    \]
-
-    \[
-    I_{\text{top}} = \int_0^{2\pi} \frac{51}{4} \, d\theta = \frac{51}{4} \cdot 2\pi = \frac{51\pi}{2}
-    \]
-
-    \[
-    \text{For } S_{\text{bot}}, \quad x = r\cos\theta, \quad z = r\sin\theta, \quad y = 0
-    \]
-
-    \[
-    x^2 + y^2 + z^2 = r^2
-    \]
-
-    \[
-    dS_{\text{bot}} = r \, dr \, d\theta
-    \]
-
-    \[
-    I_{\text{bot}} = \int_0^{2\pi} \int_0^1 r^3 \, dr \, d\theta
-    \]
-
-    \[
-    \int_0^1 r^3 \, dr = \left[\frac{r^4}{4}\right]_0^1 = \frac{1}{4}
-    \]
-
-    \[
-    I_{\text{bot}} = \int_0^{2\pi} \frac{1}{4} \, d\theta = \frac{1}{4} \cdot 2\pi = \frac{\pi}{2}
-    \]
-
-    \[
-    I = I_{\text{cyl}} + I_{\text{top}} + I_{\text{bot}} = \frac{280\pi}{3} + \frac{51\pi}{2} + \frac{\pi}{2}
-    \]
-
-    \[
-    I = \frac{560\pi}{6} + \frac{153\pi}{6} + \frac{3\pi}{6} = \frac{716\pi}{6} = \frac{358\pi}{3}
-    \]
-
-    \[
-    \boxed{\frac{358\pi}{3}}
-    \]
+    \[ I = \iint_S (x^2 + y^2 + z^2) \, dS \]
+    \[ x^2 + z^2 \leq 1, \quad 0 \leq y \leq 5 \]
+    \[ S = S_{\text{cyl}} \cup S_{\text{top}} \cup S_{\text{bot}} \]
+    \[ \text{For } S_{\text{cyl}}, \quad x = \cos\theta, \quad z = \sin\theta, \quad y = y, \quad \theta \in [0, 2\pi), \quad y \in [0, 5] \]
+    \[ \vec{r}(\theta, y) = (\cos\theta, y, \sin\theta) \]
+    \[ \vec{r}_\theta = (-\sin\theta, 0, \cos\theta), \quad \vec{r}_y = (0, 1, 0) \]
+    \[ \vec{r}_\theta \times \vec{r}_y = (-\cos\theta, 0, -\sin\theta), \quad |\vec{r}_\theta \times \vec{r}_y| = 1 \]
+    \[ dS_{\text{cyl}} = d\theta \, dy \]
+    \[ x^2 + y^2 + z^2 = \cos^2\theta + y^2 + \sin^2\theta = 1 + y^2 \]
+    \[ I_{\text{cyl}} = \int_0^{2\pi} \int_0^5 (1 + y^2) \, dy \, d\theta \]
+    \[ \int_0^5 (1 + y^2) \, dy = \int_0^5 1 \, dy + \int_0^5 y^2 \, dy = [y]_0^5 + \left[\frac{y^3}{3}\right]_0^5 = 5 + \frac{125}{3} = \frac{140}{3} \]
+    \[ I_{\text{cyl}} = \int_0^{2\pi} \frac{140}{3} \, d\theta = \frac{140}{3} \cdot 2\pi = \frac{280\pi}{3} \]
+    \[ \text{For } S_{\text{top}}, \quad x = r\cos\theta, \quad z = r\sin\theta, \quad y = 5, \quad r \in [0, 1], \quad \theta \in [0, 2\pi) \]
+    \[ dS_{\text{top}} = r \, dr \, d\theta \]
+    \[ x^2 + y^2 + z^2 = r^2 + 25 \]
+    \[ I_{\text{top}} = \int_0^{2\pi} \int_0^1 (r^2 + 25) r \, dr \, d\theta \]
+    \[ \int_0^1 (r^2 + 25)r \, dr = \int_0^1 (r^3 + 25r) \, dr = \left[\frac{r^4}{4} + \frac{25r^2}{2}\right]_0^1 = \frac{1}{4} + \frac{25}{2} = \frac{51}{4} \]
+    \[ I_{\text{top}} = \int_0^{2\pi} \frac{51}{4} \, d\theta = \frac{51}{4} \cdot 2\pi = \frac{51\pi}{2} \]
+    \[ \text{For } S_{\text{bot}}, \quad x = r\cos\theta, \quad z = r\sin\theta, \quad y = 0 \]
+    \[ x^2 + y^2 + z^2 = r^2 \]
+    \[ dS_{\text{bot}} = r \, dr \, d\theta \]
+    \[ I_{\text{bot}} = \int_0^{2\pi} \int_0^1 r^3 \, dr \, d\theta \]
+    \[ \int_0^1 r^3 \, dr = \left[\frac{r^4}{4}\right]_0^1 = \frac{1}{4} \]
+    \[ I_{\text{bot}} = \int_0^{2\pi} \frac{1}{4} \, d\theta = \frac{1}{4} \cdot 2\pi = \frac{\pi}{2} \]
+    \[ I = I_{\text{cyl}} + I_{\text{top}} + I_{\text{bot}} = \frac{280\pi}{3} + \frac{51\pi}{2} + \frac{\pi}{2} \]
+    \[ I = \frac{560\pi}{6} + \frac{153\pi}{6} + \frac{3\pi}{6} = \frac{716\pi}{6} = \frac{358\pi}{3} \]
+    \[ \boxed{\frac{358\pi}{3}} \]
 
 }
 
@@ -505,6 +360,8 @@
 
 }
 
+\newpage 
+
 \qs{}{
     Let $S$ be the part of the elliptical cylinder $y^2 + 4z^2 = 4$ that lies above the $xy$-plane and between the planes $x = -2$ and $x = 2$. Let $S$ have the upward orientation; that is, let $S$ be oriented so that the normal vectors have positive $z$-component.
     \begin{enumerate}
@@ -521,32 +378,81 @@
 
 \sol{
     \begin{enumerate}
-        \item[(a)] 
-        \[ \vec{r}(x, \theta) = \langle x,\ 2\cos\theta,\ \sin\theta \rangle, \quad x \in [-2, 2], \quad \theta \in [0, \pi]. \]
+        \item[(a)]
+        \[
+        \vec{r}(x, \theta) = x\,\hat{i} + 2\cos \theta\,\hat{j} + \sin \theta\,\hat{k}, \quad x \in [-2, 2], \; \theta \in [0, \pi].
+        \]
     
         \item[(b)]
-        \[ \vec{r}_x = \frac{\partial \vec{r}}{\partial x} = \langle 1, 0, 0 \rangle, \quad \vec{r}_\theta = \frac{\partial \vec{r}}{\partial \theta} = \langle 0, -2\sin\theta, \cos\theta \rangle. \]
-        \[ \vec{n} = \vec{r}_\theta \times \vec{r}_x = \left| \begin{array}{ccc}
-        \mathbf{i} & \mathbf{j} & \mathbf{k} \\
-        0 & -2\sin\theta & \cos\theta \\
+        \[
+        \vec{r}_x = \frac{\partial \vec{r}}{\partial x} = \hat{i}, \quad \vec{r}_\theta = \frac{\partial \vec{r}}{\partial \theta} = -2\sin \theta\,\hat{j} + \cos \theta\,\hat{k}.
+        \]
+        The normal vector is:
+        \[
+        \vec{N} = \vec{r}_x \times \vec{r}_\theta = \begin{vmatrix}
+        \hat{i} & \hat{j} & \hat{k} \\
         1 & 0 & 0 \\
-        \end{array} \right| = \langle 0, \cos\theta, 2\sin\theta \rangle. \]
-        \[ n_z = 2\sin\theta \geq 0 \quad \text{for} \quad \theta \in [0, \pi]. \]
+        0 & -2\sin \theta & \cos \theta
+        \end{vmatrix} = 0\,\hat{i} - \cos \theta\,\hat{j} - 2\sin \theta\,\hat{k}.
+        \]
+        The \( z \)-component of \( \vec{N} \) is \( N_z = -2\sin \theta \). Since \( \sin \theta \geq 0 \) for \( \theta \in [0, \pi] \), \( N_z \leq 0 \), meaning the normal vectors point downward. 
+    
+        To match the upward orientation, take:
+        \[
+        \vec{N} = -(\vec{r}_x \times \vec{r}_\theta) = 0\,\hat{i} + \cos \theta\,\hat{j} + 2\sin \theta\,\hat{k}.
+        \]
+        So, no. 
     
         \item[(c)]
-        \[ \text{Flux} = \iint_S \vec{F} \cdot d\vec{S} = \iint_D \vec{F}(\vec{r}(x, \theta)) \cdot (\vec{r}_\theta \times \vec{r}_x) \, d\theta \, dx. \]
-        \[ \vec{F}(x, y, z) = \langle e^{x^2y^2z^2}, x^2y, z^2e^{x/5} \rangle.  \]
-        \[ \vec{F}(\vec{r}(x, \theta)) = \langle e^{4x^2\cos^2\theta\sin^2\theta},\ 2x^2\cos\theta,\ \sin^2\theta e^{x/5} \rangle. \]
-        \[ \vec{F} \cdot \vec{n} = 2x^2\cos^2\theta + 2\sin^3\theta e^{x/5}. \]
-        \[ \text{Flux} = \int_{x=-2}^{2} \int_{\theta=0}^\pi \left( 2x^2\cos^2\theta + 2\sin^3\theta e^{x/5} \right) d\theta \, dx. \]
-        \[ \int_{0}^\pi \cos^2\theta \, d\theta = \frac{\pi}{2}, \quad \int_{0}^\pi \sin^3\theta \, d\theta = \frac{4}{3}. \]
-        \[ \text{Flux} = \int_{x=-2}^2 \left[ 2x^2 \cdot \frac{\pi}{2} + 2 \cdot \frac{4}{3} \cdot e^{x/5} \right] dx. \]
-        \[ \int_{x=-2}^2 x^2 dx = \left[ \frac{x^3}{3} \right]_{-2}^2 = \frac{8}{3} - \left(-\frac{8}{3}\right) = \frac{16}{3}. \]
-        \[ \int_{x=-2}^2 e^{x/5} dx = 5\left[ e^{x/5} \right]_{-2}^2 = 5\left(e^{2/5} - e^{-2/5}\right). \]
-        \[ \text{Flux} = \frac{16\pi}{3} + \frac{40}{3}\left(e^{2/5} - e^{-2/5}\right). \]
+        \[
+        \text{Flux} = \iint_S \vec{F} \cdot d\vec{S} = \iint_D \vec{F}(\vec{r}(x, \theta)) \cdot \vec{N} \, dx \, d\theta,
+        \]
+        \[
+        \vec{F}(x, y, z) = e^{x^2 y^2 z^2}\,\hat{i} + x^2 y\,\hat{j} + z^2 e^{x/5}\,\hat{k}.
+        \]
+        \[
+        y = 2\cos \theta, \quad z = \sin \theta.
+        \]
+        \[
+        F_x = e^{x^2 \cdot 4\cos^2 \theta \sin^2 \theta}, \quad F_y = 2x^2 \cos \theta, \quad F_z = (\sin \theta)^2 e^{x/5}.
+        \]
+        \[
+        \vec{N} = 0\,\hat{i} + \cos \theta\,\hat{j} + 2\sin \theta\,\hat{k}.
+        \]
+        \[
+        \vec{F} \cdot \vec{N} = F_y N_y + F_z N_z,
+        \]
+        \[
+        F_y N_y = [2x^2 \cos \theta][\cos \theta] = 2x^2 \cos^2 \theta,
+        \]
+        \[
+        F_z N_z = [(\sin \theta)^2 e^{x/5}][2\sin \theta] = 2\sin^3 \theta e^{x/5}.
+        \]
+        \[
+        \vec{F} \cdot \vec{N} = 2x^2 \cos^2 \theta + 2\sin^3 \theta e^{x/5}.
+        \]
+        \[
+        \text{Flux} = \int_{0}^{\pi} \int_{-2}^{2} \left[ 2x^2 \cos^2 \theta + 2\sin^3 \theta e^{x/5} \right] dx\, d\theta.
+        \]
+        \[
+        \int_{-2}^{2} 2x^2 dx = \frac{32}{3}, \quad \int_{-2}^{2} 2\sin^3 \theta e^{x/5} dx = 10\sin^3 \theta \left(e^{2/5} - e^{-2/5}\right).
+        \]
+        \[
+        \int_{0}^{\pi} \frac{32}{3} \cos^2 \theta d\theta = \frac{16\pi}{3}.
+        \]
+        \[
+        \int_{0}^{\pi} 10\sin^3 \theta \left(e^{2/5} - e^{-2/5}\right) d\theta = \frac{40}{3} \left(e^{2/5} - e^{-2/5}\right).
+        \]
+        \[
+        \text{Flux} = \frac{16\pi}{3} + \frac{40}{3} \cdot 2 \sinh\left(\frac{2}{5}\right),
+        \]
+        \[
+        \text{Flux} = \frac{16\pi}{3} + \frac{80}{3} \sinh\left(\frac{2}{5}\right).
+        \]
     \end{enumerate}
 }
 
+\newpage 
 \qs{}{
     For each of the following parameterizations $\vec{r}(u, v)$, and vector fields $\vec{F}(x, y, z)$:
 
@@ -664,19 +570,12 @@ Fourier's Law of Heat Conduction states that if the temperature at a point is gi
 
 \sol{
     \[ u(x, y, z) = \frac{c}{r}, \quad r = \sqrt{x^2 + y^2 + z^2}. \]
-
     \[ \frac{\partial u}{\partial x} = -\frac{c x}{r^3}, \quad \frac{\partial u}{\partial y} = -\frac{c y}{r^3}, \quad \frac{\partial u}{\partial z} = -\frac{c z}{r^3}. \]
-
     \[ \nabla u = -\frac{c}{r^3} \langle x, y, z \rangle. \]
-
     \[ \vec{F} = -K \nabla u = \frac{K c}{r^3} \langle x, y, z \rangle. \]
-
     \[ \vec{n} = \frac{\langle x, y, z \rangle}{a}, \quad d\vec{S} = \vec{n} \, dS = \frac{\langle x, y, z \rangle}{a} dS. \]
-
     \[ \vec{F} \cdot d\vec{S} = \left( \frac{K c}{a^3} \langle x, y, z \rangle \right) \cdot \left( \frac{\langle x, y, z \rangle}{a} \right) dS = \frac{K c}{a^4} (x^2 + y^2 + z^2) dS. \]
-
     \[ x^2 + y^2 + z^2 = a^2 \implies \vec{F} \cdot d\vec{S} = \frac{K c}{a^4} a^2 dS = \frac{K c}{a^2} dS. \]
-
     \[ \iint_S \vec{F} \cdot d\vec{S} = \frac{K c}{a^2} \iint_S dS = \frac{K c}{a^2} (4\pi a^2) = 4\pi K c. \]
 }
 
@@ -685,13 +584,13 @@ Fourier's Law of Heat Conduction states that if the temperature at a point is gi
 \qs{}{
     Use Stokesss Theorem to evaluate $\iint_S \text{curl} \, \vec{F} \cdot d\vec{S}$.
 
-\begin{enumerate}
-    \item[(a)] $\vec{F}(x, y, z) = x^2 y^3 z \, \hat{i} + \sin(xyz) \, \hat{j} + xyz \, \hat{k}$, \\
-    $S$ is the part of the cone $y^2 = x^2 + z^2$ that lies between the planes $y = 0$ and $y = 3$, oriented in the direction of the positive $y$-axis.
+    \begin{enumerate}
+        \item[(a)] $\vec{F}(x, y, z) = x^2 y^3 z \, \hat{i} + \sin(xyz) \, \hat{j} + xyz \, \hat{k}$, \\
+        $S$ is the part of the cone $y^2 = x^2 + z^2$ that lies between the planes $y = 0$ and $y = 3$, oriented in the direction of the positive $y$-axis.
 
-    \item[(b)] $\vec{F}(x, y, z) = e^x \cos z \, \hat{i} + x^2 z \, \hat{j} + xy \, \hat{k}$, \\
-    $S$ is the hemisphere $x = \sqrt{1 - y^2 - z^2}$, oriented in the direction of the positive $x$-axis.
-\end{enumerate}
+        \item[(b)] $\vec{F}(x, y, z) = e^x \cos z \, \hat{i} + x^2 z \, \hat{j} + xy \, \hat{k}$, \\
+        $S$ is the hemisphere $x = \sqrt{1 - y^2 - z^2}$, oriented in the direction of the positive $x$-axis.
+    \end{enumerate}
 }
 
 \sol{ \\
@@ -730,4 +629,5 @@ Fourier's Law of Heat Conduction states that if the temperature at a point is gi
     \[ \oint_C \vec{F} \cdot d\vec{r} = 0 \]
         
 }
+
 \end{document}
