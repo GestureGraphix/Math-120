@@ -591,31 +591,452 @@
 	\insertpng[0.2]{partial.png}
 }
 
+\subsection*{Higher Derivatives}
+\addcontentsline{toc}{subsection}{Higher Derivatives}
+
+\defrose{Clairut's Theorem}{
+	SSuppose $f$ is defined on a disk $D$ that contains the point $(a,b)$. If the functions $f_{xy}$ and $f_{yx}$ are both continuous on $D$, then
+    \[
+    f_{xy}(a, b) = f_{yx}(a, b)
+    \]
+}
+
+\section*{14.4 Tangent Planes and Linear Approximations}
+\addcontentsline{toc}{section}{14.4 Tangent Planes and Linear Approximations}
+
+\subsection*{Tangent Planes}
+\defrose{Tangent Plane}{
+    TThe \textbf{tangent plane} to a surface \(z = f(x, y)\) at a point \(P(x_0, y_0, z_0)\), where \(z_0 = f(x_0, y_0)\), is the plane that best approximates the surface near \(P\). If \(f\) has continuous partial derivatives, the equation of the tangent plane is given by:
+
+    \[ z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0), \]
+    
+    where:
+    \begin{itemize}
+        \item \(f_x(x_0, y_0)\) is the partial derivative of \(f\) with respect to \(x\) at \((x_0, y_0)\),
+        \item \(f_y(x_0, y_0)\) is the partial derivative of \(f\) with respect to \(y\) at \((x_0, y_0)\).
+    \end{itemize}
+}
 
 \section*{14.5 The Chain Rule}
 \addcontentsline{toc}{section}{The Chain Rule}
 
+\subsection*{The Chain Rule}
+\addcontentsline{toc}{subsection}{The Chain Rule}
+
+
+\defrose{Chain Rule (Case 1)}{
+	SSuppose that $z = f(x, y)$ is a differentiable function of $x$ and $y$, where $x = g(t)$ and $y = h(t)$ are both differentiable functions of $t$. Then $z$ is a differentiable function of $t$ and
+	\[ \frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}
+	\qquad\qquad
+	\frac{dz}{dt} = \frac{\partial z}{\partial z} \frac{dx}{dt} + \frac{\partial z}{\partial y} \frac{dy}{dt} \]
+}
+
+\defrose{Chain Rule (Case 2)}{
+	SSuppose that $z = f(x, y)$ is a differentiable function of $x$ and $y$, where $x = g(s, t)$ and $y = h(s, t)$ are differentiable functions of $s$ and $t$. Then
+		\[\frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}
+        \qquad\quad 
+		\frac{\partial z}{\partial t} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial t} \]	
+}
+
+\defrose{Chain Rule (General Case)}{
+	SSuppose that $u$ is a differentiable function of the $n$ variables $x_1, x_2, \dots, x_n$ and each $x_j$ is a differentiable function of the $m$ variables $t_1, t_2, \dots, t_m$. Then $u$ is a function of $t_1, t_2, \dots, t_m$ and
+		\[ \frac{\partial u}{\partial t_i} = \frac{\partial u}{\partial x_1} \frac{\partial x_1}{\partial t_i} + \frac{\partial u}{\partial x_2} \frac{\partial x_2}{\partial t_i} + \dots + \frac{\partial u}{\partial x_n} \frac{\partial x_n}{\partial t_i} \] 
+	for each $i = 1, 2, \dots, m$.
+}
+
+\subsection*{Implicit Differentiation}
+\addcontentsline{toc}{section}{Implicit Differentiation}
+
+\defrose{Implicit Differentiation}{
+	DDefintion: 
+    \[ \frac{dy}{dx} = - \frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial Y}} = - \frac{F_{x}}{F_{y}}
+    \qquad\quad 
+	\frac{\partial z}{\partial x} = - \frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial z}} = -\frac{F_x}{F_z}
+    \qquad\quad 
+    \frac{\partial z}{\partial y} = - \frac{\frac{\partial F}{\partial y}}{\frac{\partial F}{\partial z}} = -\frac{F_y}{F_z}\] 
+}
+
 \section*{14.6 Directional Derivatives and their Gradient Vectors}
 \addcontentsline{toc}{section}{Directional Derivatives and their Gradient Vectors}
+
+\subsection*{Directional Derivatives}
+\addcontentsline{toc}{section}{Directional Derivatives}
+
+\defrose{Directional Derivative}{
+    TThe \textbf{directional derivative} of a function \(f(x, y)\) at a point \((x_0, y_0)\) in the direction of a unit vector \(\mathbf{u} = \langle a, b \rangle\) is the rate of change of \(f\) in that direction. It is defined as:
+
+    \[ D_{\mathbf{u}}f(x_0, y_0) = \lim_{h \to 0} \frac{f(x_0 + ha, y_0 + hb) - f(x_0, y_0)}{h}. \]
+}
+
+\thm{}{
+	If $f$ is a differentiable function of $x$ and $y$, then $f$ has a directional derivative in the direction of any unit vector $\mathbf{u} = \langle a, b \rangle$ and
+	\[ D_{\mathbf{u}} f(x, y) = f_x(x, y) a + f_y(x, y) b \] 
+}
+
+\subsection*{The Gradient Vector}
+\addcontentsline{toc}{subsection}{The Gradient Vector}
+
+
+\defrose{The Gradient Vector}{
+	IIf $f$ is a function of two variables $x$ and $y$, then the \textbf{gradient} of $f$ is the vector function $\nabla f$ defined by
+    \[ \nabla f(x, y) = \langle f_x(x, y), f_y(x, y) \rangle = \frac{\partial f}{\partial x} \mathbf{i} + \frac{\partial f}{\partial y} \mathbf{j} \] 
+}
+
+\ntimg{
+	Equation 
+    \[  D_{\mathbf{u}} f(x, y) = f_x(x, y) a + f_y(x, y) b  \] 
+    can be rewritten as 
+    \[ D_{u}f(x,y) = \nabla f(x,y) \cdot \textbf{u} \] 
+}
+
+\defrose{Gradient of Three Variable Functions}{
+	DDefintion: 
+	\begin{equation}
+		\nabla f = \langle f_x, f_y, f_z \rangle = \frac{\partial f}{\partial x} \mathbf{i} + \frac{\partial f}{\partial y} \mathbf{j} + \frac{\partial f}{\partial z} \mathbf{k}
+	\end{equation}
+}
+
+\subsection*{Maximizing the Directional Derivative}
+\addcontentsline{toc}{subsection}{Maximizing the Directional Derivative}
+
+\thm{Maximizing Directional Derivative}{
+	Suppose $f$ is a differentiable function of two or three variables. The maximum value of the 
+	directional derivative $D_{\mathbf{u}} f(\mathbf{x})$ is $\lvert \nabla f(\mathbf{x}) 
+	\rvert$ and it occurs when $\mathbf{u}$ has the same direction as the gradient vector 
+	$\nabla f(\mathbf{x})$.
+}
+
+\subsection*{Tangent Planes to Level Surfaces}
+\addcontentsline{toc}{subsection}{Tangent Planes to Level Surfaces}
+
+\defrose{Tanget Planes to Level Surfaces}{
+	CConsider a surface \( S \) defined by \( F(x, y, z) = k \), where \( F \) is a function of three variables. 
+	Let \( P(x_0, y_0, z_0) \) be a point on \( S \) and \( C \) be a curve on \( S \) that passes \
+	through \( P \). The curve is given by a vector function \( \mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle \) 
+	such that \( \mathbf{r}(t_0) = \langle x_0, y_0, z_0 \rangle \). Since \( C \) lies on \( S \), 
+	the equation \( F(x(t), y(t), z(t)) = k \) must hold. \\
+
+	By using the Chain Rule to differentiate both sides of this equation, we get:
+	\[
+	\frac{\partial F}{\partial x} \frac{dx}{dt} + \frac{\partial F}{\partial y} \frac{dy}{dt} + \frac{\partial F}{\partial z} \frac{dz}{dt} = 0
+	\]
+	
+	This can be written as a dot product:
+	\[
+	\nabla F \cdot \mathbf{r}'(t) = 0
+	\]
+	which means that the gradient \( \nabla F \) is perpendicular to the tangent vector \( \mathbf{r}'(t) \) at \( P \). \\
+	
+	At \( t = t_0 \), the gradient at \( P \), \( \nabla F(x_0, y_0, z_0) \), is normal to the tangent plane at \( P \). The equation of the tangent plane is:
+	\begin{equation}
+		F_x(x_0, y_0, z_0)(x - x_0) + F_y(x_0, y_0, z_0)(y - y_0) + F_z(x_0, y_0, z_0)(z - z_0) = 0
+	\end{equation}
+}
+
+\ntimg{
+	\textbf{Properties of the Gradient Vecotr} \\
+	Let $f$ be a differentiable function of two or three variables and suppose that $\nabla f(\mathbf{x}) \neq 0$.
+	\begin{itemize}
+		\item The directional derivative of $f$ at $\mathbf{x}$ in the direction of a unit vector $\mathbf{u}$ is given by $D_{\mathbf{u}} f(\mathbf{x}) = \nabla f(\mathbf{x}) \cdot \mathbf{u}$.
+		\item $\nabla f(\mathbf{x})$ points in the direction of maximum rate of increase of $f$ at $\mathbf{x}$, and that maximum rate of change is $\lvert \nabla f(\mathbf{x}) \rvert$.
+		\item $\nabla f(\mathbf{x})$ is perpendicular to the level curve or level surface of $f$ through $\mathbf{x}$.
+	\end{itemize}
+}
 
 \section*{14.7 Maximum and Minimum Values}
 \addcontentsline{toc}{section}{Maximum and Minimum Values}
 
+\subsection*{Local Maximum and Minimum Values}
+\addcontentsline{toc}{subsection}{Local Maximum and Minimum Values}
+
+\defrose{Local Min and Max}{
+	AA function of two variables has a \textbf{local maximum} at $(a, b)$ if $f(x, y) \leq f(a, b)$ when $(x, y)$ is near $(a, b)$. [This means that $f(x, y) \leq f(a, b)$ for all points $(x, y)$ in some disk with center $(a, b)$.] The number $f(a, b)$ is called a \textbf{local maximum value}. If $f(x, y) \geq f(a, b)$ when $(x, y)$ is near $(a, b)$, then $f$ has a \textbf{local minimum} at $(a, b)$ and $f(a, b)$ is a \textbf{local minimum value}.
+}
+
+\thm{Critical Point}{
+	If $f$ has a local maximum or minimum at $(a, b)$ and the first-order partial derivatives of $f$ exist there, then $f_x(a, b) = 0$ and $f_y(a, b) = 0$.
+}
+
+\defrose{Second Derivatives Test}{
+	SSuppose the second partial derivatives of $f$ are continuous on a disk with center $(a, b)$, and suppose that $f_x(a, b) = 0$ and $f_y(a, b) = 0$ [so $(a, b)$ is a critical point of $f$]. Let
+	\begin{equation}
+	D = D(a, b) = f_{xx}(a, b) f_{yy}(a, b) - [f_{xy}(a, b)]^2
+	\end{equation}
+	\begin{itemize}
+		\item[(a)] If $D > 0$ and $f_{xx}(a, b) > 0$, then $f(a, b)$ is a local minimum.
+		\item[(b)] If $D > 0$ and $f_{xx}(a, b) < 0$, then $f(a, b)$ is a local maximum.
+		\item[(c)] If $D < 0$, then $(a, b)$ is a saddle point of $f$.
+	\end{itemize}
+}
+
+\subsection*{Absolute Maximum and Minimum Values}
+\addcontentsline{toc}{subsection}{Absolute Maximum and Minimum Values}
+
+\defrose{Absolute Maxiums and Absolute Minimums}{
+	LLet $(a, b)$ be a point in the domain $D$ of a function $f$ of two variables. Then $f(a, b)$ is the
+	\begin{itemize}
+		\item \textbf{absolute maximum} value of $f$ on $D$ if $f(a, b) \geq f(x, y)$ for all $(x, y)$ in $D$.
+		\item \textbf{absolute minimum} value of $f$ on $D$ if $f(a, b) \leq f(x, y)$ for all $(x, y)$ in $D$.
+	\end{itemize}
+}
+
+\defrose{Extreme Value Theorem for Functions of Two Variables}{
+	IIf $f$ is continuous on a closed, bounded set $D$ in $\mathbb{R}^2$, then $f$ 
+	attains an absolute maximum value $f(x_1, y_1)$ and an absolute minimum value 
+	$f(x_2, y_2)$ at some points $(x_1, y_1)$ and $(x_2, y_2)$ in $D$.
+}
+
+\ntimg{To find the absolute maximum and minimum values of a continuous function $f$ on a closed, bounded set $D$:
+	\begin{enumerate}
+		\item Find the values of $f$ at the critical points of $f$ in $D$.
+		\item Find the extreme values of $f$ on the boundary of $D$.
+		\item The largest of the values from steps 1 and 2 is the absolute maximum value; the smallest of these values is the absolute minimum value.
+	\end{enumerate}
+}
+
+
 \section*{14.8 Lagrange Multipliers}
 \addcontentsline{toc}{section}{Lagrange Multipliers}
 
+\defrose{Geometric Explanation of Lagrange Multipliers (One Constraint)}{
+    TTo find the maximum or minimum of \( f(x, y) \) under a constraint \( g(x, y) = k \), 
+    the method of Lagrange multipliers ensures that the gradients of \( f \) and \( g \) 
+    are parallel. This happens when \( \nabla f = \lambda \nabla g \), where \( \lambda \) 
+    is a scalar. For functions of three variables, the same principle applies: the extreme 
+    values of \( f(x, y, z) \) occur where \( f \)'s level surface touches the constraint 
+    surface defined by \( g(x, y, z) = k \).
+}
+
+\defrose{Method of Lagrange Multipliers}{
+	TTo find the maximum and minimum values of $f(x, y, z)$ subject to the constraint $g(x, y, z) = k$ [assuming that these extreme values exist and $\nabla g \neq 0$ on the surface $g(x, y, z) = k$]:
+
+	\begin{enumerate}
+		\item Find all values of $x$, $y$, $z$, and $\lambda$ such that
+		\[
+		\nabla f(x, y, z) = \lambda \nabla g(x, y, z)
+		\]
+		and
+		\[
+		g(x, y, z) = k
+		\]
+		\item Evaluate $f$ at all the points $(x, y, z)$ that result from step 1. The largest of these values is the maximum value of $f$; the smallest is the minimum value of $f$.
+	\end{enumerate}
+}
+
+\subsection*{Lagrange Multipliers: Two Constraints}
+\addcontentsline{toc}{subsection}{Lagrange Multipliers: Two Constraints}
+
+\defrose{Lagrange Multipliers (Two Constraints)}{
+    TTo find the maximum or minimum of \( f(x, y, z) \) under two constraints, 
+    \( g(x, y, z) = k \) and \( h(x, y, z) = c \), we examine the curve where the 
+    two constraint surfaces intersect. At an extreme value of \( f \), its gradient 
+    \( \nabla f \) lies in the plane formed by \( \nabla g \) and \( \nabla h \). This 
+    gives the relationship:
+    \[
+    \nabla f = \lambda \nabla g + \mu \nabla h
+    \]
+    where \( \lambda \) and \( \mu \) are Lagrange multipliers.
+}
 
 \chapter*{15 Multiple Integrals}
-\addcontentsline{toc}{chapter}{Multiple Integrals}
+\addcontentsline{toc}{chapter}{15 Multiple Integrals}
 
 \section*{15.1 Double Integrals over Rectangles}
-\addcontentsline{toc}{section}{Double Integrals over Rectangles}
+\addcontentsline{toc}{section}{15.1 Double Integrals over Rectangles}
+
+\subsection*{Volumes and Double Integrals}
+\addcontentsline{toc}{subsection}{Volumes and Double Integrals}
+
+\defrose{Volume of a Function}{
+	WWe start with a function \( f \) defined over a closed rectangle \( R \) in the \( xy \)-plane, denoted as:
+
+	\[ R = [a,b] \times [c,d] = \{(x,y) \in \mathbb{R}^2 \mid a \leq x \leq b, \, c \leq y \leq d\}. \]
+
+	The goal is to find the volume of the solid \( S \), which lies above the rectangle \( R \) and below the graph of the surface \( z = f(x,y) \), defined as:
+
+	\[ S = \{(x,y,z) \in \mathbb{R}^3 \mid 0 \leq z \leq f(x,y), \, (x,y) \in R\}. \]
+
+	\insertpng[0.3]{vol.png}
+}
+
+\defrose{Volume of a Function (PART II)}{
+	TTo compute this volume, we first divide the rectangle \( R \) into smaller subrectangles. The interval \( [a,b] \) is divided into \( m \) subintervals of equal width \( \Delta x = \frac{b-a}{m} \), and the interval \( [c,d] \) is divided into \( n \) subintervals of equal width \( \Delta y = \frac{d-c}{n} \). The subrectangles are denoted by:
+
+	\[
+	R_{ij} = [x_{i-1},x_i] \times [y_{j-1},y_j] = \{(x,y) \mid x_{i-1} \leq x \leq x_i, \, y_{j-1} \leq y \leq y_j\}.
+	\]
+
+	Each subrectangle has an area of \( \Delta A = \Delta x \Delta y \).
+
+	\insertpng[0.3]{rect.png}
+
+	Next, we approximate the volume of the solid \( S \) by choosing a sample point \( (x^*_{ij}, y^*_{ij}) \) in each subrectangle \( R_{ij} \). Using this point, we approximate the part of \( S \) above each \( R_{ij} \) by a thin rectangular box (or “column”) with base \( R_{ij} \) and height \( f(x^*_{ij}, y^*_{ij}) \). The volume of this box is:
+
+	\[
+	f(x^*_{ij}, y^*_{ij}) \Delta A.
+	\]
+	\insertpng[0.3]{approx.png}
+}
+
+\defrose{Volume of a Function (PART III)}{
+	WWe then sum the volumes of all these boxes over the entire grid of subrectangles, obtaining an approximation of the total volume \( V \) of the solid \( S \):
+
+	\[
+	V \approx \sum_{i=1}^{m} \sum_{j=1}^{n} f(x^*_{ij}, y^*_{ij}) \Delta A.
+	\]
+
+	As \( m \) and \( n \) become larger, our approximation becomes more accurate. The exact volume of \( S \) is given by the limit of the double sum as \( m, n \to \infty \):
+
+	\begin{equation}
+		\iint_R f(x, y) \, dA = \lim_{m,n \to \infty} \sum_{i=1}^{m} \sum_{j=1}^{n} f(x^*_{ij}, y^*_{ij}) \, \Delta A
+	\end{equation}
+
+	\insertpng[0.3]{approxVol.png}
+	This is the formal definition of the volume of the solid \( S \) that lies under the graph of the function \( f \) and above the rectangle \( R \). By taking the limit, we ensure that the approximation becomes exact.
+}
+
+
+\defrose{Double Integeral}{
+	DDefintion: The \textbf{double integral} of \(f \) over the rectangle \(R \) is 
+	\begin{equation}
+		\iint\limits_R f(x, y) \, dA = \lim_{m,n \to \infty} \sum_{i=1}^{m} \sum_{j=1}^{n} f(x^*_{ij}, y^*_{ij}) \, \Delta A
+	\end{equation}
+	if this limit exists
+}
+
+\defrose{Equation for Volume}{
+	IIf $f(x, y) \geq 0$, then the volume $V$ of the solid that lies above the rectangle $R$ and below the surface $z = f(x, y)$ is
+        \begin{equation}
+			V = \iint\limits_{R} f(x, y) \, dA
+		\end{equation}
+}
+
+\subsection*{Iterated Integrals}
+\addcontentsline{toc}{subsection}{Iterated Integrals}
+
+\defrose{Fubini's Theorem}{
+	If \( f \) is continuous on the rectangle
+	\[ R = \{(x, y) \mid a \leq x \leq b, \ c \leq y \leq d\} \]
+	then
+	\[ \iint\limits_{R} f(x, y) \, dA = \int_a^b \int_c^d f(x, y) \, dy dx = \int_c^d \int_a^b f(x, y) \, dx dy \]
+	More generally, this is true if we assume that \( f \) is bounded on \( R \), \( f \) is discontinuous only on a finite number of smooth curves, and the iterated integrals exist.
+}
+
+\thm{Fubinis Theorem}{
+    IIf \(f(x, y)\) can be expressed as the product of two functions, \(f(x, y) = g(x)h(y)\), and the region of integration \(R = [a, b] \times [c, d]\) is a rectangle, then the double integral of \(f(x, y)\) over \(R\) simplifies to the product of two single integrals:
+
+    \[ \iint_R f(x, y) \, dA = \left( \int_a^b g(x) \, dx \right) \left( \int_c^d h(y) \, dy \right). \]
+    
+    This result follows from \textbf{Fubini's Theorem}, which allows the separation of the double integral into two independent integrals when \(f(x, y)\) is separable in \(x\) and \(y\).
+    
+}
+
+\subsection*{Average Value}
+\addcontentsline{toc}{subsection}{Average Value}
+
+\defrose{Average Value}{
+	WWe define the \textbf{average value} of a function \( f \) of two variables defined on a rectangle \( R \) to be
+	\[
+	f_{\text{avg}} = \frac{1}{A(R)} \iint\limits_{R} f(x, y) \, dA
+	\]
+	where \( A(R) \) is the area of \( R \).
+
+	If \( f(x, y) \geq 0 \), the equation
+	\[
+	A(R) \times f_{\text{avg}} = \iint\limits_{R} f(x, y) \, dA
+	\]
+	holds true.
+}
 
 \section*{15.2 Double Integrals over General Regions}
-\addcontentsline{toc}{section}{Double Integrals over Geenral Regions}
+\addcontentsline{toc}{section}{15.2 Double Integrals over Geenral Regions}
+
+\subsection*{General Regions}
+\addcontentsline{toc}{subsection}{General Regions}
+
+
+
+\defrose{General Regions}{
+	CConsider a general region \( D \) which is bounded, which means that \( D \) can be enclosed in a rectangular region \( R \). In order to integrate a function \( f \) over \( D \), we define a new function \( F \) with domain \( R \) by
+	\[
+	F(x, y) =
+	\begin{cases} 
+	f(x, y) & \text{if } (x, y) \text{ is in } D \\
+	0 & \text{if } (x, y) \text{ is in } R \text{ but not in } D
+	\end{cases}
+	\]
+	\insertpng[0.35]{region.png}
+	\[
+	\iint\limits_{D} f(x, y) \, dA = \iint\limits_{R} F(x, y) \, dA
+	\]
+	where \( F \) is given by the above equation.
+}
+
+\defrose{Type 1}{
+	AA plane region \( D \) is said to be of \textbf{type I} if it lies between the graphs of two continuous functions of \( x \), that is,
+	\begin{equation}
+		D = \{ (x, y) \mid a \leq x \leq b, \ g_1(x) \leq y \leq g_2(x) \}
+	\end{equation}
+	where \( g_1 \) and \( g_2 \) are continuous on \( [a, b] \).
+
+	If \( f \) is continuous on a type I region \( D \) described by
+	\[
+	D = \{(x, y) \mid a \leq x \leq b, \ g_1(x) \leq y \leq g_2(x)\}
+	\]
+	then
+	\begin{equation}
+		\iint\limits_{D} f(x, y) \, dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f(x, y) \, dy dx
+	\end{equation}
+
+}
+
+
+\defrose{Type II}{
+	I If \( f \) is continuous on a type II region \( D \) described by
+	\begin{equation}
+		D = \{(x, y) \mid c \leq y \leq d, \ h_1(y) \leq x \leq h_2(y)\}
+	\end{equation}
+	then
+	\begin{equation}
+		\iint\limits_{D} f(x, y) \, dA = \int_c^d \int_{h_1(y)}^{h_2(y)} f(x, y) \, dx dy	
+	\end{equation}
+}
+
+\subsection*{Changing the Order of Integration}
+\addcontentsline{toc}{subsection}{Changing the Order of Integration}
+
+\defrose{Changing order of Integeration}{
+    A \textbf{Changing the Order of Integration} allows us to evaluate a double integral by reversing the order of integration. This is particularly useful when one order is difficult or impossible to compute directly.
+
+    Given a double integral over a region \(D\):
+    \[ \iint_D f(x, y) \, dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f(x, y) \, dy \, dx, \]
+    we can rewrite it by reversing the integration order as:
+    \[ \iint_D f(x, y) \, dA = \int_c^d \int_{h_1(y)}^{h_2(y)} f(x, y) \, dx \, dy. \]
+
+    Here, \(D\) must be redefined appropriately to describe the region based on the new order of integration. This transformation simplifies the evaluation when the original order is difficult or impractical.
+
+}
 
 \section*{15.3 Double Integrals in Polar Coordinates}
-\addcontentsline{toc}{section}{Double Integrals in Polar Coordinates}
+\addcontentsline{toc}{section}{15.3 Double Integrals in Polar Coordinates}
+
+\defrose{Rectangle to Polar Coordinates in Double Integerals}{
+	IIf \( f \) is continuous on a polar rectangle \( R \) given by \( 0 \leq a \leq r \leq b \), \( \alpha \leq \theta \leq \beta \), where \( 0 \leq \beta - \alpha \leq 2\pi \), then
+	\begin{equation}
+		\iint\limits_R f(x, y) \, dA = \int_{\alpha}^{\beta} \int_{a}^{b} f(r \cos \theta, r \sin \theta) \, r \, dr \, d\theta
+	\end{equation}
+}
+
+\defrose{Polar Region Double Integration}{
+	IIf \( f \) is continuous on a polar region of the form\\
+	\[
+	D = \{(r, \theta) \mid \alpha \leq \theta \leq \beta, h_1(\theta) \leq r \leq h_2(\theta)\}
+	\]
+	then
+	\begin{equation}
+		\iint\limits_D f(x, y) \, dA = \int_{\alpha}^{\beta} \int_{h_1(\theta)}^{h_2(\theta)} f(r \cos \theta, r \sin \theta) \, r \, dr \, d\theta
+	\end{equation}
+}
 
 \section*{15.6 Triple Integrals}
 \addcontentsline{toc}{section}{Triple integrals}
@@ -630,13 +1051,160 @@
 \addcontentsline{toc}{chapter}{Vector Calculus}
 
 \section*{16.1 Vector Fields}
-\addcontentsline{toc}{section}{Vector Fields}
+\addcontentsline{toc}{section}{16.1 Vector Fields}
+
+\subsection*{Vector Fields in $\mathbb{R}^{2} \text{ and } \mathbb{R}^{3}$}
+\addcontentsline{toc}{subsection}{Vector Fields in $\mathbb{R}^{2} \text{ and } \mathbb{R}^{3}$}
+
+\defrose{Vector Field}{
+	LLet \( D \) be a set in \( \mathbb{R}^2 \) (a plane region). A \textbf{vector field on \( \mathbb{R}^2 \)} is a function \( \mathbf{F} \) that assigns to each point \( (x, y) \) in \( D \) a two-dimensional vector \( \mathbf{F}(x, y) \).
+}
+
+\defrose{3 Dimensional Vector Fields}{
+	LLet \( E \) be a subset of \( \mathbb{R}^3 \). A \textbf{vector field on \( \mathbb{R}^3 \)} is a function \( \mathbf{F} \) that assigns to each point \( (x, y, z) \) in \( E \) a three-dimensional vector \( \mathbf{F}(x, y, z) \).
+}
+
+\subsection*{Gradient Fields}
+\addcontentsline{toc}{subsection}{Gradient Fields}
+
+\defrose{Gradient Fields}{
+	IIf \( f \) is a scalar function of two variables, its gradient \( \nabla f \) (also called grad \( f \)) is defined by
+	\[
+	\nabla f(x, y) = f_x(x, y) \mathbf{i} + f_y(x, y) \mathbf{j}
+	\]
+	Therefore, \( \nabla f \) is a vector field on \( \mathbb{R}^2 \) and is called a \textbf{gradient vector field}. Similarly, if \( f \) is a scalar function of three variables, its gradient is a vector field on \( \mathbb{R}^3 \), given by
+	\[
+	\nabla f(x, y, z) = f_x(x, y, z) \mathbf{i} + f_y(x, y, z) \mathbf{j} + f_z(x, y, z) \mathbf{k}
+	\]
+}
 
 \section*{16.2 Line Integrals}
 \addcontentsline{toc}{section}{Line Integrals}
 
+
+\subsection*{Line Integrals in the Planes}
+\addcontentsline{toc}{subsection}{Line Integrals in the Plane}
+
+\defrose{Line Integerals}{
+	IIf \( f \) is defined on a smooth curve \( C \) given by 
+	\[ x = x(t) \quad y = y(t) \quad a \leq t \leq b \] 
+	then the \textbf{line integral} of \( f \) along \( C \) is
+	\begin{equation}
+		\int_C f(x, y) \, ds = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*, y_i^*) \Delta s_i
+	\end{equation}
+	if this limit exists.
+}
+
+\defrose{Evaluation of Line Integerals}{
+	TThe length of the curve \( C \) is
+	\[
+	L = \int_a^b \sqrt{\left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2} \, dt
+	\]
+
+	If \( f \) is continuous, the following formula can be used to evaluate the line integral of \( f \) along \( C \):
+	\begin{equation}
+		\int_C f(x, y) \, ds = \int_a^b f(x(t), y(t)) \sqrt{\left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2} \, dt
+	\end{equation}
+}
+
+\subsection*{Line Integrals with Respect to $x$ or $y$}
+\addcontentsline{toc}{subsection}{Line Integrals with Respect to $x$ or $y$}
+
+\defrose{Line Integrals with Respect to x or y}{
+	TTwo other types of line integrals are obtained by replacing \( \Delta s_i \) by either \( \Delta x_i = x_i - x_{i-1} \) or \( \Delta y_i = y_i - y_{i-1} \). They are called the \textbf{line integrals of \( f \) along \( C \) with respect to \( x \) and \( y \)}:
+	\begin{equation}
+		\int_C f(x, y) \, dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*, y_i^*) \Delta x_i
+	\end{equation}
+
+	\begin{equation}
+		\int_C f(x, y) \, dy = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*, y_i^*) \Delta y_i
+	\end{equation}	
+
+	These line integrals can also be evaluated in terms of a parameter \( t \), where \( x = x(t) \), \( y = y(t) \), and:
+	
+	\begin{equation}
+		\int_C f(x, y) \, dx = \int_a^b f(x(t), y(t)) x'(t) \, dt
+	\end{equation}
+
+	\begin{equation}
+		\int_C f(x, y) \, dy = \int_a^b f(x(t), y(t)) y'(t) \, dt
+	\end{equation}
+}
+
+\subsection*{Line Integrals in Space}
+\addcontentsline{toc}{subsection}{Line Integrals in Space}
+
+\defrose{Line Integerals in Space}{
+	EEquation: 
+	\begin{equation}
+		\int_C f(x, y, z) \, ds = \int_a^b f(x(t), y(t), z(t)) \sqrt{\left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 + \left( \frac{dz}{dt} \right)^2} \, dt
+	\end{equation}
+}
+
+\subsection*{Line Integrals of Vector Fields; Work}
+
+\defrose{Line Integral and Work on a Vector Field}{
+    TThe \textbf{work} \( W \) done by a continuous vector field \( \mathbf{F} \) along a smooth curve \( C \) is defined as the line integral of \( \mathbf{F} \) along \( C \). If 
+    \[
+    \mathbf{F}(x, y, z) = P(x, y, z)\mathbf{i} + Q(x, y, z)\mathbf{j} + R(x, y, z)\mathbf{k},
+    \]
+    and \( C \) is parameterized by a vector function 
+    \[
+    \mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j} + z(t)\mathbf{k}, \quad t \in [a, b],
+    \]
+    then the work is given by:
+    \[
+    W = \int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t) \, dt.
+    \]
+    
+    Equivalently, this can be expressed in terms of the components of \( \mathbf{F} \) and the derivatives of \( \mathbf{r}(t) \) as:
+    \[
+    W = \int_a^b \left[ P(x(t), y(t), z(t)) \frac{dx}{dt} + Q(x(t), y(t), z(t)) \frac{dy}{dt} + R(x(t), y(t), z(t)) \frac{dz}{dt} \right] dt.
+    \]
+    
+    Or, in differential form:
+    \[
+    W = \int_C P \, dx + Q \, dy + R \, dz.
+    \]
+    
+}
+
 \section*{16.3 The fundamental Theorem for Line Integrals}
 \addcontentsline{toc}{section}{The fundamental Theorem for Line Integrals}
+
+\subsection*{The Fundamental Theorem for Line Integrals}
+\addcontentsline{toc}{subsection}{The Fundamental Theorem for Line Integrals}
+
+\defrose{Fundamental Theorem for Line Integrals}{
+    IIf we think of the gradient vector \( \nabla f \) of a function \( f \) of two or three variables as a derivative of \( f \), then the following theorem can be regarded as a version of the Fundamental Theorem for line integrals: \\
+
+    Let \( C \) be a smooth curve given by the vector function \( \mathbf{r}(t) \), \( a \leq t \leq b \). Let \( f \) be a differentiable function of two or three variables whose gradient vector \( \nabla f \) is continuous on \( C \). Then:
+    \[
+    \int_C \nabla f \cdot d\mathbf{r} = f(\mathbf{r}(b)) - f(\mathbf{r}(a)).
+    \]
+    
+    \subsection*{Note 1}
+    Theorem 2 states that we can evaluate the line integral of a conservative vector field (the gradient vector field of the potential function \( f \)) simply by knowing the value of \( f \) at the endpoints of \( C \). In fact, Theorem 2 says that the line integral of \( \nabla f \) is the net change in \( f \). For example:
+    
+    - If \( f \) is a function of two variables and \( C \) is a plane curve with initial point \( A(x_1, y_1) \) and terminal point \( B(x_2, y_2) \), then:
+    \[
+    \int_C \nabla f \cdot d\mathbf{r} = f(x_2, y_2) - f(x_1, y_1).
+    \]
+    
+    - If \( f \) is a function of three variables and \( C \) is a space curve joining the point \( A(x_1, y_1, z_1) \) to the point \( B(x_2, y_2, z_2) \), then:
+    \[
+    \int_C \nabla f \cdot d\mathbf{r} = f(x_2, y_2, z_2) - f(x_1, y_1, z_1).
+    \]
+    
+    \subsection*{Note 2}
+    Under the hypotheses of Theorem 2, if \( C_1 \) and \( C_2 \) are smooth curves with the same initial points and the same terminal points, then:
+    \[
+    \int_{C_1} \nabla f \cdot d\mathbf{r} = \int_{C_2} \nabla f \cdot d\mathbf{r}.
+    \]
+    
+    This highlights that for conservative vector fields, the line integral depends only on the endpoints of the curve, not the path taken between them.
+    
+}
 
 \section*{16.4 Green's Theorem}
 \addcontentsline{toc}{section}{Stokes' Theorem}
