@@ -463,6 +463,9 @@
     The binormal vector \(\mathbf{B}(t)\) is orthogonal to both \(\mathbf{T}(t)\) and \(\mathbf{N}(t)\) and is also a unit vector.
 }
 
+\subsection*{Planes}
+\addcontentsline{toc}{subsection}{Planes}
+
 \defrose{Normal Plane}{
     TThe \textbf{normal plane} of a curve \(C\) at a point \(P\) is the plane determined by the normal vector \(\mathbf{N}(t)\) and the binormal vector \(\mathbf{B}(t)\). It is orthogonal to the tangent vector \(\mathbf{T}(t)\) and consists of all lines passing through \(P\) that are orthogonal to \(\mathbf{T}(t)\).}
 
@@ -510,18 +513,84 @@
 \addcontentsline{toc}{subsection}{Functions of Two Variables}
 
 \defrose{Functions of Two Variables}{
-    AA \textbf{function of two variables} \(f(x, y)\) is a rule that assigns a unique real number \(f(x, y)\) to each ordered pair of real numbers \((x, y)\) in a domain \(D\).
+	AA function $f$ of two variables is a rule that assigns to each ordered pair of real numbers $(x, y)$ in a set $D$ a unique real number denoted by $f(x, y)$. The set $D$ is the \textit{domain} of $f$ and its \textit{range} is the set of values that $f$ takes on, that is, $\{ f(x, y) \mid (x, y) \in D \}$.
+}
 
-    \begin{itemize}
-        \item The \textbf{domain} of \(f\) is the set \(D\) of all pairs \((x, y)\) for which \(f(x, y)\) is defined.
-        \item The \textbf{range} of \(f\) is the set of all values \(f(x, y)\) takes on.
-    \end{itemize}
-    
-    The variables \(x\) and \(y\) are called \textbf{independent variables}, and \(z = f(x, y)\) is the \textbf{dependent variable}.
+\subsection*{Graphs of Two Variables}
+\addcontentsline{toc}{subsection}{Graphs of Two Variables}
+
+\defrose{Graph of a Function of Two Variables}{
+	DDefintion If $f$ is a function of two variables with domain $D$, then the \textit{graph} of $f$ is the set of all points $(x, y, z)$ in $\mathbb{R}^3$ such that $z = f(x, y)$ and $(x, y)$ is in $D$.
+}
+
+\subsection*{Level Curves and Contour Maps}
+\addcontentsline{toc}{subsection}{Level Curves and Contour Maps}
+
+\defrose{Level Curves and Contour Maps}{
+	TThe \textit{level curves} of a function $f$ of two variables are the curves with equations $f(x, y) = k$, where $k$ is a constant (in the range of $f$).
+}
+
+\subsection*{Functions of Three or More Variables}
+\addcontentsline{toc}{subsection}{Functions of Three or More Variables}
+
+\defrose{Functions of Three Variables}{
+	AA \textbf{function of three variables}, $f$, is a rule that assigns to each ordered triple $(x, y, z)$ in a domain $D \subseteq \mathbb{R}^3$ a unique real number denoted by $f(x, y, z)$. 
 }
 
 \section*{14.3 Parital Derivatives}
 \addcontentsline{toc}{section}{Partial Derivatives}
+
+\subsection*{Partial Derivatives of Fuctions of Two Variables}
+\addcontentsline{toc}{subsection}{Partial Derivatives of Fuctions of Two Variables}
+
+\defrose{Partial Derivatives}{
+	DDefintion Partial Derivative with respect to x  
+	\[ f_x(a, b) = g'(a) \quad \text{where} \quad g(x) = f(x, b) \]
+	Defintion Partial Derivative with respect to y  
+	\[ f_y(a, b) = h'(a) \quad \text{where} \quad h(x) = f(a, y) \]
+
+}
+
+\ntimg{
+	If $z = f(x, y)$, we write
+
+	\[ f_x(x, y) = f_x = \frac{\partial f}{\partial x} = \frac{\partial}{\partial x} f(x, y) = \frac{\partial z}{\partial x} = f_1 = D_1 f = D_x f \]
+	
+	\[ f_y(x, y) = f_y = \frac{\partial f}{\partial y} = \frac{\partial}{\partial y} f(x, y) = \frac{\partial z}{\partial y} = f_2 = D_2 f = D_y f \]
+}
+
+\ntimg{
+	{\textbf{Rule for Finding Partial Derivatives of $z = f(x, y)$}}
+
+	\begin{enumerate}
+		\item To find $f_x$, regard $y$ as a constant and differentiate $f(x, y)$ with respect to $x$.
+		\item To find $f_y$, regard $x$ as a constant and differentiate $f(x, y)$ with respect to $y$.
+	\end{enumerate}
+}
+
+\subsection*{Interpretation of Partial Derivatives}
+\addcontentsline{toc}{subsection}{Interpretation of Partial Derivatives}
+
+\defrose{interpretation of Partial Derivatives}{
+	TTo understand partial derivatives geometrically, think of the equation 
+	$z = f(x, y)$ as representing a surface $S$ (the graph of $f$). If $f(a, b) = c$, 
+	then the point $P(a, b, c)$ lies on this surface. \\
+
+	By fixing $y = b$, we focus on the curve $C_1$ where the vertical plane $y = b$ 
+	intersects $S$. Similarly, fixing $x = a$ gives us the curve $C_2$, which is 
+	where the vertical plane $x = a$ intersects $S$. Both curves $C_1$ and $C_2$ 
+	pass through the point $P$. \\
+
+	The curve $C_1$ is the graph of the function $g(x) = f(x, b)$, and the slope of 
+	its tangent at $P$ is $f_x(a, b)$. The curve $C_2$ is the graph of $G(y) = f(a, y)$, 
+	and the slope of its tangent at $P$ is $f_y(a, b)$. \\
+
+	Thus, the partial derivatives $f_x(a, b)$ and $f_y(a, b)$ represent the slopes 
+	of the tangent lines at $P$ along these curves.
+
+	\insertpng[0.2]{partial.png}
+}
+
 
 \section*{14.5 The Chain Rule}
 \addcontentsline{toc}{section}{The Chain Rule}
