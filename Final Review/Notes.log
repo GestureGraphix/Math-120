@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  28 NOV 2024 14:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  28 NOV 2024 16:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1315,7 +1315,22 @@ LaTeX Warning: Label `def:T' multiply defined.
 LaTeX Warning: Label `def:T' multiply defined.
 
 
-LaTeX Warning: Label `def:I' multiply defined.
+LaTeX Warning: Label `def:T' multiply defined.
+
+
+LaTeX Warning: Label `def:T' multiply defined.
+
+
+LaTeX Warning: Label `def:A' multiply defined.
+
+
+LaTeX Warning: Label `def:A' multiply defined.
+
+
+LaTeX Warning: Label `def:A' multiply defined.
+
+
+LaTeX Warning: Label `def:G' multiply defined.
 
 
 LaTeX Warning: Label `def:T' multiply defined.
@@ -1513,7 +1528,7 @@ Missing character: There is no ; in font nullfont!
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 ...on}{Lagrange Multipliers}{19}{section*.61}
+l.59 ...4.8 Lagrange Multipliers}{20}{section*.62}
                                                   % [1
 
 ]
@@ -1521,7 +1536,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 74.
+(Font)              size <5> substituted on input line 76.
 
 )
 \tf@toc=\write5
@@ -1530,12 +1545,12 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 
 
 [2]
-<slime.png, id=329, 867.24pt x 530.2209pt>
+<slime.png, id=351, 867.24pt x 530.2209pt>
 File: slime.png Graphic file (type png)
 <use slime.png>
 Package pdftex.def Info: slime.png  used on input line 32.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-<lot.png, id=335, 2007.5pt x 2007.5pt>
+<lot.png, id=357, 2007.5pt x 2007.5pt>
 File: lot.png Graphic file (type png)
 <use lot.png>
 Package pdftex.def Info: lot.png  used on input line 42.
@@ -1796,7 +1811,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 592--592
 
  []
 
-<partial.png, id=471, 796.9775pt x 582.175pt>
+<partial.png, id=493, 796.9775pt x 582.175pt>
 File: partial.png Graphic file (type png)
 <use partial.png>
 Package pdftex.def Info: partial.png  used on input line 592.
@@ -1814,255 +1829,254 @@ Package pdftex.def Info: slime.png  used on input line 602.
 [15 <./partial.png>]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 618.
+Package pdftex.def Info: slime.png  used on input line 621.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 632.
+Package pdftex.def Info: slime.png  used on input line 635.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 639.
+Package pdftex.def Info: slime.png  used on input line 642.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 645.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 657.
+Package pdftex.def Info: slime.png  used on input line 648.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [16]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 669.
+Package pdftex.def Info: slime.png  used on input line 660.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 683.
+Package pdftex.def Info: slime.png  used on input line 672.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 686.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: lot.png Graphic file (type png)
 <use lot.png>
-Package pdftex.def Info: lot.png  used on input line 690.
+Package pdftex.def Info: lot.png  used on input line 693.
 (pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 697.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 734--734
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 734--734
-
- []
-
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 734.
+Package pdftex.def Info: slime.png  used on input line 700.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [17]
+Underfull \hbox (badness 10000) in paragraph at lines 737--737
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 737--737
+
+ []
+
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 737.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: lot.png Graphic file (type png)
 <use lot.png>
-Package pdftex.def Info: lot.png  used on input line 744.
+Package pdftex.def Info: lot.png  used on input line 747.
 (pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 754.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 770.
+Package pdftex.def Info: slime.png  used on input line 757.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [18]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 781.
+Package pdftex.def Info: slime.png  used on input line 773.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 787.
+Package pdftex.def Info: slime.png  used on input line 784.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 790.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: lot.png Graphic file (type png)
 <use lot.png>
-Package pdftex.def Info: lot.png  used on input line 795.
+Package pdftex.def Info: lot.png  used on input line 798.
 (pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--808
+Underfull \hbox (badness 10000) in paragraph at lines 815--815
 [][]\OT1/cmr/bx/n/10 Geometric Explanation of Lagrange Multipliers (One
  []
 
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 808.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 824.
+Package pdftex.def Info: slime.png  used on input line 815.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [19]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 839.
+Package pdftex.def Info: slime.png  used on input line 831.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 846.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [20]
-<vol.png, id=543, 769.87625pt x 607.26875pt>
+<vol.png, id=565, 769.87625pt x 607.26875pt>
 File: vol.png Graphic file (type png)
 <use vol.png>
-Package pdftex.def Info: vol.png  used on input line 860.
+Package pdftex.def Info: vol.png  used on input line 867.
 (pdftex.def)             Requested size: 230.96466pt x 182.18202pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 860.
+Package pdftex.def Info: slime.png  used on input line 867.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-<rect.png, id=544, 1071.00125pt x 630.355pt>
+<rect.png, id=566, 1071.00125pt x 630.355pt>
 File: rect.png Graphic file (type png)
 <use rect.png>
-Package pdftex.def Info: rect.png  used on input line 879.
+Package pdftex.def Info: rect.png  used on input line 886.
 (pdftex.def)             Requested size: 321.30286pt x 189.10796pt.
-<approx.png, id=545, 869.2475pt x 650.43pt>
+<approx.png, id=567, 869.2475pt x 650.43pt>
 File: approx.png Graphic file (type png)
 <use approx.png>
-Package pdftex.def Info: approx.png  used on input line 879.
+Package pdftex.def Info: approx.png  used on input line 886.
 (pdftex.def)             Requested size: 260.77626pt x 195.1305pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 879.
+Package pdftex.def Info: slime.png  used on input line 886.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [21
 
  <./vol.png>]
-<approxVol.png, id=552, 869.2475pt x 650.43pt>
+<approxVol.png, id=574, 869.2475pt x 650.43pt>
 File: approxVol.png Graphic file (type png)
 <use approxVol.png>
-Package pdftex.def Info: approxVol.png  used on input line 896.
+Package pdftex.def Info: approxVol.png  used on input line 903.
 (pdftex.def)             Requested size: 260.77626pt x 195.1305pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 896.
+Package pdftex.def Info: slime.png  used on input line 903.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [22 <./rect.png> <./approx.png>]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 905.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-File: slime.png Graphic file (type png)
-<use slime.png>
 Package pdftex.def Info: slime.png  used on input line 912.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 923.
+Package pdftex.def Info: slime.png  used on input line 919.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 930.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [23 <./approxVol.png>]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 949.
+Package pdftex.def Info: slime.png  used on input line 956.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-<region.png, id=571, 465.74pt x 313.17pt>
+<region.png, id=593, 465.74pt x 313.17pt>
 File: region.png Graphic file (type png)
 <use region.png>
-Package pdftex.def Info: region.png  used on input line 973.
+Package pdftex.def Info: region.png  used on input line 980.
 (pdftex.def)             Requested size: 163.01143pt x 109.61113pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 973.
+Package pdftex.def Info: slime.png  used on input line 980.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [24]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 991.
+Package pdftex.def Info: slime.png  used on input line 998.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1003.
+Package pdftex.def Info: slime.png  used on input line 1010.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1018.
+Package pdftex.def Info: slime.png  used on input line 1025.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [25 <./region.png>]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1028.
+Package pdftex.def Info: slime.png  used on input line 1035.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1039--1039
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
 
  []
 
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1039.
+Package pdftex.def Info: slime.png  used on input line 1046.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [26]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1057.
+(hyperref)                removing `math shift' on input line 1064.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\m@thbbch@rR' on input line 1057.
+(hyperref)                removing `\m@thbbch@rR' on input line 1064.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1057.
+(hyperref)                removing `superscript' on input line 1064.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\m@thbbch@rR' on input line 1057.
+(hyperref)                removing `\m@thbbch@rR' on input line 1064.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1057.
+(hyperref)                removing `superscript' on input line 1064.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1057.
+(hyperref)                removing `math shift' on input line 1064.
 
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1061.
+Package pdftex.def Info: slime.png  used on input line 1068.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1065.
+Package pdftex.def Info: slime.png  used on input line 1072.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1079.
+Package pdftex.def Info: slime.png  used on input line 1086.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1096.
+Package pdftex.def Info: slime.png  used on input line 1103.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1108.
+Package pdftex.def Info: slime.png  used on input line 1115.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
@@ -2071,162 +2085,212 @@ Package pdftex.def Info: slime.png  used on input line 1108.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1111.
+(hyperref)                removing `math shift' on input line 1118.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1111.
+(hyperref)                removing `math shift' on input line 1118.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1111.
+(hyperref)                removing `math shift' on input line 1118.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1111.
+(hyperref)                removing `math shift' on input line 1118.
 
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1132.
+Package pdftex.def Info: slime.png  used on input line 1139.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1142.
+Package pdftex.def Info: slime.png  used on input line 1149.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1170.
+Package pdftex.def Info: slime.png  used on input line 1177.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 1207--1207
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 1200.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1227
 
  []
 
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1207.
+Package pdftex.def Info: slime.png  used on input line 1227.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [29]
+Underfull \hbox (badness 10000) in paragraph at lines 1251--1251
+
+ []
+
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1238.
+Package pdftex.def Info: slime.png  used on input line 1251.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+<flow.png, id=653, 692.5875pt x 492.84125pt>
+File: flow.png Graphic file (type png)
+<use flow.png>
+Package pdftex.def Info: flow.png  used on input line 1283.
+(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
 
 
 [30]
-File: lot.png Graphic file (type png)
-<use lot.png>
-Package pdftex.def Info: lot.png  used on input line 1243.
-(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
-File: lot.png Graphic file (type png)
-<use lot.png>
-Package pdftex.def Info: lot.png  used on input line 1247.
-(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
-File: lot.png Graphic file (type png)
-<use lot.png>
-Package pdftex.def Info: lot.png  used on input line 1265.
-(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1284.
+Package pdftex.def Info: slime.png  used on input line 1297.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 1323.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
-[31]
-File: lot.png Graphic file (type png)
-<use lot.png>
-Package pdftex.def Info: lot.png  used on input line 1312.
-(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+[31 <./flow.png>]
+File: flow.png Graphic file (type png)
+<use flow.png>
+Package pdftex.def Info: flow.png  used on input line 1362.
+(pdftex.def)             Requested size: 42.67912pt x 30.36633pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1385
+
+ []
+
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1346.
+Package pdftex.def Info: slime.png  used on input line 1385.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [32]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1360.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1368.
+Package pdftex.def Info: slime.png  used on input line 1413.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [33]
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 1418.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 1422.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 1440.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1389.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1416.
-(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
-File: slime.png Graphic file (type png)
-<use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1439.
+Package pdftex.def Info: slime.png  used on input line 1459.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [34]
+File: lot.png Graphic file (type png)
+<use lot.png>
+Package pdftex.def Info: lot.png  used on input line 1487.
+(pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1453.
+Package pdftex.def Info: slime.png  used on input line 1521.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1474.
+Package pdftex.def Info: slime.png  used on input line 1535.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [35]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1506.
+Package pdftex.def Info: slime.png  used on input line 1543.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 1564.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 1591.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [36]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1536.
+Package pdftex.def Info: slime.png  used on input line 1614.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 1628.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [37]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1556.
+Package pdftex.def Info: slime.png  used on input line 1649.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 1681.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [38]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1593.
+Package pdftex.def Info: slime.png  used on input line 1711.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [39]
 File: slime.png Graphic file (type png)
 <use slime.png>
-Package pdftex.def Info: slime.png  used on input line 1624.
+Package pdftex.def Info: slime.png  used on input line 1731.
 (pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
 
 
 [40]
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 1768.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[41]
+File: slime.png Graphic file (type png)
+<use slime.png>
+Package pdftex.def Info: slime.png  used on input line 1799.
+(pdftex.def)             Requested size: 28.45274pt x 17.39459pt.
+
+
+[42]
 File: lot.png Graphic file (type png)
 <use lot.png>
-Package pdftex.def Info: lot.png  used on input line 1633.
+Package pdftex.def Info: lot.png  used on input line 1808.
 (pdftex.def)             Requested size: 28.45274pt x 28.42644pt.
 
 
-[41] (Notes.aux)
+[43] (Notes.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -2244,17 +2308,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 48171 strings out of 475839
- 1109774 string characters out of 5777281
- 1971905 words of memory out of 5000000
- 69659 multiletter control sequences out of 15000+600000
+ 48220 strings out of 475839
+ 1110559 string characters out of 5777281
+ 1968905 words of memory out of 5000000
+ 69688 multiletter control sequences out of 15000+600000
  597219 words of font info for 149 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  99i,16n,102p,818b,1759s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk> </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmb10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
-Output written on Notes.pdf (42 pages, 1795892 bytes).
+Output written on Notes.pdf (44 pages, 1824661 bytes).
 PDF statistics:
- 1167 PDF objects out of 1200 (max. 8388607)
- 301 named destinations out of 1000 (max. 500000)
- 1099 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1235 PDF objects out of 1440 (max. 8388607)
+ 321 named destinations out of 1000 (max. 500000)
+ 1160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

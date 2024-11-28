@@ -507,7 +507,7 @@
 \addcontentsline{toc}{chapter}{14 Partial Derivatives}
 
 \section*{14.1 Functions of Several Variables}
-\addcontentsline{toc}{section}{Functions of Several Variables}
+\addcontentsline{toc}{section}{14.1 Functions of Several Variables}
 
 \subsection*{Functions of Two Variables}
 \addcontentsline{toc}{subsection}{Functions of Two Variables}
@@ -538,7 +538,7 @@
 }
 
 \section*{14.3 Parital Derivatives}
-\addcontentsline{toc}{section}{Partial Derivatives}
+\addcontentsline{toc}{section}{14.3 Partial Derivatives}
 
 \subsection*{Partial Derivatives of Fuctions of Two Variables}
 \addcontentsline{toc}{subsection}{Partial Derivatives of Fuctions of Two Variables}
@@ -604,6 +604,9 @@
 \section*{14.4 Tangent Planes and Linear Approximations}
 \addcontentsline{toc}{section}{14.4 Tangent Planes and Linear Approximations}
 
+\subsection*{Tangent Plannes}   
+\addcontentsline{toc}{subsection}{Tangent Planes}
+
 \subsection*{Tangent Planes}
 \defrose{Tangent Plane}{
     TThe \textbf{tangent plane} to a surface \(z = f(x, y)\) at a point \(P(x_0, y_0, z_0)\), where \(z_0 = f(x_0, y_0)\), is the plane that best approximates the surface near \(P\). If \(f\) has continuous partial derivatives, the equation of the tangent plane is given by:
@@ -618,7 +621,7 @@
 }
 
 \section*{14.5 The Chain Rule}
-\addcontentsline{toc}{section}{The Chain Rule}
+\addcontentsline{toc}{section}{14.5 The Chain Rule}
 
 \subsection*{The Chain Rule}
 \addcontentsline{toc}{subsection}{The Chain Rule}
@@ -645,7 +648,7 @@
 }
 
 \subsection*{Implicit Differentiation}
-\addcontentsline{toc}{section}{Implicit Differentiation}
+\addcontentsline{toc}{subsection}{Implicit Differentiation}
 
 \defrose{Implicit Differentiation}{
 	DDefintion: 
@@ -657,7 +660,7 @@
 }
 
 \section*{14.6 Directional Derivatives and their Gradient Vectors}
-\addcontentsline{toc}{section}{Directional Derivatives and their Gradient Vectors}
+\addcontentsline{toc}{section}{14.6 Directional Derivatives and their Gradient Vectors}
 
 \subsection*{Directional Derivatives}
 \addcontentsline{toc}{section}{Directional Derivatives}
@@ -744,7 +747,7 @@
 }
 
 \section*{14.7 Maximum and Minimum Values}
-\addcontentsline{toc}{section}{Maximum and Minimum Values}
+\addcontentsline{toc}{section}{14.7 Maximum and Minimum Values}
 
 \subsection*{Local Maximum and Minimum Values}
 \addcontentsline{toc}{subsection}{Local Maximum and Minimum Values}
@@ -796,7 +799,11 @@
 
 
 \section*{14.8 Lagrange Multipliers}
-\addcontentsline{toc}{section}{Lagrange Multipliers}
+\addcontentsline{toc}{section}{14.8 Lagrange Multipliers}
+
+\subsection*{Lagrange Multipliers: One Constraint}
+\addcontentsline{toc}{subsection}{Lagrange Multipliers: One Constraint}
+
 
 \defrose{Geometric Explanation of Lagrange Multipliers (One Constraint)}{
     TTo find the maximum or minimum of \( f(x, y) \) under a constraint \( g(x, y) = k \), 
@@ -1079,7 +1086,7 @@
 }
 
 \section*{16.2 Line Integrals}
-\addcontentsline{toc}{section}{Line Integrals}
+\addcontentsline{toc}{section}{16.2 Line Integrals}
 
 
 \subsection*{Line Integrals in the Planes}
@@ -1170,44 +1177,212 @@
 }
 
 \section*{16.3 The fundamental Theorem for Line Integrals}
-\addcontentsline{toc}{section}{The fundamental Theorem for Line Integrals}
+\addcontentsline{toc}{section}{16.3 The fundamental Theorem for Line Integrals}
 
 \subsection*{The Fundamental Theorem for Line Integrals}
 \addcontentsline{toc}{subsection}{The Fundamental Theorem for Line Integrals}
 
 \defrose{Fundamental Theorem for Line Integrals}{
-    IIf we think of the gradient vector \( \nabla f \) of a function \( f \) of two or three variables as a derivative of \( f \), then the following theorem can be regarded as a version of the Fundamental Theorem for line integrals: \\
+    TThe Fundamental Theorem for Line Integrals states that if a vector field is conservative (i.e., it is the gradient of some scalar function \( f \)), the line integral of the vector field over a smooth curve \( C \) depends only on the values of \( f \) at the endpoints of the curve. This means the integral is path-independent.
 
-    Let \( C \) be a smooth curve given by the vector function \( \mathbf{r}(t) \), \( a \leq t \leq b \). Let \( f \) be a differentiable function of two or three variables whose gradient vector \( \nabla f \) is continuous on \( C \). Then:
+    \vspace{1em}
+    
+    \textbf{Mathematical Definition:}  
+    Let \( \mathbf{F} = \nabla f \) (a conservative vector field where \( f \) is the potential function), and let \( C \) be a smooth curve parameterized by \( \mathbf{r}(t) \) for \( t \in [a, b] \). Then:
     \[
-    \int_C \nabla f \cdot d\mathbf{r} = f(\mathbf{r}(b)) - f(\mathbf{r}(a)).
+    \int_C \mathbf{F} \cdot d\mathbf{r} = f(\mathbf{r}(b)) - f(\mathbf{r}(a)),
     \]
-    
-    \subsection*{Note 1}
-    Theorem 2 states that we can evaluate the line integral of a conservative vector field (the gradient vector field of the potential function \( f \)) simply by knowing the value of \( f \) at the endpoints of \( C \). In fact, Theorem 2 says that the line integral of \( \nabla f \) is the net change in \( f \). For example:
-    
-    - If \( f \) is a function of two variables and \( C \) is a plane curve with initial point \( A(x_1, y_1) \) and terminal point \( B(x_2, y_2) \), then:
-    \[
-    \int_C \nabla f \cdot d\mathbf{r} = f(x_2, y_2) - f(x_1, y_1).
-    \]
-    
-    - If \( f \) is a function of three variables and \( C \) is a space curve joining the point \( A(x_1, y_1, z_1) \) to the point \( B(x_2, y_2, z_2) \), then:
-    \[
-    \int_C \nabla f \cdot d\mathbf{r} = f(x_2, y_2, z_2) - f(x_1, y_1, z_1).
-    \]
-    
-    \subsection*{Note 2}
-    Under the hypotheses of Theorem 2, if \( C_1 \) and \( C_2 \) are smooth curves with the same initial points and the same terminal points, then:
-    \[
-    \int_{C_1} \nabla f \cdot d\mathbf{r} = \int_{C_2} \nabla f \cdot d\mathbf{r}.
-    \]
-    
-    This highlights that for conservative vector fields, the line integral depends only on the endpoints of the curve, not the path taken between them.
-    
+    where:
+    \begin{itemize}
+        \item \( \mathbf{r}(a) \) and \( \mathbf{r}(b) \) are the initial and terminal points of the curve \( C \),
+        \item \( \nabla f \) is the gradient of \( f \), which represents the vector field \( \mathbf{F} \).
+    \end{itemize}    
 }
+
+\subsection*{Independence of path}
+\addcontentsline{toc}{subsection}{Independence of Path}
+
+\defrose{Path Independence}{
+    TThe \textbf{Independence of Path} property states that for a conservative vector field \( \mathbf{F} \), the line integral between two points depends only on the endpoints, not on the path taken. This implies that the line integral over any closed path is zero. \\
+
+
+    Additionally, if the line integral of \( \mathbf{F} \) over all closed paths in a domain \( D \) is zero, then \( \mathbf{F} \) is a conservative vector field, and there exists a potential function \( f \) such that \( \mathbf{F} = \nabla f \).
+
+    \vspace{1em}
+
+    \textbf{Mathematical Definition:}
+
+    1. \textbf{Independence of Path:}  
+    If \( \mathbf{F} \) is a continuous vector field in a domain \( D \), then \( \int_C \mathbf{F} \cdot d\mathbf{r} \) is independent of the path \( C \) if and only if:
+    \[
+    \int_C \mathbf{F} \cdot d\mathbf{r} = 0
+    \]
+    for every closed path \( C \) in \( D \). \\
+
+    2. \textbf{Theorem:}  
+    Suppose \( \mathbf{F} \) is a vector field that is continuous on an open connected region \( D \). If \( \int_C \mathbf{F} \cdot d\mathbf{r} \) is independent of path in \( D \), then \( \mathbf{F} \) is a conservative vector field on \( D \), meaning there exists a potential function \( f \) such that:
+    \[
+    \nabla f = \mathbf{F}.
+    \]
+}
+
+\subsection*{Conservative Vector Fields and Potential Functions}
+\addcontentsline{toc}{subsection}{Conservative Vector Fields and Potential Functions}
+
+\defrose{Conservative Vector Fields}{
+    AA vector field \( \mathbf{F} \) is conservative if it can be expressed as the gradient of a scalar potential function \( f \), i.e., \( \mathbf{F} = \nabla f \). This implies that the curl of \( \mathbf{F} \) is zero, and the field is path-independent.  \\
+
+    For conservative fields in two dimensions, specific conditions involving the partial derivatives of the components \( P \) and \( Q \) can help verify conservativeness.
+
+    \vspace{1em}
+
+    \textbf{Mathematical Definitions:}
+
+    1. If \( \mathbf{F}(x, y) = P(x, y) \, \mathbf{i} + Q(x, y) \, \mathbf{j} \) is a conservative vector field, where \( P \) and \( Q \) have continuous first-order partial derivatives throughout a domain \( D \), then:
+    \[
+    \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}.
+    \]
+
+    2. Let \( \mathbf{F}(x, y) = P(x, y) \, \mathbf{i} + Q(x, y) \, \mathbf{j} \) be a vector field on an open simply-connected region \( D \). If \( P \) and \( Q \) have continuous first-order partial derivatives and:
+    \[
+    \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x},
+    \]
+    throughout \( D \), then \( \mathbf{F} \) is a conservative vector field on \( D \).
+}
+
+\exrose{Generalized Steps to Solve for Potential Functions}{
+    \begin{enumerate}
+        \item \textbf{Check Conservativity}: Verify if the vector field is conservative:
+        \[
+        \nabla \times \mathbf{F} = 0 \quad \text{(in } \mathbb{R}^3 \text{)}, \quad 
+        \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \quad \text{(in } \mathbb{R}^2 \text{)}.
+        \]
+    
+        \item \textbf{Set Gradient Relations}: Assume \( \mathbf{F} = \nabla f \), which gives:
+        \[
+        f_x = P, \quad f_y = Q, \quad f_z = R.
+        \]
+    
+        \item \textbf{Integrate First Component}: Solve for \( f \) using \( f_x = P \):
+        \[
+        f(x, y, z) = \int P \, dx + g(y, z).
+        \]
+    
+        \item \textbf{Differentiate and Compare}: Use \( f_y = Q \) to determine \( g(y, z) \):
+        \[
+        f_y = \frac{\partial}{\partial y}\left(\int P \, dx + g(y, z)\right),
+        \]
+        and compare with \( Q \).
+    
+        \item \textbf{Repeat for Remaining Component}: Use \( f_z = R \) to find any remaining terms in \( g(y, z) \):
+        \[
+        f_z = \frac{\partial}{\partial z} f(x, y, z).
+        \]
+    
+        \item \textbf{Combine Results}: Combine all terms to construct \( f(x, y, z) \), including constants of integration.
+    \end{enumerate}}
 
 \section*{16.4 Green's Theorem}
 \addcontentsline{toc}{section}{Stokes' Theorem}
+
+\subsection*{Green's Theorem}
+\addcontentsline{toc}{subsection}{Green's Theorem}
+
+\defrose{Green's Theorem}{
+    A \textbf{Definition:} Green's Theorem states that the line integral of a vector field \( \mathbf{F} = \langle P, Q \rangle \) around a simple, closed curve \( C \) is equal to the double integral of the curl of \( \mathbf{F} \) over the region \( D \) enclosed by \( C \).
+
+    \[ \oint_C P \, dx + Q \, dy = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \, dA. \]
+    
+    \textbf{Concept:} Green's Theorem relates the circulation of a vector field along a curve (the boundary \( C \)) to the cumulative curl (rotation) of the field within the enclosed region \( D \). It connects local properties (curl) to global properties (line integral).
+}
+
+\subsection*{Finding Areas with Green's Theorem}
+\addcontentsline{toc}{subsection}{Finding Areas with Green's Theorem}
+
+\defrose{Finding Area using Green's Theorem}{
+    A 
+    \textbf{Conceptual Explanation:}  
+    Green's Theorem can be used to compute the area \( A \) of a region \( D \) enclosed by a positively oriented, simple closed curve \( C \). By choosing \( P(x, y) \) and \( Q(x, y) \) such that the curl condition 
+    \[
+    \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 1
+    \]
+    is satisfied, the area can be calculated directly using a line integral.
+    
+    \textbf{Mathematical Formulation:}  
+    From Green's Theorem:
+    \[
+    A = \iint_D 1 \, dA = \oint_C \left( P \, dx + Q \, dy \right),
+    \]
+    where \( P(x, y) \) and \( Q(x, y) \) satisfy:
+    \[
+    \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 1.
+    \]
+
+    \textbf{Key Insight:}  
+    The line integral simplifies the area computation by converting the problem of finding the area \( D \) into evaluating the boundary integral around \( C \).    
+}
+
+\exrose{Special Cases}{
+    \textbf{Special Cases for \( P(x, y) \) and \( Q(x, y) \):}
+    \begin{itemize}
+        \item \( P(x, y) = 0 \), \( Q(x, y) = x \): 
+        \[
+        A = \oint_C x \, dy
+        \]
+        \item \( P(x, y) = -y \), \( Q(x, y) = 0 \): 
+        \[
+        A = -\oint_C y \, dx
+        \]
+        \item \( P(x, y) = -\frac{1}{2}y \), \( Q(x, y) = \frac{1}{2}x \): 
+        \[
+        A = \frac{1}{2} \oint_C \left( x \, dy - y \, dx \right).
+        \]
+    \end{itemize}
+    
+    \textbf{Example:}  
+    For an ellipse \( \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \), parametrized by:
+    \[
+    x = a \cos t, \quad y = b \sin t, \quad t \in [0, 2\pi],
+    \]
+    the area can be computed as:
+    \[
+    A = \frac{1}{2} \oint_C \left( x \, dy - y \, dx \right).
+    \]
+    
+    Substitute \( x = a \cos t \) and \( y = b \sin t \):
+    \[
+    A = \frac{1}{2} \int_0^{2\pi} \left[ (a \cos t)(b \cos t) - (b \sin t)(-a \sin t) \right] dt.
+    \]
+    
+    Simplify:
+    \[
+    A = \frac{ab}{2} \int_0^{2\pi} dt = \pi ab.
+    \]
+    
+}
+
+\subsection*{Extended Version of Green's Theorem}
+\addcontentsline{toc}{subsection}{Extended Version of Green's Theorem}
+
+\defrose{Extended Version of Green's Theorem}{
+    GGreen's Theorem can be extended to apply to regions that are unions of multiple simple regions or regions with holes. For such cases:
+    \begin{itemize}
+        \item The region \( D \) is divided into subregions \( D_1, D_2, \dots \), each with simple boundaries.
+        \item The boundaries of the subregions are oriented consistently such that shared edges cancel when summing the line integrals, preserving the integrity of the theorem.
+    \end{itemize}
+    
+    \textbf{Mathematical Formulation:}  
+    For a region \( D = D_1 \cup D_2 \) (union of two subregions):
+    \[ \oint_{C_1 \cup C_3} P \, dx + Q \, dy = \iint_{D_1} \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \, dA, \]
+    \[ \oint_{C_2 \cup (-C_3)} P \, dx + Q \, dy = \iint_{D_2} \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \, dA. \]
+    
+    Adding these results cancels the shared boundary integrals:
+    \[ \oint_{C_1 \cup C_2} P \, dx + Q \, dy = \iint_{D} \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \, dA, \]
+    where \( C = C_1 \cup C_2 \) is the outer boundary of \( D \). \\
+    
+    For regions with holes, the boundary \( C \) includes both the outer boundary \( C_1 \) (counterclockwise) and the inner boundary \( C_2 \) (clockwise):
+    \[ \iint_{D} \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \, dA = \oint_{C_1} P \, dx + Q \, dy + \oint_{C_2} P \, dx + Q \, dy. \]
+}
 
 \section*{16.5 Curl and Divergence}
 \addcontentsline{toc}{section}{Curl and Divergence}

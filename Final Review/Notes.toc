@@ -34,55 +34,62 @@
 \contentsline {section}{13.4 Motion in Space: Velocity and Acceleration}{13}{section*.36}%
 \contentsline {subsection}{Velocity, Speed, and Acceleration}{13}{section*.37}%
 \contentsline {chapter}{14 Partial Derivatives}{14}{chapter*.38}%
-\contentsline {section}{Functions of Several Variables}{14}{section*.39}%
+\contentsline {section}{14.1 Functions of Several Variables}{14}{section*.39}%
 \contentsline {subsection}{Functions of Two Variables}{14}{section*.40}%
 \contentsline {subsection}{Graphs of Two Variables}{14}{section*.41}%
 \contentsline {subsection}{Level Curves and Contour Maps}{14}{section*.42}%
 \contentsline {subsection}{Functions of Three or More Variables}{14}{section*.43}%
-\contentsline {section}{Partial Derivatives}{15}{section*.44}%
+\contentsline {section}{14.3 Partial Derivatives}{15}{section*.44}%
 \contentsline {subsection}{Partial Derivatives of Fuctions of Two Variables}{15}{section*.45}%
 \contentsline {subsection}{Interpretation of Partial Derivatives}{15}{section*.46}%
 \contentsline {subsection}{Higher Derivatives}{16}{section*.47}%
 \contentsline {section}{14.4 Tangent Planes and Linear Approximations}{16}{section*.48}%
-\contentsline {section}{The Chain Rule}{16}{section*.50}%
-\contentsline {subsection}{The Chain Rule}{16}{section*.51}%
-\contentsline {section}{Implicit Differentiation}{17}{section*.52}%
-\contentsline {section}{Directional Derivatives and their Gradient Vectors}{17}{section*.53}%
-\contentsline {section}{Directional Derivatives}{17}{section*.54}%
-\contentsline {subsection}{The Gradient Vector}{17}{section*.55}%
-\contentsline {subsection}{Maximizing the Directional Derivative}{17}{section*.56}%
-\contentsline {subsection}{Tangent Planes to Level Surfaces}{18}{section*.57}%
-\contentsline {section}{Maximum and Minimum Values}{18}{section*.58}%
-\contentsline {subsection}{Local Maximum and Minimum Values}{18}{section*.59}%
-\contentsline {subsection}{Absolute Maximum and Minimum Values}{19}{section*.60}%
-\contentsline {section}{Lagrange Multipliers}{19}{section*.61}%
-\contentsline {subsection}{Lagrange Multipliers: Two Constraints}{20}{section*.62}%
-\contentsline {chapter}{15 Multiple Integrals}{21}{chapter*.63}%
-\contentsline {section}{15.1 Double Integrals over Rectangles}{21}{section*.64}%
-\contentsline {subsection}{Volumes and Double Integrals}{21}{section*.65}%
-\contentsline {subsection}{Iterated Integrals}{24}{section*.66}%
-\contentsline {subsection}{Average Value}{24}{section*.67}%
-\contentsline {section}{15.2 Double Integrals over Geenral Regions}{25}{section*.68}%
-\contentsline {subsection}{General Regions}{25}{section*.69}%
-\contentsline {subsection}{Changing the Order of Integration}{26}{section*.70}%
-\contentsline {section}{15.3 Double Integrals in Polar Coordinates}{26}{section*.71}%
-\contentsline {section}{Triple integrals}{26}{section*.72}%
-\contentsline {section}{Triple Integral in Cylindrical Coordinates}{26}{section*.73}%
-\contentsline {section}{Triple Integrals in Spherical Coordinates}{26}{section*.74}%
-\contentsline {chapter}{Vector Calculus}{27}{chapter*.75}%
-\contentsline {section}{16.1 Vector Fields}{27}{section*.76}%
-\contentsline {subsection}{Vector Fields in $\varmathbb {R}^{2} \text { and } \varmathbb {R}^{3}$}{27}{section*.77}%
-\contentsline {subsection}{Gradient Fields}{27}{section*.78}%
-\contentsline {section}{Line Integrals}{27}{section*.79}%
-\contentsline {subsection}{Line Integrals in the Plane}{27}{section*.80}%
-\contentsline {subsection}{Line Integrals with Respect to $x$ or $y$}{28}{section*.81}%
-\contentsline {subsection}{Line Integrals in Space}{28}{section*.82}%
-\contentsline {section}{The fundamental Theorem for Line Integrals}{30}{section*.84}%
-\contentsline {subsection}{The Fundamental Theorem for Line Integrals}{30}{section*.85}%
-\contentsline {section}{Stokes' Theorem}{31}{section*.88}%
-\contentsline {section}{Curl and Divergence}{31}{section*.89}%
-\contentsline {section}{Parametric Surfaces and Their Areas}{33}{section*.96}%
-\contentsline {section}{Surface Integral}{37}{section*.106}%
-\contentsline {section}{Stokes' Theorem}{41}{section*.120}%
-\contentsline {section}{The Divergence Theorem}{41}{section*.121}%
+\contentsline {subsection}{Tangent Planes}{16}{section*.49}%
+\contentsline {section}{14.5 The Chain Rule}{16}{section*.51}%
+\contentsline {subsection}{The Chain Rule}{16}{section*.52}%
+\contentsline {subsection}{Implicit Differentiation}{17}{section*.53}%
+\contentsline {section}{14.6 Directional Derivatives and their Gradient Vectors}{17}{section*.54}%
+\contentsline {section}{Directional Derivatives}{17}{section*.55}%
+\contentsline {subsection}{The Gradient Vector}{17}{section*.56}%
+\contentsline {subsection}{Maximizing the Directional Derivative}{18}{section*.57}%
+\contentsline {subsection}{Tangent Planes to Level Surfaces}{18}{section*.58}%
+\contentsline {section}{14.7 Maximum and Minimum Values}{19}{section*.59}%
+\contentsline {subsection}{Local Maximum and Minimum Values}{19}{section*.60}%
+\contentsline {subsection}{Absolute Maximum and Minimum Values}{19}{section*.61}%
+\contentsline {section}{14.8 Lagrange Multipliers}{20}{section*.62}%
+\contentsline {subsection}{Lagrange Multipliers: One Constraint}{20}{section*.63}%
+\contentsline {subsection}{Lagrange Multipliers: Two Constraints}{20}{section*.64}%
+\contentsline {chapter}{15 Multiple Integrals}{21}{chapter*.65}%
+\contentsline {section}{15.1 Double Integrals over Rectangles}{21}{section*.66}%
+\contentsline {subsection}{Volumes and Double Integrals}{21}{section*.67}%
+\contentsline {subsection}{Iterated Integrals}{24}{section*.68}%
+\contentsline {subsection}{Average Value}{24}{section*.69}%
+\contentsline {section}{15.2 Double Integrals over Geenral Regions}{25}{section*.70}%
+\contentsline {subsection}{General Regions}{25}{section*.71}%
+\contentsline {subsection}{Changing the Order of Integration}{26}{section*.72}%
+\contentsline {section}{15.3 Double Integrals in Polar Coordinates}{26}{section*.73}%
+\contentsline {section}{Triple integrals}{26}{section*.74}%
+\contentsline {section}{Triple Integral in Cylindrical Coordinates}{26}{section*.75}%
+\contentsline {section}{Triple Integrals in Spherical Coordinates}{26}{section*.76}%
+\contentsline {chapter}{Vector Calculus}{27}{chapter*.77}%
+\contentsline {section}{16.1 Vector Fields}{27}{section*.78}%
+\contentsline {subsection}{Vector Fields in $\varmathbb {R}^{2} \text { and } \varmathbb {R}^{3}$}{27}{section*.79}%
+\contentsline {subsection}{Gradient Fields}{27}{section*.80}%
+\contentsline {section}{16.2 Line Integrals}{27}{section*.81}%
+\contentsline {subsection}{Line Integrals in the Plane}{27}{section*.82}%
+\contentsline {subsection}{Line Integrals with Respect to $x$ or $y$}{28}{section*.83}%
+\contentsline {subsection}{Line Integrals in Space}{28}{section*.84}%
+\contentsline {section}{16.3 The fundamental Theorem for Line Integrals}{29}{section*.86}%
+\contentsline {subsection}{The Fundamental Theorem for Line Integrals}{29}{section*.87}%
+\contentsline {subsection}{Independence of Path}{30}{section*.88}%
+\contentsline {subsection}{Conservative Vector Fields and Potential Functions}{30}{section*.89}%
+\contentsline {section}{Stokes' Theorem}{31}{section*.90}%
+\contentsline {subsection}{Green's Theorem}{31}{section*.91}%
+\contentsline {subsection}{Finding Areas with Green's Theorem}{32}{section*.92}%
+\contentsline {subsection}{Extended Version of Green's Theorem}{33}{section*.93}%
+\contentsline {section}{Curl and Divergence}{33}{section*.94}%
+\contentsline {section}{Parametric Surfaces and Their Areas}{36}{section*.101}%
+\contentsline {section}{Surface Integral}{39}{section*.111}%
+\contentsline {section}{Stokes' Theorem}{43}{section*.125}%
+\contentsline {section}{The Divergence Theorem}{43}{section*.126}%
 \contentsfinish 
