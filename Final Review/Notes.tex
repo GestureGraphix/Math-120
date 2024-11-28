@@ -18,69 +18,281 @@
 \pagebreak
 
 \chapter*{12 Vectors and the Geometry of Space}
-\addcontentsline{toc}{chapter}{Vectors and the Geometry of Space }
+\addcontentsline{toc}{chapter}{12 Vectors and the Geometry of Space }
+
 
 \section*{12.1 Three-Dimensional Coordinate Systems}
-\addcontentsline{toc}{section}{Three-Dimensional Coordinate Systems}
+\addcontentsline{toc}{section}{12.1 Three-Dimensional Coordinate Systems}
 
-\defrose{hi}{Hi}
+\subsection*{3D Space}
 
-\section*{12.2}
+\defrose{Three Dimensional Rectangular Coordinate System}{
+    TThe carstesian product $ \mathbb{R} \times \mathbb{R} \times \mathbb{R} = \left[ (x,y,z) \, | \, x,y,z \in \mathbb{R} \right]$. is the set of all real 
+    numbers and is denoted by $ \mathbb{R}$
+}
 
-\section*{12.3}
+\addcontentsline{toc}{subsection}{3D Space}
 
-\section*{12.4}
+\subsection*{Surfaces and Solids}
+\addcontentsline{toc}{subsection}{Surfaces and Solids}
 
-\section*{12.5}
+\ntimg{
+    In three-dimensional analytic, an equation in $x,y$ and, $z$ represents a surface in 
+    $\mathbb{R}$  
+}
+
+\subsection*{Distance and Spheres}
+\addcontentsline{toc}{subsection}{Distacnes and Spheres}
+
+\defrose{Distance Formula in Three Dimensions}{
+    TThe distance $| P_{1} P_{2}|$ between the points $P_{1}(x_{1},y_{1},z_{1})$ and $P_{2}(x_{1}, y_{2}, z_{2})$ is 
+    \[ |P_{1}P_{2}| = \sqrt{\left(x_{2} - x_{1}\right)^{2} + \left(y_{2} - y_{1}\right)^{2} + \left(z_{2} - z_{1}\right)^{2}}\] 
+}
+
+\section*{12.2 Vectors}
+\addcontentsline{toc}{section}{12.2 Vectors}
+
+\defrose{Vectors}{
+    AA \textit{vector} indicates a quantity that has both magnitude and direction
+}
+
+\subsection*{Geometric Description of Vectors}
+\addcontentsline{toc}{subsection}{Geometric Description of Vectors}
+
+\defrose{Vector Addition}{
+    FFor vectors \textbf{Vector Addition} means the sum of two vectors $\mathbf{u} + \mathbf{v}$ is the vector from the initial point of $\mathbf{u}$ to the terminal point of $\mathbf{v}$, with $\mathbf{v}$ placed so its tail starts at the tip of $\mathbf{u}$..
+}
+
+\defrose{Triangle Law}{
+    FFor vectors that \textbf{Triangle Law} refers to the sum of two vectors representing the third side of a triangle by placing the second vector's tail at the first vector's tip.
+}
+
+\defrose{Parallelogram Law}{
+    FFor vectors \textbf{Parallelogram Law} refers to the sum of two vectors is representing the diagonal of a parallelogram formed when both vectors originate from the same point.
+}
+
+\defrose{Scalar Multiplication}{
+    FFor vectors \textbf{Scalar Multiplication} means that if $c$ is a scalar and $\mathbf{v}$ is a vector, the scalar multiple $c\mathbf{v}$ is a vector whose length is $|c|$ times the length of $\mathbf{v}$. Its direction matches $\mathbf{v}$ if $c > 0$, is opposite to $\mathbf{v}$ if $c < 0$, and is $\mathbf{0}$ if $c = 0$ or $\mathbf{v} = \mathbf{0}$.
+}
+
+\subsection*{Components of Vectors}
+\addcontentsline{toc}{subsection}{Components of Vectors}
+
+\defrose{Vector Representation}{
+    GGiven points $A(x_1, y_1, z_1)$ and $B(x_2, y_2, z_2)$, the vector $\mathbf{a}$ representing the directed segment $\overrightarrow{AB}$ is 
+    \[ \mathbf{a} = \langle x_2 - x_1, y_2 - y_1, z_2 - z_1 \rangle. \]
+}
+
+\defrose{Magnitude of a Vector}{
+    TThe length of a vector $\mathbf{a}$ is 
+    \[ |\mathbf{a}| = \sqrt{a_1^2 + a_2^2} \quad \text{(2D)}, \quad |\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2} \quad \text{(3D)}. \]
+}
+\ntimg{
+    \textbf{Vector Addition:} Add corresponding components:
+    \[\mathbf{a} + \mathbf{b} = \langle a_1 + b_1, a_2 + b_2 \rangle \quad \text{(2D)}, \quad \mathbf{a} + \mathbf{b} = \langle a_1 + b_1, a_2 + b_2, a_3 + b_3 \rangle \quad \text{(3D)}.\]
+
+    \textbf{Vector Subtraction:} Subtract corresponding components:
+    \[ \mathbf{a} - \mathbf{b} = \langle a_1 - b_1, a_2 - b_2 \rangle \quad \text{(2D)}, \quad \mathbf{a} - \mathbf{b} = \langle a_1 - b_1, a_2 - b_2, a_3 - b_3 \rangle \quad \text{(3D)}. \]
+
+    \textbf{Scalar Multiplication:} Multiply each component by the scalar:
+    \[ c\mathbf{a} = \langle c a_1, c a_2 \rangle \quad \text{(2D)}, \quad c\mathbf{a} = \langle c a_1, c a_2, c a_3 \rangle \quad \text{(3D)}. \]
+}
+
+\defrose{Unit Vector}{
+    AA vector whose magnitude is 1
+}
+
+\newpage
+
+\section*{12.3 The Dot Product}
+\addcontentsline{toc}{section}{12.3 The dot product}
+
+\subsection*{Dot Product of Two Vectors}
+\addcontentsline{toc}{subsection}{Dot Product of Two Vectors}
+
+\defrose{Dot Product}{
+    TThe \textit{dot product} of two vectors $\mathbf{a} = \langle a_1, a_2, a_3 \rangle$ and $\mathbf{b} = \langle b_1, b_2, b_3 \rangle$ is a scalar given by:
+    \[ \mathbf{a} \cdot \mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3. \]
+}
+
+\thm{Angle Between Vectors}{
+    The dot product of two vectors $\mathbf{a}$ and $\mathbf{b}$ relates their magnitudes and the cosine of the angle $\theta$ between them:
+    \[ \mathbf{a} \cdot \mathbf{b} = |\mathbf{a}| |\mathbf{b}| \cos\theta. \]
+    This formula shows how the dot product measures both the lengths of the vectors and their alignment in space.
+}
+
+\cor{Angle Between Vectors}{
+    If $\theta$ is the angle between the nonzero vectors \textbf{a} annd \textbf{b}, then
+    \[ \cos \theta = \frac{\textbf{a} \cdot \textbf{b}}{|\textbf{a}||\textbf{b}|} \] 
+}
+
+\ntimg{
+    Two vectors \textbf{a} and \textbf{b} are orthogonal if and only if  $\textbf{a} \cdot \textbf{b} = 0 $
+}
+
+\subsection*{Direction Angles and Direction Cosines}
+\addcontentsline{toc}{subsection}{Direction Angles and Direction Cosines}
+
+\defrose{Direction Cosines}{
+    TThe direction angles ($\alpha, \beta, \gamma$) of a nonzero vector $\mathbf{a}$ are the angles it makes with the positive $x$-, $y$-, and $z$-axes, respectively. The cosines of these angles ($\cos\alpha, \cos\beta, \cos\gamma$) are called the direction cosines, and they satisfy:
+    \[ \cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1. \]
+}
+
+\ntimg{
+    The vector $\mathbf{a}$ can be expressed in terms of its magnitude and direction cosines as:
+    \[ \mathbf{a} = |\mathbf{a}| \langle \cos\alpha, \cos\beta, \cos\gamma \rangle, \]
+    and the unit vector in the direction of $\mathbf{a}$ is:
+    \[ \frac{1}{|\mathbf{a}|} \mathbf{a} = \langle \cos\alpha, \cos\beta, \cos\gamma \rangle. \]
+}
+
+\subsection*{Projections}
+\addcontentsline{toc}{subsection}{Projections}
+
+\defrose{Projections}{
+    TThe \textbf{scalar projection} of $\mathbf{b}$ onto $\mathbf{a}$, denoted $\text{comp}_{\mathbf{a}} \mathbf{b}$, represents the magnitude of $\mathbf{b}$ in the direction of $\mathbf{a}$. It is the length of the "shadow" of $\mathbf{b}$ onto $\mathbf{a}$ and is given by:
+    \[ \text{comp}_{\mathbf{a}} \mathbf{b} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|}. \]
+
+    The \textbf{Vector Projection:} The vector projection of $\mathbf{b}$ onto $\mathbf{a}$, denoted $\text{proj}_{\mathbf{a}} \mathbf{b}$, represents the vector component of $\mathbf{b}$ in the direction of $\mathbf{a}$. It is the scaled vector of $\mathbf{a}$ that aligns with the projection, given by:
+    \[ \text{proj}_{\mathbf{a}} \mathbf{b} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|^2} \mathbf{a}. \]
+}
+
+\section*{12.4 The Cross Product}
+\addcontentsline{toc}{section}{12.4 The Cross Product}
+
+\subsection*{The Cross Product of Two Vectors}
+\addcontentsline{toc}{subsection}{The Cross Product of Two Vectors}
+
+\defrose{Cross Product}{
+    TThe \textbf{cross product} of two vectors \(\vec{a} = \langle a_1, a_2, a_3 \rangle\) and \(\vec{b} = \langle b_1, b_2, b_3 \rangle\) is a vector \(\vec{a} \times \vec{b}\) defined as:
+    \[ \vec{a} \times \vec{b} = \langle a_2b_3 - a_3b_2, \, a_3b_1 - a_1b_3, \, a_1b_2 - a_2b_1 \rangle \]
+
+    The cross product is a vector:
+    \begin{itemize}
+        \item \textbf{Perpendicular} to both \(\vec{a}\) and \(\vec{b}\).
+        \item \textbf{Magnitude} equal to \(\|\vec{a}\| \|\vec{b}\| \sin \theta\), where \(\theta\) is the angle between \(\vec{a}\) and \(\vec{b}\).
+        \item \textbf{Direction} determined by the right-hand rule.
+    \end{itemize}
+}
+
+\subsection*{Properties of the Cross Product}
+\addcontentsline{toc}{subsection}{Properties of the Cross Product}
+
+\thm{Resulting Vector}{
+    The vector \textbf{a} $\times$ \textbf{b} is orthogonal to both \textbf{a} and \textbf{b} 
+}
+
+\thm{Geometric Description of the Length of the Cross Product}{
+    If $\theta$ is the angle between \textbf{a} and \textbf{b} (s0 $ 0 \leq \theta \leq \pi$), then the 
+    length of the cross product $\textbf{a} \times \textbf{b}$ is given by 
+    \[ |\textbf{a} \times \textbf{b} | = |\textbf{a}| |texbt{b}| \sin \theta \] 
+}
+
+\cor{Parallellity using Cross Product}{
+    Two nonzero vectors \textbf{a} and \textbf{b} are parallel if and only if 
+    \[ \textbf{a} \times \textbf{b} = 0 \] 
+}
+
+\ntimg{
+    The length of the cross product \textbf{a} $\times$ \textbf{b} is equal to the area of the parallelogram determined
+    by \textbf{a} and \textbf{b}  
+}
+
+\subsection*{Triple Products}
+\addcontentsline{toc}{subsection}{Triple Products}  
+
+\defrose{Triple Product}{
+    TThe \textbf{scalar triple product} of three vectors \(\mathbf{a}\), \(\mathbf{b}\), and \(\mathbf{c}\) is given by:
+    \[ \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}), \]
+    which can also be expressed as the determinant of the matrix formed by placing the vectors as rows (or columns):
+    \[ \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 
+    \begin{vmatrix}
+    a_1 & a_2 & a_3 \\
+    b_1 & b_2 & b_3 \\
+    c_1 & c_2 & c_3
+    \end{vmatrix}. \]
+        
+    \begin{itemize}
+        \item The magnitude of the scalar triple product, \(|\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})|\), represents the \textbf{volume} of the parallelepiped formed by the vectors \(\mathbf{a}\), \(\mathbf{b}\), and \(\mathbf{c}\).
+        \item If \(\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 0\), then the vectors \(\mathbf{a}\), \(\mathbf{b}\), and \(\mathbf{c}\) are \textbf{coplanar}, meaning they lie in the same plane.
+    \end{itemize}
+}
+
+\section*{12.5 Equations of Lines and Planes}
+\addcontentsline{toc}{section}{12.5 Equations of Lines and Planes}
 
 \chapter*{13}
+\addcontentsline{toc}{chapter}{Vector Functions}
 
-\section*{13.1}
+\section*{13.1 Vector Functions and Space Curves}
+\addcontentsline{toc}{section}{Vector Functions and Space Curves}
 
-\section*{13.2}
+\section*{13.2 Derivatives and Integrals of Line Functions}
+\addcontentsline{toc}{section}{Derivatives and Integrals of Line Functions}
 
-\section*{13.3}
 
-\section*{13.4}
+\section*{13.3 Arc Length and Curvature}
+\addcontentsline{toc}{section}{Arc Length and Curvature}
 
-\chapter*{14}
+\section*{13.4 Motion in Space: Veolcity and Acceleration}
+\addcontentsline{toc}{section}{Motion in Space: Velocity and Acceleration}
 
-\section*{14.1}
+\chapter*{14 Partial Derivatives}
+\addcontentsline{toc}{chapter}{Partial Derivatives}
 
-\section*{14.3}
+\section*{14.1 Functions of Several Variables}
+\addcontentsline{toc}{section}{Functions of Several Variables}
 
-\section*{14.5}
+\section*{14.3 Parital Derivatives}
+\addcontentsline{toc}{section}{Partial Derivatives}
 
-\section*{14.6}
+\section*{14.5 The Chain Rule}
+\addcontentsline{toc}{section}{The Chain Rule}
 
-\section*{14.7}
+\section*{14.6 Directional Derivatives and their Gradient Vectors}
+\addcontentsline{toc}{section}{Directional Derivatives and their Gradient Vectors}
 
-\section*{14.8}
+\section*{14.7 Maximum and Minimum Values}
+\addcontentsline{toc}{section}{Maximum and Minimum Values}
 
-\chapter*{15}
+\section*{14.8 Lagrange Multipliers}
+\addcontentsline{toc}{section}{Lagrange Multipliers}
 
-\section*{15.1}
 
-\section*{15.2}
+\chapter*{15 Multiple Integrals}
+\addcontentsline{toc}{chapter}{Multiple Integrals}
 
-\section*{15.3}
+\section*{15.1 Double Integrals over Rectangles}
+\addcontentsline{toc}{section}{Double Integrals over Rectangles}
 
-\section*{15.6}
+\section*{15.2 Double Integrals over General Regions}
+\addcontentsline{toc}{section}{Double Integrals over Geenral Regions}
 
-\section*{15.7}
+\section*{15.3 Double Integrals in Polar Coordinates}
+\addcontentsline{toc}{section}{Double Integrals in Polar Coordinates}
 
-\section*{15.8}
+\section*{15.6 Triple Integrals}
+\addcontentsline{toc}{section}{Triple integrals}
+
+\section*{15.7 Triple Integrals in Cylindrical Coordinates}
+\addcontentsline{toc}{section}{Triple Integral in Cylindrical Coordinates}
+
+\section*{15.8 Triple Integrals in Spherical Coordinates}
+\addcontentsline{toc}{section}{Triple Integrals in Spherical Coordinates}
 
 \chapter*{16 Vector Calculus}
 \addcontentsline{toc}{chapter}{Vector Calculus}
 
-\section*{16.1}
+\section*{16.1 Vector Fields}
+\addcontentsline{toc}{section}{Vector Fields}
 
-\section*{16.2}
+\section*{16.2 Line Integrals}
+\addcontentsline{toc}{section}{Line Integrals}
 
-\section*{16.3}
+\section*{16.3 The fundamental Theorem for Line Integrals}
+\addcontentsline{toc}{section}{The fundamental Theorem for Line Integrals}
 
-\section*{16.4}
+\section*{16.4 Green's Theorem}
+\addcontentsline{toc}{section}{Stokes' Theorem}
 
 \section*{16.5 Curl and Divergence}
 \addcontentsline{toc}{section}{Curl and Divergence}
@@ -507,7 +719,11 @@
 \addcontentsline{toc}{section}{Stokes' Theorem}
 
 
-\section*{16.9}
+\section*{16.9 The Divergence Theorem} 
+\addcontentsline{toc}{section}{The Divergence Theorem}
+
+
+
 
 
 
