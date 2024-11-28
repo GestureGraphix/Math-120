@@ -42,7 +42,7 @@
 }
 
 \subsection*{Distance and Spheres}
-\addcontentsline{toc}{subsection}{Distacnes and Spheres}
+\addcontentsline{toc}{subsection}{Distances and Spheres}
 
 \defrose{Distance Formula in Three Dimensions}{
     TThe distance $| P_{1} P_{2}|$ between the points $P_{1}(x_{1},y_{1},z_{1})$ and $P_{2}(x_{1}, y_{2}, z_{2})$ is 
@@ -220,27 +220,305 @@
 \section*{12.5 Equations of Lines and Planes}
 \addcontentsline{toc}{section}{12.5 Equations of Lines and Planes}
 
-\chapter*{13}
-\addcontentsline{toc}{chapter}{Vector Functions}
+\subsection*{Lines}
+\addcontentsline{toc}{subsection}{Lines}
+
+\defrose{Line in 3D Space}{
+    AA line in three-dimensional space is defined by:
+    \begin{itemize}
+        \item A point \(\mathbf{r}_0 = \langle x_0, y_0, z_0 \rangle\),
+        \item A direction vector \(\mathbf{v} = \langle a, b, c \rangle\).
+    \end{itemize}
+    
+    Its vector equation is:
+    \[ \mathbf{r} = \mathbf{r}_0 + t\mathbf{v}, \]
+    where \(t\) is a scalar parameter.
+    
+    In parametric form, the equation becomes:
+    \[ x = x_0 + ta, \quad y = y_0 + tb, \quad z = z_0 + tc. \]
+}
+
+\subsection*{Planes}
+\addcontentsline{toc}{subsection}{Planes}
+
+\defrose{Plane in 3D Space}{
+    AA plane in three-dimensional space is defined by:
+    \begin{itemize}
+        \item A point \(\mathbf{r}_0 = \langle x_0, y_0, z_0 \rangle\) on the plane,
+        \item A normal vector \(\mathbf{n} = \langle a, b, c \rangle\), orthogonal to the plane.
+    \end{itemize}
+
+    The vector equation of the plane is:
+    \[
+    \mathbf{n} \cdot (\mathbf{r} - \mathbf{r}_0) = 0,
+    \]
+    where \(\mathbf{r} = \langle x, y, z \rangle\) is the position vector of any point on the plane.
+
+    The scalar equation of the plane is:
+    \[
+    a(x - x_0) + b(y - y_0) + c(z - z_0) = 0,
+    \]
+    where \((x_0, y_0, z_0)\) is a point on the plane, and \(\mathbf{n} = \langle a, b, c \rangle\) is the normal vector.
+}
+
+\ntimg{
+    Two planes are parallel  if their normal vectors are parallel \\
+    If two planes are not parallel, then they intersect in a straight line and the angle 
+    between the two planes is defined as the acute angle between their normal vectors     
+}
+
+\subsection*{Distances}
+\addcontentsline{toc}{subsection}{Distances}
+
+\defrose{Distances}{
+    TThe distance \(D\) from a point \(P_1(x_1, y_1, z_1)\) to a plane given by the equation \(ax + by + cz + d = 0\) is:
+
+    \[
+    D = \frac{|ax_1 + by_1 + cz_1 + d|}{\sqrt{a^2 + b^2 + c^2}}.
+    \]
+    
+    \subsection*{Explanation}
+    \begin{itemize}
+        \item \((x_1, y_1, z_1)\) are the coordinates of the point \(P_1\),
+        \item \(a\), \(b\), \(c\), and \(d\) are the constants defining the plane equation,
+        \item \(\sqrt{a^2 + b^2 + c^2}\) represents the magnitude of the normal vector \(\mathbf{n} = \langle a, b, c \rangle\).
+    \end{itemize}
+}
+
+\chapter*{13 Vector Functions}
+\addcontentsline{toc}{chapter}{13 Vector Functions}
+
 
 \section*{13.1 Vector Functions and Space Curves}
-\addcontentsline{toc}{section}{Vector Functions and Space Curves}
+\addcontentsline{toc}{section}{13.1 Vector Functions and Space Curves}
+
+\subsection*{Vector-Valued Functions}
+\addcontentsline{toc}{subsection}{Vector-Valued Functions}
+
+\defrose{Vector-Valued Functions}{
+    AA \textbf{vector-valued function} is a function whose domain is a set of real numbers and whose range is a set of vectors. In three dimensions, a vector-valued function \(\mathbf{r}(t)\) can be expressed as:
+    \[ \mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t)\mathbf{i} + g(t)\mathbf{j} + h(t)\mathbf{k}, \]
+    where \(f(t)\), \(g(t)\), and \(h(t)\) are the component functions of \(\mathbf{r}(t)\), and \(t\) is the independent variable.
+}
+
+\subsection*{Space Curves}
+\addcontentsline{toc}{subsection}{Space Curves}
+
+\defrose{Space Curves}{
+    AA \textbf{space curve} is the set of all points \(C(x, y, z)\) in space traced by a continuous vector-valued function \(\mathbf{r}(t)\), where:
+
+    \[    \mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle, \]
+    
+    and \(t\) varies over an interval \(I\).
+    
+    The parametric equations of the space curve are:
+    
+    \[     x = f(t), \quad y = g(t), \quad z = h(t).  \]
+    
+    A space curve represents the path of a moving particle whose position at time \(t\) is given by \((f(t), g(t), h(t))\).
+    
+}
 
 \section*{13.2 Derivatives and Integrals of Line Functions}
-\addcontentsline{toc}{section}{Derivatives and Integrals of Line Functions}
+\addcontentsline{toc}{section}{13.2 Derivatives and Integrals of Line Functions}
 
+\subsection*{Derivatives}
+\addcontentsline{toc}{subsection}{Derivatives}
+
+\defrose{Derivative of a Vector Function}{
+    TThe derivative of a vector function \(\mathbf{r}(t)\), denoted as \(\mathbf{r}'(t)\), is defined as:
+
+    \[ \mathbf{r}'(t) = \lim_{h \to 0} \frac{\mathbf{r}(t + h) - \mathbf{r}(t)}{h},  \]
+
+    provided the limit exists.
+
+    \begin{itemize}
+        \item \(\mathbf{r}'(t)\) represents the \textbf{tangent vector} to the curve defined by \(\mathbf{r}(t)\) at a point.
+        \item The tangent line to the curve at this point is parallel to \(\mathbf{r}'(t)\).
+    \end{itemize}
+
+}
+
+\thm{Derivatives}{
+    If \(\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t)\mathbf{i} + g(t)\mathbf{j} + h(t)\mathbf{k}\), where \(f\), \(g\), and \(h\) are differentiable functions, then:
+    \[ \mathbf{r}'(t) = \langle f'(t), g'(t), h'(t) \rangle = f'(t)\mathbf{i} + g'(t)\mathbf{j} + h'(t)\mathbf{k}. \]
+}
+
+\thm{Orthogonnality from derivative}{
+    If $|\textbf{r}(t)| = c$ (a constant), then \textbf{r}'(t) is orthogonal to \textbf{r}(t) for all $t$.
+}
+
+\subsection*{Integrals}
+\addcontentsline{toc}{subsection}{Integrals}
+
+\defrose{Definite Integral}{
+    TThe \textbf{definite integral} of a continuous vector function \(\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle\) over the interval \([a, b]\) is defined as:
+
+    \[
+    \int_a^b \mathbf{r}(t) \, dt = 
+    \left( \int_a^b f(t) \, dt \right) \mathbf{i} + 
+    \left( \int_a^b g(t) \, dt \right) \mathbf{j} + 
+    \left( \int_a^b h(t) \, dt \right) \mathbf{k}.
+    \]
+    
+    Conceptually, the integral computes the accumulation of the vector values of \(\mathbf{r}(t)\) over the interval, integrating each component function \(f(t)\), \(g(t)\), and \(h(t)\) independently. \\
+        
+    The Fundamental Theorem of Calculus for vector functions states:
+    
+    \[
+    \int_a^b \mathbf{r}(t) \, dt = \mathbf{R}(b) - \mathbf{R}(a),
+    \]
+    
+    where \(\mathbf{R}(t)\) is an antiderivative of \(\mathbf{r}(t)\), satisfying \(\mathbf{R}'(t) = \mathbf{r}(t)\).
+    
+}
 
 \section*{13.3 Arc Length and Curvature}
-\addcontentsline{toc}{section}{Arc Length and Curvature}
+\addcontentsline{toc}{section}{13.3 Arc Length and Curvature}
+
+\subsection*{Arc Length}
+\addcontentsline{toc}{subsection}{Arc Length}
+
+\defrose{Arc Length}{
+    TThe \textbf{arc length} \(L\) of a curve defined by a vector function \(\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle\) over the interval \([a, b]\) is:
+
+    \[ L = \int_a^b \sqrt{\left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 + \left( \frac{dz}{dt} \right)^2} \, dt, \]
+
+    or equivalently:
+
+    \[ L = \int_a^b \sqrt{[f'(t)]^2 + [g'(t)]^2 + [h'(t)]^2} \, dt. \]
+
+    In compact form, the arc length can be written using the magnitude of the derivative:
+
+    \[ L = \int_a^b |\mathbf{r}'(t)| \, dt, \]
+
+    where \(|\mathbf{r}'(t)| = \sqrt{[f'(t)]^2 + [g'(t)]^2 + [h'(t)]^2}\) represents the speed of the particle moving along the curve.
+
+}
+
+\subsection*{The Arc Length Function}   
+\addcontentsline{toc}{subsection}{The Arc Length Function}  
+
+\defrose{Arc Length Function}{
+    TThe \textbf{arc length function} \(s(t)\) measures the length of the curve from the starting point to a point on the curve corresponding to parameter \(t\). For a curve defined by a vector function \(\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle\), the arc length function is given by:
+
+    \[ s(t) = \int_a^t |\mathbf{r}'(u)| \, du = \int_a^t \sqrt{\left(\frac{dx}{du}\right)^2 + \left(\frac{dy}{du}\right)^2 + \left(\frac{dz}{du}\right)^2} \, du, \]
+    
+    where \(|\mathbf{r}'(u)|\) represents the magnitude of the derivative of \(\mathbf{r}(u)\).
+    
+    Differentiating \(s(t)\) with respect to \(t\) yields:
+    
+    \[ \frac{ds}{dt} = |\mathbf{r}'(t)|. \]
+    
+    This formula connects the arc length function to the speed of motion along the curve.
+}
+
+\subsection*{Curvature}
+\addcontentsline{toc}{subsection}{Curvature}
+
+\defrose{Curvature}{
+    TThe \textbf{curvature} \(\kappa\) of a curve at a given point measures how quickly the direction of the curve changes at that point. It is defined as the magnitude of the rate of change of the unit tangent vector \(\mathbf{T}(t)\) with respect to the arc length \(s\):
+
+    \[ \kappa = \left| \frac{d\mathbf{T}}{ds} \right|, \]
+    
+    where the unit tangent vector is given by:
+    
+    \[ \mathbf{T}(t) = \frac{\mathbf{r}'(t)}{|\mathbf{r}'(t)|}. \]
+    
+    Using the chain rule, curvature can be expressed in terms of the parameter \(t\):
+    
+    \[ \kappa = \frac{\left| \frac{d\mathbf{T}}{dt} \right|}{\left| \frac{ds}{dt} \right|}. \]
+    
+    Since \(\frac{ds}{dt} = |\mathbf{r}'(t)|\), the curvature formula becomes:
+    
+    \[ \kappa = \frac{\left| \mathbf{T}'(t) \right|}{\left| \mathbf{r}'(t) \right|}. \]
+}
+
+\thm{Curvature}{
+    The curvature of the curve given by the vector function \textbf{r} is 
+    \[ \kappa(t) = \frac{\left|\textbf{r}(t) \times \textbf{r}^{n}(t) \right|}{\left| \textbf{r}'(t) \right|^{3}}\] 
+}
+
+\subsection*{The Normal and Binormal Vectors}
+\addcontentsline{toc}{subsection}{The Normal and Binormal Vectors}
+
+\defrose{The Normal Vectors}{
+    FFor a smooth space curve \(\mathbf{r}(t)\), the \textbf{unit normal vector} \(\mathbf{N}(t)\) and the \textbf{binormal vector} \(\mathbf{B}(t)\) are defined as follows: \\
+
+    The unit normal vector \(\mathbf{N}(t)\) is the normalized derivative of the unit tangent vector \(\mathbf{T}(t)\):
+    \[ \mathbf{N}(t) = \frac{\mathbf{T}'(t)}{|\mathbf{T}'(t)|}, \]
+    
+    where the unit tangent vector is given by:
+    \[ \mathbf{T}(t) = \frac{\mathbf{r}'(t)}{|\mathbf{r}'(t)|}. 
+    \]
+    The vector \(\mathbf{N}(t)\) indicates the direction in which the curve is turning. \\
+
+}
+
+\defrose{Binormal Vectors}{
+    FFor a smooth space curve \(\mathbf{r}(t)\), the \textbf{unit normal vector} \(\mathbf{N}(t)\) and the \textbf{binormal vector} \(\mathbf{B}(t)\) are defined as follows: \\
+    
+    The binormal vector \(\mathbf{B}(t)\) is the cross product of the tangent vector \(\mathbf{T}(t)\) and the normal vector \(\mathbf{N}(t)\):
+    \[ \mathbf{B}(t) = \mathbf{T}(t) \times \mathbf{N}(t). \]
+    The binormal vector \(\mathbf{B}(t)\) is orthogonal to both \(\mathbf{T}(t)\) and \(\mathbf{N}(t)\) and is also a unit vector.
+}
+
+\defrose{Normal Plane}{
+    TThe \textbf{normal plane} of a curve \(C\) at a point \(P\) is the plane determined by the normal vector \(\mathbf{N}(t)\) and the binormal vector \(\mathbf{B}(t)\). It is orthogonal to the tangent vector \(\mathbf{T}(t)\) and consists of all lines passing through \(P\) that are orthogonal to \(\mathbf{T}(t)\).}
+
+\defrose{Osculating Planes}{
+    TThe \textbf{osculating plane} of a curve \(C\) at a point \(P\) is the plane determined by the tangent vector \(\mathbf{T}(t)\) and the normal vector \(\mathbf{N}(t)\). It is the plane that comes closest to containing the part of the curve near \(P\).
+}
+
+\defrose{Circle of Curvature}{ 
+    TThe \textbf{circle of curvature}, or \textbf{osculating circle}, of \(C\) at \(P\) is the circle that lies in the osculating plane, passes through \(P\), and has a radius of \(\frac{1}{\kappa}\), where \(\kappa\) is the curvature of the curve at \(P\). The center of the circle is located a distance of \(\frac{1}{\kappa}\) along the direction of the normal vector \(\mathbf{N}(t)\).
+    The circle of curvature best describes how the curve \(C\) behaves near \(P\), sharing the same tangent, normal, and curvature at \(P\).
+}
+
+\newpage
 
 \section*{13.4 Motion in Space: Veolcity and Acceleration}
-\addcontentsline{toc}{section}{Motion in Space: Velocity and Acceleration}
+\addcontentsline{toc}{section}{13.4 Motion in Space: Velocity and Acceleration}
+
+\subsection*{Velolcity, Speed and Acceleration}
+\addcontentsline{toc}{subsection}{Velocity, Speed, and Acceleration}    
+
+\defrose{Velocity and Speed}{
+    TThe \textbf{velocity vector} \(\mathbf{v}(t)\) of a particle moving through space is defined as the derivative of its position vector \(\mathbf{r}(t)\) with respect to time:
+    \[ \mathbf{v}(t) = \lim_{h \to 0} \frac{\mathbf{r}(t + h) - \mathbf{r}(t)}{h} = \mathbf{r}'(t). \]
+    It represents the direction and rate of change of the particle's position and points along the tangent to the particle's path. \\
+
+    The \textbf{speed} of the particle at time \(t\) is the magnitude of the velocity vector:
+    \[ |\mathbf{v}(t)| = |\mathbf{r}'(t)| = \frac{ds}{dt}. \]
+    It represents the rate of change of distance with respect to time.
+}
+
+\defrose{Acceleration Vector}{
+    TThe \textbf{acceleration vector} \(\mathbf{a}(t)\) is defined as the derivative of the velocity vector \(\mathbf{v}(t)\) with respect to time:
+    \[ \mathbf{a}(t) = \mathbf{v}'(t) = \mathbf{r}''(t).  \]
+    It represents the rate of change of the velocity of the particle.
+
+}
 
 \chapter*{14 Partial Derivatives}
-\addcontentsline{toc}{chapter}{Partial Derivatives}
+\addcontentsline{toc}{chapter}{14 Partial Derivatives}
 
 \section*{14.1 Functions of Several Variables}
 \addcontentsline{toc}{section}{Functions of Several Variables}
+
+\subsection*{Functions of Two Variables}
+\addcontentsline{toc}{subsection}{Functions of Two Variables}
+
+\defrose{Functions of Two Variables}{
+    AA \textbf{function of two variables} \(f(x, y)\) is a rule that assigns a unique real number \(f(x, y)\) to each ordered pair of real numbers \((x, y)\) in a domain \(D\).
+
+    \begin{itemize}
+        \item The \textbf{domain} of \(f\) is the set \(D\) of all pairs \((x, y)\) for which \(f(x, y)\) is defined.
+        \item The \textbf{range} of \(f\) is the set of all values \(f(x, y)\) takes on.
+    \end{itemize}
+    
+    The variables \(x\) and \(y\) are called \textbf{independent variables}, and \(z = f(x, y)\) is the \textbf{dependent variable}.
+}
 
 \section*{14.3 Parital Derivatives}
 \addcontentsline{toc}{section}{Partial Derivatives}

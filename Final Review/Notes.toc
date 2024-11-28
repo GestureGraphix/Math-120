@@ -2,7 +2,7 @@
 \contentsline {section}{12.1 Three-Dimensional Coordinate Systems}{3}{section*.3}%
 \contentsline {subsection}{3D Space}{3}{tcb@cnt@DefinitionWithImage.0.0.1}%
 \contentsline {subsection}{Surfaces and Solids}{3}{section*.5}%
-\contentsline {subsection}{Distacnes and Spheres}{3}{section*.6}%
+\contentsline {subsection}{Distances and Spheres}{3}{section*.6}%
 \contentsline {section}{12.2 Vectors}{3}{section*.7}%
 \contentsline {subsection}{Geometric Description of Vectors}{3}{section*.8}%
 \contentsline {subsection}{Components of Vectors}{4}{section*.9}%
@@ -15,33 +15,46 @@
 \contentsline {subsection}{Properties of the Cross Product}{6}{section*.16}%
 \contentsline {subsection}{Triple Products}{7}{section*.17}%
 \contentsline {section}{12.5 Equations of Lines and Planes}{7}{section*.18}%
-\contentsline {chapter}{Vector Functions}{8}{chapter*.19}%
-\contentsline {section}{Vector Functions and Space Curves}{8}{section*.20}%
-\contentsline {section}{Derivatives and Integrals of Line Functions}{8}{section*.21}%
-\contentsline {section}{Arc Length and Curvature}{8}{section*.22}%
-\contentsline {section}{Motion in Space: Velocity and Acceleration}{8}{section*.23}%
-\contentsline {chapter}{Partial Derivatives}{9}{chapter*.24}%
-\contentsline {section}{Functions of Several Variables}{9}{section*.25}%
-\contentsline {section}{Partial Derivatives}{9}{section*.26}%
-\contentsline {section}{The Chain Rule}{9}{section*.27}%
-\contentsline {section}{Directional Derivatives and their Gradient Vectors}{9}{section*.28}%
-\contentsline {section}{Maximum and Minimum Values}{9}{section*.29}%
-\contentsline {section}{Lagrange Multipliers}{9}{section*.30}%
-\contentsline {chapter}{Multiple Integrals}{10}{chapter*.31}%
-\contentsline {section}{Double Integrals over Rectangles}{10}{section*.32}%
-\contentsline {section}{Double Integrals over Geenral Regions}{10}{section*.33}%
-\contentsline {section}{Double Integrals in Polar Coordinates}{10}{section*.34}%
-\contentsline {section}{Triple integrals}{10}{section*.35}%
-\contentsline {section}{Triple Integral in Cylindrical Coordinates}{10}{section*.36}%
-\contentsline {section}{Triple Integrals in Spherical Coordinates}{10}{section*.37}%
-\contentsline {chapter}{Vector Calculus}{11}{chapter*.38}%
-\contentsline {section}{Vector Fields}{11}{section*.39}%
-\contentsline {section}{Line Integrals}{11}{section*.40}%
-\contentsline {section}{The fundamental Theorem for Line Integrals}{11}{section*.41}%
-\contentsline {section}{Stokes' Theorem}{11}{section*.42}%
-\contentsline {section}{Curl and Divergence}{11}{section*.43}%
-\contentsline {section}{Parametric Surfaces and Their Areas}{13}{section*.50}%
-\contentsline {section}{Surface Integral}{17}{section*.60}%
-\contentsline {section}{Stokes' Theorem}{21}{section*.74}%
-\contentsline {section}{The Divergence Theorem}{21}{section*.75}%
+\contentsline {subsection}{Lines}{7}{section*.19}%
+\contentsline {subsection}{Planes}{7}{section*.20}%
+\contentsline {subsection}{Distances}{8}{section*.21}%
+\contentsline {chapter}{13 Vector Functions}{9}{chapter*.23}%
+\contentsline {section}{13.1 Vector Functions and Space Curves}{9}{section*.24}%
+\contentsline {subsection}{Vector-Valued Functions}{9}{section*.25}%
+\contentsline {subsection}{Space Curves}{9}{section*.26}%
+\contentsline {section}{13.2 Derivatives and Integrals of Line Functions}{9}{section*.27}%
+\contentsline {subsection}{Derivatives}{9}{section*.28}%
+\contentsline {subsection}{Integrals}{10}{section*.29}%
+\contentsline {section}{13.3 Arc Length and Curvature}{10}{section*.30}%
+\contentsline {subsection}{Arc Length}{10}{section*.31}%
+\contentsline {subsection}{The Arc Length Function}{11}{section*.32}%
+\contentsline {subsection}{Curvature}{11}{section*.33}%
+\contentsline {subsection}{The Normal and Binormal Vectors}{12}{section*.34}%
+\contentsline {section}{13.4 Motion in Space: Velocity and Acceleration}{13}{section*.35}%
+\contentsline {subsection}{Velocity, Speed, and Acceleration}{13}{section*.36}%
+\contentsline {chapter}{14 Partial Derivatives}{14}{chapter*.37}%
+\contentsline {section}{Functions of Several Variables}{14}{section*.38}%
+\contentsline {subsection}{Functions of Two Variables}{14}{section*.39}%
+\contentsline {section}{Partial Derivatives}{14}{section*.40}%
+\contentsline {section}{The Chain Rule}{14}{section*.41}%
+\contentsline {section}{Directional Derivatives and their Gradient Vectors}{14}{section*.42}%
+\contentsline {section}{Maximum and Minimum Values}{14}{section*.43}%
+\contentsline {section}{Lagrange Multipliers}{14}{section*.44}%
+\contentsline {chapter}{Multiple Integrals}{15}{chapter*.45}%
+\contentsline {section}{Double Integrals over Rectangles}{15}{section*.46}%
+\contentsline {section}{Double Integrals over Geenral Regions}{15}{section*.47}%
+\contentsline {section}{Double Integrals in Polar Coordinates}{15}{section*.48}%
+\contentsline {section}{Triple integrals}{15}{section*.49}%
+\contentsline {section}{Triple Integral in Cylindrical Coordinates}{15}{section*.50}%
+\contentsline {section}{Triple Integrals in Spherical Coordinates}{15}{section*.51}%
+\contentsline {chapter}{Vector Calculus}{16}{chapter*.52}%
+\contentsline {section}{Vector Fields}{16}{section*.53}%
+\contentsline {section}{Line Integrals}{16}{section*.54}%
+\contentsline {section}{The fundamental Theorem for Line Integrals}{16}{section*.55}%
+\contentsline {section}{Stokes' Theorem}{16}{section*.56}%
+\contentsline {section}{Curl and Divergence}{16}{section*.57}%
+\contentsline {section}{Parametric Surfaces and Their Areas}{18}{section*.64}%
+\contentsline {section}{Surface Integral}{22}{section*.74}%
+\contentsline {section}{Stokes' Theorem}{26}{section*.88}%
+\contentsline {section}{The Divergence Theorem}{26}{section*.89}%
 \contentsfinish 
