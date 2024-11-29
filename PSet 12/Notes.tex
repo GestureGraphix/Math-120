@@ -24,7 +24,7 @@
 \qs{}{ 
     Evaluate the iterated integral 
     \[
-    \int_{0}^{\pi/2} \int_{0}^{x} \int_{0}^{x^2} x^2 \sin y \, dy \, dz \, dx.
+    \int_{0}^{\sqrt{\pi}} \int_{0}^{x} \int_{0}^{xz} x^2 \sin y \, dy \, dz \, dx.
     \]}
 
 \newpage
@@ -42,7 +42,7 @@
 \qs{}{
     Write five other iterated integrals that are equal to the iterated integral 
     \[
-    \int_{0}^{2} \int_{0}^{x^2} \int_{0}^{y} f(x, y, z) \, dz \, dy \, dx.
+    \int_{0}^{1} \int_{0}^{x^2} \int_{0}^{y} f(x, y, z) \, dz \, dy \, dx.
     \]
 }
 
@@ -61,7 +61,7 @@
 \qs{}{
     Describe and sketch the solid whose volume is given by the integral. You do not need to evaluate the integral.
     \[
-    \int_{0}^{\pi/2} \int_{0}^{2} \int_{0}^{\sqrt{9 - r^2}} r \, dz \, dr \, d\theta
+    \int_{0}^{\pi/2} \int_{0}^{2} \int_{0}^{9 - r^2} r \, dz \, dr \, d\theta
     \]
     \[
     \int_{0}^{2\pi} \int_{\pi/2}^{\pi} \int_{1}^{2} \rho^2 \sin \phi \, d\phi \, d\theta \, d\rho.
@@ -87,11 +87,11 @@
     \begin{enumerate}
         \item Evaluate the integral by changing to cylindrical coordinates:
         \[
-        \int_{-1}^{1} \int_{|x|}^{\sqrt{2 - x^2}} \int_{0}^{\sqrt{x^2 + y^2}} \sqrt{x^2 + y^2} \, dz \, dy \, dx.
+        \int_{-1}^{1} \int_{|x|}^{\sqrt{2 - x^2}} \int_{0}^{x^2 + y^2} \sqrt{x^2 + y^2} \, dz \, dy \, dx.
         \]
         \item Evaluate the integral by changing to spherical coordinates:
         \[
-        \int_{0}^{a} \int_{0}^{\sqrt{a^2 - y^2}} \int_{-\sqrt{a^2 - x^2 - y^2}}^{\sqrt{a^2 - x^2 - y^2}} (x^2 + y^2 z^2) \, dz \, dx \, dy.
+        \int_{-a}^{0} \int_{0}^{\sqrt{a^2 - y^2}} \int_{-\sqrt{a^2 - x^2 - y^2}}^{\sqrt{a^2 - x^2 - y^2}} (xz^2 + yz^2) \, dz \, dx \, dy.
         \]
     \end{enumerate}
 }
