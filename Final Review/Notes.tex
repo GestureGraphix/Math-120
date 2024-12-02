@@ -1048,11 +1048,240 @@
 \section*{15.6 Triple Integrals}
 \addcontentsline{toc}{section}{Triple integrals}
 
+\subsection*{Triple Integrals Over Rectangluar Boxes}
+\addcontentsline{toc}{subsection}{Triple Integrals Over Rectangluar Boxes}
+
+\defrose{Triple Integrals Over Rectangular Boxes}{
+    AA \textbf{triple integral} calculates the total accumulation of a function \( f(x, y, z) \) over a three-dimensional rectangular box \( B \), defined as:
+    \[
+    B = \{(x, y, z) \mid a \leq x \leq b, \, c \leq y \leq d, \, r \leq z \leq s\}.
+    \]
+    
+    Mathematically, the triple integral is:
+    \[
+    \iiint_B f(x, y, z) \, dV = \lim_{\Delta V \to 0} \sum f(x, y, z) \Delta V,
+    \]
+    where \( \Delta V = \Delta x \Delta y \Delta z \) is the volume of an infinitesimal sub-box.
+    
+    Using \textbf{Fubini's Theorem}, we express it as an iterated integral:
+    \[
+    \iiint_B f(x, y, z) \, dV = \int_r^s \int_c^d \int_a^b f(x, y, z) \, dx \, dy \, dz.
+    \]
+    
+    This integral sums the values of \( f(x, y, z) \) weighted by tiny volumes \( dV \), capturing the total effect of \( f(x, y, z) \) across the 3D region \( B \).    
+}
+
+\subsection*{Triple Integrals Over General Regions}
+\addcontentsline{toc}{subsection}{Triple Integrals Over General Regions}
+
+\defrose{Triple Integrals Over General Regions}{
+    AA triple integral represents the accumulation of a function \( f(x, y, z) \) over a three-dimensional region \( E \) in space. It generalizes the concept of volume by integrating a function, which could represent density, temperature, or another scalar field, over the specified region.
+
+    To compute the triple integral over a bounded region \( E \), we:
+    \begin{enumerate}
+        \item Enclose \( E \) in a bounding box \( B \), defining \( F(x, y, z) \) such that \( F = f \) inside \( E \) and \( F = 0 \) outside \( E \).
+        \item Express \( E \) in terms of inequalities describing its bounds:
+        \begin{itemize}
+            \item \textbf{Type I region}: \( E = \{ (x, y, z) \mid (x, y) \in D, u_1(x, y) \leq z \leq u_2(x, y) \} \), where \( D \) is the projection of \( E \) onto the \( xy \)-plane.
+            \item \textbf{Type II region}: \( E = \{ (x, y, z) \mid (y, z) \in D, u_1(y, z) \leq x \leq u_2(y, z) \} \).
+            \item \textbf{Type III region}: \( E = \{ (x, y, z) \mid (x, z) \in D, u_1(x, z) \leq y \leq u_2(x, z) \} \).
+        \end{itemize}
+        \item Write the integral as an iterated integral, selecting the order of integration based on the type of region and the ease of computation \\
+    \end{enumerate}
+    Here, the outer integrals handle the projection \( D \) onto a plane, and the inner integral integrates the function over the ``height'' (or range) of the region defined by \( u_1 \) and \( u_2 \).
+}
+
+\newpage 
+
+\ntimg{
+    \begin{itemize}
+        \item For a \textbf{Type I region}:
+        \[
+        \iiint_E f(x, y, z) \, dV = \iint_D \int_{u_1(x, y)}^{u_2(x, y)} f(x, y, z) \, dz \, dA.
+        \]
+        \item For a \textbf{Type II region}:
+        \[
+        \iiint_E f(x, y, z) \, dV = \iint_D \int_{u_1(y, z)}^{u_2(y, z)} f(x, y, z) \, dx \, dA.
+        \]
+        \item For a \textbf{Type III region}:
+        \[
+        \iiint_E f(x, y, z) \, dV = \iint_D \int_{u_1(x, z)}^{u_2(x, z)} f(x, y, z) \, dy \, dA.
+        \]
+    \end{itemize}
+}
+\subsection*{Changing Order of Integration}
+\addcontentsline{toc}{subsection}{Changing Order of Integration}
+
+\defrose{Changing Order of Integration}{
+    IIn the context of triple integrals, \textbf{changing the order of integration} involves rearranging the sequence of integration in an iterated integral to simplify computation while still evaluating the same overall integral over the same three-dimensional region \( E \).
+
+    This process is guided by \textbf{Fubini's Theorem}, which ensures that the triple integral of a continuous function \( f(x, y, z) \) over a bounded region \( E \) can be expressed as an iterated integral in six possible orders of integration:
+    \[
+    \iiint_E f(x, y, z) \, dV = \int \int \int f(x, y, z) \, dx \, dy \, dz,
+    \]
+    where the order of \( dx, dy, dz \) can vary.
+
+    Each order corresponds to a specific way of ``slicing'' the region \( E \) into layers along one axis while projecting the region onto a plane for the remaining two variables. For instance:
+    \begin{itemize}
+        \item The order \( dz \, dy \, dx \) evaluates \( z \) first, followed by \( y \), then \( x \).
+        \item Similarly, \( dy \, dx \, dz \) integrates \( y \) first, then \( x \), and \( z \) last.
+    \end{itemize}
+}
+
+\ntimg{
+    \begin{itemize}
+        \item Some orders of integration may be computationally simpler depending on the bounds and the function \( f(x, y, z) \).
+        \item Changing the order of integration redefines the bounds for the variables to align with the geometry of \( E \) in a way that simplifies evaluation.
+    \end{itemize}
+
+    For a region \( E \) defined by bounds such as:
+    \[
+    E = \{ (x, y, z) \mid u_1(x, y) \leq z \leq u_2(x, y), g_1(x) \leq y \leq g_2(x), a \leq x \leq b \},
+    \]
+    switching the order of integration requires recalculating these bounds to fit the new sequence, ensuring that the region \( E \) is correctly represented in the new order. \\
+
+    This flexibility in rearranging integration orders is a powerful tool, especially when working with complex regions or functions.
+}
+
 \section*{15.7 Triple Integrals in Cylindrical Coordinates}
 \addcontentsline{toc}{section}{Triple Integral in Cylindrical Coordinates}
 
+\subsection*{Cylindrical Coordinates}
+\addcontentsline{toc}{subsection}{Cylindrical Coordinates}
+
+\defrose{Cylindrical Coordinates}{
+    TThe \textbf{cylindrical coordinate system} is a three-dimensional coordinate system that extends the two-dimensional polar coordinate system by adding a third coordinate to describe height or elevation. It is particularly useful for solving problems with \textbf{cylindrical symmetry}, where objects or regions exhibit symmetry around an axis, typically the \( z \)-axis.
+
+    A point \( P \) in space is represented in cylindrical coordinates by the ordered triple \( (r, \theta, z) \), where:
+    \begin{itemize}
+        \item \( r \) is the radial distance from the \( z \)-axis (the distance of the projection of \( P \) onto the \( xy \)-plane to the origin).
+        \item \( \theta \) is the angle between the positive \( x \)-axis and the line connecting the origin to the projection of \( P \) onto the \( xy \)-plane.
+        \item \( z \) is the height or the directed distance of \( P \) from the \( xy \)-plane.
+    \end{itemize}    
+}
+
+\ntimg{
+    \begin{enumerate}
+        \item To convert from \textbf{cylindrical to Cartesian coordinates}, use:
+        \[
+        x = r \cos \theta, \quad y = r \sin \theta, \quad z = z.
+        \]
+        \item To convert from \textbf{Cartesian to cylindrical coordinates}, use:
+        \[
+        r^2 = x^2 + y^2, \quad \tan \theta = \frac{y}{x}, \quad z = z.
+        \]
+    \end{enumerate}
+    
+    \subsection*{Applications}
+    Cylindrical coordinates are especially beneficial for problems involving:
+    \begin{itemize}
+        \item \textbf{Circular cylinders}, where the equation \( r = c \) describes a cylinder of radius \( c \) centered around the \( z \)-axis.
+        \item \textbf{Planes through the \( z \)-axis}, where the equation \( \theta = c \) defines a vertical plane.
+        \item \textbf{Horizontal planes}, where \( z = c \) defines a plane parallel to the \( xy \)-plane.
+    \end{itemize}
+}
+
+\subsection*{Triple Integerals In Cylindrical Coordinates}
+\addcontentsline{toc}{subsection}{Triple Integrals In Cylindrical Coordinates}
+
+\defrose{Triple Integrals In Cylindrical Coordinates}{
+    TTriple integrals in cylindrical coordinates simplify the computation of integrals over regions with cylindrical symmetry. In this system, the Cartesian coordinates \( x \) and \( y \) are replaced by cylindrical coordinates \( r \) and \( \theta \), while \( z \) remains unchanged.
+
+    To evaluate a triple integral:
+    \begin{enumerate}
+        \item Convert \( x \) and \( y \) using:
+        \[
+        x = r \cos \theta, \quad y = r \sin \theta, \quad z = z.
+        \]
+        \item Replace the volume element \( dV \) with \( r \, dr \, d\theta \, dz \).
+        \item The integral becomes:
+        \[
+        \iiint_E f(x, y, z) \, dV = \int_\alpha^\beta \int_{h_1(\theta)}^{h_2(\theta)} \int_{u_1(r \cos \theta, r \sin \theta)}^{u_2(r \cos \theta, r \sin \theta)} f(r \cos \theta, r \sin \theta, z) \, r \, dz \, dr \, d\theta.
+        \]
+    \end{enumerate}
+    
+    This method is ideal when the region \( E \) or the function \( f(x, y, z) \) involves terms like \( x^2 + y^2 \), as \( r^2 = x^2 + y^2 \) naturally simplifies such expressions. Cylindrical coordinates are particularly effective for regions and functions exhibiting rotational symmetry around the \( z \)-axis.
+    
+}
+
 \section*{15.8 Triple Integrals in Spherical Coordinates}
 \addcontentsline{toc}{section}{Triple Integrals in Spherical Coordinates}
+
+\subsection*{Spherical Coordinates}
+\addcontentsline{toc}{subsection}{Spherical Coordinates}
+
+\defrose{Spherical Coordinates}{
+    TThe \textbf{spherical coordinate system} represents points in three-dimensional space using three coordinates \( (\rho, \theta, \phi) \), where:
+    \begin{itemize}
+        \item \( \rho \) is the radial distance from the origin to the point \( P \) (\( \rho \geq 0 \)).
+        \item \( \theta \) is the angle between the positive \( x \)-axis and the projection of \( P \) onto the \( xy \)-plane (\( 0 \leq \theta < 2\pi \)).
+        \item \( \phi \) is the angle between the positive \( z \)-axis and the line segment \( OP \) (\( 0 \leq \phi \leq \pi \)).
+    \end{itemize}
+    
+    \begin{enumerate}
+        \item To convert from \textbf{spherical to Cartesian coordinates}:
+        \[
+        x = \rho \sin \phi \cos \theta, \quad y = \rho \sin \phi \sin \theta, \quad z = \rho \cos \phi.
+        \]
+        \item To convert from \textbf{Cartesian to spherical coordinates}:
+        \[
+        \rho^2 = x^2 + y^2 + z^2, \quad \tan \theta = \frac{y}{x}, \quad \phi = \arccos\left(\frac{z}{\rho}\right).
+        \]
+    \end{enumerate}
+}
+
+\ntimg{
+    \subsection*{Applications}
+    The spherical coordinate system is particularly useful in problems with radial symmetry about a point, such as:
+    \begin{itemize}
+        \item \textbf{Spheres}, where the equation \( \rho = c \) defines a sphere of radius \( c \) centered at the origin.
+        \item \textbf{Vertical half-planes}, defined by \( \theta = c \).
+        \item \textbf{Cones}, defined by \( \phi = c \).
+    \end{itemize}
+}
+
+\subsection*{Triple Integerals in Spherical Coordinates}
+\addcontentsline{toc}{subsection}{Triple Integrals in Spherical Coordinates}
+
+\defrose{Triple Integrals in Spherical Coordinates}{
+    TTriple integrals in spherical coordinates are used to compute the integral of a function \( f(x, y, z) \) over a three-dimensional region \( E \) that exhibits spherical symmetry. In this system, the Cartesian coordinates \( (x, y, z) \) are replaced by the spherical coordinates \( (\rho, \theta, \phi) \), where:
+    \begin{itemize}
+        \item \( \rho \) is the radial distance from the origin to the point (\( \rho \geq 0 \)).
+        \item \( \theta \) is the angle in the \( xy \)-plane, measured from the positive \( x \)-axis (\( 0 \leq \theta < 2\pi \)).
+        \item \( \phi \) is the angle between the positive \( z \)-axis and the line segment connecting the origin to the point (\( 0 \leq \phi \leq \pi \)).
+    \end{itemize}
+    
+    \subsection*{Conversion and Formula}
+    To evaluate a triple integral:
+    \begin{enumerate}
+        \item Convert the Cartesian coordinates:
+        \[
+        x = \rho \sin \phi \cos \theta, \quad y = \rho \sin \phi \sin \theta, \quad z = \rho \cos \phi.
+        \]
+        \item Replace the volume element \( dV \) with \( \rho^2 \sin \phi \, d\rho \, d\theta \, d\phi \).
+        \item Use the following formula for integration:
+        \[
+        \iiint_E f(x, y, z) \, dV = \int_c^d \int_\alpha^\beta \int_a^b f(\rho \sin \phi \cos \theta, \rho \sin \phi \sin \theta, \rho \cos \phi) \rho^2 \sin \phi \, d\rho \, d\theta \, d\phi,
+        \]
+        where \( E \) is a spherical wedge defined by:
+        \[
+        E = \{ (\rho, \theta, \phi) \mid a \leq \rho \leq b, \, \alpha \leq \theta \leq \beta, \, c \leq \phi \leq d \}.
+        \]
+    \end{enumerate}
+}
+
+\ntimg{
+    \subsection*{Applications}
+    This method is particularly advantageous when the region \( E \) or the function \( f(x, y, z) \) involves spherical symmetry, such as:
+    \begin{itemize}
+        \item Spheres or spherical shells.
+        \item Cones, which are naturally described by constant \( \phi \).
+        \item Regions with radial symmetry about the origin.
+    \end{itemize}
+    
+    By leveraging the spherical coordinate system, triple integrals over symmetric regions become computationally efficient and geometrically intuitive.
+}
+
 
 \chapter*{16 Vector Calculus}
 \addcontentsline{toc}{chapter}{Vector Calculus}

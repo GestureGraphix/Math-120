@@ -68,28 +68,35 @@
 \contentsline {subsection}{General Regions}{25}{section*.71}%
 \contentsline {subsection}{Changing the Order of Integration}{26}{section*.72}%
 \contentsline {section}{15.3 Double Integrals in Polar Coordinates}{26}{section*.73}%
-\contentsline {section}{Triple integrals}{26}{section*.74}%
-\contentsline {section}{Triple Integral in Cylindrical Coordinates}{26}{section*.75}%
-\contentsline {section}{Triple Integrals in Spherical Coordinates}{26}{section*.76}%
-\contentsline {chapter}{Vector Calculus}{27}{chapter*.77}%
-\contentsline {section}{16.1 Vector Fields}{27}{section*.78}%
-\contentsline {subsection}{Vector Fields in $\varmathbb {R}^{2} \text { and } \varmathbb {R}^{3}$}{27}{section*.79}%
-\contentsline {subsection}{Gradient Fields}{27}{section*.80}%
-\contentsline {section}{16.2 Line Integrals}{27}{section*.81}%
-\contentsline {subsection}{Line Integrals in the Plane}{27}{section*.82}%
-\contentsline {subsection}{Line Integrals with Respect to $x$ or $y$}{28}{section*.83}%
-\contentsline {subsection}{Line Integrals in Space}{28}{section*.84}%
-\contentsline {section}{16.3 The fundamental Theorem for Line Integrals}{29}{section*.86}%
-\contentsline {subsection}{The Fundamental Theorem for Line Integrals}{29}{section*.87}%
-\contentsline {subsection}{Independence of Path}{30}{section*.88}%
-\contentsline {subsection}{Conservative Vector Fields and Potential Functions}{30}{section*.89}%
-\contentsline {section}{16.4 Green's Theorem}{31}{section*.90}%
-\contentsline {subsection}{Green's Theorem}{31}{section*.91}%
-\contentsline {subsection}{Finding Areas with Green's Theorem}{32}{section*.92}%
-\contentsline {subsection}{Extended Version of Green's Theorem}{33}{section*.93}%
-\contentsline {section}{Curl and Divergence}{33}{section*.94}%
-\contentsline {section}{Parametric Surfaces and Their Areas}{36}{section*.101}%
-\contentsline {section}{Surface Integral}{39}{section*.111}%
-\contentsline {section}{Stokes' Theorem}{43}{section*.125}%
-\contentsline {section}{The Divergence Theorem}{43}{section*.126}%
+\contentsline {section}{Triple integrals}{27}{section*.74}%
+\contentsline {subsection}{Triple Integrals Over Rectangluar Boxes}{27}{section*.75}%
+\contentsline {subsection}{Triple Integrals Over General Regions}{27}{section*.76}%
+\contentsline {subsection}{Changing Order of Integration}{28}{section*.77}%
+\contentsline {section}{Triple Integral in Cylindrical Coordinates}{29}{section*.78}%
+\contentsline {subsection}{Cylindrical Coordinates}{29}{section*.79}%
+\contentsline {subsection}{Triple Integrals In Cylindrical Coordinates}{30}{section*.81}%
+\contentsline {section}{Triple Integrals in Spherical Coordinates}{30}{section*.82}%
+\contentsline {subsection}{Spherical Coordinates}{30}{section*.83}%
+\contentsline {subsection}{Triple Integrals in Spherical Coordinates}{31}{section*.85}%
+\contentsline {chapter}{Vector Calculus}{32}{chapter*.88}%
+\contentsline {section}{16.1 Vector Fields}{32}{section*.89}%
+\contentsline {subsection}{Vector Fields in $\varmathbb {R}^{2} \text { and } \varmathbb {R}^{3}$}{32}{section*.90}%
+\contentsline {subsection}{Gradient Fields}{32}{section*.91}%
+\contentsline {section}{16.2 Line Integrals}{32}{section*.92}%
+\contentsline {subsection}{Line Integrals in the Plane}{32}{section*.93}%
+\contentsline {subsection}{Line Integrals with Respect to $x$ or $y$}{33}{section*.94}%
+\contentsline {subsection}{Line Integrals in Space}{33}{section*.95}%
+\contentsline {section}{16.3 The fundamental Theorem for Line Integrals}{34}{section*.97}%
+\contentsline {subsection}{The Fundamental Theorem for Line Integrals}{34}{section*.98}%
+\contentsline {subsection}{Independence of Path}{35}{section*.99}%
+\contentsline {subsection}{Conservative Vector Fields and Potential Functions}{35}{section*.100}%
+\contentsline {section}{16.4 Green's Theorem}{36}{section*.101}%
+\contentsline {subsection}{Green's Theorem}{36}{section*.102}%
+\contentsline {subsection}{Finding Areas with Green's Theorem}{37}{section*.103}%
+\contentsline {subsection}{Extended Version of Green's Theorem}{38}{section*.104}%
+\contentsline {section}{Curl and Divergence}{38}{section*.105}%
+\contentsline {section}{Parametric Surfaces and Their Areas}{41}{section*.112}%
+\contentsline {section}{Surface Integral}{44}{section*.122}%
+\contentsline {section}{Stokes' Theorem}{48}{section*.136}%
+\contentsline {section}{The Divergence Theorem}{48}{section*.137}%
 \contentsfinish 
