@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  12 DEC 2024 01:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  12 DEC 2024 16:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -491,9 +491,74 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 LaTeX Warning: No \author given.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
 [1
 
 {/home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--473
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--512
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
+
+ []
+
+
+Underfull \hbox (badness 6445) in paragraph at lines 561--562
+[]\OT1/cmr/bx/n/8 Pick Coordinates Wisely: \OT1/cmr/m/n/8 If symmetry is present, use
+ []
+
+
 
 [2] (sheet.aux)
  ***********
@@ -502,17 +567,17 @@ L3 programming layer <2024-05-27>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13970 strings out of 475839
- 280581 string characters out of 5777281
- 1973905 words of memory out of 5000000
- 36374 multiletter control sequences out of 15000+600000
- 565277 words of font info for 63 fonts, out of 8000000 for 9000
+ 13963 strings out of 475839
+ 280389 string characters out of 5777281
+ 1980905 words of memory out of 5000000
+ 36366 multiletter control sequences out of 15000+600000
+ 565585 words of font info for 64 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  83i,16n,93p,509b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx6.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti8.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on sheet.pdf (2 pages, 162726 bytes).
+ </home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx6.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti8.pfb></home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on sheet.pdf (2 pages, 178572 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

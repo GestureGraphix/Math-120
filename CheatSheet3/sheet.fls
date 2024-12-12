@@ -188,9 +188,12 @@ INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx6
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx5.tfm
 OUTPUT sheet.pdf
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
 INPUT sheet.aux
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx6.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx6.pfb
 INPUT /home/alexhernandezjuarez/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb
