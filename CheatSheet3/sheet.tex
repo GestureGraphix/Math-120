@@ -1,0 +1,420 @@
+\documentclass[9pt]{article}
+\usepackage{amsmath, amssymb, graphicx, geometry, multicol, tcolorbox, titlesec, xcolor, titling}
+\geometry{a4paper, margin=0.1in}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\linespread{0.3}
+\titlespacing{\section}{0pt}{0pt}{0pt}
+\setlength{\columnsep}{0.1cm}
+
+% Brighter pastel colors
+\definecolor{brightblue}{HTML}{B3D9FF}
+\definecolor{brightgreen}{HTML}{C2FABC}
+\definecolor{brightpink}{HTML}{FFD3D6}
+\definecolor{brightyellow}{HTML}{FFFCAB}
+
+\tcbset{
+    boxrule=0.1mm,
+    colback=white,
+    fonttitle=\bfseries\footnotesize,
+    sharp corners,
+    coltitle=black,
+    top=0pt,
+    bottom=0pt,
+    left=0.3mm,
+    right=0.3mm,
+    boxsep=0.2mm,
+    arc=0.3mm
+}
+
+\setlength{\droptitle}{-70pt}
+
+\title{\footnotesize \textbf{Comprehensive Review for Exams 1, 2, and Final}}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-15pt}
+
+\begin{multicols}{2}
+\footnotesize
+
+\noindent \textbf{Review Exam 1 Concepts:}\\
+Foundations of multivariable calculus: vectors, geometry in space, and basic derivatives. Understanding these helps you visualize and tackle more advanced problems later.
+
+\begin{tcolorbox}[title=, colframe=brightblue]
+\textbf{1. Vectors}\\
+\textit{Concept:} Vectors represent quantities with both magnitude and direction. They are the building blocks of spatial reasoning in calculus.
+
+\begin{itemize}
+    \item Magnitude: For $\mathbf{a}=\langle a_1,a_2,a_3\rangle$, $\|\mathbf{a}\|=\sqrt{a_1^2+a_2^2+a_3^2}$.
+    \item Addition and scalar multiplication: If $\mathbf{a},\mathbf{b}\in\mathbb{R}^3$ and $c\in\mathbb{R}$, then $\mathbf{a}+\mathbf{b}=\langle a_1+b_1,a_2+b_2,a_3+b_3\rangle$, $c\mathbf{a}=\langle ca_1,ca_2,ca_3\rangle$.
+    \item $\overrightarrow{AB}$: If $A=(x_1,y_1,z_1)$ and $B=(x_2,y_2,z_2)$, then $\overrightarrow{AB}=\langle x_2 - x_1, y_2 - y_1, z_2 - z_1\rangle$.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightgreen]
+\textbf{2. Dot Product}\\
+\textit{Concept:} The dot product measures how much two vectors "line up." It relates to projections and angles.
+
+\[
+\mathbf{a}\cdot \mathbf{b}=\|\mathbf{a}\|\|\mathbf{b}\|\cos\theta.
+\]
+
+Projection of $\mathbf{a}$ onto $\mathbf{b}$:
+\[
+\text{proj}_{\mathbf{b}}(\mathbf{a})=\left(\frac{\mathbf{a}\cdot\mathbf{b}}{\|\mathbf{b}\|^2}\right)\mathbf{b}.
+\]
+If two vectors are perpendicular, the dot product is zero.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightpink]
+\textbf{3. Cross Product}\\
+\textit{Concept:} The cross product gives a vector perpendicular to both inputs, representing the "area" spanned by two vectors and a direction given by the right-hand rule.
+
+\[
+\mathbf{a}\times \mathbf{b} = \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k}\\
+a_1 & a_2 & a_3 \\
+b_1 & b_2 & b_3
+\end{vmatrix}, \quad \|\mathbf{a}\times \mathbf{b}\|=\|\mathbf{a}\|\|\mathbf{b}\|\sin\theta.
+\]
+Also relates to volumes of parallelepipeds and indicates orientation in space.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightyellow]
+\textbf{4. Planes}\\
+\textit{Concept:} A plane in 3D is defined by a point and a normal vector. The normal captures the plane's orientation.
+
+\[
+ax+by+cz=d.
+\]
+Normal vector $\langle a,b,c\rangle$ shows how the plane is "tilted."
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightblue]
+\textbf{5. Distances}\\
+\textit{Concept:} Distance formulas measure how far apart objects are in space, crucial for geometry and optimization.
+
+- Distance from point $P_0=(x_0,y_0,z_0)$ to plane $ax+by+cz=d$:
+\[
+\text{distance} = \frac{|ax_0+by_0+cz_0 - d|}{\sqrt{a^2 + b^2 + c^2}}.
+\]
+
+- Distance from point $P_0=(x_0,y_0,z_0)$ to line through $A=(x_1,y_1,z_1)$ with direction vector $\mathbf{v}$:
+\[
+\text{distance}=\frac{\|\overrightarrow{P_0A}\times \mathbf{v}\|}{\|\mathbf{v}\|}.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightgreen]
+\textbf{6. Derivative of Vector Functions}\\
+\textit{Concept:} A vector function changes with respect to a parameter (often time). Its derivative gives the instantaneous direction and rate of change.
+
+\[
+\mathbf{r}'(t)=\langle x'(t),y'(t),z'(t)\rangle.
+\]
+Think of it as velocity if $\mathbf{r}(t)$ is a position.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightpink]
+\textbf{7. Tangent Line}\\
+\textit{Concept:} The tangent line at a point on a curve shows the curve's immediate direction. It’s a linear approximation at a specific point.
+
+\[
+\text{Tangent line: } \mathbf{r}(t)=\mathbf{r}(t_0)+\mathbf{r}'(t_0)(t-t_0).
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightyellow]
+\textbf{8. Integrals of Vector Functions}\\
+\textit{Concept:} Integrals summarize accumulation over time or space. For vector functions, it represents accumulated displacement or "area under" a vector curve.
+
+\[
+\int_a^b \mathbf{r}'(t)\,dt=\mathbf{r}(b)-\mathbf{r}(a).
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightblue]
+\textbf{9. Functions of Several Variables}\\
+\textit{Concept:} Surfaces and contours come from functions of two or three variables. If $f(x,y,z)$ is a function of three variables, level surfaces $f(x,y,z)=c$ define 3D shapes.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightgreen]
+\textbf{10. Implicit Differentiation}\\
+\textit{Concept:} When functions aren't given explicitly (like $y=f(x)$), we differentiate implicitly to find relationships between rates of change of variables.
+
+For $F(x,y)=0$:
+\[
+\frac{dy}{dx} = -\frac{F_x}{F_y}.
+\]
+
+For surfaces defined implicitly by $F(x,y,z)=0$, partial derivatives follow similarly:
+\[
+\frac{\partial z}{\partial x} = -\frac{F_x}{F_z}, \quad \frac{\partial z}{\partial y} = -\frac{F_y}{F_z}.
+\]
+\end{tcolorbox}
+
+\end{multicols}
+
+\noindent After these basics, Exam 2 topics incorporate partial derivatives, optimizing functions in multiple variables, and evaluating integrals over paths and areas.
+
+\begin{multicols}{2}
+\footnotesize
+
+\noindent \textbf{Review Exam 2 Topics:}\\
+Building on Exam 1, we now focus on how surfaces change in different directions, find maxima/minima in multiple dimensions, and handle integrals along curves.
+
+\begin{tcolorbox}[title=, colframe=brightpink]
+\textbf{1. Directional Derivatives}\\
+\textit{Concept:} The directional derivative tells you how a function changes as you move in a given direction. It's like a "slope" in the direction of a chosen vector.
+
+\[
+D_{\mathbf{u}} f(x_0,y_0)=\nabla f(x_0,y_0)\cdot \mathbf{u}.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightyellow]
+\textbf{2. Tangent Plane for $z=f(x,y)$}\\
+\textit{Concept:} The tangent plane is a 2D approximation of a surface near a point. It's the "best linear fit" to a surface at that point.
+
+\[
+z-z_0=f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0).
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightblue]
+\textbf{3. Critical Points \& 2nd-Derivative Test}\\
+\textit{Concept:} Critical points are where a function's slope "flattens out." The 2nd-derivative test classifies these points as peaks, valleys, or saddle points.
+
+\[
+D=\begin{vmatrix}
+f_{xx}(x_0,y_0) & f_{xy}(x_0,y_0)\\
+f_{yx}(x_0,y_0) & f_{yy}(x_0,y_0)
+\end{vmatrix}=f_{xx}f_{yy}-f_{xy}^2.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightgreen]
+\textbf{4. Lagrange Multipliers}\\
+\textit{Concept:} A method to find maxima/minima of a function subject to a constraint. Geometrically, it aligns gradients so that at extrema, the surfaces "touch" but do not intersect.
+
+\[
+\nabla f=\lambda \nabla g.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightpink]
+\textbf{5. Double Integrals}\\
+\textit{Concept:} Double integrals measure volumes under surfaces. Changing to polar coordinates makes circular or radial regions simpler.
+
+\[
+\iint_{R} f(x,y)\,dA.
+\]
+In polar: $x=r\cos\theta, y=r\sin\theta$, $dA=r\,dr\,d\theta$.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightyellow]
+\textbf{6. Line Integrals}\\
+\textit{Concept:} Integrating along a path in space. Can represent work done by a force along a path or mass of a wire.
+
+\[
+\int_C \mathbf{F}\cdot d\mathbf{r}=\int_a^b \mathbf{F}(\mathbf{r}(t))\cdot \mathbf{r}'(t)\,dt.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightblue]
+\textbf{7. Fundamental Theorem of Line Integrals}\\
+\textit{Concept:} If a vector field is the gradient of some function, then the integral depends only on the endpoints—making calculations much simpler.
+
+\[
+\int_C \mathbf{F}\cdot d\mathbf{r}=f(\text{end})-f(\text{start}).
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightgreen]
+\textbf{8. Vector Fields}\\
+\textit{Concept:} Assigning a vector to every point in space describes flows, fields (like gravity or electricity), and directional tendencies.
+
+If $\mathbf{F}(x,y,z)=\langle P(x,y,z),Q(x,y,z),R(x,y,z)\rangle$, it is a vector field on $\mathbb{R}^3$.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightpink]
+\textbf{9. Green's Theorem}\\
+\textit{Concept:} Converts a line integral around a closed curve into a double integral over the region inside. It relates circulation around a boundary to a "curl-like" measure inside the region.
+
+\[
+\oint_{C} (P\,dx + Q\,dy) = \iint_{D}\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)dA.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightyellow]
+\textbf{10. Conservative Vector Fields}\\
+\textit{Concept:} If a field is conservative, there's a potential function whose gradient gives the field. This means path independence and simpler integral evaluations.
+
+If $\mathbf{F}=\nabla f$, then $\mathbf{F}$ is conservative.
+\end{tcolorbox}
+
+\end{multicols}
+
+\noindent For the Final, we integrate everything: curl, divergence, and the great theorems linking line, surface, and volume integrals. These theorems unify our understanding of vector fields and surfaces.
+
+\begin{multicols}{2}
+\footnotesize
+
+\noindent \textbf{Review for the Final Exam:}\\
+We now employ curl, divergence, and parameterizations more fully. This big-picture view links line integrals, surface integrals, and volume integrals into powerful theorems.
+
+\begin{tcolorbox}[title=, colframe=brightblue]
+\textbf{1. Curl of a Vector Field}\\
+\textit{Concept:} Curl measures the "rotation" of a vector field. A high curl means the field swirls around that point.
+
+\[
+\nabla \times \mathbf{F}=\left(\frac{\partial R}{\partial y}-\frac{\partial Q}{\partial z}\right)\mathbf{i}+\left(\frac{\partial P}{\partial z}-\frac{\partial R}{\partial x}\right)\mathbf{j}+\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)\mathbf{k}.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightgreen]
+\textbf{2. Divergence of a Vector Field}\\
+\textit{Concept:} Divergence measures how much a vector field "spreads out" from a point. Positive divergence means sources (outflow), negative means sinks (inflow).
+
+\[
+\nabla \cdot \mathbf{F}=\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightpink]
+\textbf{3. Parametric Plane}\\
+\textit{Concept:} We describe surfaces by parameters. A parametric plane can be given by:
+\[
+\mathbf{r}(u,v) = \mathbf{r}_0 + u\mathbf{r}_u + v\mathbf{r}_v,
+\]
+where $\mathbf{r}_u$ and $\mathbf{r}_v$ are direction vectors.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightyellow]
+\textbf{4. Parametric Surfaces}\\
+\textit{Concept:} More general surfaces (like spheres or saddle shapes) can be described by two parameters $(u,v)$:
+\[
+\mathbf{r}(u,v)=\langle x(u,v), y(u,v), z(u,v)\rangle.
+\]
+This approach makes complex integrals easier.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightblue]
+\textbf{5. Tangent Planes to Surfaces}\\
+\textit{Concept:} Similar to tangent lines but now for surfaces. If $\mathbf{r}(u,v)$ describes a surface, the tangent vectors are:
+\[
+\mathbf{r}_u=\frac{\partial\mathbf{r}}{\partial u}, \quad \mathbf{r}_v=\frac{\partial\mathbf{r}}{\partial v}.
+\]
+A tangent plane is spanned by $\mathbf{r}_u$ and $\mathbf{r}_v$ at a point.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightgreen]
+\textbf{6. Surface Integral}\\
+\textit{Concept:} Surface integrals extend the idea of double integrals to curved surfaces. For a scalar function $f$:
+\[
+\iint_S f(x,y,z)\,dS.
+\]
+If $S$ is given by $\mathbf{r}(u,v)$, then $dS=\|\mathbf{r}_u\times\mathbf{r}_v\|\,du\,dv$.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightpink]
+\textbf{7. Surface Orientation}\\
+\textit{Concept:} Orientation (the direction of the normal vector) matters for flux. For $\mathbf{r}(u,v)$, the normal vector can be $\mathbf{r}_u\times\mathbf{r}_v$ or its negative.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightyellow]
+\textbf{8. Flux Integral}\\
+\textit{Concept:} The flux integral measures how much of a vector field passes through a surface. 
+\[
+\iint_S \mathbf{F}\cdot\mathbf{n}\,dS.
+\]
+If $S$ is parameterized by $\mathbf{r}(u,v)$, then
+\[
+\iint_S \mathbf{F}\cdot(\mathbf{r}_u\times\mathbf{r}_v)\,du\,dv.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightblue]
+\textbf{9. Stokes' Theorem}\\
+\textit{Concept:} Stokes' Theorem links a line integral around a boundary to a surface integral of the curl.
+
+\[
+\oint_C \mathbf{F}\cdot d\mathbf{r}=\iint_S (\nabla \times \mathbf{F})\cdot \mathbf{n}\,dS.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightgreen]
+\textbf{10. Triple Integrals}\\
+\textit{Concept:} Triple integrals measure volume-based quantities inside 3D regions.
+
+\[
+\iiint_W f(x,y,z)\,dV.
+\]
+
+Change of coordinates (cylindrical or spherical) often simplifies these integrals.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightpink]
+\textbf{11. Cylindrical Coordinates}\\
+\textit{Concept:} Cylindrical coordinates simplify integrals in problems with circular symmetry.
+\[
+x=r\cos\theta,\quad y=r\sin\theta,\quad z=z,\quad dV=r\,dr\,d\theta\,dz.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightyellow]
+\textbf{12. Spherical Coordinates}\\
+\textit{Concept:} Spherical coordinates simplify integrals over spherical regions.
+\[
+x=\rho\sin\phi\cos\theta,\quad y=\rho\sin\phi\sin\theta,\quad z=\rho\cos\phi,\quad dV=\rho^2\sin\phi\,d\rho\,d\phi\,d\theta.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightblue]
+\textbf{13. Divergence Theorem}\\
+\textit{Concept:} Converts a flux integral over a closed surface into a volume integral of the divergence:
+\[
+\iint_{S}\mathbf{F}\cdot\mathbf{n}\,dS=\iiint_{V}(\nabla \cdot \mathbf{F})\,dV.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightgreen]
+\textbf{14. Remarks}\\
+\textit{Concept:} Choosing the right theorem or coordinate system often simplifies the work. Think strategically!
+\end{tcolorbox}
+
+\end{multicols}
+
+\noindent By now, you've seen how all pieces connect: from simple vector operations to powerful theorems that turn complicated integrals into manageable ones.
+
+\begin{multicols}{2}
+\footnotesize
+
+\noindent \textbf{Additional Strategies and Tips:}\\
+These strategies help you navigate complex problems and choose the best approach.
+
+\begin{tcolorbox}[title=, colframe=brightpink]
+\begin{enumerate}
+    \item \textbf{Use FTLI:} If a line integral is over a gradient field, just find the potential function’s values at the endpoints.
+    \item \textbf{Convert to Double/Surface Integrals:} Green’s and Stokes’ turn line integrals into area/surface integrals when it’s simpler.
+    \item \textbf{Use Divergence Theorem:} If dealing with a closed surface, consider switching to a volume integral of divergence.
+    \item \textbf{Linear Approximations:} Tangent planes and vectors help approximate functions locally.
+    \item \textbf{Optimization Tools:} Lagrange multipliers and the 2nd-derivative test help find maxima and minima efficiently.
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=, colframe=brightyellow]
+\textbf{General Tips:}
+\begin{itemize}
+    \item \textbf{Visualize:} Drawing regions, surfaces, and vector fields aids understanding.
+    \item \textbf{Normal Vectors:} Gradients give normals to surfaces defined implicitly.
+    \item \textbf{Check Curl/Divergence:} If $\nabla\times\mathbf{F}=0$, consider potential functions. If $\nabla\cdot\mathbf{F}=0$, you might simplify flux integrals.
+    \item \textbf{Coordinate Changes:} Cylindrical and spherical coordinates handle symmetrical regions more easily.
+\end{itemize}
+\end{tcolorbox}
+
+\end{multicols}
+
+\end{document}
